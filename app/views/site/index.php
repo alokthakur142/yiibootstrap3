@@ -1,50 +1,83 @@
-<div class="container">
+<?php
+/* @var $this DefaultController */
 
-	<!-- Main hero unit for a primary marketing message or call to action -->
-	<div class="hero-unit">
-		<h1>Hello, world!</h1>
-
-		<p>This is a template for a simple marketing or informational website. It includes a large callout called the
-			hero unit and three supporting pieces of content. Use it as a starting point to create something more
-			unique.</p>
-
-		<p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-	</div>
-
-	<!-- Example row of columns -->
-	<div class="row">
-		<div class="span4">
-			<h2>Heading</h2>
-
-			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-				condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis
-				euismod. Donec sed odio dui. </p>
-
-			<p><a class="btn" href="#">View details &raquo;</a></p>
-		</div>
-		<div class="span4">
-			<h2>Heading</h2>
-
-			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-				condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis
-				euismod. Donec sed odio dui. </p>
-
-			<p><a class="btn" href="#">View details &raquo;</a></p>
-		</div>
-		<div class="span4">
-			<h2>Heading</h2>
-
-			<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula
-				porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-				fermentum massa justo sit amet risus.</p>
-
-			<p><a class="btn" href="#">View details &raquo;</a></p>
-		</div>
-	</div>
-
-	<hr>
-
-	<footer>
-		<p>&copy; Company 2012</p>
-	</footer>
+$this->breadcrumbs = array(
+    $this->id => '/',
+    'Base'
+);
+//array_push(
+//    $this->mainNavPartials,
+//    MainNavPartial::getView('_buttons')
+//);
+array_push(
+    $this->secondNavPartials,
+    NavPartial::getView('_affix')
+);
+Yii::app()->clientScript->registerScript('affix_sidebar',
+    "
+     $('.bs-sidenav').on('click','li',function(){
+        if($(this).hasClass('activeli'))
+            return false;
+        $('.bs-sidenav .activeli').removeClass('activeli');
+        $(this).addClass('activeli');
+    });
+    ",
+    CClientScript::POS_READY
+);
+?>
+<?php //CVarDumper::dump(Yii::app()->request,10,true) ?>
+<?php //CVarDumper::dump($_SERVER,10,true) ?>
+<?php $this->renderPartial('_middle_nav',array('code' => true)) ?>
+<h1 id="charts" class="page-header">Charts</h1>
+<div class="panel panel-warning">
+    <div class="panel-heading">
+        <h3  class="panel-title">Charts</h3>
+    </div>
+    <div class="panel-body">
+        <?php $this->renderPartial('_chartjs',array('code' => true)) ?>
+    </div>
 </div>
+<h1 id="forms" class="page-header">Forms</h1>
+<div class="panel">
+    <div class="panel-heading">
+        <h3 class="panel-title">Forms</h3>
+    </div>
+    <div class="panel-body">
+        <?php $this->renderPartial('_activeForm',array('code' => true)) ?>
+    </div>
+</div>
+<h1 id="alert" class="page-header">Alert</h1>
+<div class="panel">
+    <div class="panel-heading">
+        <h3 class="panel-title">Alert</h3>
+    </div>
+    <div class="panel-body">
+        <?php $this->renderPartial('_alerts',array('code' => true)) ?>
+    </div>
+</div>
+<h1 id="buttons" class="page-header">Buttons</h1>
+<?php $this->renderPartial('_buttons',array('code' => true)) ?>
+
+<h1 id="progress" class="page-header">Progress</h1>
+<div class="panel">
+    <div class="panel-heading">
+        <h3 class="panel-title">Progress</h3>
+    </div>
+    <div class="panel-body">
+        <?php $this->renderPartial('_progress',array('code' => true)) ?>
+    </div>
+</div>
+
+<h1 id="pagination" class="page-header">Pagination</h1>
+<div class="panel">
+    <div class="panel-heading">
+        <h3 class="panel-title">Pagination</h3>
+    </div>
+    <div class="panel-body">
+        <?php $this->renderPartial('_pagination',array('code' => true)) ?>
+    </div>
+</div>
+<h1 id="gridView" class="page-header">GridView</h1>
+<?php $this->renderPartial('_grid_view',array('code' => true)) ?>
+<h1 id="icons"  class="page-header">Icons</h1>
+<?php $this->renderPartial('_tabs',array('code' => true)) ?>

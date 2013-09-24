@@ -92,7 +92,7 @@
 
 <div id="footer">
     <div class="container">
-        <p class="text-muted credit">Example courtesy <a href="http://martinbean.co.uk">Martin Bean</a> and <a href="http://ryanfait.com/sticky-footer/">Ryan Fait</a>.</p>
+        <p class="text-muted credit"><?php echo BSHtml::icon(BSHtml::GLYPHICON_COPYRIGHT_MARK);BSHtml::link('Pascal Brewing','http://pascalbrewing.de') ?></p>
     </div>
 </div>
 <div id="demo_modal" class="modal fade">

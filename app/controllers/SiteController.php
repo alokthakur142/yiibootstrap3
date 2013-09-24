@@ -11,10 +11,17 @@
  */
 class SiteController extends EController
 {
-	public function actionIndex()
-	{
-		$this->render('index');
-	}
+    public function actionIndex()
+    {
+        $this->render('index');
+    }
+
+    public function actionAjaxTest()
+    {
+        $message = $_POST['message'];
+        echo BSHtml::alert(BSHtml::ALERT_COLOR_INFO, "<strong>Message:</strong>{$message}");
+        Yii::app()->end();
+    }
 
 	/**
 	 * This is the action to handle external exceptions.
