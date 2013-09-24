@@ -44,7 +44,7 @@
         array('color' => BSHtml::PROGRESS_COLOR_DANGER, 'width' => 10),
     )
 ); ?>
-<pre class="pre-scrollable linenums prettyprint lang-py prettyprint lang-py">
+<pre class="pre-scrollable col-sm-hidden col-xs-hidden  linenums prettyprint lang-py prettyprint lang-py">
 &lt;?php echo BSHtml::progressBar(
     90,
     array(

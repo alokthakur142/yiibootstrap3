@@ -104,7 +104,7 @@ if(!isset($code))
             )
         ); ?>
         <?php if ($code) : ?>
-                    <pre class="pre-scrollable linenums prettyprint lang-py">
+                    <pre class="pre-scrollable col-sm-hidden col-xs-hidden  linenums prettyprint lang-py">
                         &lt;?php echo BSHtml::linkButton('Google',array(
                             'url' => 'http://www.google.de',
                             'target' => '_blank',
@@ -235,7 +235,7 @@ if(!isset($code))
         <?php echo BSHtml::button('Default', array('size' => BSHtml::BUTTON_SIZE_MINI)); ?>
         <?php echo BSHtml::button('Link', array('color' => BSHtml::BUTTON_COLOR_LINK, 'size' => BSHtml::BUTTON_SIZE_MINI)); ?>
         <?php if ($code) : ?>
-        <pre class="pre-scrollable linenums prettyprint lang-py">
+        <pre class="pre-scrollable col-sm-hidden col-xs-hidden  linenums prettyprint lang-py">
 &lt;?php echo BSHtml::button(
     'Primary',
     array(

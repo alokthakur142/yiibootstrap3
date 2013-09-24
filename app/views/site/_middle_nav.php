@@ -199,7 +199,7 @@
     )
 ) ?>
 <?php if($code) : ?>
-    <pre class="pre-scrollable linenums prettyprint lang-py">
+    <pre class="pre-scrollable col-sm-hidden col-xs-hidden  linenums prettyprint lang-py">
         &lt;?php Yii::import('bootstrap.extensions.middlenav.MNav') ?&gt;
         &lt;?php $this->widget('bootstrap.extensions.middlenav.MNav',
             array(
