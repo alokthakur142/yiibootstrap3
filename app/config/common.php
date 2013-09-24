@@ -47,11 +47,11 @@ return array(
                     'class'=>'CFileLogRoute',
                     'levels'=>'error, warning, info',
                 ),
-                array(
-                    'class'=>'CWebLogRoute',
-                    'levels'=>'trace',
-                    'enabled'=>true,
-                ),
+//                array(
+//                    'class'=>'CWebLogRoute',
+//                    'levels'=>'trace',
+//                    'enabled'=>true,
+//                ),
             ),
         ),
 
