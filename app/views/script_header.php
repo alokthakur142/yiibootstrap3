@@ -40,7 +40,7 @@ $cs
             offset: {
               top: 100
             , bottom: function () {
-                return (this.bottom = $('.bs-footer').outerHeight(true))
+                return (this.bottom = $('.bs-footer').outerHeight(true));
               }
             }
         })"
