@@ -2,7 +2,7 @@
 /* @var $this DefaultController */
 
 $this->breadcrumbs = array(
-    $this->id => '/',
+    $this-> id => '/',
     'Base'
 );
 //array_push(
