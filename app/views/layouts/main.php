@@ -55,6 +55,23 @@
                         )
                         ?>
                     </li>
+                    <li class="text-right">
+                        <?php echo BSHtml::link(
+                            CHtml::image(
+                                Yii::app()->baseUrl.'/img/logo.png',
+                                'Packagist ;)',
+                                array(
+                                    'class' => 'img-rounded',
+                                    'height' => 40
+                                )
+                            ),
+                            'https://packagist.org/packages/drmabuse/yii-bootstrap-3-module',
+                            array(
+                                'target' => '_blank',
+                            )
+                        )
+                        ?>
+                    </li>
                 </ul>
             </div>
         </div>
