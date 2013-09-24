@@ -1,12 +1,5 @@
 <div class="row">
     <div class="secondNav">
-        <div class="secTop">
-            <div class="balance">
-                <div class="balInfo">Balance:<span>Apr 21 2012</span></div>
-                <div class="balAmount"><span class="balBars"><canvas width="59" height="18" style="display: inline-block; width: 59px; height: 18px; vertical-align: top;"></canvas></span><span>$58,990</span></div>
-            </div>
-            <a href="#" class="triangle-red"></a>
-        </div>
         <?php  $this->beginWidget('zii.widgets.CPortlet', array(
             'title'=>'',
         ));

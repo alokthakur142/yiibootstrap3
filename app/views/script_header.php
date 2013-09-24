@@ -31,6 +31,7 @@ $cs
     ->registerScriptFile($themePath.'/js/bootstrap.min.js',CClientScript::POS_END)
     ->registerScriptFile($themePath.'/js/holder.js',CClientScript::POS_END)
     ->registerScript('tooltip',"$('[data-toggle=\"tooltip\"]').tooltip();",CClientScript::POS_READY)
+    ->registerScript('popover',"$('[data-toggle=\"popover\"]').popover();",CClientScript::POS_READY)
     ->registerScript(
         'affix',
         "$('affix').affix({
