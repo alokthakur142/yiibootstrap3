@@ -1,4 +1,10 @@
 <?php
-	`cd ../`;
-	echo '<pre>'.`git pull 2>&1`.PHP_EOL.'</pre>--end';
-	#echo shell_exec('whoami');
+
+header("Content-Type: text/plain; Charset: utf-8");
+
+chdir(__DIR__.DIRECTORY_SEPARATOR.'..');
+
+echo "########################" . PHP_EOL;
+echo "  D e p l o y" . PHP_EOL;
+echo "########################" . str_repeat(PHP_EOL, 3);
+echo `/usr/bin/git pull 2>&1`;
