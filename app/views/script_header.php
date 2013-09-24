@@ -30,6 +30,8 @@ $cs
     ->registerCoreScript('jquery.ui',CClientScript::POS_END)
     ->registerScriptFile($themePath.'/js/bootstrap.min.js',CClientScript::POS_END)
     ->registerScriptFile($themePath.'/js/holder.js',CClientScript::POS_END)
+    ->registerScriptFile($themePath.'/js/holder.js',CClientScript::POS_END)
+    ->registerScriptFile('https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css',CClientScript::POS_END)
     ->registerScript('tooltip',"$('[data-toggle=\"tooltip\"]').tooltip();",CClientScript::POS_READY)
     ->registerScript('popover',"$('[data-toggle=\"popover\"]').popover();",CClientScript::POS_READY)
     ->registerScript(
