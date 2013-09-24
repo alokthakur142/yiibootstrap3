@@ -2,7 +2,7 @@
 
 header("Content-Type: text/plain; Charset: utf-8");
 
-chdir(__DIR__.DIRECTORY_SEPARATOR.'..');
+chdir(dirname(__FILE__).DIRECTORY_SEPARATOR.'..');
 
 echo "########################" . PHP_EOL;
 echo "  D e p l o y" . PHP_EOL;
