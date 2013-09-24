@@ -67,11 +67,11 @@ if(!isset($code))
         ); ?>
         <?php echo BSHtml::ajaxButton(
             'BSHtml::ajaxButton',
-            Yii::app()->createAbsoluteUrl('bootstrap/default/ajaxTest'),
+            Yii::app()->createAbsoluteUrl('sitet/ajaxTest'),
             array(
                 'cache' => true,
                 'data' => array(
-                    'message' => 'Lorem Ipsum Message.'
+                    'message' => 'clicked the AjaxButton'
                 ),
                 'type' => 'POST',
                 'success' => 'js:function(data){
@@ -86,11 +86,11 @@ if(!isset($code))
             )
         ); ?>
         <?php echo BSHtml::ajaxLink('BSHtml::ajaxLink',
-            Yii::app()->createAbsoluteUrl('bootstrap/default/ajaxTest'),
+            Yii::app()->createAbsoluteUrl('site/ajaxTest'),
             array(
                 'cache' => true,
                 'data' => array(
-                    'message' => 'Lorem Ipsum Message.'
+                    'message' => 'clicked the AjaxLink'
                 ),
                 'type' => 'POST',
                 'success' => 'js:function(data){
