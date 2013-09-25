@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.png">
 
-    <title>Layout Column2 for Presentage</title>
+    <title>Yii-Bootstrap-3-Module</title>
     <?php $this->renderPartial('//script_header') ?>
 </head>
 <body>
