@@ -25,11 +25,26 @@
                     <li class=" ">
                         <?php echo BSHtml::link(
                             CHtml::image(
+                                Yii::app()->baseUrl.'/img/bootstrap.png',
+                                'Yii ;)',
+                                array(
+                                    'class' => '',
+                                    'height' => 30
+                                )
+                            ),
+                            'http://getbootstrap.com',
+                            array(
+                                'target' => '_blank',
+                            )
+                        )
+                        ?>
+                        <?php echo BSHtml::link(
+                            CHtml::image(
                                 Yii::app()->baseUrl.'/img/yii.png',
                                 'Yii ;)',
                                 array(
-                                    'class' => 'img-rounded',
-                                    'height' => 40
+                                    'class' => '',
+                                    'height' => 30
                                 )
                             ),
                             'http://www.yiiframework.com/extension/yii-bootstrap3-module/',
@@ -45,8 +60,8 @@
                                 Yii::app()->baseUrl.'/img/bitbucket_logo_landing.png',
                                 'Bitbucket ;)',
                                 array(
-                                    'class' => 'img-rounded',
-                                    'height' => 40
+                                    'class' => '',
+                                    'height' => 30
                                 )
                             ),
                             'https://bitbucket.org/DrMabuse/yii-bootstrap-3-module',
@@ -62,8 +77,8 @@
                                 Yii::app()->baseUrl.'/img/logo.png',
                                 'Packagist ;)',
                                 array(
-                                    'class' => 'img-rounded',
-                                    'height' => 40
+                                    'class' => '',
+                                    'height' => 30
                                 )
                             ),
                             'https://packagist.org/packages/drmabuse/yii-bootstrap-3-module',
