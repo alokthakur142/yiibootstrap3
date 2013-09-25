@@ -44,7 +44,7 @@
 </p>
 
 <?php if($code) : ?>
-    <pre class="pre-scrollable col-sm-hidden col-xs-hidden  linenums prettyprint lang-py">
+    <pre class="pre-scrollable hidden-sm hidden-xs  linenums prettyprint lang-py">
     &lt;?php echo BSHtml::checkBox('test',true,array()); ?&gt;
     &lt;?php $this->widget('bootstrap.extensions.ibutton.IButton', array(
         'selector'=>':checkbox',

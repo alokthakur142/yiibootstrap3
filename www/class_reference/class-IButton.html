@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class IButton</title>
+
+	<script type="text/javascript" src="resources/combined.js?1303512325"></script>
+	<script type="text/javascript" src="elementlist.js?3105221396"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-bootstrap.html">bootstrap<span></span></a>
+						<ul>
+				<li><a href="namespace-bootstrap.helpers.html">helpers</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-None.html">None</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-BootstrapCode.html">BootstrapCode</a></li>
+				<li><a href="class-BootstrapGenerator.html">BootstrapGenerator</a></li>
+				<li><a href="class-BootStrapModule.html">BootStrapModule</a></li>
+				<li><a href="class-BsActiveForm.html">BsActiveForm</a></li>
+				<li><a href="class-BSApi.html">BSApi</a></li>
+				<li><a href="class-BsButtonColumn.html">BsButtonColumn</a></li>
+				<li><a href="class-BsDataColumn.html">BsDataColumn</a></li>
+				<li><a href="class-BsGridView.html">BsGridView</a></li>
+				<li><a href="class-BSHtml.html">BSHtml</a></li>
+				<li><a href="class-BsListView.html">BsListView</a></li>
+				<li><a href="class-BsModal.html">BsModal</a></li>
+				<li><a href="class-BsNav.html">BsNav</a></li>
+				<li><a href="class-BsNavbar.html">BsNavbar</a></li>
+				<li><a href="class-BsPager.html">BsPager</a></li>
+				<li><a href="class-BsWidget.html">BsWidget</a></li>
+				<li><a href="class-ChartJs.html">ChartJs</a></li>
+				<li><a href="class-ChBars.html">ChBars</a></li>
+				<li><a href="class-ChDoughnut.html">ChDoughnut</a></li>
+				<li><a href="class-ChLine.html">ChLine</a></li>
+				<li><a href="class-ChPie.html">ChPie</a></li>
+				<li><a href="class-ChPolar.html">ChPolar</a></li>
+				<li><a href="class-ChRadar.html">ChRadar</a></li>
+				<li class="active"><a href="class-IButton.html">IButton</a></li>
+				<li><a href="class-MNav.html">MNav</a></li>
+				<li><a href="class-NavPartial.html">NavPartial</a></li>
+				<li><a href="class-Person.html">Person</a></li>
+				<li><a href="class-YiiLog.html">YiiLog</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-None.html" title="Summary of None"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class IButton</h1>
+
+
+	<div class="description">
+	
+<p>IButton implements the Giva Labs jQuery iButton plugin. More info at: <a
+href="http://www.givainc.com/labs/ibutton_jquery_plugin.htm">http://www.givainc.com/labs/ibutton_jquery_plugin.htm</a></p>
+
+<p>IButton makes checkboxes and/or radio buttons look like Apple's "on-off"
+buttons</p>
+
+<p>IButton accepts CSS selectors, so it is easy to give any checkbox or radio
+button the effect. It was also added support for model/attribute pairs, so that
+you can easily integrate into your Yii's forms</p>
+
+<p>Sample 1 - turn all checkboxes in the page into iButtons:</p>
+
+<p>&lt;?php $this-&gt;widget('ext.ibutton.IButton', array(
+'selector'=&gt;':checkbox', 'options' =&gt;array( 'duration' =&gt; 250,
+'change'=&gt;'js:function(){alert("ooohay! it has been changed!");}' )
+));?&gt;</p>
+
+<p>Sample 2 - turn the model/attribute pair into an iButton:</p>
+
+<p>&lt;?php $this-&gt;widget('ext.ibutton.IButton', array( 'model' =&gt; $model,
+'attribute' =&gt; 'is_master', 'options' =&gt;array(
+'labelOn'=&gt;Yii::t('app','Yes'), 'labelOff'=&gt;Yii::t('app','No'),
+'change'=&gt;'js:function($choice){ $choice.is(":checked")?alert("Hey,
+master!"):alert("Sorry, you are not my master!"); }' ) ));?&gt;</p>
+
+<p>Sample 3 - turn both all radio buttons and a model/attribute pair into
+iButtons:</p>
+
+<p>&lt;?php $this-&gt;widget('ext.ibutton.IButton', array( 'selector' =&gt;
+':radio', 'model' =&gt; $model, 'attribute' =&gt; 'is_master', 'options'
+=&gt;array( 'labelOn'=&gt;Yii::t('app','Yes'),
+'labelOff'=&gt;Yii::t('app','No'), 'change'=&gt;'js:function($choice){
+$choice.is(":checked")?alert("Check on"):alert("Check off"); }' ) ));?&gt;</p>
+
+<p>Sample 4 - convert all checkboxes and radios in a form into iButtons using
+form: &lt;?php $this-&gt;widget('ext.ibutton.IButton', array( 'selector' =&gt;
+'form', 'options' =&gt;array( 'labelOn'=&gt;Yii::t('app','Yes'),
+'labelOff'=&gt;Yii::t('app','No') ) ));?&gt;</p>
+
+<p>Live demo at <a
+href="http://www.givainc.com/labs/ibutton_example.htm">http://www.givainc.com/labs/ibutton_example.htm</a></p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+CWidget
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>IButton</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		
+
+				<b>Copyright:</b>
+				IButton class Copyright © 2012 df9<br />
+				<b>License:</b>
+				<a href="IButton">class is Free to use for both personal or commercial projects.
+Visit http://www.givainc.com/labs/ibutton_jquery_plugin.htm for Giva&#039;s plugin license</a><br />
+				<b>Author:</b>
+				Junior - df9 &lt;<a
+href="mailto:scoob.junior&#64;gmail.com">scoob.junior&#64;<!---->gmail.com</a>&gt;
+&lt;<a href="mailto:junior&#64;df9.com.br">junior&#64;<!---->df9.com.br</a>&gt;<br />
+				<b>Version:</b>
+				1.2<br />
+		<b>Located at</b> <a href="source-class-IButton.html#13-212" title="Go to source code">extensions/ibutton/IButton.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="init" id="_init">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_init">#</a>
+		<code><a href="source-class-IButton.html#150-154" title="Go to source code">init</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="run" id="_run">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_run">#</a>
+		<code><a href="source-class-IButton.html#159-165" title="Go to source code">run</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="id" id="$id">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-IButton.html#86" title="Go to source code"><var>$id</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$id" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="debug" id="$debug">
+		<td class="attributes"><code>
+			public  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-IButton.html#90" title="Go to source code"><var>$debug</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">false</span></code></td>
+		<td class="description"><div>
+			<a href="#$debug" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="selector" id="$selector">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-IButton.html#93" title="Go to source code"><var>$selector</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">null</span></code></td>
+		<td class="description"><div>
+			<a href="#$selector" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="model" id="$model">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-IButton.html#96" title="Go to source code"><var>$model</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">null</span></code></td>
+		<td class="description"><div>
+			<a href="#$model" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="attribute" id="$attribute">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-IButton.html#97" title="Go to source code"><var>$attribute</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">null</span></code></td>
+		<td class="description"><div>
+			<a href="#$attribute" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="options" id="$options">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-IButton.html#100" title="Go to source code"><var>$options</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$options" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="useJqueryMetadata" id="$useJqueryMetadata">
+		<td class="attributes"><code>
+			public  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-IButton.html#103" title="Go to source code"><var>$useJqueryMetadata</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">true</span></code></td>
+		<td class="description"><div>
+			<a href="#$useJqueryMetadata" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="useJqueryEasing" id="$useJqueryEasing">
+		<td class="attributes"><code>
+			public  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-IButton.html#104" title="Go to source code"><var>$useJqueryEasing</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">true</span></code></td>
+		<td class="description"><div>
+			<a href="#$useJqueryEasing" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

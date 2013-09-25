@@ -11,8 +11,10 @@
  */
 class SiteController extends EController
 {
+
     public function actionIndex()
     {
+        $this->layout = '//layouts/column_2';
         $this->render('index');
     }
 
@@ -23,6 +25,15 @@ class SiteController extends EController
         Yii::app()->end();
     }
 
+    /**
+     * Apigen Documentation
+     * php apigen.php apigen
+     * --source bootstrap/app/lib/vendor/drmabuse/yii-bootstrap-3-module/
+     * --destination bootstrap/www/class_reference
+     */
+    public function actionDoc(){
+        $this->render('documentation');
+    }
 	/**
 	 * This is the action to handle external exceptions.
 	 */

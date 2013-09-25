@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+	<meta name="robots" content="noindex" />
+
+	<title>File widgets/BsListView.php</title>
+
+	<script type="text/javascript" src="resources/combined.js?1303512325"></script>
+	<script type="text/javascript" src="elementlist.js?3105221396"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-bootstrap.html">bootstrap<span></span></a>
+						<ul>
+				<li><a href="namespace-bootstrap.helpers.html">helpers</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-None.html">None</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-BootstrapCode.html">BootstrapCode</a></li>
+				<li><a href="class-BootstrapGenerator.html">BootstrapGenerator</a></li>
+				<li><a href="class-BootStrapModule.html">BootStrapModule</a></li>
+				<li><a href="class-BsActiveForm.html">BsActiveForm</a></li>
+				<li><a href="class-BSApi.html">BSApi</a></li>
+				<li><a href="class-BsButtonColumn.html">BsButtonColumn</a></li>
+				<li><a href="class-BsDataColumn.html">BsDataColumn</a></li>
+				<li><a href="class-BsGridView.html">BsGridView</a></li>
+				<li><a href="class-BSHtml.html">BSHtml</a></li>
+				<li class="active"><a href="class-BsListView.html">BsListView</a></li>
+				<li><a href="class-BsModal.html">BsModal</a></li>
+				<li><a href="class-BsNav.html">BsNav</a></li>
+				<li><a href="class-BsNavbar.html">BsNavbar</a></li>
+				<li><a href="class-BsPager.html">BsPager</a></li>
+				<li><a href="class-BsWidget.html">BsWidget</a></li>
+				<li><a href="class-ChartJs.html">ChartJs</a></li>
+				<li><a href="class-ChBars.html">ChBars</a></li>
+				<li><a href="class-ChDoughnut.html">ChDoughnut</a></li>
+				<li><a href="class-ChLine.html">ChLine</a></li>
+				<li><a href="class-ChPie.html">ChPie</a></li>
+				<li><a href="class-ChPolar.html">ChPolar</a></li>
+				<li><a href="class-ChRadar.html">ChRadar</a></li>
+				<li><a href="class-IButton.html">IButton</a></li>
+				<li><a href="class-MNav.html">MNav</a></li>
+				<li><a href="class-NavPartial.html">NavPartial</a></li>
+				<li><a href="class-Person.html">Person</a></li>
+				<li><a href="class-YiiLog.html">YiiLog</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-None.html" title="Summary of None"><span>Namespace</span></a>
+			</li>
+			<li>
+				<a href="class-BsListView.html" title="Summary of BsListView"><span>Class</span></a>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<pre><code><span id="1" class="l"><a class="l" href="#1"> 1: </a><span class="xlang">&lt;?php</span>
+</span><span id="2" class="l"><a class="l" href="#2"> 2: </a><span class="php-comment">/**
+</span></span><span id="3" class="l"><a class="l" href="#3"> 3: </a><span class="php-comment"> * TbListView class file.
+</span></span><span id="4" class="l"><a class="l" href="#4"> 4: </a><span class="php-comment"> * @author Pascal Brewing
+</span></span><span id="5" class="l"><a class="l" href="#5"> 5: </a><span class="php-comment"> * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
+</span></span><span id="6" class="l"><a class="l" href="#6"> 6: </a><span class="php-comment"> * @package bootstrap.widgets
+</span></span><span id="7" class="l"><a class="l" href="#7"> 7: </a><span class="php-comment"> */</span>
+</span><span id="8" class="l"><a class="l" href="#8"> 8: </a>
+</span><span id="9" class="l"><a class="l" href="#9"> 9: </a>Yii::import(<span class="php-quote">'zii.widgets.CListView'</span>);
+</span><span id="10" class="l"><a class="l" href="#10">10: </a>
+</span><span id="11" class="l"><a class="l" href="#11">11: </a><span class="php-comment">/**
+</span></span><span id="12" class="l"><a class="l" href="#12">12: </a><span class="php-comment"> * Bootstrap Zii list view.
+</span></span><span id="13" class="l"><a class="l" href="#13">13: </a><span class="php-comment"> */</span>
+</span><span id="14" class="l"><a class="l" href="#14">14: </a><span class="php-keyword1">class</span> <a id="BsListView" href="#BsListView">BsListView</a> <span class="php-keyword1">extends</span> CListView
+</span><span id="15" class="l"><a class="l" href="#15">15: </a>{
+</span><span id="16" class="l"><a class="l" href="#16">16: </a>    <span class="php-comment">/**
+</span></span><span id="17" class="l"><a class="l" href="#17">17: </a><span class="php-comment">     * @var string the CSS class name for the pager container. Defaults to 'pagination'.
+</span></span><span id="18" class="l"><a class="l" href="#18">18: </a><span class="php-comment">     */</span>
+</span><span id="19" class="l"><a class="l" href="#19">19: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$pagerCssClass" href="#$pagerCssClass">$pagerCssClass</a></span> = <span class="php-quote">'pagination'</span>;
+</span><span id="20" class="l"><a class="l" href="#20">20: </a>    <span class="php-comment">/**
+</span></span><span id="21" class="l"><a class="l" href="#21">21: </a><span class="php-comment">     * @var array the configuration for the pager.
+</span></span><span id="22" class="l"><a class="l" href="#22">22: </a><span class="php-comment">     * Defaults to &lt;code&gt;array('class'=&gt;'ext.bootstrap.widgets.TbPager')&lt;/code&gt;.
+</span></span><span id="23" class="l"><a class="l" href="#23">23: </a><span class="php-comment">     */</span>
+</span><span id="24" class="l"><a class="l" href="#24">24: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$pager" href="#$pager">$pager</a></span> = <span class="php-keyword1">array</span>(<span class="php-quote">'class'</span> =&gt; <span class="php-quote">'bootstrap.widgets.BsPager'</span>);
+</span><span id="25" class="l"><a class="l" href="#25">25: </a>    <span class="php-comment">/**
+</span></span><span id="26" class="l"><a class="l" href="#26">26: </a><span class="php-comment">     * @var string the URL of the CSS file used by this detail view.
+</span></span><span id="27" class="l"><a class="l" href="#27">27: </a><span class="php-comment">     * Defaults to false, meaning that no CSS will be included.
+</span></span><span id="28" class="l"><a class="l" href="#28">28: </a><span class="php-comment">     */</span>
+</span><span id="29" class="l"><a class="l" href="#29">29: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$cssFile" href="#$cssFile">$cssFile</a></span> = <span class="php-keyword1">false</span>;
+</span><span id="30" class="l"><a class="l" href="#30">30: </a>    <span class="php-comment">/**
+</span></span><span id="31" class="l"><a class="l" href="#31">31: </a><span class="php-comment">     * @var string the template to be used to control the layout of various sections in the view.
+</span></span><span id="32" class="l"><a class="l" href="#32">32: </a><span class="php-comment">     */</span>
+</span><span id="33" class="l"><a class="l" href="#33">33: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$template" href="#$template">$template</a></span> = <span class="php-quote">&quot;{items}\n&lt;div class=\&quot;row-fluid\&quot;&gt;&lt;div class=\&quot;span6\&quot;&gt;{pager}&lt;/div&gt;&lt;div class=\&quot;span6\&quot;&gt;{summary}&lt;/div&gt;&lt;/div&gt;&quot;</span>;
+</span><span id="34" class="l"><a class="l" href="#34">34: </a>
+</span><span id="35" class="l"><a class="l" href="#35">35: </a>    <span class="php-comment">/**
+</span></span><span id="36" class="l"><a class="l" href="#36">36: </a><span class="php-comment">     * Renders the empty message when there is no data.
+</span></span><span id="37" class="l"><a class="l" href="#37">37: </a><span class="php-comment">     */</span>
+</span><span id="38" class="l"><a class="l" href="#38">38: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_renderEmptyText" href="#_renderEmptyText">renderEmptyText</a>()
+</span><span id="39" class="l"><a class="l" href="#39">39: </a>    {
+</span><span id="40" class="l"><a class="l" href="#40">40: </a>        <span class="php-var">$emptyText</span> = <span class="php-var">$this</span>-&gt;emptyText === <span class="php-keyword1">null</span> ? Yii::t(<span class="php-quote">'zii'</span>, <span class="php-quote">'No results found.'</span>) : <span class="php-var">$this</span>-&gt;emptyText;
+</span><span id="41" class="l"><a class="l" href="#41">41: </a>        <span class="php-keyword1">echo</span> BSHtml::tag(<span class="php-quote">'div'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'class'</span> =&gt; <span class="php-quote">'empty'</span>, <span class="php-quote">'span'</span> =&gt; <span class="php-num">12</span>), <span class="php-var">$emptyText</span>);
+</span><span id="42" class="l"><a class="l" href="#42">42: </a>    }
+</span><span id="43" class="l"><a class="l" href="#43">43: </a>}
+</span><span id="44" class="l"><a class="l" href="#44">44: </a></span></code></pre>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
