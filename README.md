@@ -1,8 +1,8 @@
 
 ### Code
-[Bitbucket][0]
+[Demo][0]
 
-[0]: https://bitbucket.org/DrMabuse/yii-bootstrap-3-module
+[0]: https://bootstrap3.pascal-brewing.de
 
 ## Setup and first run
 
