@@ -2,7 +2,7 @@
 ### Code
 [Demo][0]
 
-[0]: https://bootstrap3.pascal-brewing.de
+[0]: http://bootstrap3.pascal-brewing.de
 
 ## Setup and first run
 
