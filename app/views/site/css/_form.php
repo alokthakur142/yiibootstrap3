@@ -13,7 +13,10 @@
     array(
 //        'layout' => BSHtml::FORM_LAYOUT_HORIZONTAL,
         'enableAjaxValidation' => true,
-        'id' => 'user_form'
+        'id' => 'user_form',
+        'htmlOptions' => array(
+            'class' => 'bs-example'
+        )
     )
 ); ?>
 <fieldset>
@@ -30,10 +33,7 @@
         $model,
         'email'
     ); ?>
-    <?php echo BSHtml::formActions(array(
-        BSHtml::submitButton('Submit', array('color' => BSHtml::BUTTON_COLOR_PRIMARY)),
-
-    )); ?>
+    <?php echo BSHtml::submitButton('Submit', array('color' => BSHtml::BUTTON_COLOR_PRIMARY)) ?>
 </fieldset>
 <?php $this->endWidget(); ?>
 <!-- /example -->
@@ -85,7 +85,10 @@
     array(
         'layout' => BSHtml::FORM_LAYOUT_INLINE,
         'enableAjaxValidation' => true,
-        'id' => 'user_form_inline'
+        'id' => 'user_form_inline',
+        'htmlOptions' => array(
+            'class' => 'bs-example'
+        )
     )
 ); ?>
 <fieldset>
@@ -144,7 +147,10 @@
     array(
         'layout' => BSHtml::FORM_LAYOUT_HORIZONTAL,
         'enableAjaxValidation' => true,
-        'id' => 'user_form_horizontal'
+        'id' => 'user_form_horizontal',
+        'htmlOptions' => array(
+            'class' => 'bs-example'
+        )
     )
 ); ?>
 <fieldset>
@@ -153,6 +159,8 @@
         $model,
         'username'
     ); ?>
+    <?php echo $form->textFieldControlGroup($model, 'username', array('prepend' => BSHtml::icon(BSHtml::GLYPHICON_USER))); ?>
+    <?php echo $form->textFieldControlGroup($model, 'username', array('append' => BSHtml::icon(BSHtml::GLYPHICON_USER))); ?>
     <?php echo $form->passwordFieldControlGroup(
         $model,
         'password'
@@ -161,7 +169,10 @@
         $model,
         'email'
     ); ?>
-    <?php echo BSHtml::submitButton('Submit', array('color' => BSHtml::BUTTON_COLOR_PRIMARY)); ?>
+
+    <?php echo BSHtml::formActions(array(
+        BSHtml::submitButton('Submit', array('color' => BSHtml::BUTTON_COLOR_PRIMARY)),
+    )); ?>
 </fieldset>
 <?php $this->endWidget(); ?>
 <!-- /example -->
@@ -209,25 +220,86 @@
 
     <p>Inputs will only be fully styled if their <code>type</code> is properly declared.</p>
 </div>
-<form class="bs-example">
-    <input type="text" class="form-control" placeholder="Text input">
-</form>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;input</span> <span class="na">type=</span><span
-                class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span
-                class="na">placeholder=</span><span class="s">"Text input"</span><span class="nt">&gt;</span>
-        </code></pre>
+<?php $form = $this->beginWidget('bootstrap.widgets.BsActiveForm',
+    array(
+        'enableAjaxValidation' => true,
+        'id' => uniqid('user_'),
+        'htmlOptions' => array(
+            'class' => 'bs-example'
+        )
+    )
+); ?>
+<?php echo $form->textField($model, 'username',array('placeholder' => 'textField')); ?>
+<br />
+<?php echo $form->passwordField($model, 'username',array('placeholder' => 'passwordField')); ?>
+<br />
+<?php echo $form->numberField($model, 'username',array('placeholder' => 'numberField')); ?>
+<br />
+<?php echo $form->emailField($model, 'username',array('placeholder' => 'emailField')); ?>
+<br />
+<?php echo $form->urlField($model, 'username',array('placeholder' => 'urlField')); ?>
+<br />
+<?php echo $form->rangeField($model, 'username',array('placeholder' => 'rangeField')); ?>
+<br />
+<?php echo $form->dateField($model, 'username',array('placeholder' => 'dateField')); ?>
+<br />
+<?php echo $form->fileField($model, 'username',array('placeholder' => 'fileField')); ?>
+<br />
+<?php $this->endWidget() ?>
+
+<div class="highlight">
+    <pre class="linenums prettyprint lang-py">
+        &lt;?php $form = $this-&gt;beginWidget('bootstrap.widgets.BsActiveForm',
+            array(
+                'enableAjaxValidation' =&gt; true,
+                'id' =&gt; uniqid('user_'),
+                'htmlOptions' =&gt; array(
+                    'class' =&gt; 'bs-example'
+                )
+            )
+        ); ?&gt;
+        &lt;?php echo $form-&gt;textField($model, 'username'); ?&gt;
+        &lt;?php echo $form-&gt;passwordField($model, 'username'); ?&gt;
+        &lt;?php echo $form-&gt;numberField($model, 'username'); ?&gt;
+        &lt;?php echo $form-&gt;emailField($model, 'username'); ?&gt;
+        &lt;?php echo $form-&gt;urlField($model, 'username'); ?&gt;
+        &lt;?php echo $form-&gt;rangeField($model, 'username'); ?&gt;
+        &lt;?php echo $form-&gt;dateField($model, 'username'); ?&gt;
+        &lt;?php echo $form-&gt;fileField($model, 'username'); ?&gt;
+        &lt;?php $this-&gt;endWidget() ?&gt;
+    </pre>
 </div>
 
 <h3>Textarea</h3>
 
 <p>Form control which supports multiple lines of text. Change <code>rows</code> attribute as necessary.</p>
 
-<form class="bs-example">
-    <textarea class="form-control" rows="3"></textarea>
-</form>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;textarea</span> <span class="na">class=</span><span
-                class="s">"form-control"</span> <span class="na">rows=</span><span class="s">"3"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
-        </code></pre>
+<?php $form = $this->beginWidget('bootstrap.widgets.BsActiveForm',
+    array(
+        'enableAjaxValidation' => true,
+        'id' => uniqid('user_'),
+        'htmlOptions' => array(
+            'class' => 'bs-example'
+        )
+    )
+); ?>
+<?php echo $form->textArea($model, 'username'); ?>
+<?php $this->endWidget() ?>
+
+<div class="highlight">
+    <pre class="linenums prettyprint lang-py">
+        &lt;?php $form = $this-&gt;beginWidget('bootstrap.widgets.BsActiveForm',
+            array(
+                'enableAjaxValidation' =&gt; true,
+                'id' =&gt; uniqid('user_'),
+                'htmlOptions' =&gt; array(
+                    'class' =&gt; 'bs-example'
+                )
+            )
+        ); ?&gt;
+        &lt;?php echo $form-&gt;textArea($model, 'username'); ?&gt;
+        &lt;?php $this-&gt;endWidget() ?&gt;
+    </pre>
 </div>
 
 <h3>Checkboxes and radios</h3>
@@ -235,29 +307,45 @@
 <p>Checkboxes are for selecting one or several options in a list while radios are for selecting one option from
     many.</p>
 <h4>Default (stacked)</h4>
+<?php $form = $this->beginWidget('bootstrap.widgets.BsActiveForm',
+    array(
+        'enableAjaxValidation' => true,
+        'id' => uniqid('user_'),
+        'htmlOptions' => array(
+            'class' => 'bs-example'
+        )
+    )
+); ?>
+<?php echo $form->checkBoxControlGroup($model, 'profile'); ?>
+<?php echo $form->inlineCheckBoxListControlGroup($model, 'profile', array('1', '2', '3')); ?>
+<?php echo $form->checkBoxListControlGroup($model, 'profile',
+    array("Option one is this and that—be sure to include why it's great")); ?>
 
-<form class="bs-example">
-    <div class="checkbox">
-        <label>
-            <input type="checkbox" value="">
-            Option one is this and that—be sure to include why it's great
-        </label>
-    </div>
-    <br>
+<?php echo $form->radioButtonControlGroup($model, 'profile'); ?>
+<?php $this->endWidget() ?>
 
-    <div class="radio">
-        <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-            Option one is this and that—be sure to include why it's great
-        </label>
-    </div>
-    <div class="radio">
-        <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-            Option two can be something else and selecting it will deselect option one
-        </label>
-    </div>
-</form>
+<div class="highlight">
+    <pre class="linenums prettyprint lang-py">
+        &lt;?php $form = $this-&gt;beginWidget('bootstrap.widgets.BsActiveForm',
+            array(
+                'enableAjaxValidation' =&gt; true,
+                'id' =&gt; uniqid('user_'),
+                'htmlOptions' =&gt; array(
+                    'class' =&gt; 'bs-example'
+                )
+            )
+        ); ?&gt;
+        &lt;?php echo $form-&gt;textField($model, 'username'); ?&gt;
+        &lt;?php echo $form-&gt;passwordField($model, 'username'); ?&gt;
+        &lt;?php echo $form-&gt;numberField($model, 'username'); ?&gt;
+        &lt;?php echo $form-&gt;emailField($model, 'username'); ?&gt;
+        &lt;?php echo $form-&gt;urlField($model, 'username'); ?&gt;
+        &lt;?php echo $form-&gt;rangeField($model, 'username'); ?&gt;
+        &lt;?php echo $form-&gt;dateField($model, 'username'); ?&gt;
+        &lt;?php echo $form-&gt;fileField($model, 'username'); ?&gt;
+        &lt;?php $this-&gt;endWidget() ?&gt;
+    </pre>
+</div>
 <div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span
                 class="s">"checkbox"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;label&gt;</span>
