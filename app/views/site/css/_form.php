@@ -110,7 +110,8 @@
 &lt;?php $form = $this->beginWidget('bootstrap.widgets.BsActiveForm',
     array(
         'enableAjaxValidation' => true,
-        'id' => 'user_form'
+        'id' => 'user_form',
+        'layout' => BSHtml::FORM_LAYOUT_INLINE,
     )
 ); ?&gt;
     &lt;?php echo $form-&gt;textFieldControlGroup(
@@ -139,92 +140,58 @@
 <p>Use Bootstrap's predefined grid classes to align labels and groups of form controls in a horizontal layout by adding
     <code>.form-horizontal</code> to the form. Doing so changes <code>.form-group</code>s to behave as grid rows, so no
     need for <code>.row</code>.</p>
+<?php $form = $this->beginWidget('bootstrap.widgets.BsActiveForm',
+    array(
+        'layout' => BSHtml::FORM_LAYOUT_HORIZONTAL,
+        'enableAjaxValidation' => true,
+        'id' => 'user_form_horizontal'
+    )
+); ?>
+<fieldset>
+    <legend>Legend</legend>
+    <?php echo $form->textFieldControlGroup(
+        $model,
+        'username'
+    ); ?>
+    <?php echo $form->passwordFieldControlGroup(
+        $model,
+        'password'
+    ); ?>
+    <?php echo $form->emailFieldControlGroup(
+        $model,
+        'email'
+    ); ?>
+    <?php echo BSHtml::submitButton('Submit', array('color' => BSHtml::BUTTON_COLOR_PRIMARY)); ?>
+</fieldset>
+<?php $this->endWidget(); ?>
+<!-- /example -->
+<div class="highlight"><pre class="linenums prettyprint lang-py">
+&lt;?php $form = $this->beginWidget('bootstrap.widgets.BsActiveForm',
+    array(
+        'enableAjaxValidation' => true,
+        'id' => 'user_form',
+        'layout' => BSHtml::FORM_LAYOUT_HORIZONTAL,
+    )
+); ?&gt;
+    &lt;?php echo $form-&gt;textFieldControlGroup(
+        $model,
+        'username'
+    ); ?&gt;
+    &lt;?php echo $form-&gt;passwordFieldControlGroup(
+        $model,
+        'password'
+    ); ?&gt;
+    &lt;?php echo $form-&gt;emailFieldControlGroup(
+        $model,
+        'email'
+    ); ?&gt;
+    &lt;?php echo BSHtml::formActions(array(
+        BSHtml::submitButton('Submit', array('color' =&gt; BSHtml::BUTTON_COLOR_PRIMARY)),
 
-<form class="bs-example form-horizontal">
-    <div class="form-group">
-        <label for="inputEmail1" class="col-lg-2 control-label">Email</label>
-
-        <div class="col-lg-10">
-            <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="inputPassword1" class="col-lg-2 control-label">Password</label>
-
-        <div class="col-lg-10">
-            <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
-        </div>
-    </div>
-    <div class="form-group">
-        <div class="col-lg-offset-2 col-lg-10">
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox"> Remember me
-                </label>
-            </div>
-        </div>
-    </div>
-    <div class="form-group">
-        <div class="col-lg-offset-2 col-lg-10">
-            <button type="submit" class="btn btn-default">Sign in</button>
-        </div>
-    </div>
-</form>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span
-                class="s">"form-horizontal"</span> <span class="na">role=</span><span class="s">"form"</span><span
-                class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span
-                class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputEmail1"</span> <span
-                class="na">class=</span><span class="s">"col-lg-2 control-label"</span><span class="nt">&gt;</span>Email<span
-                class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-10"</span><span
-                class="nt">&gt;</span>
-            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span
-                class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span
-                class="s">"inputEmail1"</span> <span class="na">placeholder=</span><span class="s">"Email"</span><span
-                class="nt">&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span
-                class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputPassword1"</span> <span
-                class="na">class=</span><span class="s">"col-lg-2 control-label"</span><span class="nt">&gt;</span>Password<span
-                class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-10"</span><span
-                class="nt">&gt;</span>
-            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span
-                class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span
-                class="s">"inputPassword1"</span> <span class="na">placeholder=</span><span
-                class="s">"Password"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span
-                class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span
-                class="s">"col-lg-offset-2 col-lg-10"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span
-                class="nt">&gt;</span>
-            <span class="nt">&lt;label&gt;</span>
-            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span
-                class="nt">&gt;</span> Remember me
-            <span class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span
-                class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span
-                class="s">"col-lg-offset-2 col-lg-10"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span
-                class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Sign in<span
-                class="nt">&lt;/button&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;/form&gt;</span>
-        </code></pre>
+    )); ?&gt;
+&lt;?php $this-&gt;endWidget(); ?&gt;
+    </pre>
 </div>
-
 
 <h2 id="forms-controls">Supported controls</h2>
 
