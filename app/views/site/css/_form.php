@@ -353,19 +353,19 @@
             array(
                 'enableAjaxValidation' =&gt; true,
                 'id' =&gt; uniqid('user_'),
-                'htmlOptions' =&gt; array(
-                    'class' =&gt; 'bs-example'
-                )
+                
             )
         ); ?&gt;
-        &lt;?php echo $form-&gt;textField($model, 'username'); ?&gt;
-        &lt;?php echo $form-&gt;passwordField($model, 'username'); ?&gt;
-        &lt;?php echo $form-&gt;numberField($model, 'username'); ?&gt;
-        &lt;?php echo $form-&gt;emailField($model, 'username'); ?&gt;
-        &lt;?php echo $form-&gt;urlField($model, 'username'); ?&gt;
-        &lt;?php echo $form-&gt;rangeField($model, 'username'); ?&gt;
-        &lt;?php echo $form-&gt;dateField($model, 'username'); ?&gt;
-        &lt;?php echo $form-&gt;fileField($model, 'username'); ?&gt;
+       &lt;?php echo $form-&gt;checkBoxControlGroup($model, 'profile'); ?&gt;
+    &lt;?php echo $form-&gt;inlineCheckBoxListControlGroup($model, 'profile', array('1', '2', '3')); ?&gt;
+    &lt;?php echo $form-&gt;checkBoxListControlGroup($model, 'profile',
+        array("Option one is this and that—be sure to include why it's great")); ?&gt;
+
+    &lt;?php echo $form-&gt;radioButtonControlGroup($model, 'profile'); ?&gt;
+    &lt;?php echo $form-&gt;radioButtonListControlGroup($model, 'profile', array(
+        'Option one is this and that—be sure to include why it\'s great',
+        'Option two can is something else and selecting it will deselect option one',
+    )); ?&gt;
         &lt;?php $this-&gt;endWidget() ?&gt;
     </pre>
 </div>
