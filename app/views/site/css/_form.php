@@ -169,7 +169,16 @@
         $model,
         'email'
     ); ?>
+    <?php echo $form->checkBoxControlGroup($model, 'profile'); ?>
+    <?php echo $form->inlineCheckBoxListControlGroup($model, 'profile', array('1', '2', '3')); ?>
+    <?php echo $form->checkBoxListControlGroup($model, 'profile',
+        array("Option one is this and that—be sure to include why it's great")); ?>
 
+    <?php echo $form->radioButtonControlGroup($model, 'profile'); ?>
+    <?php echo $form->radioButtonListControlGroup($model, 'profile', array(
+        'Option one is this and that—be sure to include why it\'s great',
+        'Option two can is something else and selecting it will deselect option one',
+    )); ?>
     <?php echo BSHtml::formActions(array(
         BSHtml::submitButton('Submit', array('color' => BSHtml::BUTTON_COLOR_PRIMARY)),
     )); ?>
@@ -196,6 +205,16 @@
         $model,
         'email'
     ); ?&gt;
+    <?php echo $form->checkBoxControlGroup($model, 'profile'); ?>
+    <?php echo $form->inlineCheckBoxListControlGroup($model, 'profile', array('1', '2', '3')); ?>
+    <?php echo $form->checkBoxListControlGroup($model, 'profile',
+        array("Option one is this and that—be sure to include why it's great")); ?>
+
+    <?php echo $form->radioButtonControlGroup($model, 'profile'); ?>
+    <?php echo $form->radioButtonListControlGroup($model, 'profile', array(
+        'Option one is this and that—be sure to include why it\'s great',
+        'Option two can is something else and selecting it will deselect option one',
+    )); ?>
     &lt;?php echo BSHtml::formActions(array(
         BSHtml::submitButton('Submit', array('color' =&gt; BSHtml::BUTTON_COLOR_PRIMARY)),
 
@@ -322,6 +341,10 @@
     array("Option one is this and that—be sure to include why it's great")); ?>
 
 <?php echo $form->radioButtonControlGroup($model, 'profile'); ?>
+<?php echo $form->radioButtonListControlGroup($model, 'profile', array(
+    'Option one is this and that—be sure to include why it\'s great',
+    'Option two can is something else and selecting it will deselect option one',
+)); ?>
 <?php $this->endWidget() ?>
 
 <div class="highlight">
