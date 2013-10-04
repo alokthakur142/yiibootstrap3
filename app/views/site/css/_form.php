@@ -353,7 +353,7 @@
             array(
                 'enableAjaxValidation' =&gt; true,
                 'id' =&gt; uniqid('user_'),
-                
+
             )
         ); ?&gt;
        &lt;?php echo $form-&gt;checkBoxControlGroup($model, 'profile'); ?&gt;
@@ -368,37 +368,6 @@
     )); ?&gt;
         &lt;?php $this-&gt;endWidget() ?&gt;
     </pre>
-</div>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span
-                class="s">"checkbox"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label&gt;</span>
-            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span
-                class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>
-            Option one is this and that<span class="ni">&amp;mdash;</span>be sure to include why it's great
-            <span class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radio"</span><span
-                class="nt">&gt;</span>
-            <span class="nt">&lt;label&gt;</span>
-            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span
-                class="na">name=</span><span class="s">"optionsRadios"</span> <span class="na">id=</span><span
-                class="s">"optionsRadios1"</span> <span class="na">value=</span><span class="s">"option1"</span> <span
-                class="na">checked</span><span class="nt">&gt;</span>
-            Option one is this and that<span class="ni">&amp;mdash;</span>be sure to include why it's great
-            <span class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radio"</span><span
-                class="nt">&gt;</span>
-            <span class="nt">&lt;label&gt;</span>
-            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span
-                class="na">name=</span><span class="s">"optionsRadios"</span> <span class="na">id=</span><span
-                class="s">"optionsRadios2"</span> <span class="na">value=</span><span class="s">"option2"</span><span
-                class="nt">&gt;</span>
-            Option two can be something else and selecting it will deselect option one
-            <span class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-        </code></pre>
 </div>
 
 <h4>Inline checkboxes</h4>
