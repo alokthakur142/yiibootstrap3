@@ -1,19 +1,49 @@
 <?php
 /**
- *
  * SiteController class
- *
- * @author Antonio Ramirez <amigo.cobos@gmail.com>
- * @link http://www.ramirezcobos.com/
- * @link http://www.2amigos.us/
- * @copyright 2013 2amigOS! Consultation Group LLC
+ * @author Pascal Brewing <pascalbrewing@gmail.com>
+ * @link http://www.pascal-brewing.de
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 class SiteController extends EController
 {
 
+    /**
+    * @return array action filters
+    */
+    public function filters()
+    {
+        return array(
+            'accessControl', // perform access control for CRUD operations
+            'postOnly + delete', // we only allow deletion via POST request
+        );
+    }
+
+    /**
+     * Specifies the access control rules.
+     * This method is used by the 'accessControl' filter.
+     * @return array access control rules
+     */
+    public function accessRules()
+    {
+        return array(
+            array('allow',  // allow all users to perform 'index' and 'view' actions
+                'actions'=>array('index','css','ajaxTest'),
+                'users'=>array('*'),
+            ),
+            array('deny',  // deny all users
+                'users'=>array('*'),
+            ),
+        );
+    }
+
     public function actionIndex()
-    {   $model = new User();
+    {
+        $this->render('index');
+    }
+
+    public function actionCss(){
+        $model = new User();
         $this->layout = '//layouts/column_2';
 
         if(isset($_POST['User']))
@@ -21,9 +51,8 @@ class SiteController extends EController
             echo CActiveForm::validate($model);
             Yii::app()->end();
         }
-        $this->render('bindex',array('model' => $model));
+        $this->render('css',array('model' => $model));
     }
-
     /**
      * Ajax Sample
      */

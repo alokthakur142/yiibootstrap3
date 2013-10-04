@@ -41,3 +41,46 @@
                 class="nt">&gt;</span>
         </code></pre>
 </div>
+<h3 id="overview-responsive-images">Responsive images</h3>
+
+<p>Images in Bootstrap 3 can be made responsive-friendly via the addition of the <code>.img-responsive</code> class.
+    This applies <code>max-width: 100%;</code> and <code>height: auto;</code> to the image so that it scales nicely
+    to the parent element.</p>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span
+                class="s">"..."</span> <span class="na">class=</span><span class="s">"img-responsive"</span> <span
+                class="na">alt=</span><span class="s">"Responsive image"</span><span class="nt">&gt;</span>
+        </code></pre>
+</div>
+
+<h3 id="overview-type-links">Typography and links</h3>
+
+<p>Bootstrap sets basic global display, typography, and link styles. Specifically, we:</p>
+<ul>
+    <li>Remove <code>margin</code> on the body</li>
+    <li>Set <code>background-color: white;</code> on the <code>body</code></li>
+    <li>Use the <code>@font-family-base</code>, <code>@font-size-base</code>, and <code>@line-height-base</code>
+        attributes as our typographic base
+    </li>
+    <li>Set the global link color via <code>@link-color</code> and apply link underlines only on <code>:hover</code>
+    </li>
+</ul>
+<p>These styles can be found within <code>scaffolding.less</code>.</p>
+
+<h3 id="overview-normalize">Normalize</h3>
+
+<p>For improved cross-browser rendering, we use <a href="http://necolas.github.io/normalize.css/" target="_blank">Normalize</a>,
+    a project by <a href="http://twitter.com/necolas" target="_blank">Nicolas Gallagher</a> and <a
+        href="http://twitter.com/jon_neal" target="_blank">Jonathan Neal</a>.</p>
+
+<h3 id="overview-container">Containers</h3>
+
+<p>Easily center a page's contents by wrapping its contents in a <code>.container</code>. Containers set <code>max-width</code>
+    at various media query breakpoints to match our grid system.</p>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span
+                class="s">"container"</span><span class="nt">&gt;</span>
+            ...
+            <span class="nt">&lt;/div&gt;</span>
+        </code></pre>
+</div>

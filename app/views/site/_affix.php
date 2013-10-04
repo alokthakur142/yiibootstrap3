@@ -26,37 +26,37 @@
 <div class="bs-sidebar hidden-print affix" role="complementary">
     <ul class="nav bs-sidenav">
 
+<!--        <li>-->
+<!--            <a href="#overview">Overview</a>-->
+<!--            <ul class="nav">-->
+<!--                <li><a href="#overview-doctype">HTML5 doctype</a></li>-->
+<!--                <li><a href="#overview-mobile">Mobile first</a></li>-->
+<!--                <li><a href="#overview-responsive-images">Responsive images</a></li>-->
+<!--                <li><a href="#overview-type-links">Typography and links</a></li>-->
+<!--                <li><a href="#overview-normalize">Normalize</a></li>-->
+<!--                <li><a href="#overview-container">Containers</a></li>-->
+<!--            </ul>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <a href="#grid">Grid system</a>-->
+<!--            <ul class="nav">-->
+<!--                <li><a href="#grid-media-queries">Media queries</a></li>-->
+<!--                <li><a href="#grid-options">Grid options</a></li>-->
+<!--                <li><a href="#grid-example-basic">Ex: Stacked-to-horizonal</a></li>-->
+<!--                <li><a href="#grid-example-mixed">Ex: Mobile and desktops</a></li>-->
+<!--                <li><a href="#grid-example-mixed-complete">Ex: Mobile, tablet, desktops</a></li>-->
+<!--                <li><a href="#grid-responsive-resets">Responsive column resets</a></li>-->
+<!--                <li><a href="#grid-offsetting">Offsetting columns</a></li>-->
+<!--                <li><a href="#grid-nesting">Nesting columns</a></li>-->
+<!--                <li><a href="#grid-column-ordering">Column ordering</a></li>-->
+<!--                <li><a href="#grid-less">LESS mixins and variables</a></li>-->
+<!--            </ul>-->
+<!--        </li>-->
         <li>
-            <a href="#overview">Overview</a>
-            <ul class="nav">
-                <li><a href="#overview-doctype">HTML5 doctype</a></li>
-                <li><a href="#overview-mobile">Mobile first</a></li>
-                <li><a href="#overview-responsive-images">Responsive images</a></li>
-                <li><a href="#overview-type-links">Typography and links</a></li>
-                <li><a href="#overview-normalize">Normalize</a></li>
-                <li><a href="#overview-container">Containers</a></li>
-            </ul>
-        </li>
-        <li>
-            <a href="#grid">Grid system</a>
-            <ul class="nav">
-                <li><a href="#grid-media-queries">Media queries</a></li>
-                <li><a href="#grid-options">Grid options</a></li>
-                <li><a href="#grid-example-basic">Ex: Stacked-to-horizonal</a></li>
-                <li><a href="#grid-example-mixed">Ex: Mobile and desktops</a></li>
-                <li><a href="#grid-example-mixed-complete">Ex: Mobile, tablet, desktops</a></li>
-                <li><a href="#grid-responsive-resets">Responsive column resets</a></li>
-                <li><a href="#grid-offsetting">Offsetting columns</a></li>
-                <li><a href="#grid-nesting">Nesting columns</a></li>
-                <li><a href="#grid-column-ordering">Column ordering</a></li>
-                <li><a href="#grid-less">LESS mixins and variables</a></li>
-            </ul>
-        </li>
-        <li class="active">
             <a href="#type">Typography</a>
             <ul class="nav">
                 <li class=""><a href="#type-headings">Headings</a></li>
-                <li class="active"><a href="#type-body-copy">Body copy</a></li>
+                <li><a href="#type-body-copy">Body copy</a></li>
                 <li><a href="#type-emphasis">Emphasis</a></li>
                 <li><a href="#type-abbreviations">Abbreviations</a></li>
                 <li><a href="#type-addresses">Addresses</a></li>

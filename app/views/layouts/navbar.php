@@ -1,5 +1,6 @@
 <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
     <div class="container">
+
         <div class="navbar-header">
             <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -15,18 +16,35 @@
                     <a href="../getting-started">Getting started</a>
                 </li>
                 <li class="active">
-                    <a href="../css">CSS</a>
+                    <a href="css">CSS</a>
                 </li>
+<!--                <li>-->
+<!--                    <a href="components">Components</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="../javascript">JavaScript</a>-->
+<!--                </li>-->
                 <li>
-                    <a href="../components">Components</a>
-                </li>
-                <li>
-                    <a href="../javascript">JavaScript</a>
-                </li>
-                <li>
-                    <a href="../customize">Customize</a>
+                    <a href="doc">Class Reference</a>
                 </li>
             </ul>
         </nav>
     </div>
 </header>
+<?php //$this->widget('bootstrap.widgets.BsNavbar', array(
+//    'brandLabel' => 'Title',
+//    'display' => null, // default is static to top
+//    'htmlOptions' => array(
+//        'class' => 'navbar-fixed-top bs-docs-nav'
+//    ),
+//    'items' => array(
+//        array(
+//            'class' => 'bootstrap.widgets.BsNav',
+//            'items' => array(
+//                array('label' => 'Home', 'url' => '#', 'active' => true),
+//                array('label' => 'Link', 'url' => '#'),
+//                array('label' => 'Link', 'url' => '#'),
+//            ),
+//        ),
+//    ),
+//)); ?>
