@@ -205,16 +205,16 @@
         $model,
         'email'
     ); ?&gt;
-    <?php echo $form->checkBoxControlGroup($model, 'profile'); ?>
-    <?php echo $form->inlineCheckBoxListControlGroup($model, 'profile', array('1', '2', '3')); ?>
-    <?php echo $form->checkBoxListControlGroup($model, 'profile',
-        array("Option one is this and that—be sure to include why it's great")); ?>
+    &lt;?php echo $form-&gt;checkBoxControlGroup($model, 'profile'); ?&gt;
+    &lt;?php echo $form-&gt;inlineCheckBoxListControlGroup($model, 'profile', array('1', '2', '3')); ?&gt;
+    &lt;?php echo $form-&gt;checkBoxListControlGroup($model, 'profile',
+        array("Option one is this and that—be sure to include why it's great")); ?&gt;
 
-    <?php echo $form->radioButtonControlGroup($model, 'profile'); ?>
-    <?php echo $form->radioButtonListControlGroup($model, 'profile', array(
+    &lt;?php echo $form-&gt;radioButtonControlGroup($model, 'profile'); ?&gt;
+    &lt;?php echo $form-&gt;radioButtonListControlGroup($model, 'profile', array(
         'Option one is this and that—be sure to include why it\'s great',
         'Option two can is something else and selecting it will deselect option one',
-    )); ?>
+    )); ?&gt;
     &lt;?php echo BSHtml::formActions(array(
         BSHtml::submitButton('Submit', array('color' =&gt; BSHtml::BUTTON_COLOR_PRIMARY)),
 
