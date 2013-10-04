@@ -39,7 +39,7 @@ class SiteController extends EController
 
     public function actionIndex()
     {
-        $this->redirect('css');
+        $this->redirect('site/css');
         $this->render('index');
     }
 
