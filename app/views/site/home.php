@@ -1,16 +1,7 @@
 <div class="content g-markdown">
-    <div class="toc"><div class="ref level-2"><a href="#hh0">Download </a><a href="http://getbootstrap.com" title="bootsrap">here</a> the bootstrap package.</div>
-        <div class="ref level-3"><a href="#hh1">Download the Module</a></div>
-        <div class="ref level-3"><a href="#hh2">Configure</a></div>
-        <div class="ref level-2"><a href="#hh3"></a><a href="http://bootstrap3.pascal-brewing.de/" title="">Demo-Page</a></div>
-        <div class="ref level-3"><a href="#hh4"></a><a href="http://bootstrap3.pascal-brewing.de/doc" title="">Class Reference</a></div>
-        <div class="ref level-3"><a href="#hh5"></a><a href="https://bitbucket.org/DrMabuse/yii-bootstrap-3-module-example" title="">Demo-Page-Example Bitbucket</a></div>
-        <div class="ref level-2"><a href="#hh6">Changes</a></div></div>
-    <p><img src="https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2013/Sep/20/yii-bootstrap-3-module-logo-3812395379-7_avatar.png" alt="" title=""></p>
-
     <p><strong>Instructions</strong></p>
 
-    <h2 id="hh0">Download <a href="http://getbootstrap.com" title="bootsrap">here</a> the bootstrap package. <a class="anchor" href="#hh0">¶</a></h2>
+    <h2 id="hh0">Download <a href="http://getbootstrap.com" title="bootsrap">http://getbootstrap.com here</a> the bootstrap3  package. <a class="anchor" href="#hh0">¶</a></h2>
 
     <p>Append in Your Layout:</p>
 
