@@ -444,6 +444,11 @@
     ); ?>
     <?php echo $form->textFieldControlGroup($model, 'username',
         array(
+            'groupOptions' => array('class' => 'has-success'),
+        )
+    ); ?>
+    <?php echo $form->textFieldControlGroup($model, 'username',
+        array(
             'controlOptions' => array('class' => 'has-warning col-lg-10'),
         )
     ); ?>
@@ -458,6 +463,11 @@
 &lt;?php echo $form-&gt;textFieldControlGroup($model, 'username',
     array(
         'controlOptions' => array('class' => 'has-sucess col-lg-10'),
+    )));
+?&gt;
+&lt;?php echo $form-&gt;textFieldControlGroup($model, 'username',
+    array(
+        'groupOptions' => array('class' => 'has-sucess'),
     )));
 ?&gt;
 &lt;?php echo $form-&gt;textFieldControlGroup($model, 'username',

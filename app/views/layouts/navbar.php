@@ -11,8 +11,8 @@
         </div>
         <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
             <ul class="nav navbar-nav">
-                <li class="active">
-                    <a href="/site/css">CSS</a>
+                <li>
+                    <a href="/site/css">Examples</a>
                 </li>
 <!--                <li>-->
 <!--                    <a href="components">Components</a>-->

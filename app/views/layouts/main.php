@@ -23,6 +23,74 @@
 
 <div id="footer">
     <div class="container">
+        <ul class="list-inline">
+            <li class=" ">
+                <?php echo BSHtml::link(
+                    CHtml::image(
+                        Yii::app()->baseUrl.'/img/bootstrap.png',
+                        'Bootstrap3 ;)',
+                        array(
+                            'class' => '',
+                            'height' => 30
+                        )
+                    ),
+                    'http://getbootstrap.com',
+                    array(
+                        'target' => '_blank',
+                    )
+                )
+                ?>
+                <?php echo BSHtml::link(
+                    CHtml::image(
+                        Yii::app()->baseUrl.'/img/yii.png',
+                        'Yii ;)',
+                        array(
+                            'class' => '',
+                            'height' => 30
+                        )
+                    ),
+                    'http://www.yiiframework.com/extension/yii-bootstrap3-module/',
+                    array(
+                        'target' => '_blank',
+                    )
+                )
+                ?>
+            </li>
+            <li class="">
+                <?php echo BSHtml::link(
+                    CHtml::image(
+                        Yii::app()->baseUrl.'/img/bitbucket_logo_landing.png',
+                        'Bitbucket ;)',
+                        array(
+                            'class' => '',
+                            'height' => 30
+                        )
+                    ),
+                    'https://bitbucket.org/DrMabuse/yii-bootstrap-3-module',
+                    array(
+                        'target' => '_blank',
+                    )
+                )
+                ?>
+            </li>
+            <li class="">
+                <?php echo BSHtml::link(
+                    CHtml::image(
+                        Yii::app()->baseUrl.'/img/logo.png',
+                        'Packagist ;)',
+                        array(
+                            'class' => '',
+                            'height' => 30
+                        )
+                    ),
+                    'https://packagist.org/packages/drmabuse/yii-bootstrap-3-module',
+                    array(
+                        'target' => '_blank',
+                    )
+                )
+                ?>
+            </li>
+        </ul>
         <p class="text-muted credit"><?php echo BSHtml::link('Pascal Brewing '.BSHtml::icon(BSHtml::GLYPHICON_COPYRIGHT_MARK),'http://www.pascal-brewing.de') ?></p>
     </div>
 </div>
