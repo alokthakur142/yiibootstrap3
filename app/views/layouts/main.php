@@ -90,8 +90,10 @@
                 )
                 ?>
             </li>
+            <li>
+                <?php echo BSHtml::link('Pascal Brewing '.BSHtml::icon(BSHtml::GLYPHICON_COPYRIGHT_MARK),'http://www.pascal-brewing.de') ?>
+            </li>
         </ul>
-        <p class="text-muted credit"><?php echo BSHtml::link('Pascal Brewing '.BSHtml::icon(BSHtml::GLYPHICON_COPYRIGHT_MARK),'http://www.pascal-brewing.de') ?></p>
     </div>
 </div>
 <div id="demo_modal" class="modal fade">
