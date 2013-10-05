@@ -5,70 +5,70 @@
 </div>
 
 <!-- Headings -->
-<h2 id="type-headings">Headings</h2>
-
-<p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> are available.</p>
-
-<div class="bs-example bs-example-type">
-    <table class="table">
-        <tbody>
-        <tr>
-            <td><h1>h1. Bootstrap heading</h1></td>
-            <td>Semibold 36px</td>
-        </tr>
-        <tr>
-            <td><h2>h2. Bootstrap heading</h2></td>
-            <td>Semibold 30px</td>
-        </tr>
-        <tr>
-            <td><h3>h3. Bootstrap heading</h3></td>
-            <td>Semibold 24px</td>
-        </tr>
-        <tr>
-            <td><h4>h4. Bootstrap heading</h4></td>
-            <td>Semibold 18px</td>
-        </tr>
-        <tr>
-            <td><h5>h5. Bootstrap heading</h5></td>
-            <td>Semibold 14px</td>
-        </tr>
-        <tr>
-            <td><h6>h6. Bootstrap heading</h6></td>
-            <td>Semibold 12px</td>
-        </tr>
-        </tbody>
-    </table>
-</div>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;h1&gt;</span>...<span class="nt">&lt;/h1&gt;</span>
-            <span class="nt">&lt;h2&gt;</span>...<span class="nt">&lt;/h2&gt;</span>
-            <span class="nt">&lt;h3&gt;</span>...<span class="nt">&lt;/h3&gt;</span>
-            <span class="nt">&lt;h4&gt;</span>...<span class="nt">&lt;/h4&gt;</span>
-            <span class="nt">&lt;h5&gt;</span>...<span class="nt">&lt;/h5&gt;</span>
-            <span class="nt">&lt;h6&gt;</span>...<span class="nt">&lt;/h6&gt;</span>
-        </code></pre>
-</div>
+<!--<h2 id="type-headings">Headings</h2>-->
+<!---->
+<!--<p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> are available.</p>-->
+<!---->
+<!--<div class="bs-example bs-example-type">-->
+<!--    <table class="table">-->
+<!--        <tbody>-->
+<!--        <tr>-->
+<!--            <td><h1>h1. Bootstrap heading</h1></td>-->
+<!--            <td>Semibold 36px</td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td><h2>h2. Bootstrap heading</h2></td>-->
+<!--            <td>Semibold 30px</td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td><h3>h3. Bootstrap heading</h3></td>-->
+<!--            <td>Semibold 24px</td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td><h4>h4. Bootstrap heading</h4></td>-->
+<!--            <td>Semibold 18px</td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td><h5>h5. Bootstrap heading</h5></td>-->
+<!--            <td>Semibold 14px</td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td><h6>h6. Bootstrap heading</h6></td>-->
+<!--            <td>Semibold 12px</td>-->
+<!--        </tr>-->
+<!--        </tbody>-->
+<!--    </table>-->
+<!--</div>-->
+<!--<div class="highlight"><pre><code class="html"><span class="nt">&lt;h1&gt;</span>...<span class="nt">&lt;/h1&gt;</span>-->
+<!--            <span class="nt">&lt;h2&gt;</span>...<span class="nt">&lt;/h2&gt;</span>-->
+<!--            <span class="nt">&lt;h3&gt;</span>...<span class="nt">&lt;/h3&gt;</span>-->
+<!--            <span class="nt">&lt;h4&gt;</span>...<span class="nt">&lt;/h4&gt;</span>-->
+<!--            <span class="nt">&lt;h5&gt;</span>...<span class="nt">&lt;/h5&gt;</span>-->
+<!--            <span class="nt">&lt;h6&gt;</span>...<span class="nt">&lt;/h6&gt;</span>-->
+<!--        </code></pre>-->
+<!--</div>-->
 
 <!-- Body copy -->
 <h2 id="type-body-copy">Body copy</h2>
-
-<p>Bootstrap's global default <code>font-size</code> is <strong>14px</strong>, with a <code>line-height</code> of
-    <strong>1.428</strong>. This is applied to the <code>&lt;body&gt;</code> and all paragraphs. In addition, <code>&lt;p&gt;</code>
-    (paragraphs) receive a bottom margin of half their computed line-height (10px by default).</p>
-
-<div class="bs-example">
-    <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient
-        montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-
-    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non
-        metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem
-        nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
-
-    <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus.
-        Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-</div>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
-        </code></pre>
-</div>
+<!---->
+<!--<p>Bootstrap's global default <code>font-size</code> is <strong>14px</strong>, with a <code>line-height</code> of-->
+<!--    <strong>1.428</strong>. This is applied to the <code>&lt;body&gt;</code> and all paragraphs. In addition, <code>&lt;p&gt;</code>-->
+<!--    (paragraphs) receive a bottom margin of half their computed line-height (10px by default).</p>-->
+<!---->
+<!--<div class="bs-example">-->
+<!--    <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient-->
+<!--        montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>-->
+<!---->
+<!--    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non-->
+<!--        metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem-->
+<!--        nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>-->
+<!---->
+<!--    <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus.-->
+<!--        Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>-->
+<!--</div>-->
+<!--<div class="highlight"><pre><code class="html"><span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>-->
+<!--        </code></pre>-->
+<!--</div>-->
 
 <!-- Body copy .lead -->
 <h3>Lead body copy</h3>
@@ -269,38 +269,38 @@
 
 
 <!-- Addresses -->
-<h2 id="type-addresses">Addresses</h2>
-
-<p>Present contact information for the nearest ancestor or the entire body of work. Preserve formatting by ending all
-    lines with <code>&lt;br&gt;</code>.</p>
-
-<div class="bs-example">
-    <address>
-        <strong>Twitter, Inc.</strong><br>
-        795 Folsom Ave, Suite 600<br>
-        San Francisco, CA 94107<br>
-        <abbr title="Phone">P:</abbr> (123) 456-7890
-    </address>
-    <address>
-        <strong>Full Name</strong><br>
-        <a href="mailto:#">first.last@example.com</a>
-    </address>
-</div>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;address&gt;</span>
-            <span class="nt">&lt;strong&gt;</span>Twitter, Inc.<span class="nt">&lt;/strong&gt;&lt;br&gt;</span>
-            795 Folsom Ave, Suite 600<span class="nt">&lt;br&gt;</span>
-            San Francisco, CA 94107<span class="nt">&lt;br&gt;</span>
-            <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">"Phone"</span><span
-                class="nt">&gt;</span>P:<span class="nt">&lt;/abbr&gt;</span> (123) 456-7890
-            <span class="nt">&lt;/address&gt;</span>
-
-            <span class="nt">&lt;address&gt;</span>
-            <span class="nt">&lt;strong&gt;</span>Full Name<span class="nt">&lt;/strong&gt;&lt;br&gt;</span>
-            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"mailto:#"</span><span
-                class="nt">&gt;</span>first.last@example.com<span class="nt">&lt;/a&gt;</span>
-            <span class="nt">&lt;/address&gt;</span>
-        </code></pre>
-</div>
+<!--<h2 id="type-addresses">Addresses</h2>-->
+<!---->
+<!--<p>Present contact information for the nearest ancestor or the entire body of work. Preserve formatting by ending all-->
+<!--    lines with <code>&lt;br&gt;</code>.</p>-->
+<!---->
+<!--<div class="bs-example">-->
+<!--    <address>-->
+<!--        <strong>Twitter, Inc.</strong><br>-->
+<!--        795 Folsom Ave, Suite 600<br>-->
+<!--        San Francisco, CA 94107<br>-->
+<!--        <abbr title="Phone">P:</abbr> (123) 456-7890-->
+<!--    </address>-->
+<!--    <address>-->
+<!--        <strong>Full Name</strong><br>-->
+<!--        <a href="mailto:#">first.last@example.com</a>-->
+<!--    </address>-->
+<!--</div>-->
+<!--<div class="highlight"><pre><code class="html"><span class="nt">&lt;address&gt;</span>-->
+<!--            <span class="nt">&lt;strong&gt;</span>Twitter, Inc.<span class="nt">&lt;/strong&gt;&lt;br&gt;</span>-->
+<!--            795 Folsom Ave, Suite 600<span class="nt">&lt;br&gt;</span>-->
+<!--            San Francisco, CA 94107<span class="nt">&lt;br&gt;</span>-->
+<!--            <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">"Phone"</span><span-->
+<!--                class="nt">&gt;</span>P:<span class="nt">&lt;/abbr&gt;</span> (123) 456-7890-->
+<!--            <span class="nt">&lt;/address&gt;</span>-->
+<!---->
+<!--            <span class="nt">&lt;address&gt;</span>-->
+<!--            <span class="nt">&lt;strong&gt;</span>Full Name<span class="nt">&lt;/strong&gt;&lt;br&gt;</span>-->
+<!--            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"mailto:#"</span><span-->
+<!--                class="nt">&gt;</span>first.last@example.com<span class="nt">&lt;/a&gt;</span>-->
+<!--            <span class="nt">&lt;/address&gt;</span>-->
+<!--        </code></pre>-->
+<!--</div>-->
 
 
 <!-- Blockquotes -->
@@ -375,164 +375,164 @@ array('small' => 'Someone famous in','cite' => 'Source Title','pull' => BSHtml::
 
 
 <!-- Lists -->
-<h2 id="type-lists">Lists</h2>
-
-<h3>Unordered</h3>
-
-<p>A list of items in which the order does <em>not</em> explicitly matter.</p>
-
-<div class="bs-example">
-    <ul>
-        <li>Lorem ipsum dolor sit amet</li>
-        <li>Consectetur adipiscing elit</li>
-        <li>Integer molestie lorem at massa</li>
-        <li>Facilisis in pretium nisl aliquet</li>
-        <li>Nulla volutpat aliquam velit
-            <ul>
-                <li>Phasellus iaculis neque</li>
-                <li>Purus sodales ultricies</li>
-                <li>Vestibulum laoreet porttitor sem</li>
-                <li>Ac tristique libero volutpat at</li>
-            </ul>
-        </li>
-        <li>Faucibus porta lacus fringilla vel</li>
-        <li>Aenean sit amet erat nunc</li>
-        <li>Eget porttitor lorem</li>
-    </ul>
-</div>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;ul&gt;</span>
-            <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
-            <span class="nt">&lt;/ul&gt;</span>
-        </code></pre>
-</div>
-
-<h3>Ordered</h3>
-
-<p>A list of items in which the order <em>does</em> explicitly matter.</p>
-
-<div class="bs-example">
-    <ol>
-        <li>Lorem ipsum dolor sit amet</li>
-        <li>Consectetur adipiscing elit</li>
-        <li>Integer molestie lorem at massa</li>
-        <li>Facilisis in pretium nisl aliquet</li>
-        <li>Nulla volutpat aliquam velit</li>
-        <li>Faucibus porta lacus fringilla vel</li>
-        <li>Aenean sit amet erat nunc</li>
-        <li>Eget porttitor lorem</li>
-    </ol>
-</div>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;ol&gt;</span>
-            <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
-            <span class="nt">&lt;/ol&gt;</span>
-        </code></pre>
-</div>
-
-<h3>Unstyled</h3>
-
-<p>Remove the default <code>list-style</code> and left margin on list items (immediate children only). <strong>This only
-        applies to immediate children list items</strong>, meaning you will need to add the class for any nested lists
-    as well.</p>
-
-<div class="bs-example">
-    <ul class="list-unstyled">
-        <li>Lorem ipsum dolor sit amet</li>
-        <li>Consectetur adipiscing elit</li>
-        <li>Integer molestie lorem at massa</li>
-        <li>Facilisis in pretium nisl aliquet</li>
-        <li>Nulla volutpat aliquam velit
-            <ul>
-                <li>Phasellus iaculis neque</li>
-                <li>Purus sodales ultricies</li>
-                <li>Vestibulum laoreet porttitor sem</li>
-                <li>Ac tristique libero volutpat at</li>
-            </ul>
-        </li>
-        <li>Faucibus porta lacus fringilla vel</li>
-        <li>Aenean sit amet erat nunc</li>
-        <li>Eget porttitor lorem</li>
-    </ul>
-</div>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span
-                class="s">"list-unstyled"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
-            <span class="nt">&lt;/ul&gt;</span>
-        </code></pre>
-</div>
-
-<h3>Inline</h3>
-
-<p>Place all list items on a single line with <code>display: inline-block;</code> and some light padding.</p>
-
-<div class="bs-example">
-    <ul class="list-inline">
-        <li>Lorem ipsum</li>
-        <li>Phasellus iaculis</li>
-        <li>Nulla volutpat</li>
-    </ul>
-</div>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span
-                class="s">"list-inline"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
-            <span class="nt">&lt;/ul&gt;</span>
-        </code></pre>
-</div>
-
-<h3>Description</h3>
-
-<p>A list of terms with their associated descriptions.</p>
-
-<div class="bs-example">
-    <dl>
-        <dt>Description lists</dt>
-        <dd>A description list is perfect for defining terms.</dd>
-        <dt>Euismod</dt>
-        <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
-        <dd>Donec id elit non mi porta gravida at eget metus.</dd>
-        <dt>Malesuada porta</dt>
-        <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
-    </dl>
-</div>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;dl&gt;</span>
-            <span class="nt">&lt;dt&gt;</span>...<span class="nt">&lt;/dt&gt;</span>
-            <span class="nt">&lt;dd&gt;</span>...<span class="nt">&lt;/dd&gt;</span>
-            <span class="nt">&lt;/dl&gt;</span>
-        </code></pre>
-</div>
-
-<h4>Horizontal description</h4>
-
-<p>Make terms and descriptions in <code>&lt;dl&gt;</code> line up side-by-side. Starts off stacked like default <code>
-        &lt;dl&gt;</code>s, but when the navbar expands, so do these.</p>
-
-<div class="bs-example">
-    <dl class="dl-horizontal">
-        <dt>Description lists</dt>
-        <dd>A description list is perfect for defining terms.</dd>
-        <dt>Euismod</dt>
-        <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
-        <dd>Donec id elit non mi porta gravida at eget metus.</dd>
-        <dt>Malesuada porta</dt>
-        <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
-        <dt>Felis euismod semper eget lacinia</dt>
-        <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet
-            risus.
-        </dd>
-    </dl>
-</div>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;dl</span> <span class="na">class=</span><span
-                class="s">"dl-horizontal"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;dt&gt;</span>...<span class="nt">&lt;/dt&gt;</span>
-            <span class="nt">&lt;dd&gt;</span>...<span class="nt">&lt;/dd&gt;</span>
-            <span class="nt">&lt;/dl&gt;</span>
-        </code></pre>
-</div>
-
-<div class="bs-callout bs-callout-info">
-    <h4>Auto-truncating</h4>
-
-    <p>Horizontal description lists will truncate terms that are too long to fit in the left column with <code>text-overflow</code>.
-        In narrower viewports, they will change to the default stacked layout.</p>
-</div>
+<!--<h2 id="type-lists">Lists</h2>-->
+<!---->
+<!--<h3>Unordered</h3>-->
+<!---->
+<!--<p>A list of items in which the order does <em>not</em> explicitly matter.</p>-->
+<!---->
+<!--<div class="bs-example">-->
+<!--    <ul>-->
+<!--        <li>Lorem ipsum dolor sit amet</li>-->
+<!--        <li>Consectetur adipiscing elit</li>-->
+<!--        <li>Integer molestie lorem at massa</li>-->
+<!--        <li>Facilisis in pretium nisl aliquet</li>-->
+<!--        <li>Nulla volutpat aliquam velit-->
+<!--            <ul>-->
+<!--                <li>Phasellus iaculis neque</li>-->
+<!--                <li>Purus sodales ultricies</li>-->
+<!--                <li>Vestibulum laoreet porttitor sem</li>-->
+<!--                <li>Ac tristique libero volutpat at</li>-->
+<!--            </ul>-->
+<!--        </li>-->
+<!--        <li>Faucibus porta lacus fringilla vel</li>-->
+<!--        <li>Aenean sit amet erat nunc</li>-->
+<!--        <li>Eget porttitor lorem</li>-->
+<!--    </ul>-->
+<!--</div>-->
+<!--<div class="highlight"><pre><code class="html"><span class="nt">&lt;ul&gt;</span>-->
+<!--            <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>-->
+<!--            <span class="nt">&lt;/ul&gt;</span>-->
+<!--        </code></pre>-->
+<!--</div>-->
+<!---->
+<!--<h3>Ordered</h3>-->
+<!---->
+<!--<p>A list of items in which the order <em>does</em> explicitly matter.</p>-->
+<!---->
+<!--<div class="bs-example">-->
+<!--    <ol>-->
+<!--        <li>Lorem ipsum dolor sit amet</li>-->
+<!--        <li>Consectetur adipiscing elit</li>-->
+<!--        <li>Integer molestie lorem at massa</li>-->
+<!--        <li>Facilisis in pretium nisl aliquet</li>-->
+<!--        <li>Nulla volutpat aliquam velit</li>-->
+<!--        <li>Faucibus porta lacus fringilla vel</li>-->
+<!--        <li>Aenean sit amet erat nunc</li>-->
+<!--        <li>Eget porttitor lorem</li>-->
+<!--    </ol>-->
+<!--</div>-->
+<!--<div class="highlight"><pre><code class="html"><span class="nt">&lt;ol&gt;</span>-->
+<!--            <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>-->
+<!--            <span class="nt">&lt;/ol&gt;</span>-->
+<!--        </code></pre>-->
+<!--</div>-->
+<!---->
+<!--<h3>Unstyled</h3>-->
+<!---->
+<!--<p>Remove the default <code>list-style</code> and left margin on list items (immediate children only). <strong>This only-->
+<!--        applies to immediate children list items</strong>, meaning you will need to add the class for any nested lists-->
+<!--    as well.</p>-->
+<!---->
+<!--<div class="bs-example">-->
+<!--    <ul class="list-unstyled">-->
+<!--        <li>Lorem ipsum dolor sit amet</li>-->
+<!--        <li>Consectetur adipiscing elit</li>-->
+<!--        <li>Integer molestie lorem at massa</li>-->
+<!--        <li>Facilisis in pretium nisl aliquet</li>-->
+<!--        <li>Nulla volutpat aliquam velit-->
+<!--            <ul>-->
+<!--                <li>Phasellus iaculis neque</li>-->
+<!--                <li>Purus sodales ultricies</li>-->
+<!--                <li>Vestibulum laoreet porttitor sem</li>-->
+<!--                <li>Ac tristique libero volutpat at</li>-->
+<!--            </ul>-->
+<!--        </li>-->
+<!--        <li>Faucibus porta lacus fringilla vel</li>-->
+<!--        <li>Aenean sit amet erat nunc</li>-->
+<!--        <li>Eget porttitor lorem</li>-->
+<!--    </ul>-->
+<!--</div>-->
+<!--<div class="highlight"><pre><code class="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span-->
+<!--                class="s">"list-unstyled"</span><span class="nt">&gt;</span>-->
+<!--            <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>-->
+<!--            <span class="nt">&lt;/ul&gt;</span>-->
+<!--        </code></pre>-->
+<!--</div>-->
+<!---->
+<!--<h3>Inline</h3>-->
+<!---->
+<!--<p>Place all list items on a single line with <code>display: inline-block;</code> and some light padding.</p>-->
+<!---->
+<!--<div class="bs-example">-->
+<!--    <ul class="list-inline">-->
+<!--        <li>Lorem ipsum</li>-->
+<!--        <li>Phasellus iaculis</li>-->
+<!--        <li>Nulla volutpat</li>-->
+<!--    </ul>-->
+<!--</div>-->
+<!--<div class="highlight"><pre><code class="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span-->
+<!--                class="s">"list-inline"</span><span class="nt">&gt;</span>-->
+<!--            <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>-->
+<!--            <span class="nt">&lt;/ul&gt;</span>-->
+<!--        </code></pre>-->
+<!--</div>-->
+<!---->
+<!--<h3>Description</h3>-->
+<!---->
+<!--<p>A list of terms with their associated descriptions.</p>-->
+<!---->
+<!--<div class="bs-example">-->
+<!--    <dl>-->
+<!--        <dt>Description lists</dt>-->
+<!--        <dd>A description list is perfect for defining terms.</dd>-->
+<!--        <dt>Euismod</dt>-->
+<!--        <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>-->
+<!--        <dd>Donec id elit non mi porta gravida at eget metus.</dd>-->
+<!--        <dt>Malesuada porta</dt>-->
+<!--        <dd>Etiam porta sem malesuada magna mollis euismod.</dd>-->
+<!--    </dl>-->
+<!--</div>-->
+<!--<div class="highlight"><pre><code class="html"><span class="nt">&lt;dl&gt;</span>-->
+<!--            <span class="nt">&lt;dt&gt;</span>...<span class="nt">&lt;/dt&gt;</span>-->
+<!--            <span class="nt">&lt;dd&gt;</span>...<span class="nt">&lt;/dd&gt;</span>-->
+<!--            <span class="nt">&lt;/dl&gt;</span>-->
+<!--        </code></pre>-->
+<!--</div>-->
+<!---->
+<!--<h4>Horizontal description</h4>-->
+<!---->
+<!--<p>Make terms and descriptions in <code>&lt;dl&gt;</code> line up side-by-side. Starts off stacked like default <code>-->
+<!--        &lt;dl&gt;</code>s, but when the navbar expands, so do these.</p>-->
+<!---->
+<!--<div class="bs-example">-->
+<!--    <dl class="dl-horizontal">-->
+<!--        <dt>Description lists</dt>-->
+<!--        <dd>A description list is perfect for defining terms.</dd>-->
+<!--        <dt>Euismod</dt>-->
+<!--        <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>-->
+<!--        <dd>Donec id elit non mi porta gravida at eget metus.</dd>-->
+<!--        <dt>Malesuada porta</dt>-->
+<!--        <dd>Etiam porta sem malesuada magna mollis euismod.</dd>-->
+<!--        <dt>Felis euismod semper eget lacinia</dt>-->
+<!--        <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet-->
+<!--            risus.-->
+<!--        </dd>-->
+<!--    </dl>-->
+<!--</div>-->
+<!--<div class="highlight"><pre><code class="html"><span class="nt">&lt;dl</span> <span class="na">class=</span><span-->
+<!--                class="s">"dl-horizontal"</span><span class="nt">&gt;</span>-->
+<!--            <span class="nt">&lt;dt&gt;</span>...<span class="nt">&lt;/dt&gt;</span>-->
+<!--            <span class="nt">&lt;dd&gt;</span>...<span class="nt">&lt;/dd&gt;</span>-->
+<!--            <span class="nt">&lt;/dl&gt;</span>-->
+<!--        </code></pre>-->
+<!--</div>-->
+<!---->
+<!--<div class="bs-callout bs-callout-info">-->
+<!--    <h4>Auto-truncating</h4>-->
+<!---->
+<!--    <p>Horizontal description lists will truncate terms that are too long to fit in the left column with <code>text-overflow</code>.-->
+<!--        In narrower viewports, they will change to the default stacked layout.</p>-->
+<!--</div>-->
 </div>
 

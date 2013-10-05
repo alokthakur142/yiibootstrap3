@@ -55,13 +55,13 @@
         <li>
             <a href="#type">Typography</a>
             <ul class="nav">
-                <li class=""><a href="#type-headings">Headings</a></li>
+<!--                <li class=""><a href="#type-headings">Headings</a></li>-->
                 <li><a href="#type-body-copy">Body copy</a></li>
                 <li><a href="#type-emphasis">Emphasis</a></li>
                 <li><a href="#type-abbreviations">Abbreviations</a></li>
-                <li><a href="#type-addresses">Addresses</a></li>
+<!--                <li><a href="#type-addresses">Addresses</a></li>-->
                 <li><a href="#type-blockquotes">Blockquotes</a></li>
-                <li><a href="#type-lists">Lists</a></li>
+<!--                <li><a href="#type-lists">Lists</a></li>-->
             </ul>
         </li>
         <li><a href="#code">Code</a></li>
@@ -105,14 +105,14 @@
         <li>
             <a href="#helper-classes">Helper classes</a>
         </li>
-        <li>
-            <a href="#responsive-utilities">Responsive utilities</a>
-            <ul class="nav">
-                <li><a href="#responsive-utilities-classes">Available classes</a></li>
-                <li><a href="#responsive-utilities-print">Print classes</a></li>
-                <li><a href="#responsive-utilities-tests">Test cases</a></li>
-            </ul>
-        </li>
+<!--        <li>-->
+<!--            <a href="#responsive-utilities">Responsive utilities</a>-->
+<!--            <ul class="nav">-->
+<!--                <li><a href="#responsive-utilities-classes">Available classes</a></li>-->
+<!--                <li><a href="#responsive-utilities-print">Print classes</a></li>-->
+<!--                <li><a href="#responsive-utilities-tests">Test cases</a></li>-->
+<!--            </ul>-->
+<!--        </li>-->
 
 
     </ul>

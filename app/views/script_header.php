@@ -35,78 +35,25 @@ $cs
     ->registerScript('tooltip',"$('[data-toggle=\"tooltip\"]').tooltip();",CClientScript::POS_READY)
     ->registerScript('popover',"$('[data-toggle=\"popover\"]').popover();",CClientScript::POS_READY)
     ->registerScript('affix',
-        "  var _window = $(window)
-            var _body   = $(document.body)
-
-            var navHeight = $('.navbar').outerHeight(true) + 10
-
-            _body.scrollspy({
+        "
+          $('#myAffix').affix({
+    offset: {
+      top: 100
+    , bottom: function () {
+        return (this.bottom = $('.bs-footer').outerHeight(true))
+      }
+    }
+  })
+  var _body = $('body');
+  _body.scrollspy({
                 target: '.bs-sidebar',
-                offset: navHeight
+                offset: 100
             })
 
-            _window.on('load', function () {
+            $(window).on('load', function () {
                 _body.scrollspy('refresh')
             })
-
-            $('.bs-docs-container [href=#]').click(function (e) {
-                e.preventDefault()
-            })
-
-            // back to top
-            setTimeout(function () {
-                var _sideBar = $('.bs-sidebar')
-
-                _sideBar.affix({
-                    offset: {
-                        top: function () {
-                            var offsetTop      = _sideBar.offset().top
-                            var sideBarMargin  = parseInt(_sideBar.children(0).css('margin-top'), 10)
-                            var navOuterHeight = $('.bs-docs-nav').height()
-
-                            return (this.top = offsetTop - navOuterHeight - sideBarMargin)
-                        }
-                        , bottom: function () {
-                            return (this.bottom = $('.bs-footer').outerHeight(true))
-                        }
-                    }
-                })
-            }, 100)
-
-            setTimeout(function () {
-                $('.bs-top').affix()
-            }, 100)
-
-            // tooltip demo
-            $('.tooltip-demo').tooltip({
-                selector: '[data-toggle=tooltip]',
-                container: 'body'
-            })
-
-            $('.tooltip-test').tooltip()
-            $('.popover-test').popover()
-
-            $('.bs-docs-navbar').tooltip({
-                selector: 'a[data-toggle=tooltip]',
-                container: '.bs-docs-navbar .nav'
-            })
-
-            // popover demo
-            $('[data-toggle=popover]')
-                .popover()
-
-            // button state demo
-            $('#fat-btn')
-                .click(function () {
-                    var btn = $(this)
-                    btn.button('loading')
-                    setTimeout(function () {
-                        btn.button('reset')
-                    }, 3000)
-                })
-
-            // carousel demo
-            $('.bs-docs-carousel-example').carousel()",
+        ",
         CClientScript::POS_READY
     );
 
