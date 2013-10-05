@@ -84,7 +84,7 @@
                 <li><a href="#forms-inline">Inline form</a></li>
                 <li><a href="#forms-horizontal">Horizontal form</a></li>
                 <li><a href="#forms-controls">Supported controls</a></li>
-                <li><a href="#forms-controls-static">Static control</a></li>
+<!--                <li><a href="#forms-controls-static">Static control</a></li>-->
                 <li><a href="#forms-control-states">Control states</a></li>
                 <li><a href="#forms-control-sizes">Control sizing</a></li>
                 <li><a href="#forms-help-text">Help text</a></li>

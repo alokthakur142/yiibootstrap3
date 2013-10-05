@@ -28,7 +28,7 @@ class SiteController extends EController
     {
         return array(
             array('allow',  // allow all users to perform 'index' and 'view' actions
-                'actions'=>array('index','css','ajaxTest','doc'),
+                'actions'=>array('index','css','ajaxTest','doc','error'),
                 'users'=>array('*'),
             ),
             array('deny',  // deny all users
