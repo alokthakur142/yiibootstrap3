@@ -80,7 +80,7 @@ $gridColumns = array(
 </div>
 <!-- /example -->
 <div class="highlight">
-    <pre class="linenums prettyprint lang-py">
+    <pre class="linenums prettyprint ">
 &lt;?php $this->widget('bootstrap.widgets.BsGridView', array(
     'dataProvider' => $gridDataProvider,
     
@@ -111,7 +111,7 @@ $gridColumns = array(
 </div>
 <!-- /example -->
 <div class="highlight">
-<pre class="linenums prettyprint lang-py">
+<pre class="linenums prettyprint ">
 &lt;?php $this->widget('bootstrap.widgets.BsGridView', array(
 'dataProvider' => $gridDataProvider,
 
@@ -137,7 +137,7 @@ $gridColumns = array(
 </div>
 <!-- /example -->
 <div class="highlight">
-<pre class="linenums prettyprint lang-py">
+<pre class="linenums prettyprint ">
 &lt;?php $this->widget('bootstrap.widgets.BsGridView', array(
 'dataProvider' => $gridDataProvider,
 
@@ -163,7 +163,7 @@ $gridColumns = array(
 </div>
 <!-- /example -->
 <div class="highlight">
-<pre class="linenums prettyprint lang-py">
+<pre class="linenums prettyprint ">
 &lt;?php $this->widget('bootstrap.widgets.BsGridView', array(
 'dataProvider' => $gridDataProvider,
 
@@ -189,7 +189,7 @@ $gridColumns = array(
 </div>
 <!-- /example -->
 <div class="highlight">
-<pre class="linenums prettyprint lang-py">
+<pre class="linenums prettyprint ">
 &lt;?php $this->widget('bootstrap.widgets.BsGridView', array(
 'dataProvider' => $gridDataProvider,
 
@@ -250,7 +250,7 @@ $gridColumns = array(
 </div>
 <!-- /example -->
 <div class="highlight">
-<pre class="linenums prettyprint lang-py">
+<pre class="linenums prettyprint ">
  &lt;?php $col = array(
         array(
             'name' => 'id',
@@ -299,7 +299,7 @@ $gridColumns = array(
 </div>
 <!-- /example -->
 <div class="highlight">
-<pre class="linenums prettyprint lang-py">
+<pre class="linenums prettyprint ">
 &lt;?php $this->widget('bootstrap.widgets.BsGridView', array(
 'dataProvider' => $gridDataProvider,
 

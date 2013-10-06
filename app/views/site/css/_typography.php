@@ -84,7 +84,7 @@
     ?>
 </div>
 <div class="highlight">
-    <pre class="linenums prettyprint lang-py">
+    <pre class="linenums prettyprint ">
         <code class="html ">
 &lt;?php
     echo BSHtml::lead(
@@ -122,7 +122,7 @@
     </p>
 </div>
 <div class="highlight">
-    <pre class="linenums prettyprint lang-py">
+    <pre class="linenums prettyprint ">
 &lt;?php echo BSHtml::small('This line of text is meant to be treated as fine print.') ?&gt;
     </pre>
 </div>
@@ -135,7 +135,7 @@
     <p>The following snippet of text is <?php echo BSHtml::bold('rendered as bold text.')?></p>
 </div>
 <div class="highlight">
-    <pre class="linenums prettyprint lang-py">
+    <pre class="linenums prettyprint ">
 &lt;?php echo BSHtml::bold('rendered as bold text.')?&gt;
     </pre>
 </div>
@@ -148,7 +148,7 @@
     <p>The following snippet of text is <?php echo BSHtml::italics('rendered as italicized text') ?>.</p>
 </div>
 <div class="highlight">
-    <pre class="linenums prettyprint lang-py">
+    <pre class="linenums prettyprint ">
 &lt;?php echo BSHtml::italics('rendered as italicized text') ?>&gt;
     </pre>
 </div>
@@ -171,7 +171,7 @@
     <?php echo BSHtml::emphasis('Right aligned text.',array('color' => BSHtml::TEXT_ALIGN_RIGHT)) ?>
 </div>
 <div class="highlight">
-    <pre class="linenums prettyprint lang-py">
+    <pre class="linenums prettyprint ">
 &lt;?php echo BSHtml::emphasis('Left aligned text.',array('color' =&gt; BSHtml::TEXT_ALIGN_LEFT)) ?&gt;<br />
 &lt;?php echo BSHtml::emphasis('Center aligned text.',array('color' =&gt; BSHtml::TEXT_ALIGN_CENTER)) ?&gt;<br />
 &lt;?php echo BSHtml::emphasis('Right aligned text.',array('color' =&gt; BSHtml::TEXT_ALIGN_RIGHT)) ?&gt;<br />
@@ -191,7 +191,7 @@
     <?php echo BSHtml::emphasis('Duis mollis, est non commodo luctus, nisi erat porttitor ligula.', array('color' => BSHtml::TEXT_COLOR_DANGER)); ?>
 </div>
 <div class="highlight">
-    <pre class="linenums prettyprint lang-py">
+    <pre class="linenums prettyprint ">
 &lt;?php echo BSHtml::emphasis(
     'Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.',
     array('color' => BSHtml::TEXT_MUTED)
@@ -241,7 +241,7 @@
     <?php echo BSHtml::emphasis('An abbreviation of the word attribute is '.BSHtml::abbr('atrr','attribute').'.') ?>
 </div>
 <div class="highlight">
-    <pre class="linenums prettyprint lang-py">
+    <pre class="linenums prettyprint ">
 &lt;?php echo BSHtml::emphasis(
 'An abbreviation of the word attribute is '.BSHtml::abbr('atrr','attribute').'.'
 ) ?&gt;
@@ -258,7 +258,7 @@
     </p>
 </div>
 <div class="highlight">
-    <pre class="linenums prettyprint lang-py">
+    <pre class="linenums prettyprint ">
 &lt;?php echo BSHtml::abbr(
     'HTML',
     'HyperText Markup Language',
@@ -317,7 +317,7 @@
     <?php echo BSHtml::quote('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.') ?>
 </div>
 <div class="highlight">
-<pre class="linenums prettyprint lang-py">
+<pre class="linenums prettyprint ">
 &lt;?php echo BSHtml::quote(<br />
 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.'<br />
 ) ?&gt;
@@ -342,7 +342,7 @@
     )); ?>
 </div>
 <div class="highlight">
-    <pre class="linenums prettyprint lang-py">
+    <pre class="linenums prettyprint ">
 &lt;?php echo BSHtml::quote(
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.',
     array(
@@ -365,7 +365,7 @@
     )); ?>
 </div>
 <div class="highlight">
-    <pre class="linenums prettyprint lang-py">
+    <pre class="linenums prettyprint ">
 &lt;?php echo BSHtml::quote(
 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.',
 array('small' => 'Someone famous in','cite' => 'Source Title','pull' => BSHtml::PULL_RIGHT,)

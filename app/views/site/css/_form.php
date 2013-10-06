@@ -37,7 +37,7 @@
 </fieldset>
 <?php $this->endWidget(); ?>
 <!-- /example -->
-<div class="highlight"><pre class="linenums prettyprint lang-py">
+<div class="highlight"><pre class="linenums prettyprint ">
 &lt;?php $form = $this->beginWidget('bootstrap.widgets.BsActiveForm',
     array(
         'enableAjaxValidation' => true,
@@ -109,7 +109,7 @@
 </fieldset>
 <?php $this->endWidget(); ?>
 <!-- /example -->
-<div class="highlight"><pre class="linenums prettyprint lang-py">
+<div class="highlight"><pre class="linenums prettyprint ">
 &lt;?php $form = $this->beginWidget('bootstrap.widgets.BsActiveForm',
     array(
         'enableAjaxValidation' => true,
@@ -193,7 +193,7 @@
 
 <?php $this->endWidget(); ?>
 <!-- /example -->
-<div class="highlight"><pre class="linenums prettyprint lang-py">
+<div class="highlight"><pre class="linenums prettyprint ">
 &lt;?php $form = $this->beginWidget('bootstrap.widgets.BsActiveForm',
     array(
         'enableAjaxValidation' => true,
@@ -275,7 +275,7 @@
 <?php $this->endWidget() ?>
 
 <div class="highlight">
-    <pre class="linenums prettyprint lang-py">
+    <pre class="linenums prettyprint ">
         &lt;?php $form = $this-&gt;beginWidget('bootstrap.widgets.BsActiveForm',
             array(
                 'enableAjaxValidation' =&gt; true,
@@ -314,7 +314,7 @@
 <?php $this->endWidget() ?>
 
 <div class="highlight">
-    <pre class="linenums prettyprint lang-py">
+    <pre class="linenums prettyprint ">
         &lt;?php $form = $this-&gt;beginWidget('bootstrap.widgets.BsActiveForm',
             array(
                 'enableAjaxValidation' =&gt; true,
@@ -356,7 +356,7 @@
 <?php $this->endWidget() ?>
 
 <div class="highlight">
-    <pre class="linenums prettyprint lang-py">
+    <pre class="linenums prettyprint ">
         &lt;?php $form = $this-&gt;beginWidget('bootstrap.widgets.BsActiveForm',
             array(
                 'enableAjaxValidation' =&gt; true,
@@ -413,7 +413,7 @@
 
 <?php $this->endWidget() ?>
 <div class="highlight">
-    <pre class="linenums prettyprint lang-py">
+    <pre class="linenums prettyprint ">
 &lt;?php echo $form-&gt;textFieldControlGroup($model, 'username',
     array(
         'disabled' => true,
@@ -459,7 +459,7 @@
     ); ?>
 <?php $this->endWidget() ?>
 <div class="highlight">
-    <pre class="linenums prettyprint lang-py">
+    <pre class="linenums prettyprint ">
 &lt;?php echo $form-&gt;textFieldControlGroup($model, 'username',
     array(
         'controlOptions' => array('class' => 'has-sucess col-lg-10'),
@@ -518,7 +518,7 @@
 ); ?>
 <?php $this->endWidget() ?>
 <div class="highlight">
-    <pre class="linenums prettyprint lang-py">
+    <pre class="linenums prettyprint ">
 &lt;?php echo $form-&gt;textFieldControlGroup($model, 'username',
         array('class' =&gt; BSHtml::INPUT_SIZE_LG));
 ?&gt;
@@ -571,7 +571,7 @@
 </div>
 <?php $this->endWidget() ?>
 <div class="highlight">
-    <pre class="linenums prettyprint lang-py">
+    <pre class="linenums prettyprint ">
 &lt;?php echo $form-&gt;textFieldControlGroup($model, 'username',
     array('groupOptions' =&gt; array('class' =&gt; 'col-lg-2',
         'controlOptions' => array('class' => 'col-lg-12')
@@ -601,7 +601,7 @@
 ); ?>
 <?php $this->endWidget() ?>
 <div class="highlight">
-    <pre class="linenums prettyprint lang-py">
+    <pre class="linenums prettyprint ">
 &lt;?php echo $form-&gt;textFieldControlGroup($model, 'username',
     array(
         'placeholder' => '',
