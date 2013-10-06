@@ -1,8 +1,8 @@
 <div class="content g-markdown">
     <p><strong>Instructions</strong></p>
 
-    <h2 id="hh0">Download <a href="http://getbootstrap.com" title="bootsrap">http://getbootstrap.com here</a> the
-        bootstrap3 package. <a class="anchor" href="#hh0">¶</a></h2>
+    <h5 id="hh0">Download <a href="http://getbootstrap.com" title="bootsrap">http://getbootstrap.com here</a> the
+        bootstrap3 package. <a class="anchor" href="#hh0"></a></h5>
 
     <p>Append in Your Layout:</p>
 
@@ -87,7 +87,7 @@
         </div>
     </div>
 
-    <h3 id="hh1">Download the Module <a class="anchor" href="#hh1">¶</a></h3>
+    <h3 id="hh1">Download the Module <a class="anchor" href="#hh1"></a></h3>
 
     <p><a href="https://bitbucket.org/DrMabuse/yii-bootstrap-3-module" title="bitbucket">Module</a>
         Move the Package to your</p>
@@ -139,7 +139,7 @@
             </ul>
         </li>
     </ul>
-    <h3 id="hh2">Configure <a class="anchor" href="#hh2">¶</a></h3>
+    <h3 id="hh2">Configure <a class="anchor" href="#hh2"></a></h3>
 
     <p>configure</p>
 
