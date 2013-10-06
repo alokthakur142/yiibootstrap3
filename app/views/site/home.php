@@ -1,5 +1,6 @@
 <div class="content g-markdown">
     <p><strong>Instructions</strong></p>
+    <?= BSHtml::emphasis('This module facilitates their use of <a href="http://getbootstrap.com" title="bootsrap">Twitter Bootstrap</a> as it provides multiple widgets') ?>
 
     <h5 id="hh0">Download <a href="http://getbootstrap.com" title="bootsrap">http://getbootstrap.com here</a> the
         bootstrap3 package. <a class="anchor" href="#hh0"></a></h5>
