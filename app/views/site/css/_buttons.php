@@ -195,21 +195,20 @@ array(
 <p>Add the <code>disabled</code> attribute to <code>&lt;button&gt;</code> buttons.</p>
 
 <p class="bs-example">
-    <?php echo BSHtml::button('Primary button',
-        array('disabled' => true, 'size'=>BSHtml::BUTTON_SIZE_LARGE, 'color' => BSHtml::BUTTON_COLOR_PRIMARY)); ?>
-    <?php echo BSHtml::button('Button',
-        array('disabled' => true, 'size' => BSHtml::BUTTON_SIZE_LARGE)); ?>
+<?php echo BSHtml::button('Primary button',
+    array('disabled' => true, 'size'=>BSHtml::BUTTON_SIZE_LARGE, 'color' => BSHtml::BUTTON_COLOR_PRIMARY)); ?>
+<?php echo BSHtml::button('Button',
+    array('disabled' => true, 'size' => BSHtml::BUTTON_SIZE_LARGE)); ?>
 </p>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span
-                class="s">"button"</span> <span class="na">class=</span><span
-                class="s">"btn btn-lg btn-primary"</span> <span class="na">disabled=</span><span
-                class="s">"disabled"</span><span
-                class="nt">&gt;</span>Primary button<span class="nt">&lt;/button&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span
-                class="na">class=</span><span class="s">"btn btn-default btn-lg"</span> <span
-                class="na">disabled=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>Button<span
-                class="nt">&lt;/button&gt;</span>
-        </code></pre>
+<div class="highlight">
+    <pre class="linenums prettyprint ">
+ &lt;?php echo BSHtml::button('Primary button',
+     array('disabled' =&gt; true, 'size'=&gt;BSHtml::BUTTON_SIZE_LARGE,
+         'color' =&gt; BSHtml::BUTTON_COLOR_PRIMARY)); ?&gt;
+
+ &lt;?php echo BSHtml::button('Button',
+     array('disabled' =&gt; true, 'size' =&gt; BSHtml::BUTTON_SIZE_LARGE)); ?&gt;
+    </pre>
 </div>
 
 <div class="bs-callout bs-callout-danger">
@@ -224,17 +223,20 @@ array(
 <p>Add the <code>.disabled</code> class to <code>&lt;a&gt;</code> buttons.</p>
 
 <p class="bs-example">
-    <a href="#" class="btn btn-primary btn-lg disabled">Primary link</a>
-    <a href="#" class="btn btn-default btn-lg disabled">Link</a>
+    <?php echo BSHtml::linkButton('Primary link',
+        array('disabled' => true, 'size'=>BSHtml::BUTTON_SIZE_LARGE, 'color' => BSHtml::BUTTON_COLOR_PRIMARY)); ?>
+    <?php echo BSHtml::linkButton('Link',
+        array('disabled' => true, 'size' => BSHtml::BUTTON_SIZE_LARGE)); ?>
 </p>
 
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span
-                class="s">"#"</span> <span class="na">class=</span><span
-                class="s">"btn btn-primary btn-lg disabled"</span><span class="nt">&gt;</span>Primary link<span
-                class="nt">&lt;/a&gt;</span>
-            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span
-                class="s">"btn btn-default btn-lg disabled"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
-        </code></pre>
+<div class="highlight"> <pre class="linenums prettyprint ">
+ &lt;?php echo BSHtml::linkButton('Primary link',
+     array('disabled' =&gt; true, 'size'=&gt;BSHtml::BUTTON_SIZE_LARGE,
+         'color' =&gt; BSHtml::BUTTON_COLOR_PRIMARY)); ?&gt;
+
+ &lt;?php echo BSHtml::linkButton('Link',
+     array('disabled' =&gt; true, 'size' =&gt; BSHtml::BUTTON_SIZE_LARGE)); ?&gt;
+    </pre>
 </div>
 <p>
     We use <code>.disabled</code> as a utility class here, similar to the common <code>.active</code> class, so no
@@ -255,24 +257,19 @@ array(
     element.</p>
 
 <form class="bs-example">
-    <a class="btn btn-default" href="#">Link</a>
-    <button class="btn btn-default" type="submit">Button</button>
-    <input class="btn btn-default" type="button" value="Input">
-    <input class="btn btn-default" type="submit" value="Submit">
+    <?php echo BSHtml::linkButton('Link'); ?>
+    <?php echo BSHtml::button('Button'); ?>
+    <?php echo BSHtml::inputButton('Input'); ?>
+    <?php echo BSHtml::inputSubmitButton('Submit',array('type' => 'input')); ?>
+    <?php echo BSHtml::submitButton('Submit Button',array('type' => 'input')); ?>
 </form>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span
-                class="s">"btn btn-default"</span> <span class="na">href=</span><span class="s">"#"</span><span
-                class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span
-                class="s">"btn btn-default"</span> <span class="na">type=</span><span class="s">"submit"</span><span
-                class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
-            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"btn btn-default"</span>
-            <span class="na">type=</span><span class="s">"button"</span> <span class="na">value=</span><span
-                class="s">"Input"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"btn btn-default"</span>
-            <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span
-                class="s">"Submit"</span><span class="nt">&gt;</span>
-        </code></pre>
+<div class="highlight"><pre class="linenums prettyprint ">
+&lt;?php echo BSHtml::linkButton('Link'); ?&gt;
+&lt;?php echo BSHtml::button('Button'); ?&gt;
+&lt;?php echo BSHtml::inputButton('Input'); ?&gt;
+&lt;?php echo BSHtml::inputSubmitButton('Submit',array('type' => 'input')); ?&gt;
+&lt;?php echo BSHtml::submitButton('Submit',array('type' => 'input')); ?&gt;
+</pre>
 </div>
 
 <div class="bs-callout bs-callout-warning">
