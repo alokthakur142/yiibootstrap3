@@ -3,11 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Pascal Brewing">
     <link rel="shortcut icon" href="../../assets/ico/favicon.png">
-
-    <title>Yii-Bootstrap-3-Module</title>
+    <title><?= $this->pageTitle ?> | Yii-Bootstrap-3-Module</title>
     <?php $this->renderPartial('//script_header') ?>
 </head>
 <body>
@@ -23,7 +21,7 @@
 
 <div id="footer">
     <div class="container">
-        <ul class="list-inline">
+        <ul class="list-inline text-center">
             <li class=" ">
                 <?php echo BSHtml::link(
                     CHtml::image(
@@ -91,7 +89,11 @@
                 ?>
             </li>
             <li>
-                <?php echo BSHtml::link('Pascal Brewing '.BSHtml::icon(BSHtml::GLYPHICON_COPYRIGHT_MARK),'http://www.pascal-brewing.de') ?>
+                <?php echo BSHtml::emphasis(BSHtml::link(
+                    BSHtml::icon(BSHtml::GLYPHICON_COPYRIGHT_MARK).' Pascal Brewing',
+                    'http://www.pascal-brewing.de',
+                    array('style' => 'color:#666')
+                )) ?>
             </li>
         </ul>
     </div>

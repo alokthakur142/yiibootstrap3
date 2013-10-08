@@ -28,7 +28,7 @@ class SiteController extends EController
     {
         return array(
             array('allow',  // allow all users to perform 'index' and 'view' actions
-                'actions'=>array('index','css','ajaxTest','doc','error'),
+                'actions'=>array('index','css','ajaxTest','doc','error','components'),
                 'users'=>array('*'),
             ),
             array('deny',  // deny all users
@@ -53,6 +53,18 @@ class SiteController extends EController
             Yii::app()->end();
         }
         $this->render('css',array('model' => $model));
+    }
+
+    public function actionComponents(){
+        $model = new User();
+        $this->layout = '//layouts/column_2';
+
+        if(isset($_POST['User']))
+        {
+            echo CActiveForm::validate($model);
+            Yii::app()->end();
+        }
+        $this->render('components',array('model' => $model));
     }
     /**
      * Ajax Sample

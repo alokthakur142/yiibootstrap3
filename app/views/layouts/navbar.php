@@ -11,8 +11,15 @@
         </div>
         <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
             <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Examples <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="<?= Yii::app()->baseUrl.'/site/css' ?>">css examples</a></li>
+                        <li><a href="<?= Yii::app()->baseUrl.'/site/components' ?>">components examples</a></li>
+                    </ul>
+                </li>
                 <li>
-                    <a href="/site/css">Examples</a>
+
                 </li>
 <!--                <li>-->
 <!--                    <a href="components">Components</a>-->

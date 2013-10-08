@@ -16,6 +16,7 @@ class EController extends CController
 	public $meta_description = array();
 	public $breadcrumbs;
     public $layout;
+    public $pageTitle = '';
     public $mainNavPartials = array();
     public $secondNavPartials = array();
     public $menu;

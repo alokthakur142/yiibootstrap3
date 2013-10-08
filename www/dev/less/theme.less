@@ -229,7 +229,7 @@
 /* Sticky footer styles
 -------------------------------------------------- */
 body{
-  background: url("../img/brushed.png") 0 0 repeat #666666;
+  background: url("../img/grid.png") 0 0 repeat #666;
 }
 /* Wrapper for page content to push down footer */
 #wrap {
@@ -245,11 +245,20 @@ body{
 /* Set the fixed height of the footer here */
 #footer {
   height: 60px;
-  padding-top: 10px;
-  background: url("../img/brushed.png") 0 0 repeat #666666;
+  background: url("../img/tweed.png") 0 0 repeat #666666;
   position: fixed;
   bottom: 0;
   width: 100%;
+  .list-inline{
+    background: url("../img/grid.png") 0 0 repeat #666;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    height: 50px;
+    margin-top: 10px;
+    li{
+      padding-top: 10px;
+    }
+  }
 }
 .bs-docs-nav{
   background: url("../img/tweed.png") 0 0 repeat #666666;
@@ -261,6 +270,7 @@ body{
 
 #wrap > .container {
   padding: 0 15px 0;
+//  background:#85887F;
   &>.col-md-10{
     &>.page-header{
       margin-top: 0;
@@ -1260,30 +1270,50 @@ h1[id] {
   background-color: #f7f7f9;
   border: 1px solid #e1e1e8;
   border-radius: 4px;
+  pre {
+    border-radius:0;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    border: 0;
+    white-space: nowrap;
+    code {
+      font-size: inherit;
+      color: #333; /* Effectively the base text color */
+    }
+    .lineno {
+      display: inline-block;
+      width: 22px;
+      padding-right: 5px;
+      margin-right: 10px;
+      text-align: right;
+      color: #c1c1c1;
+    }
+  }
 }
 
-.highlight pre {
-  border-radius:0;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  background-color: transparent;
-  border: 0;
-  white-space: nowrap;
-}
-.highlight pre code {
-  font-size: inherit;
-  color: #333; /* Effectively the base text color */
-}
-.highlight pre .lineno {
-  display: inline-block;
-  width: 22px;
-  padding-right: 5px;
-  margin-right: 10px;
-  text-align: right;
-  color: #c1c1c1;
-}
 
+.bs-glyphicons{
+  li {
+    span {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    float: left;
+    height: 115px;
+    padding: 10px;
+    margin: 0 -1px -1px 0;
+    line-height: 1.4;
+    text-align: center;
+    border: 1px solid #ddd;
+    list-style: none;
+    background: url("../img/tweed.png") 0 0 repeat #666;
+    span,small{
+      color: #99cc32;
+    }
+  }
+}
 /* Show code snippets when we have the space */
 @media screen and (min-width: 481px) {
   .highlight {

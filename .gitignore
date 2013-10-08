@@ -35,3 +35,6 @@ index
 # composer
 /app/lib/vendor
 composer.lock
+
+#npm
+node_modules
