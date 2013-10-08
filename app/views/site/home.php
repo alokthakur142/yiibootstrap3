@@ -1,7 +1,8 @@
+<?php $this->pageTitle = 'Home' ?>
 <div class="content g-markdown">
 <?= BSHtml::pageHeader('Yii-Bootstrap3-Module', BSHtml::italics(' Version 0.0.5 ')); ?>
 <p><strong>Instructions</strong></p>
-<?= BSHtml::emphasis('This module facilitates their use of <a href="http://getbootstrap.com" title="bootsrap">Twitter Bootstrap</a> as it provides multiple widgets') ?>
+<p>This yii module uses <a href="http://getbootstrap.com" title="bootsrap">Twitter Bootstrap</a> as a base. It is written for the Yii framework and requires at least PHP&gt; = 5.3 *.The usual widgets like CGridView offered with. You could test it after installation with the gii code generator is included in the module.</p>
 <div class="bs-docs-section">
     <div class="page-header">
         <h1 id="download">Download Bootstrap</h1>

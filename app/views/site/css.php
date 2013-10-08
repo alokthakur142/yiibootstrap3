@@ -1,4 +1,5 @@
 <?php
+$this->pageTitle = 'CSS';
 array_push(
     $this->secondNavPartials,
     \bootstrap\helpers\NavPartial::getView('_affix')
