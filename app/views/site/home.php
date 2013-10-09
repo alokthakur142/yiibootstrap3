@@ -16,7 +16,7 @@
         along with the included fonts. No documentation or original source files are included.</p>
 
     <p><a class="btn btn-lg btn-primary"
-          href="https://github.com/twbs/bootstrap/releases/download/v3.0.0/bootstrap-3.0.0-dist.zip"
+          href="http://getbootstrap.com/customize/"
           onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download compiled']);">Download
             Bootstrap</a></p>
 
@@ -24,7 +24,7 @@
 
     <div class="bs-docs-dl-options">
         <h4>
-            <a href="https://github.com/twbs/bootstrap/archive/v3.0.0.zip"
+            <a href="https://github.com/twbs/bootstrap"
                onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download source']);">Download latest
                 source code</a>
         </h4>
