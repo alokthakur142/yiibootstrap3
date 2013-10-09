@@ -9,15 +9,15 @@
                 <li><a href="#glyphicons-examples">Examples</a></li>
             </ul>
         </li>
-<!--        <li>-->
-<!--            <a href="#dropdowns">Dropdowns</a>-->
-<!--            <ul class="nav">-->
-<!--                <li><a href="#dropdowns-example">Example</a></li>-->
-<!--                <li><a href="#dropdowns-alignment">Alignment options</a></li>-->
-<!--                <li><a href="#dropdowns-headers">Headers</a></li>-->
-<!--                <li><a href="#dropdowns-disabled">Disabled menu items</a></li>-->
-<!--            </ul>-->
-<!--        </li>-->
+        <li>
+            <a href="#dropdowns">Dropdowns</a>
+            <ul class="nav">
+                <li><a href="#dropdowns-example">Example</a></li>
+                <li><a href="#dropdowns-alignment">Alignment options</a></li>
+                <li><a href="#dropdowns-headers">Headers</a></li>
+                <li><a href="#dropdowns-disabled">Disabled menu items</a></li>
+            </ul>
+        </li>
 <!--        <li>-->
 <!--            <a href="#btn-groups">Button groups</a>-->
 <!--            <ul class="nav">-->

@@ -217,10 +217,10 @@ $glyphicons = array(
 
     <div class="row">
         <ul class="bs-glyphicons">
-            <?php foreach ($glyphicons as  $key=>$value) : ?>
+            <?php foreach ($glyphicons as  $key => $value) : ?>
                 <li class="col-lg-4 text-center">
                     <?= BSHtml::icon($value) ?>
-                    <br/>
+                    <br />
                     <?php echo BSHtml::small(strtoupper(str_replace('-', '_', $value))) ?>
                 </li>
             <?php endforeach ?>
@@ -242,22 +242,6 @@ $glyphicons = array(
     <h2 id="glyphicons-examples">Examples</h2>
 
     <p>Use them in buttons, button groups for a toolbar, navigation, or prepended form inputs.</p>
-    <!--    const GLYPHICON_ADJUST='glyphicon-adjust';-->
-    <!--    const GLYPHICON_ALIGN_CENTER='glyphicon-align-center';-->
-    <!--    const GLYPHICON_ALIGN_JUSTIFY='glyphicon-align-justify';-->
-    <!--    const GLYPHICON_ALIGN_LEFT='glyphicon-align-left';-->
-    <!--    const GLYPHICON_ALIGN_RIGHT='glyphicon-align-right';-->
-    <!--    const GLYPHICON_ARROW_DOWN='glyphicon-arrow-down';-->
-    <!--    const GLYPHICON_ARROW_LEFT='glyphicon-arrow-left';-->
-    <!--    const GLYPHICON_ARROW_RIGHT='glyphicon-arrow-right';-->
-    <!--    const GLYPHICON_ARROW_UP='glyphicon-arrow-up';-->
-    <!--    const GLYPHICON_ASTERISK='glyphicon-asterisk';-->
-    <!--    const GLYPHICON_BACKWARD='glyphicon-backward';-->
-    <!--    const GLYPHICON_BAN_CIRCLE='glyphicon-ban-circle';-->
-    <!--    const GLYPHICON_BARCODE='glyphicon-barcode';-->
-    <!--    const GLYPHICON_BELL='glyphicon-bell';-->
-    <!--    const GLYPHICON_BOLD='glyphicon-bold';-->
-    <!--    const GLYPHICON_BOOK='glyphicon-book';-->
     <div class="bs-example">
         <?php
         echo BSHtml::buttonToolbar(array(

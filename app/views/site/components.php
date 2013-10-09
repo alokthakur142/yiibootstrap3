@@ -9,3 +9,6 @@ array_push(
 ================================================== -->
 <?php $this->renderPartial('components/_glyphicons', array('model' => $model)) ?>
 
+<!-- Dropdowns
+================================================== -->
+<?php $this->renderPartial('components/_dropdowns', array('model' => $model)) ?>
