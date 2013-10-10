@@ -61,8 +61,8 @@ return array(
 		// php configuration
 		'php.defaultCharset' => 'utf-8',
 		'php.timezone'       => 'UTC',
-        'yii.handleErrors'   => true,
-        'yii.debug' => true,
-        'yii.traceLevel' => 3,
+//        'yii.handleErrors'   => true,
+//        'yii.debug' => true,
+//        'yii.traceLevel' => 3,
 	)
 );
