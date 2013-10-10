@@ -13,12 +13,12 @@
     <div class="bs-example bs-example-images">
         <?php echo BSHtml::imageRounded('holder.js/140x140'); ?>
         <?php echo BSHtml::imageCircle('holder.js/140x140'); ?>
-        <?php echo BSHtml::imagePolaroid('holder.js/140x140'); ?>
+        <?php echo BSHtml::imageThumbnail('holder.js/140x140'); ?>
     </div>
     <div class="highlight"><pre class="linenums prettyprint ">
 &lt;?php echo BSHtml::imageRounded('holder.js/140x140'); ?&gt;
 &lt;?php echo BSHtml::imageCircle('holder.js/140x140'); ?&gt;
-&lt;?php echo BSHtml::imagePolaroid('holder.js/140x140'); ?&gt;
+&lt;?php echo BSHtml::imageThumbnail('holder.js/140x140'); ?&gt;
 </pre>
     </div>
 

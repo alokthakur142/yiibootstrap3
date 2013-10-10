@@ -18,17 +18,17 @@
                 <li><a href="#dropdowns-disabled">Disabled menu items</a></li>
             </ul>
         </li>
-<!--        <li>-->
-<!--            <a href="#btn-groups">Button groups</a>-->
-<!--            <ul class="nav">-->
-<!--                <li><a href="#btn-groups-single">Basic example</a></li>-->
-<!--                <li><a href="#btn-groups-toolbar">Button toolbar</a></li>-->
-<!--                <li><a href="#btn-groups-sizing">Sizing</a></li>-->
-<!--                <li><a href="#btn-groups-nested">Nesting</a></li>-->
-<!--                <li><a href="#btn-groups-vertical">Vertical variation</a></li>-->
-<!--                <li><a href="#btn-groups-justified">Justified link variation</a></li>-->
-<!--            </ul>-->
-<!--        </li>-->
+        <li>
+            <a href="#btn-groups">Button groups</a>
+            <ul class="nav">
+                <li><a href="#btn-groups-single">Basic example</a></li>
+                <li><a href="#btn-groups-toolbar">Button toolbar</a></li>
+                <li><a href="#btn-groups-sizing">Sizing</a></li>
+                <li><a href="#btn-groups-nested">Nesting</a></li>
+                <li><a href="#btn-groups-vertical">Vertical variation</a></li>
+                <li><a href="#btn-groups-justified">Justified link variation</a></li>
+            </ul>
+        </li>
 <!--        <li>-->
 <!--            <a href="#btn-dropdowns">Button dropdowns</a>-->
 <!--            <ul class="nav">-->

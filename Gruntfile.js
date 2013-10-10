@@ -36,6 +36,16 @@ module.exports = function (grunt) {
                         to: 'Version <%= pkg.version %>'
                     }
                 ]
+            },
+            config_dev:{
+                src: ['app/config/main.php'],
+                overwrite: true,
+                replacements: [
+                    {
+                        from: /Version \d{1,1}\.\d{1,2}\.\d{1,2}/g,
+                        to: 'Version <%= pkg.version %>'
+                    }
+                ]
             }
         },
         sass: {                              // Task
@@ -44,22 +54,72 @@ module.exports = function (grunt) {
                     style: 'compact'
                 },
                 files: {                         // Dictionary of files
-                    'extensions/ibutton/resources/css/jquery.ibutton.css': extIbuttonAsset+'jquery.ibutton.scss'       // 'destination': 'source'
+                    'extensions/ibutton/resources/css/jquery.ibutton.css': extIbuttonAsset + 'jquery.ibutton.scss'       // 'destination': 'source'
                 }
             },
-            ibuttonprod:{
+            ibuttonprod: {
                 options: {                       // Target options
                     style: 'compressed'
                 },
                 files: {                         // Dictionary of files
-                    'extensions/ibutton/resources/css/jquery.ibutton.min.css': extIbuttonAsset+'jquery.ibutton.scss'       // 'destination': 'source'
+                    'extensions/ibutton/resources/css/jquery.ibutton.min.css': extIbuttonAsset + 'jquery.ibutton.scss'       // 'destination': 'source'
                 }
+            }
+        },
+        concat: {
+            application_css: {
+                src: [
+                    'www/css/bootstrap.min.css',
+                    'www/css/bootstrap-theme.min.css'
+                ],
+                dest: 'www/css/application-<%= pkg.version %>.min.css'
+            },
+            application_js: {
+                src: [
+                    'www/js/bootstrap.min.js',
+                    'www/js/holder.js'
+                ],
+                dest: 'www/js/application-<%= pkg.version %>.min.js'
+            }
+        },
+        recess: {
+            options: {
+                compile: true
+            },
+            bootstrap: {
+                src: ['www/dev/less/bootstrap.less'],
+                dest: 'www/css/bootstrap.css'
+            },
+            min: {
+                options: {
+                    compress: true
+                },
+                src: ['www/dev/less/bootstrap.less'],
+                dest: 'www/css/bootstrap.min.css'
+            },
+            theme: {
+                src: ['www/dev/less/theme.less'],
+                dest: 'www/css/bootstrap-theme.css'
+            },
+            theme_min: {
+                options: {
+                    compress: true
+                },
+                src: ['www/dev/less/theme.less'],
+                dest: 'www/css/bootstrap-theme.min.css'
+            },
+            application_min:{
+                options: {
+                    compress: true
+                },
+                src: ['www/css/bootstrap.min.css','www/css/bootstrap-theme.min.css'],
+                dest: 'www/css/style.min.css'
             }
         },
         watch: {
             ibuttoncss: {
-                files: extIbuttonAsset+'jquery.ibutton.scss',
-                tasks: ['sass:ibuttondist','sass:ibuttonprod']
+                files: extIbuttonAsset + 'jquery.ibutton.scss',
+                tasks: ['sass:ibuttondist', 'sass:ibuttonprod']
 
             }
 
@@ -70,7 +130,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-bumpup');
     grunt.loadNpmTasks('grunt-text-replace');
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-recess');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-concat');
 
     // Default task(s).
     grunt.registerTask('default', ['replace', 'release']);

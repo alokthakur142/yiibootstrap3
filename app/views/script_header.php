@@ -8,13 +8,18 @@
  */
 $cs = Yii::app()->clientScript;
 $themePath = Yii::app()->baseUrl;
-
+$version = trim(str_replace(' Version ', '', Yii::app()->params->version));
+//CVarDumper::dump($version);
 /**
  * StyleSHeets
  */
-$cs
-    ->registerCssFile($themePath.'/css/bootstrap.css')
-    ->registerCssFile($themePath.'/css/bootstrap-theme.css');
+if (YII_DEBUG) {
+    $cs
+        ->registerCssFile($themePath . '/css/bootstrap.css')
+        ->registerCssFile($themePath . '/css/bootstrap-theme.css');
+} else {
+    $cs->registerCssFile($themePath . "/css/application-{$version}.min.css");
+}
 
 /**
  * JavaScripts
@@ -26,33 +31,38 @@ $cs
 //);
 
 $cs
-    ->registerCoreScript('jquery',CClientScript::POS_END)
-    ->registerCoreScript('jquery.ui',CClientScript::POS_END)
-    ->registerScriptFile($themePath.'/js/bootstrap.min.js',CClientScript::POS_END)
-    ->registerScriptFile($themePath.'/js/holder.js',CClientScript::POS_END)
-    ->registerScriptFile($themePath.'/js/holder.js',CClientScript::POS_END)
-    ->registerScriptFile('https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css',CClientScript::POS_END)
-    ->registerScript('tooltip',"$('[data-toggle=\"tooltip\"]').tooltip();",CClientScript::POS_READY)
-    ->registerScript('popover',"$('[data-toggle=\"popover\"]').popover();",CClientScript::POS_READY)
+    ->registerCoreScript('jquery', CClientScript::POS_END)
+    ->registerCoreScript('jquery.ui', CClientScript::POS_END);
+if (YII_DEBUG) {
+    $cs
+        ->registerScriptFile($themePath . '/js/bootstrap.js', CClientScript::POS_END)
+        ->registerScriptFile($themePath . '/js/holder.js', CClientScript::POS_END);
+} else {
+    $cs->registerScriptFile($themePath . "/js/application-{$version}.min.css", CClientScript::POS_END);
+}
+$cs
+    ->registerScriptFile('https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css', CClientScript::POS_END)
+    ->registerScript('tooltip', "$('[data-toggle=\"tooltip\"]').tooltip();", CClientScript::POS_READY)
+    ->registerScript('popover', "$('[data-toggle=\"popover\"]').popover();", CClientScript::POS_READY)
     ->registerScript('affix',
         "
-          $('#myAffix').affix({
-    offset: {
-      top: 100
-    , bottom: function () {
-        return (this.bottom = $('.bs-footer').outerHeight(true))
-      }
-    }
-  })
-  var _body = $('body');
-  _body.scrollspy({
+            $('#myAffix').affix({
+                offset: {
+                    top: 100
+                    , bottom: function () {
+                        return (this.bottom = $('.bs-footer').outerHeight(true))
+                    }
+                }
+            });
+            var _body = $('body');
+            _body.scrollspy({
                 target: '.bs-sidebar',
                 offset: 100
-            })
+            });
 
             $(window).on('load', function () {
                 _body.scrollspy('refresh')
-            })
+            });
         ",
         CClientScript::POS_READY
     );
@@ -60,6 +70,6 @@ $cs
 ?>
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
-    <script src="<?php echo $themePath ?>/js/html5shiv.js"></script>
-    <script src="<?php echo $themePath ?>/js/respond.min.js"></script>
+<script src="<?php echo $themePath ?>/js/html5shiv.js"></script>
+<script src="<?php echo $themePath ?>/js/respond.min.js"></script>
 <![endif]-->

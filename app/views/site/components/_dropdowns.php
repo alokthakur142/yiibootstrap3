@@ -74,12 +74,6 @@
                 BSHtml::dropDownHeader('Dropdown Header'),
                 array('label' => 'Separate link', 'url' => '#'),
             )
-            ,array(
-                'split' => false,
-                'size' => BSHtml::BUTTON_SIZE_SMALL,
-                'color' =>BSHtml::BUTTON_COLOR_INFO,
-
-            )
         );?>
     </div><!-- /example -->
     <div class="highlight"><pre class="linenums prettyprint">

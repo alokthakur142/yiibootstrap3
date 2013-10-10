@@ -12,3 +12,6 @@ array_push(
 <!-- Dropdowns
 ================================================== -->
 <?php $this->renderPartial('components/_dropdowns', array('model' => $model)) ?>
+<!-- Button Groups
+================================================== -->
+<?php $this->renderPartial('components/_button_groups', array('model' => $model)) ?>
