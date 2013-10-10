@@ -38,7 +38,7 @@ if (YII_DEBUG) {
         ->registerScriptFile($themePath . '/js/bootstrap.js', CClientScript::POS_END)
         ->registerScriptFile($themePath . '/js/holder.js', CClientScript::POS_END);
 } else {
-    $cs->registerScriptFile($themePath . "/js/application-{$version}.min.css", CClientScript::POS_END);
+    $cs->registerScriptFile($themePath . "/js/application-{$version}.min.js", CClientScript::POS_END);
 }
 $cs
     ->registerScriptFile('https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css', CClientScript::POS_END)
