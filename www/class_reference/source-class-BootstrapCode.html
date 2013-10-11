@@ -8,7 +8,7 @@
 	<title>File gii/bootstrap/BootstrapCode.php</title>
 
 	<script type="text/javascript" src="resources/combined.js?1303512325"></script>
-	<script type="text/javascript" src="elementlist.js?238736377"></script>
+	<script type="text/javascript" src="elementlist.js?3453341943"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -62,8 +62,6 @@
 				<li><a href="class-ChRadar.html">ChRadar</a></li>
 				<li><a href="class-IButton.html">IButton</a></li>
 				<li><a href="class-MNav.html">MNav</a></li>
-				<li><a href="class-Person.html">Person</a></li>
-				<li><a href="class-YiiLog.html">YiiLog</a></li>
 			</ul>
 
 
@@ -125,7 +123,7 @@
 </span><span id="17" class="l"><a class="l" href="#17">17: </a>            <span class="php-keyword1">return</span> <span class="php-quote">&quot;BSHtml::activeCheckBoxControlGroup(\</span><span class="php-var">$model</span><span class="php-quote">,'</span><span class="php-var">{$column-&gt;name}</span><span class="php-quote">')&quot;</span>;
 </span><span id="18" class="l"><a class="l" href="#18">18: </a>        } <span class="php-keyword1">else</span> {
 </span><span id="19" class="l"><a class="l" href="#19">19: </a>            <span class="php-keyword1">if</span> (<span class="php-keyword2">stripos</span>(<span class="php-var">$column</span>-&gt;dbType, <span class="php-quote">'text'</span>) !== <span class="php-keyword1">false</span>) {
-</span><span id="20" class="l"><a class="l" href="#20">20: </a>                <span class="php-keyword1">return</span> <span class="php-quote">&quot;BSHtml::activeTextAreaControlGroup(\</span><span class="php-var">$model</span><span class="php-quote">,'</span><span class="php-var">{$column-&gt;name}</span><span class="php-quote">',array('rows'=&gt;6,'span'=&gt;8))&quot;</span>;
+</span><span id="20" class="l"><a class="l" href="#20">20: </a>                <span class="php-keyword1">return</span> <span class="php-quote">&quot;BSHtml::activeTextAreaControlGroup(\</span><span class="php-var">$model</span><span class="php-quote">,'</span><span class="php-var">{$column-&gt;name}</span><span class="php-quote">',array('rows'=&gt;6))&quot;</span>;
 </span><span id="21" class="l"><a class="l" href="#21">21: </a>            } <span class="php-keyword1">else</span> {
 </span><span id="22" class="l"><a class="l" href="#22">22: </a>                <span class="php-keyword1">if</span> (<span class="php-keyword2">preg_match</span>(<span class="php-quote">'/^(password|pass|passwd|passcode)$/i'</span>, <span class="php-var">$column</span>-&gt;name)) {
 </span><span id="23" class="l"><a class="l" href="#23">23: </a>                    <span class="php-var">$inputField</span> = <span class="php-quote">'activePasswordControlGroup'</span>;
@@ -151,7 +149,7 @@
 </span><span id="43" class="l"><a class="l" href="#43">43: </a>            <span class="php-keyword1">return</span> <span class="php-quote">&quot;\</span><span class="php-var">$form</span><span class="php-quote">-&gt;checkBoxControlGroup(\</span><span class="php-var">$model</span><span class="php-quote">,'</span><span class="php-var">{$column-&gt;name}</span><span class="php-quote">')&quot;</span>;
 </span><span id="44" class="l"><a class="l" href="#44">44: </a>        } <span class="php-keyword1">else</span> {
 </span><span id="45" class="l"><a class="l" href="#45">45: </a>            <span class="php-keyword1">if</span> (<span class="php-keyword2">stripos</span>(<span class="php-var">$column</span>-&gt;dbType, <span class="php-quote">'text'</span>) !== <span class="php-keyword1">false</span>) {
-</span><span id="46" class="l"><a class="l" href="#46">46: </a>                <span class="php-keyword1">return</span> <span class="php-quote">&quot;\</span><span class="php-var">$form</span><span class="php-quote">-&gt;textAreaControlGroup(\</span><span class="php-var">$model</span><span class="php-quote">,'</span><span class="php-var">{$column-&gt;name}</span><span class="php-quote">',array('rows'=&gt;6,'span'=&gt;8))&quot;</span>;
+</span><span id="46" class="l"><a class="l" href="#46">46: </a>                <span class="php-keyword1">return</span> <span class="php-quote">&quot;\</span><span class="php-var">$form</span><span class="php-quote">-&gt;textAreaControlGroup(\</span><span class="php-var">$model</span><span class="php-quote">,'</span><span class="php-var">{$column-&gt;name}</span><span class="php-quote">',array('rows'=&gt;6))&quot;</span>;
 </span><span id="47" class="l"><a class="l" href="#47">47: </a>            } <span class="php-keyword1">else</span> {
 </span><span id="48" class="l"><a class="l" href="#48">48: </a>                <span class="php-keyword1">if</span> (<span class="php-keyword2">preg_match</span>(<span class="php-quote">'/^(password|pass|passwd|passcode)$/i'</span>, <span class="php-var">$column</span>-&gt;name)) {
 </span><span id="49" class="l"><a class="l" href="#49">49: </a>                    <span class="php-var">$inputField</span> = <span class="php-quote">'passwordFieldControlGroup'</span>;
@@ -160,9 +158,9 @@
 </span><span id="52" class="l"><a class="l" href="#52">52: </a>                }
 </span><span id="53" class="l"><a class="l" href="#53">53: </a>
 </span><span id="54" class="l"><a class="l" href="#54">54: </a>                <span class="php-keyword1">if</span> (<span class="php-var">$column</span>-&gt;type !== <span class="php-quote">'string'</span> || <span class="php-var">$column</span>-&gt;size === <span class="php-keyword1">null</span>) {
-</span><span id="55" class="l"><a class="l" href="#55">55: </a>                    <span class="php-keyword1">return</span> <span class="php-quote">&quot;\</span><span class="php-var">$form</span><span class="php-quote">-&gt;</span><span class="php-var">{$inputField}</span><span class="php-quote">(\</span><span class="php-var">$model</span><span class="php-quote">,'</span><span class="php-var">{$column-&gt;name}</span><span class="php-quote">',array('span'=&gt;5))&quot;</span>;
+</span><span id="55" class="l"><a class="l" href="#55">55: </a>                    <span class="php-keyword1">return</span> <span class="php-quote">&quot;\</span><span class="php-var">$form</span><span class="php-quote">-&gt;</span><span class="php-var">{$inputField}</span><span class="php-quote">(\</span><span class="php-var">$model</span><span class="php-quote">,'</span><span class="php-var">{$column-&gt;name}</span><span class="php-quote">')&quot;</span>;
 </span><span id="56" class="l"><a class="l" href="#56">56: </a>                } <span class="php-keyword1">else</span> {
-</span><span id="57" class="l"><a class="l" href="#57">57: </a>                    <span class="php-keyword1">return</span> <span class="php-quote">&quot;\</span><span class="php-var">$form</span><span class="php-quote">-&gt;</span><span class="php-var">{$inputField}</span><span class="php-quote">(\</span><span class="php-var">$model</span><span class="php-quote">,'</span><span class="php-var">{$column-&gt;name}</span><span class="php-quote">',array('span'=&gt;5,'maxlength'=&gt;</span><span class="php-var">$column</span><span class="php-quote">-&gt;size))&quot;</span>;
+</span><span id="57" class="l"><a class="l" href="#57">57: </a>                    <span class="php-keyword1">return</span> <span class="php-quote">&quot;\</span><span class="php-var">$form</span><span class="php-quote">-&gt;</span><span class="php-var">{$inputField}</span><span class="php-quote">(\</span><span class="php-var">$model</span><span class="php-quote">,'</span><span class="php-var">{$column-&gt;name}</span><span class="php-quote">',array('maxlength'=&gt;</span><span class="php-var">$column</span><span class="php-quote">-&gt;size))&quot;</span>;
 </span><span id="58" class="l"><a class="l" href="#58">58: </a>                }
 </span><span id="59" class="l"><a class="l" href="#59">59: </a>            }
 </span><span id="60" class="l"><a class="l" href="#60">60: </a>        }

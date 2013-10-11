@@ -76,22 +76,19 @@
 <p>Make a paragraph stand out by adding <code>.lead</code>.</p>
 
 <div class="bs-example">
-    <?php
-        echo BSHtml::lead(
-            'Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-            Duis mollis, est non commodo luctus.'
-        )
-    ?>
-</div>
-<div class="highlight">
-    <pre class="linenums prettyprint ">
-        <code class="html ">
-&lt;?php
+<?php
     echo BSHtml::lead(
         'Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
         Duis mollis, est non commodo luctus.'
     )
-?&gt;
+?>
+</div>
+<div class="highlight">
+    <pre >
+        <code class="html ">
+<span class="pre_black">
+<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">lead</span><span class="pre_green">(</span><span class="pre_red">'Vivamus&nbsp;sagittis&nbsp;lacus&nbsp;vel&nbsp;augue&nbsp;laoreet&nbsp;rutrum&nbsp;faucibus&nbsp;dolor&nbsp;auctor.<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;Duis&nbsp;mollis,&nbsp;est&nbsp;non&nbsp;commodo&nbsp;luctus.'</span><span class="pre_green">);<br></span><span class="pre_blue">?&gt;</span>
+</span>
         </code>
     </pre>
 </div>
@@ -122,8 +119,10 @@
     </p>
 </div>
 <div class="highlight">
-    <pre class="linenums prettyprint ">
-&lt;?php echo BSHtml::small('This line of text is meant to be treated as fine print.') ?&gt;
+    <pre >
+<span class="pre_black">
+<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">small</span><span class="pre_green">(</span><span class="pre_red">'This&nbsp;line&nbsp;of&nbsp;text&nbsp;is&nbsp;meant&nbsp;to&nbsp;be&nbsp;treated&nbsp;as&nbsp;fine&nbsp;print.'</span><span class="pre_green">);<br></span><span class="pre_blue">?&gt;</span>
+</span>
     </pre>
 </div>
 
@@ -135,8 +134,10 @@
     <p>The following snippet of text is <?php echo BSHtml::bold('rendered as bold text.')?></p>
 </div>
 <div class="highlight">
-    <pre class="linenums prettyprint ">
-&lt;?php echo BSHtml::bold('rendered as bold text.')?&gt;
+    <pre >
+<span class="pre_black">
+<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">bold</span><span class="pre_green">(</span><span class="pre_red">'rendered&nbsp;as&nbsp;bold&nbsp;text.'</span><span class="pre_green">);<br></span><span class="pre_blue">?&gt;</span>
+</span>
     </pre>
 </div>
 
@@ -148,8 +149,10 @@
     <p>The following snippet of text is <?php echo BSHtml::italics('rendered as italicized text') ?>.</p>
 </div>
 <div class="highlight">
-    <pre class="linenums prettyprint ">
-&lt;?php echo BSHtml::italics('rendered as italicized text') ?>&gt;
+    <pre >
+<span class="pre_black">
+<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">italics</span><span class="pre_green">(</span><span class="pre_red">'rendered&nbsp;as&nbsp;italicized&nbsp;text'</span><span class="pre_green">);<br></span><span class="pre_blue">?&gt;</span>
+</span>
     </pre>
 </div>
 
@@ -166,15 +169,15 @@
 <p>Easily realign text to components with text alignment classes.</p>
 
 <div class="bs-example">
-    <?php echo BSHtml::emphasis('Left aligned text.',array('color' => BSHtml::TEXT_ALIGN_LEFT)) ?>
-    <?php echo BSHtml::emphasis('Center aligned text.',array('color' => BSHtml::TEXT_ALIGN_CENTER)) ?>
-    <?php echo BSHtml::emphasis('Right aligned text.',array('color' => BSHtml::TEXT_ALIGN_RIGHT)) ?>
+<?php echo BSHtml::emphasis('Left aligned text.',array('color' => BSHtml::TEXT_ALIGN_LEFT)) ?>
+<?php echo BSHtml::emphasis('Center aligned text.',array('color' => BSHtml::TEXT_ALIGN_CENTER)) ?>
+<?php echo BSHtml::emphasis('Right aligned text.',array('color' => BSHtml::TEXT_ALIGN_RIGHT)) ?>
 </div>
 <div class="highlight">
-    <pre class="linenums prettyprint ">
-&lt;?php echo BSHtml::emphasis('Left aligned text.',array('color' =&gt; BSHtml::TEXT_ALIGN_LEFT)) ?&gt;<br />
-&lt;?php echo BSHtml::emphasis('Center aligned text.',array('color' =&gt; BSHtml::TEXT_ALIGN_CENTER)) ?&gt;<br />
-&lt;?php echo BSHtml::emphasis('Right aligned text.',array('color' =&gt; BSHtml::TEXT_ALIGN_RIGHT)) ?&gt;<br />
+    <pre >
+<span class="pre_black">
+<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">emphasis</span><span class="pre_green">(</span><span class="pre_red">'Left&nbsp;aligned&nbsp;text.'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">TEXT_ALIGN_LEFT<br></span><span class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">emphasis</span><span class="pre_green">(</span><span class="pre_red">'Center&nbsp;aligned&nbsp;text.'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">TEXT_ALIGN_CENTER<br></span><span class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">emphasis</span><span class="pre_green">(</span><span class="pre_red">'Right&nbsp;aligned&nbsp;text.'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">TEXT_ALIGN_RIGHT<br></span><span class="pre_green">));<br></span><span class="pre_blue">?&gt;</span>
+</span>
     </pre>
 </div>
 
@@ -183,44 +186,18 @@
 <p>Convey meaning through color with a handful of emphasis utility classes.</p>
 
 <div class="bs-example">
-    <?php echo BSHtml::emphasis('Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.',array('color' => BSHtml::TEXT_COLOR_MUTED)); ?>
-    <?php echo BSHtml::emphasis('Etiam porta sem malesuada magna mollis euismod.', array('color' => BSHtml::TEXT_COLOR_PRIMARY)); ?>
-    <?php echo BSHtml::emphasis('Donec ullamcorper nulla non metus auctor fringilla.', array('color' => BSHtml::TEXT_COLOR_SUCCESS)); ?>
-    <?php echo BSHtml::emphasis('Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.', array('color' => BSHtml::TEXT_COLOR_INFO)); ?>
-    <?php echo BSHtml::emphasis('Duis mollis, est non commodo luctus, nisi erat porttitor ligula.', array('color' => BSHtml::TEXT_COLOR_WARNING)); ?>
-    <?php echo BSHtml::emphasis('Duis mollis, est non commodo luctus, nisi erat porttitor ligula.', array('color' => BSHtml::TEXT_COLOR_DANGER)); ?>
+<?php echo BSHtml::emphasis('Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.',array('color' => BSHtml::TEXT_COLOR_MUTED)); ?>
+<?php echo BSHtml::emphasis('Etiam porta sem malesuada magna mollis euismod.', array('color' => BSHtml::TEXT_COLOR_PRIMARY)); ?>
+<?php echo BSHtml::emphasis('Donec ullamcorper nulla non metus auctor fringilla.', array('color' => BSHtml::TEXT_COLOR_SUCCESS)); ?>
+<?php echo BSHtml::emphasis('Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.', array('color' => BSHtml::TEXT_COLOR_INFO)); ?>
+<?php echo BSHtml::emphasis('Duis mollis, est non commodo luctus, nisi erat porttitor ligula.', array('color' => BSHtml::TEXT_COLOR_WARNING)); ?>
+<?php echo BSHtml::emphasis('Duis mollis, est non commodo luctus, nisi erat porttitor ligula.', array('color' => BSHtml::TEXT_COLOR_DANGER)); ?>
 </div>
 <div class="highlight">
-    <pre class="linenums prettyprint ">
-&lt;?php echo BSHtml::emphasis(
-    'Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.',
-    array('color' => BSHtml::TEXT_MUTED)
-);?&gt;
-
-&lt;?php echo BSHtml::emphasis(
-    'Etiam porta sem malesuada magna mollis euismod.',
-    array('color' =&gt; BSHtml::TEXT_PRIMARY)
-);?&gt;
-
-&lt;?php echo BSHtml::emphasis(
-    'Donec ullamcorper nulla non metus auctor fringilla.',
-    array('color' =&gt; BSHtml::TEXT_SUCCESS)
-);?&gt;
-
-&lt;?php echo BSHtml::emphasis(
-    'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.',
-    array('color' =&gt; BSHtml::TEXT_INFO)
-); ?&gt;
-
-&lt;?php echo BSHtml::emphasis(
-    'Duis mollis, est non commodo luctus, nisi erat porttitor ligula.',
-    array('color' =&gt; BSHtml::TEXT_WARNING));
-?&gt;
-
-&lt;?php echo BSHtml::emphasis(
-    'Duis mollis, est non commodo luctus, nisi erat porttitor ligula.',
-    array('color' =&gt; BSHtml::TEXT_DANGER)
-); ?&gt;
+    <pre >
+<span class="pre_black">
+<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">emphasis</span><span class="pre_green">(</span><span class="pre_red">'Fusce&nbsp;dapibus,&nbsp;tellus&nbsp;ac&nbsp;cursus&nbsp;commodo,&nbsp;tortor&nbsp;mauris&nbsp;nibh.'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">TEXT_COLOR_MUTED<br></span><span class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">emphasis</span><span class="pre_green">(</span><span class="pre_red">'Etiam&nbsp;porta&nbsp;sem&nbsp;malesuada&nbsp;magna&nbsp;mollis&nbsp;euismod.'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">TEXT_COLOR_PRIMARY<br></span><span class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">emphasis</span><span class="pre_green">(</span><span class="pre_red">'Donec&nbsp;ullamcorper&nbsp;nulla&nbsp;non&nbsp;metus&nbsp;auctor&nbsp;fringilla.'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">TEXT_COLOR_SUCCESS<br></span><span class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">emphasis</span><span class="pre_green">(</span><span class="pre_red">'Aenean&nbsp;eu&nbsp;leo&nbsp;quam.&nbsp;Pellentesque&nbsp;ornare&nbsp;sem&nbsp;lacinia&nbsp;quam&nbsp;venenatis.'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">TEXT_COLOR_INFO<br></span><span class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">emphasis</span><span class="pre_green">(</span><span class="pre_red">'Duis&nbsp;mollis,&nbsp;est&nbsp;non&nbsp;commodo&nbsp;luctus,&nbsp;nisi&nbsp;erat&nbsp;porttitor&nbsp;ligula.'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">TEXT_COLOR_WARNING<br></span><span class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">emphasis</span><span class="pre_green">(</span><span class="pre_red">'Duis&nbsp;mollis,&nbsp;est&nbsp;non&nbsp;commodo&nbsp;luctus,&nbsp;nisi&nbsp;erat&nbsp;porttitor&nbsp;ligula.'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">TEXT_COLOR_DANGER<br></span><span class="pre_green">));<br></span><span class="pre_blue">?&gt;</span>
+</span>
     </pre>
 </div>
 
@@ -241,10 +218,10 @@
     <?php echo BSHtml::emphasis('An abbreviation of the word attribute is '.BSHtml::abbr('atrr','attribute').'.') ?>
 </div>
 <div class="highlight">
-    <pre class="linenums prettyprint ">
-&lt;?php echo BSHtml::emphasis(
-'An abbreviation of the word attribute is '.BSHtml::abbr('atrr','attribute').'.'
-) ?&gt;
+    <pre >
+<span class="pre_black">
+<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">emphasis</span><span class="pre_green">(</span><span class="pre_red">'An&nbsp;abbreviation&nbsp;of&nbsp;the&nbsp;word&nbsp;attribute&nbsp;is&nbsp;'&nbsp;</span><span class="pre_green">.&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">abbr</span><span class="pre_green">(</span><span class="pre_red">'atrr'</span><span class="pre_green">,&nbsp;</span><span class="pre_red">'attribute'</span><span class="pre_green">)&nbsp;.&nbsp;</span><span class="pre_red">'.'</span><span class="pre_green">);<br></span><span class="pre_blue">?&gt;</span>
+</span>
     </pre>
 </div>
 
@@ -258,12 +235,10 @@
     </p>
 </div>
 <div class="highlight">
-    <pre class="linenums prettyprint ">
-&lt;?php echo BSHtml::abbr(
-    'HTML',
-    'HyperText Markup Language',
-    array('type' => BSHtml::TEXT_ABBR_INITIALISM)
-) ?&gt;
+    <pre >
+<span class="pre_black">
+&nbsp;<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">abbr</span><span class="pre_green">(</span><span class="pre_red">'HTML'</span><span class="pre_green">,&nbsp;</span><span class="pre_red">'HyperText&nbsp;Markup&nbsp;Language'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'type'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">TEXT_ABBR_INITIALISM<br></span><span class="pre_green">));<br></span><span class="pre_blue">?&gt;</span>
+</span>
     </pre>
 </div>
 
@@ -314,13 +289,13 @@
     straight quotes, we recommend a <code>&lt;p&gt;</code>.</p>
 
 <div class="bs-example">
-    <?php echo BSHtml::quote('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.') ?>
+<?php echo BSHtml::quote('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.') ?>
 </div>
 <div class="highlight">
-<pre class="linenums prettyprint ">
-&lt;?php echo BSHtml::quote(<br />
-'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.'<br />
-) ?&gt;
+<pre >
+<span class="pre_black">
+<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">quote</span><span class="pre_green">(</span><span class="pre_red">'Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet,&nbsp;consectetur&nbsp;adipiscing&nbsp;elit.&nbsp;Integer&nbsp;posuere&nbsp;erat&nbsp;a&nbsp;ante.'</span><span class="pre_green">);<br></span><span class="pre_blue">?&gt;</span>
+</span>
 </pre>
 </div>
 
@@ -342,14 +317,10 @@
     )); ?>
 </div>
 <div class="highlight">
-    <pre class="linenums prettyprint ">
-&lt;?php echo BSHtml::quote(
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.',
-    array(
-        'small' => 'Someone famous in',
-        'cite' => 'Source Title'
-    )
-); ?&gt;
+    <pre >
+<span class="pre_black">
+<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">quote</span><span class="pre_green">(</span><span class="pre_red">'Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet,&nbsp;consectetur&nbsp;adipiscing&nbsp;elit.&nbsp;Integer&nbsp;posuere&nbsp;erat&nbsp;a&nbsp;ante.'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'small'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_red">'Someone&nbsp;famous&nbsp;in'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'cite'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_red">'Source&nbsp;Title'<br></span><span class="pre_green">));<br></span><span class="pre_blue">?&gt;</span>
+</span>
     </pre>
 </div>
 
@@ -358,18 +329,17 @@
 <p>Use <code>.pull-right</code> for a floated, right-aligned blockquote.</p>
 
 <div class="bs-example" style="overflow: hidden;">
-    <?php echo BSHtml::quote('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.', array(
-        'small' => 'Someone famous in',
-        'cite' => 'Source Title',
-        'pull' => BSHtml::PULL_RIGHT,
-    )); ?>
+<?php echo BSHtml::quote('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.', array(
+    'small' => 'Someone famous in',
+    'cite' => 'Source Title',
+    'pull' => BSHtml::PULL_RIGHT,
+)); ?>
 </div>
 <div class="highlight">
-    <pre class="linenums prettyprint ">
-&lt;?php echo BSHtml::quote(
-'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.',
-array('small' => 'Someone famous in','cite' => 'Source Title','pull' => BSHtml::PULL_RIGHT,)
-); ?&gt;
+    <pre >
+<span class="pre_black">
+<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">quote</span><span class="pre_green">(</span><span class="pre_red">'Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet,&nbsp;consectetur&nbsp;adipiscing&nbsp;elit.&nbsp;Integer&nbsp;posuere&nbsp;erat&nbsp;a&nbsp;ante.'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'small'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_red">'Someone&nbsp;famous&nbsp;in'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'cite'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_red">'Source&nbsp;Title'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'pull'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">PULL_RIGHT<br></span><span class="pre_green">));<br></span><span class="pre_blue">?&gt;</span>
+</span>
     </pre>
 </div>
 

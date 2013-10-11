@@ -15,10 +15,10 @@
         <?php echo BSHtml::imageCircle('holder.js/140x140'); ?>
         <?php echo BSHtml::imageThumbnail('holder.js/140x140'); ?>
     </div>
-    <div class="highlight"><pre class="linenums prettyprint ">
-&lt;?php echo BSHtml::imageRounded('holder.js/140x140'); ?&gt;
-&lt;?php echo BSHtml::imageCircle('holder.js/140x140'); ?&gt;
-&lt;?php echo BSHtml::imageThumbnail('holder.js/140x140'); ?&gt;
+    <div class="highlight"><pre >
+<span class="pre_black">
+<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">imageRounded</span><span class="pre_green">(</span><span class="pre_red">'holder.js/140x140'</span><span class="pre_green">);<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">imageCircle</span><span class="pre_green">(</span><span class="pre_red">'holder.js/140x140'</span><span class="pre_green">);<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">imageThumbnail</span><span class="pre_green">(</span><span class="pre_red">'holder.js/140x140'</span><span class="pre_green">);<br></span><span class="pre_blue">?&gt;</span>
+</span>
 </pre>
     </div>
 

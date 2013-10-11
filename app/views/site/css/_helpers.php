@@ -13,8 +13,10 @@
         </p>
     </div>
     <div class="highlight">
-        <pre class="linenums prettyprint ">
-&lt;?php echo  BSHtml::closeButton(); ?&gt;
+        <pre >
+<span class="pre_black">
+<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">closeButton</span><span class="pre_green">();<br></span><span class="pre_blue">?&gt;</span>
+</span>
         </pre>
     </div>
 </div>

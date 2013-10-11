@@ -1119,24 +1119,49 @@ h1[id] {
   border-radius: 4px;
 }
 
-.highlight pre {
-  padding: 0;
+pre {
+  padding: 10px 20px;
   margin-top: 0;
   margin-bottom: 0;
+  color: white;
   white-space: nowrap;
-  background-color: transparent;
+  background: url("../img/noisy_net.png") 0 0 repeat #666666;
   border: 0;
   border-radius: 0;
 }
 
-.highlight pre code {
+pre.prettyprint {
+  background: #ccc7c4;
+}
+
+pre .pre_green {
+  color: #99cc32;
+}
+
+pre .pre_blue {
+  color: #f221c6;
+}
+
+pre .pre_red {
+  color: #2ddde1;
+}
+
+pre .pre_black {
+  color: #cccccc;
+}
+
+pre .pre_orange {
+  color: #cc540a;
+}
+
+pre code {
   font-size: inherit;
-  color: #333;
+  color: #cc540a;
   /* Effectively the base text color */
 
 }
 
-.highlight pre .lineno {
+pre .lineno {
   display: inline-block;
   width: 22px;
   padding-right: 5px;

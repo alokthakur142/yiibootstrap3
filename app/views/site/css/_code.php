@@ -14,8 +14,16 @@
     </div>
 
     <div class="highlight">
-        <pre class="linenums prettyprint lang-js">
-            &lt;?php echo BSHtml::code(BSHtml::italics('Sample text here...')); ?&gt;
+        <pre >
+            <span class="pre_black">
+<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+                   class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                   class="pre_blue">code</span><span class="pre_green">(</span><span
+                   class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                   class="pre_blue">italics</span><span class="pre_green">(</span><span
+                    class="pre_red">'Sample&nbsp;text&nbsp;here...'</span><span class="pre_green">));<br></span><span
+                   class="pre_blue">?&gt;</span>
+</span>
         </pre>
     </div>
 
@@ -29,7 +37,15 @@
     </div>
     <div class="highlight">
         <pre>
-            &lt;?php echo BSHtml::codeBlock(BSHtml::emphasis('Sample text here...')); ?&gt;
+            <span class="pre_black">
+<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+                   class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                   class="pre_blue">codeBlock</span><span class="pre_green">(</span><span
+                   class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                   class="pre_blue">emphasis</span><span class="pre_green">(</span><span
+                    class="pre_red">'Sample&nbsp;text&nbsp;here...'</span><span class="pre_green">));<br></span><span
+                   class="pre_blue">?&gt;</span>
+</span>
         </pre>
     </div>
 

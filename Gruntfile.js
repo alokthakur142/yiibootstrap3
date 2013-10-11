@@ -107,20 +107,30 @@ module.exports = function (grunt) {
                 },
                 src: ['www/dev/less/theme.less'],
                 dest: 'www/css/bootstrap-theme.min.css'
-            },
-            application_min:{
-                options: {
-                    compress: true
-                },
-                src: ['www/css/bootstrap.min.css','www/css/bootstrap-theme.min.css'],
-                dest: 'www/css/style.min.css'
             }
+
         },
         watch: {
             ibuttoncss: {
                 files: extIbuttonAsset + 'jquery.ibutton.scss',
                 tasks: ['sass:ibuttondist', 'sass:ibuttonprod']
 
+            },
+            app:{
+                files: 'www/css/bootstrap.css',
+                tasks: ['concat']
+            },
+            app_theme:{
+                files: 'www/css/bootstrap-theme.css',
+                tasks: ['concat']
+            },
+            app_less:{
+                files: 'www/dev/less/bootstrap.less',
+                tasks: ['recess:bootstrap','recess:min']
+            },
+            app_theme_less:{
+                files: 'www/dev/less/theme.less',
+                tasks: ['recess:theme','recess:theme_min']
             }
 
         }

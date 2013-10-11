@@ -59,44 +59,44 @@ echo BSHtml::buttonGroup(
 </div>
 <div class="highlight">
     <pre >
-        <span style="color: #000000">
-<span style="color: #0000BB">&lt;?php<br></span><span style="color: #007700;">echo&nbsp;</span><span
-                style="color: #0000BB;">BSHtml</span><span style="color: #007700;">::</span><span
-                style="color: #0000BB;">buttonGroup</span><span style="color: #007700;">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #DD0000;">'label'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-                style="color: #DD0000;">'Left'<br>&nbsp;&nbsp; &nbsp;</span><span style="color: #007700;">),<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #DD0000;">'label'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-                style="color: #DD0000;">'Middle'<br>&nbsp;&nbsp; &nbsp;</span><span style="color: #007700;">),<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #DD0000;">'own'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-                style="color: #0000BB;">BSHtml</span><span style="color: #007700;">::</span><span
-                style="color: #0000BB;">ajaxButton</span><span style="color: #007700;">(</span><span
-                style="color: #DD0000;">'own'</span><span style="color: #007700;">,&nbsp;</span><span
-                style="color: #0000BB;">Yii</span><span style="color: #007700;">::</span><span style="color: #0000BB;">app</span><span
-                style="color: #007700;">()-&gt;</span><span style="color: #0000BB;">createAbsoluteUrl</span><span
-                style="color: #007700;">(</span><span style="color: #DD0000;">'site/ajaxTest'</span><span
-                style="color: #007700;">),&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #DD0000;">'cache'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-                style="color: #0000BB;">true</span><span style="color: #007700;">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #DD0000;">'data'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #DD0000;">'message'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-                style="color: #DD0000;">'clicked&nbsp;the&nbsp;Ajaxbutton&nbsp;from&nbsp;the&nbsp;buttongroup'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #007700;">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #DD0000;">'type'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-                style="color: #DD0000;">'POST'</span><span style="color: #007700;">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #DD0000;">'success'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-                style="color: #DD0000;">'js:function(data){<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;console.log(data);<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$(".modal-body").html(data);<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$("#demo_modal").modal("show");<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #007700;">),&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #DD0000;">'icon'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-                style="color: #0000BB;">BSHtml</span><span style="color: #007700;">::</span><span
-                style="color: #0000BB;">GLYPHICON_BELL<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #007700;">))<br>&nbsp;&nbsp; &nbsp;)<br>),&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
-                style="color: #DD0000;">'color'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-                style="color: #0000BB;">BSHtml</span><span style="color: #007700;">::</span><span
-                style="color: #0000BB;">BUTTON_COLOR_WARNING</span><span style="color: #007700;">,<br>&nbsp;&nbsp; &nbsp;</span><span
-                style="color: #DD0000;">'type'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-                style="color: #0000BB;">BSHtml</span><span style="color: #007700;">::</span><span
-                style="color: #0000BB;">BUTTON_TYPE_LINK<br></span><span style="color: #007700;">));<br></span><span
-                style="color: #0000BB;">?&gt;</span>
+        <span class="pre_black">
+<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">buttonGroup</span><span class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'Left'<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'Middle'<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'own'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">ajaxButton</span><span class="pre_green">(</span><span
+                class="pre_red">'own'</span><span class="pre_green">,&nbsp;</span><span
+                class="pre_blue">Yii</span><span class="pre_green">::</span><span class="pre_blue">app</span><span
+                class="pre_green">()-&gt;</span><span class="pre_blue">createAbsoluteUrl</span><span
+                class="pre_green">(</span><span class="pre_red">'site/ajaxTest'</span><span
+                class="pre_green">),&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'cache'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_blue">true</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'data'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'message'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'clicked&nbsp;the&nbsp;Ajaxbutton&nbsp;from&nbsp;the&nbsp;buttongroup'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'type'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'POST'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'success'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'js:function(data){<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;console.log(data);<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$(".modal-body").html(data);<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$("#demo_modal").modal("show");<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">),&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'icon'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">GLYPHICON_BELL<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">))<br>&nbsp;&nbsp; &nbsp;)<br>),&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
+                class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BUTTON_COLOR_WARNING</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
+                class="pre_red">'type'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BUTTON_TYPE_LINK<br></span><span class="pre_green">));<br></span><span
+                class="pre_blue">?&gt;</span>
 </span>
     </pre>
 </div>
@@ -125,35 +125,35 @@ echo BSHtml::buttonGroup(
 </div>
 <div class="highlight">
     <pre >
-       <span style="color: #000000">
-<span style="color: #0000BB">&lt;?php<br></span><span style="color: #007700;">echo&nbsp;</span><span
-               style="color: #0000BB;">BSHtml</span><span style="color: #007700;">::</span><span
-               style="color: #0000BB;">buttonToolbar</span><span style="color: #007700;">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #DD0000;">'items'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #DD0000;">'icon'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-               style="color: #0000BB;">BSHtml</span><span style="color: #007700;">::</span><span
-               style="color: #0000BB;">GLYPHICON_CAMERA<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #007700;">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #DD0000;">'label'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-               style="color: #DD0000;">'2'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #007700;">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #DD0000;">'label'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-               style="color: #DD0000;">'3'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #007700;">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #DD0000;">'label'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-               style="color: #DD0000;">'4'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #007700;">)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;)<br>&nbsp;&nbsp; &nbsp;),<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #DD0000;">'items'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #DD0000;">'label'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-               style="color: #DD0000;">'5'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #007700;">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #DD0000;">'label'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-               style="color: #DD0000;">'6'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #007700;">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #DD0000;">'label'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-               style="color: #DD0000;">'7'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #007700;">)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;)<br>&nbsp;&nbsp; &nbsp;)<br>));<br></span><span
-               style="color: #0000BB;">?&gt;</span>
+       <span class="pre_black">
+<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+               class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+               class="pre_blue">buttonToolbar</span><span class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_red">'items'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_red">'icon'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+               class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+               class="pre_blue">GLYPHICON_CAMERA<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+               class="pre_red">'2'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+               class="pre_red">'3'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+               class="pre_red">'4'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_green">)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;)<br>&nbsp;&nbsp; &nbsp;),<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_red">'items'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+               class="pre_red">'5'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+               class="pre_red">'6'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+               class="pre_red">'7'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_green">)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;)<br>&nbsp;&nbsp; &nbsp;)<br>));<br></span><span
+               class="pre_blue">?&gt;</span>
 </span>
     </pre>
 </div>
@@ -244,38 +244,38 @@ echo BSHtml::buttonGroup(
 </div>
 <div class="highlight">
     <pre >
-       <span style="color: #000000">
-<span style="color: #0000BB">&lt;?php<br></span><span style="color: #007700;">echo&nbsp;</span><span
-               style="color: #0000BB;">BSHtml</span><span style="color: #007700;">::</span><span
-               style="color: #0000BB;">buttonToolbar</span><span style="color: #007700;">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #DD0000;">'items'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #DD0000;">'icon'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-               style="color: #0000BB;">BSHtml</span><span style="color: #007700;">::</span><span
-               style="color: #0000BB;">GLYPHICON_CAMERA<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #007700;">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #DD0000;">'label'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-               style="color: #DD0000;">'2'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #007700;">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #DD0000;">'label'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-               style="color: #DD0000;">'3'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #007700;">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #DD0000;">'label'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-               style="color: #DD0000;">'4'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #007700;">)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;)<br>&nbsp;&nbsp; &nbsp;),<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #DD0000;">'items'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #DD0000;">'label'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-               style="color: #DD0000;">'5'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #007700;">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #DD0000;">'label'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-               style="color: #DD0000;">'6'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #007700;">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #DD0000;">'label'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-               style="color: #DD0000;">'7'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-               style="color: #007700;">)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;)<br>&nbsp;&nbsp; &nbsp;)<br>),&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
-               style="color: #DD0000;">'size'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-               style="color: #0000BB;">BSHtml</span><span style="color: #007700;">::</span><span
-               style="color: #0000BB;">BUTTON_SIZE_MINI<br></span><span style="color: #007700;">));<br></span><span
-               style="color: #0000BB;">?&gt;</span>
+       <span class="pre_black">
+<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+               class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+               class="pre_blue">buttonToolbar</span><span class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_red">'items'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_red">'icon'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+               class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+               class="pre_blue">GLYPHICON_CAMERA<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+               class="pre_red">'2'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+               class="pre_red">'3'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+               class="pre_red">'4'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_green">)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;)<br>&nbsp;&nbsp; &nbsp;),<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_red">'items'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+               class="pre_red">'5'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+               class="pre_red">'6'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+               class="pre_red">'7'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+               class="pre_green">)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;)<br>&nbsp;&nbsp; &nbsp;)<br>),&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
+               class="pre_red">'size'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+               class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+               class="pre_blue">BUTTON_SIZE_MINI<br></span><span class="pre_green">));<br></span><span
+               class="pre_blue">?&gt;</span>
 </span>
     </pre>
 </div>
@@ -287,73 +287,71 @@ echo BSHtml::buttonGroup(
 
 <div class="bs-example">
     <?php
-    echo BSHtml::buttonToolbar(array(
-        array('items' => array(
-            array('label' => '1'),
-            array('label' => '2'),
-            array(
-                'own' =>BSHtml::buttonDropdown(
-                    'Dropdown',
-                    array(
-                        BSHtml::dropDownHeader('Dropdown Header'),
-                        array('label' => 'Action', 'url' => '#'),
-                        array('label' => 'Another action', 'url' => '#'),
-                        array('label' => 'Something else here', 'url' => '#'),
-                        BSHtml::menuDivider(),
-                        BSHtml::dropDownHeader('Dropdown Header'),
-                        array('label' => 'Separate link', 'url' => '#'),
-                    )
+    echo BSHtml::buttonGroup(array(
+        array('label' => '1'),
+        array('label' => '2'),
+        array(
+            'own' =>BSHtml::buttonDropdown(
+                'Dropdown',
+                array(
+                    BSHtml::dropDownHeader('Dropdown Header'),
+                    array('label' => 'Action', 'url' => '#'),
+                    array('label' => 'Another action', 'url' => '#'),
+                    array('label' => 'Something else here', 'url' => '#'),
+                    BSHtml::menuDivider(),
+                    BSHtml::dropDownHeader('Dropdown Header'),
+                    array('label' => 'Separate link', 'url' => '#'),
                 )
             )
-        )),
+        )
     ));
     ?>
 </div>
 <div class="highlight">
     <pre >
-        <span style="color: #000000"><span style="color: #0000BB">&lt;?php<br></span><span style="color: #007700;">echo&nbsp;</span><span
-                style="color: #0000BB;">BSHtml</span><span style="color: #007700;">::</span><span
-                style="color: #0000BB;">buttonToolbar</span><span style="color: #007700;">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #DD0000;">'items'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #DD0000;">'label'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-                style="color: #DD0000;">'1'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #007700;">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #DD0000;">'label'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-                style="color: #DD0000;">'2'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #007700;">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #DD0000;">'own'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-                style="color: #0000BB;">BSHtml</span><span style="color: #007700;">::</span><span
-                style="color: #0000BB;">buttonDropdown</span><span style="color: #007700;">(</span><span
-                style="color: #DD0000;">'Dropdown'</span><span style="color: #007700;">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #0000BB;">BSHtml</span><span style="color: #007700;">::</span><span
-                style="color: #0000BB;">dropDownHeader</span><span style="color: #007700;">(</span><span
-                style="color: #DD0000;">'Dropdown&nbsp;Header'</span><span style="color: #007700;">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #DD0000;">'label'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-                style="color: #DD0000;">'Action'</span><span style="color: #007700;">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #DD0000;">'url'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-                style="color: #DD0000;">'#'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #007700;">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #DD0000;">'label'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-                style="color: #DD0000;">'Another&nbsp;action'</span><span style="color: #007700;">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #DD0000;">'url'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-                style="color: #DD0000;">'#'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #007700;">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #DD0000;">'label'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-                style="color: #DD0000;">'Something&nbsp;else&nbsp;here'</span><span style="color: #007700;">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #DD0000;">'url'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-                style="color: #DD0000;">'#'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #007700;">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #0000BB;">BSHtml</span><span style="color: #007700;">::</span><span
-                style="color: #0000BB;">menuDivider</span><span style="color: #007700;">(),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #0000BB;">BSHtml</span><span style="color: #007700;">::</span><span
-                style="color: #0000BB;">dropDownHeader</span><span style="color: #007700;">(</span><span
-                style="color: #DD0000;">'Dropdown&nbsp;Header'</span><span style="color: #007700;">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #DD0000;">'label'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-                style="color: #DD0000;">'Separate&nbsp;link'</span><span style="color: #007700;">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #DD0000;">'url'&nbsp;</span><span style="color: #007700;">=&gt;&nbsp;</span><span
-                style="color: #DD0000;">'#'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                style="color: #007700;">)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;))<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;)<br>&nbsp;&nbsp; &nbsp;)<br>));<br></span><span
-                style="color: #0000BB;">?&gt;</span>
+        <span class="pre_black"><span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">buttonToolbar</span><span class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'items'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'1'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'2'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'own'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">buttonDropdown</span><span class="pre_green">(</span><span
+                class="pre_red">'Dropdown'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">dropDownHeader</span><span class="pre_green">(</span><span
+                class="pre_red">'Dropdown&nbsp;Header'</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'Action'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'#'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'Another&nbsp;action'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'#'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'Something&nbsp;else&nbsp;here'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'#'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">menuDivider</span><span class="pre_green">(),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">dropDownHeader</span><span class="pre_green">(</span><span
+                class="pre_red">'Dropdown&nbsp;Header'</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'Separate&nbsp;link'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'#'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;))<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;)<br>&nbsp;&nbsp; &nbsp;)<br>));<br></span><span
+                class="pre_blue">?&gt;</span>
         </span>
     </pre>
 </div>
@@ -364,62 +362,73 @@ echo BSHtml::buttonGroup(
 <p>Make a set of buttons appear vertically stacked rather than horizontally.</p>
 
 <div class="bs-example">
-    <div class="btn-group-vertical">
-        <button type="button" class="btn btn-default">Button</button>
-        <button type="button" class="btn btn-default">Button</button>
-        <div class="btn-group">
-            <button id="btnGroupVerticalDrop1" type="button" class="btn btn-default dropdown-toggle"
-                    data-toggle="dropdown">
-                Dropdown
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop1">
-                <li><a href="#">Dropdown link</a></li>
-                <li><a href="#">Dropdown link</a></li>
-            </ul>
-        </div>
-        <button type="button" class="btn btn-default">Button</button>
-        <button type="button" class="btn btn-default">Button</button>
-        <div class="btn-group">
-            <button id="btnGroupVerticalDrop2" type="button" class="btn btn-default dropdown-toggle"
-                    data-toggle="dropdown">
-                Dropdown
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop2">
-                <li><a href="#">Dropdown link</a></li>
-                <li><a href="#">Dropdown link</a></li>
-            </ul>
-        </div>
-        <div class="btn-group">
-            <button id="btnGroupVerticalDrop3" type="button" class="btn btn-default dropdown-toggle"
-                    data-toggle="dropdown">
-                Dropdown
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop3">
-                <li><a href="#">Dropdown link</a></li>
-                <li><a href="#">Dropdown link</a></li>
-            </ul>
-        </div>
-        <div class="btn-group">
-            <button id="btnGroupVerticalDrop4" type="button" class="btn btn-default dropdown-toggle"
-                    data-toggle="dropdown">
-                Dropdown
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop4">
-                <li><a href="#">Dropdown link</a></li>
-                <li><a href="#">Dropdown link</a></li>
-            </ul>
-        </div>
-    </div>
+    <?php
+    echo BSHtml::verticalButtonGroup(array(
+        array('label' => '1'),
+        array('label' => '2'),
+        array(
+            'own' =>BSHtml::buttonDropdown(
+                'Dropdown',
+                array(
+                    BSHtml::dropDownHeader('Dropdown Header'),
+                    array('label' => 'Action', 'url' => '#'),
+                    array('label' => 'Another action', 'url' => '#'),
+                    array('label' => 'Something else here', 'url' => '#'),
+                    BSHtml::menuDivider(),
+                    BSHtml::dropDownHeader('Dropdown Header'),
+                    array('label' => 'Separate link', 'url' => '#'),
+                )
+            )
+        )
+
+    ));
+    ?>
 </div>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span
-                class="s">"btn-group-vertical"</span><span class="nt">&gt;</span>
-            ...
-            <span class="nt">&lt;/div&gt;</span>
-        </code></pre>
+<div class="highlight">
+    <pre>
+        <span class="pre_black">
+&nbsp;<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">verticalButtonGroup</span><span class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'1'<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'2'<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'own'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">buttonDropdown</span><span class="pre_green">(</span><span
+                class="pre_red">'Dropdown'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">dropDownHeader</span><span class="pre_green">(</span><span
+                class="pre_red">'Dropdown&nbsp;Header'</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'Action'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'#'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'Another&nbsp;action'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'#'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'Something&nbsp;else&nbsp;here'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'#'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">menuDivider</span><span class="pre_green">(),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">dropDownHeader</span><span class="pre_green">(</span><span
+                class="pre_red">'Dropdown&nbsp;Header'</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'Separate&nbsp;link'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'#'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;))<br>&nbsp;&nbsp; &nbsp;)<br>&nbsp;&nbsp; &nbsp;<br>));<br></span><span
+                class="pre_blue">?&gt;</span>
+</span>
+    </pre>
 </div>
 
 <h3 id="btn-groups-justified">Justified link variation</h3>

@@ -222,7 +222,11 @@
 @list-group-link-color: #555;
 @list-group-link-heading-color: #333;
 
-
+@pre_blue: #f221c6;
+@pre_green:#99cc32;
+@pre_reed: #2ddde1;
+@pre_black: #ccc;
+@pre_orange: #cc540a;
 // Sprites
 @icon-font-path: '../app/fonts/';
 @icon-font-name: glyphicons-halflings-regular;
@@ -1270,26 +1274,45 @@ h1[id] {
   background-color: #f7f7f9;
   border: 1px solid #e1e1e8;
   border-radius: 4px;
-  pre {
-    border-radius:0;
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    background-color: transparent;
-    border: 0;
-    white-space: nowrap;
-    code {
-      font-size: inherit;
-      color: #333; /* Effectively the base text color */
-    }
-    .lineno {
-      display: inline-block;
-      width: 22px;
-      padding-right: 5px;
-      margin-right: 10px;
-      text-align: right;
-      color: #c1c1c1;
-    }
+}
+pre {
+  border-radius:0;
+  padding: 10px 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  background: url("../img/noisy_net.png") 0 0 repeat #666666;
+  border: 0;
+  white-space: nowrap;
+  color: white;
+  &.prettyprint{
+    background: #ccc7c4;
+  }
+  .pre_green{
+    color: @pre_green;
+  }
+  .pre_blue{
+    color: @pre_blue;
+  }
+  .pre_red{
+    color: @pre_reed;
+  }
+  .pre_black{
+    color: @pre_black;
+  }
+  .pre_orange{
+    color: @pre_orange;
+  }
+  code {
+    font-size: inherit;
+    color: @pre_orange; /* Effectively the base text color */
+  }
+  .lineno {
+    display: inline-block;
+    width: 22px;
+    padding-right: 5px;
+    margin-right: 10px;
+    text-align: right;
+    color: #c1c1c1;
   }
 }
 

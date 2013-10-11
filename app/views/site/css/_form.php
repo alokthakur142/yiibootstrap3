@@ -37,30 +37,44 @@
 </fieldset>
 <?php $this->endWidget(); ?>
 <!-- /example -->
-<div class="highlight"><pre class="linenums prettyprint ">
-&lt;?php $form = $this->beginWidget('bootstrap.widgets.BsActiveForm',
-    array(
-        'enableAjaxValidation' => true,
-        'id' => 'user_form'
-    )
-); ?&gt;
-    &lt;?php echo $form-&gt;textFieldControlGroup(
-        $model,
-        'username'
-    ); ?&gt;
-    &lt;?php echo $form-&gt;passwordFieldControlGroup(
-        $model,
-        'password'
-    ); ?&gt;
-    &lt;?php echo $form-&gt;emailFieldControlGroup(
-        $model,
-        'email'
-    ); ?&gt;
-    &lt;?php echo BSHtml::formActions(array(
-        BSHtml::submitButton('Submit', array('color' =&gt; BSHtml::BUTTON_COLOR_PRIMARY)),
-
-    )); ?&gt;
-&lt;?php $this-&gt;endWidget(); ?&gt;
+<div class="highlight"><pre >
+<span class="pre_black">
+<span class="pre_blue">&lt;?php<br>$form&nbsp;</span><span class="pre_green">=&nbsp;</span><span
+       class="pre_blue">$this</span><span class="pre_green">-&gt;</span><span class="pre_blue">beginWidget</span><span
+        class="pre_green">(</span><span class="pre_red">'bootstrap.widgets.BsActiveForm'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span style="color: #FF8000;">// &nbsp; &nbsp; &nbsp; &nbsp;'layout'&nbsp;=&gt;&nbsp;BSHtml::FORM_LAYOUT_HORIZONTAL,<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'enableAjaxValidation'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+       class="pre_blue">true</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'id'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+        class="pre_red">'user_form'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'htmlOptions'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+        class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+        class="pre_red">'bs-example'<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_green">)<br>));<br></span><span class="pre_blue">?&gt;<br></span>&lt;fieldset&gt;<br>&nbsp;&nbsp; &nbsp;&lt;legend&gt;Legend&lt;/legend&gt;<br><span
+        class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+       class="pre_blue">$form</span><span class="pre_green">-&gt;</span><span class="pre_blue">textFieldControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'username'</span><span
+        class="pre_green">);<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
+        class="pre_green">echo&nbsp;</span><span class="pre_blue">$form</span><span
+        class="pre_green">-&gt;</span><span class="pre_blue">passwordFieldControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'password'</span><span
+        class="pre_green">);<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
+        class="pre_green">echo&nbsp;</span><span class="pre_blue">$form</span><span
+        class="pre_green">-&gt;</span><span class="pre_blue">emailFieldControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'email'</span><span class="pre_green">);<br></span><span
+       class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">submitButton</span><span
+        class="pre_green">(</span><span class="pre_red">'Submit'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_COLOR_PRIMARY<br></span><span
+        class="pre_green">));<br></span><span class="pre_blue">?&gt;<br></span>&lt;/fieldset&gt;<br><span
+        class="pre_blue">&lt;?php<br>$this</span><span class="pre_green">-&gt;</span><span
+       class="pre_blue">endWidget</span><span class="pre_green">();<br></span><span
+       class="pre_blue">?&gt;</span>
+</span>
     </pre>
 </div>
 
@@ -109,31 +123,48 @@
 </fieldset>
 <?php $this->endWidget(); ?>
 <!-- /example -->
-<div class="highlight"><pre class="linenums prettyprint ">
-&lt;?php $form = $this->beginWidget('bootstrap.widgets.BsActiveForm',
-    array(
-        'enableAjaxValidation' => true,
-        'id' => 'user_form',
-        'layout' => BSHtml::FORM_LAYOUT_INLINE,
-    )
-); ?&gt;
-    &lt;?php echo $form-&gt;textFieldControlGroup(
-        $model,
-        'username'
-    ); ?&gt;
-    &lt;?php echo $form-&gt;passwordFieldControlGroup(
-        $model,
-        'password'
-    ); ?&gt;
-    &lt;?php echo $form-&gt;emailFieldControlGroup(
-        $model,
-        'email'
-    ); ?&gt;
-    &lt;?php echo BSHtml::formActions(array(
-        BSHtml::submitButton('Submit', array('color' =&gt; BSHtml::BUTTON_COLOR_PRIMARY)),
-
-    )); ?&gt;
-&lt;?php $this-&gt;endWidget(); ?&gt;
+<div class="highlight"><pre >
+<span class="pre_black">
+<span class="pre_blue">&lt;?php<br>$form&nbsp;</span><span class="pre_green">=&nbsp;</span><span
+       class="pre_blue">$this</span><span class="pre_green">-&gt;</span><span class="pre_blue">beginWidget</span><span
+        class="pre_green">(</span><span class="pre_red">'bootstrap.widgets.BsActiveForm'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'layout'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">FORM_LAYOUT_INLINE</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'enableAjaxValidation'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">true</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'id'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_red">'user_form_inline'</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'htmlOptions'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+        class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+        class="pre_red">'bs-example'<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_green">)<br>));<br></span><span class="pre_blue">?&gt;<br></span>&lt;fieldset&gt;<br>&nbsp;&nbsp; &nbsp;&lt;legend&gt;Legend&lt;/legend&gt;<br>&nbsp;&nbsp; &nbsp;<span
+        class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+       class="pre_blue">$form</span><span class="pre_green">-&gt;</span><span class="pre_blue">textFieldControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'username'</span><span
+        class="pre_green">);<br></span><span class="pre_blue">?&gt;<br></span> &nbsp; &nbsp;<span
+        class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+       class="pre_blue">$form</span><span class="pre_green">-&gt;</span><span class="pre_blue">passwordFieldControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'password'</span><span
+        class="pre_green">);<br></span><span class="pre_blue">?&gt;<br></span> &nbsp; &nbsp;<span
+        class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+       class="pre_blue">$form</span><span class="pre_green">-&gt;</span><span class="pre_blue">emailFieldControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'email'</span><span class="pre_green">);<br></span><span
+       class="pre_blue">?&gt;<br></span> &nbsp; &nbsp;<span class="pre_blue">&lt;?php<br></span><span
+        class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span
+        class="pre_green">::</span><span class="pre_blue">submitButton</span><span class="pre_green">(</span><span
+        class="pre_red">'Submit'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_COLOR_PRIMARY<br></span><span
+        class="pre_green">));<br></span><span class="pre_blue">?&gt;<br></span>&lt;/fieldset&gt;<br><span
+        class="pre_blue">&lt;?php<br>$this</span><span class="pre_green">-&gt;</span><span
+       class="pre_blue">endWidget</span><span class="pre_green">();<br></span><span
+       class="pre_blue">?&gt;</span>
+</span>
     </pre>
 </div>
 
@@ -187,47 +218,130 @@
         'Option two can is something else and selecting it will deselect option one',
     )); ?>
 </fieldset>
-    <?php echo BSHtml::formActions(array(
-        BSHtml::submitButton('Submit', array('color' => BSHtml::BUTTON_COLOR_PRIMARY)),
-    )); ?>
+<?php echo BSHtml::formActions(array(
+    BSHtml::submitButton('Submit', array('color' => BSHtml::BUTTON_COLOR_PRIMARY)),
+)); ?>
 
 <?php $this->endWidget(); ?>
 <!-- /example -->
-<div class="highlight"><pre class="linenums prettyprint ">
-&lt;?php $form = $this->beginWidget('bootstrap.widgets.BsActiveForm',
-    array(
-        'enableAjaxValidation' => true,
-        'id' => 'user_form',
-        'layout' => BSHtml::FORM_LAYOUT_HORIZONTAL,
-    )
-); ?&gt;
-    &lt;?php echo $form-&gt;textFieldControlGroup(
-        $model,
-        'username'
-    ); ?&gt;
-    &lt;?php echo $form-&gt;passwordFieldControlGroup(
-        $model,
-        'password'
-    ); ?&gt;
-    &lt;?php echo $form-&gt;emailFieldControlGroup(
-        $model,
-        'email'
-    ); ?&gt;
-    &lt;?php echo $form-&gt;checkBoxControlGroup($model, 'profile'); ?&gt;
-    &lt;?php echo $form-&gt;inlineCheckBoxListControlGroup($model, 'profile', array('1', '2', '3')); ?&gt;
-    &lt;?php echo $form-&gt;checkBoxListControlGroup($model, 'profile',
-        array("Option one is this and that—be sure to include why it's great")); ?&gt;
-
-    &lt;?php echo $form-&gt;radioButtonControlGroup($model, 'profile'); ?&gt;
-    &lt;?php echo $form-&gt;radioButtonListControlGroup($model, 'profile', array(
-        'Option one is this and that—be sure to include why it\'s great',
-        'Option two can is something else and selecting it will deselect option one',
-    )); ?&gt;
-    &lt;?php echo BSHtml::formActions(array(
-        BSHtml::submitButton('Submit', array('color' =&gt; BSHtml::BUTTON_COLOR_PRIMARY)),
-
-    )); ?&gt;
-&lt;?php $this-&gt;endWidget(); ?&gt;
+<div class="highlight"><pre >
+<span class="pre_black">
+<span class="pre_blue">&lt;?php<br>$form&nbsp;</span><span class="pre_green">=&nbsp;</span><span
+       class="pre_blue">$this</span><span class="pre_green">-&gt;</span><span class="pre_blue">beginWidget</span><span
+        class="pre_green">(</span><span class="pre_red">'bootstrap.widgets.BsActiveForm'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'layout'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">FORM_LAYOUT_HORIZONTAL</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'enableAjaxValidation'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">true</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'id'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_red">'user_form_horizontal'</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'htmlOptions'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+        class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+        class="pre_red">'bs-example'<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_green">)<br>));<br></span><span class="pre_blue">?&gt;<br></span>&lt;fieldset&gt;<br>&lt;legend&gt;Legend&lt;/legend&gt;<br><span
+        class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+       class="pre_blue">$form</span><span class="pre_green">-&gt;</span><span class="pre_blue">textFieldControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'username'</span><span
+        class="pre_green">);<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
+        class="pre_green">echo&nbsp;</span><span class="pre_blue">$form</span><span
+        class="pre_green">-&gt;</span><span class="pre_blue">textFieldControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'username'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'prepend'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+       class="pre_blue">icon</span><span class="pre_green">(</span><span
+       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">GLYPHICON_USER</span><span
+        class="pre_green">)<br>));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
+        class="pre_green">echo&nbsp;</span><span class="pre_blue">$form</span><span
+        class="pre_green">-&gt;</span><span class="pre_blue">textFieldControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'username'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'append'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+       class="pre_blue">icon</span><span class="pre_green">(</span><span
+       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">GLYPHICON_USER</span><span
+        class="pre_green">)<br>));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
+        class="pre_green">echo&nbsp;</span><span class="pre_blue">$form</span><span
+        class="pre_green">-&gt;</span><span class="pre_blue">passwordFieldControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'password'</span><span
+        class="pre_green">);<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
+        class="pre_green">echo&nbsp;</span><span class="pre_blue">$form</span><span
+        class="pre_green">-&gt;</span><span class="pre_blue">emailFieldControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'email'</span><span class="pre_green">);<br></span><span
+       class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+       class="pre_blue">$form</span><span class="pre_green">-&gt;</span><span class="pre_blue">dropDownListControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'profile'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'1'</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'2'</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'3'</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'4'</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'5'<br></span><span
+        class="pre_green">),&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'empty'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+        class="pre_red">'Something&nbsp;...'<br></span><span class="pre_green">));<br></span><span
+       class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+       class="pre_blue">$form</span><span class="pre_green">-&gt;</span><span class="pre_blue">dropDownListControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'profile'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'1'</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'2'</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'3'</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'4'</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'5'<br></span><span
+        class="pre_green">),&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'multiple'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">true<br></span><span
+        class="pre_green">));<br></span><span class="pre_blue">?&gt;<br></span><br><span
+        class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+       class="pre_blue">$form</span><span class="pre_green">-&gt;</span><span class="pre_blue">checkBoxControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'profile'</span><span
+        class="pre_green">);<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
+        class="pre_green">echo&nbsp;</span><span class="pre_blue">$form</span><span
+        class="pre_green">-&gt;</span><span class="pre_blue">inlineCheckBoxListControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'profile'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'1'</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'2'</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'3'<br></span><span
+        class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
+        class="pre_green">echo&nbsp;</span><span class="pre_blue">$form</span><span
+        class="pre_green">-&gt;</span><span class="pre_blue">checkBoxListControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'profile'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">"Option&nbsp;one&nbsp;is&nbsp;this&nbsp;and&nbsp;that—be&nbsp;sure&nbsp;to&nbsp;include&nbsp;why&nbsp;it's&nbsp;great"<br></span><span
+        class="pre_green">));<br></span><span class="pre_blue">?&gt;<br></span><br><span
+        class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+       class="pre_blue">$form</span><span class="pre_green">-&gt;</span><span class="pre_blue">radioButtonControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'profile'</span><span
+        class="pre_green">);<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
+        class="pre_green">echo&nbsp;</span><span class="pre_blue">$form</span><span
+        class="pre_green">-&gt;</span><span class="pre_blue">radioButtonListControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'profile'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'Option&nbsp;one&nbsp;is&nbsp;this&nbsp;and&nbsp;that—be&nbsp;sure&nbsp;to&nbsp;include&nbsp;why&nbsp;it\'s&nbsp;great'</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'Option&nbsp;two&nbsp;can&nbsp;is&nbsp;something&nbsp;else&nbsp;and&nbsp;selecting&nbsp;it&nbsp;will&nbsp;deselect&nbsp;option&nbsp;one'<br></span><span
+        class="pre_green">));<br></span><span class="pre_blue">?&gt;<br></span>&lt;/fieldset&gt;<br><span
+        class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">formActions</span><span
+        class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_blue">BSHtml</span><span
+        class="pre_green">::</span><span class="pre_blue">submitButton</span><span class="pre_green">(</span><span
+        class="pre_red">'Submit'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+        class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_COLOR_PRIMARY<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_green">))<br>));<br></span><span class="pre_blue">?&gt;<br></span><br><span
+        class="pre_blue">&lt;?php<br>$this</span><span class="pre_green">-&gt;</span><span
+       class="pre_blue">endWidget</span><span class="pre_green">();<br></span><span
+       class="pre_blue">?&gt;</span>
+</span>
     </pre>
 </div>
 
@@ -256,44 +370,98 @@
         )
     )
 ); ?>
-<?php echo $form->textField($model, 'username',array('placeholder' => 'textField')); ?>
-<br />
-<?php echo $form->passwordField($model, 'username',array('placeholder' => 'passwordField')); ?>
-<br />
-<?php echo $form->numberField($model, 'username',array('placeholder' => 'numberField')); ?>
-<br />
-<?php echo $form->emailField($model, 'username',array('placeholder' => 'emailField')); ?>
-<br />
-<?php echo $form->urlField($model, 'username',array('placeholder' => 'urlField')); ?>
-<br />
-<?php echo $form->rangeField($model, 'username',array('placeholder' => 'rangeField')); ?>
-<br />
-<?php echo $form->dateField($model, 'username',array('placeholder' => 'dateField')); ?>
-<br />
-<?php echo $form->fileField($model, 'username',array('placeholder' => 'fileField')); ?>
-<br />
+<?php echo $form->textField($model, 'username', array('placeholder' => 'textField')); ?>
+<br/>
+<?php echo $form->passwordField($model, 'username', array('placeholder' => 'passwordField')); ?>
+<br/>
+<?php echo $form->numberField($model, 'username', array('placeholder' => 'numberField')); ?>
+<br/>
+<?php echo $form->emailField($model, 'username', array('placeholder' => 'emailField')); ?>
+<br/>
+<?php echo $form->urlField($model, 'username', array('placeholder' => 'urlField')); ?>
+<br/>
+<?php echo $form->rangeField($model, 'username', array('placeholder' => 'rangeField')); ?>
+<br/>
+<?php echo $form->dateField($model, 'username', array('placeholder' => 'dateField')); ?>
+<br/>
+<?php echo $form->fileField($model, 'username', array('placeholder' => 'fileField')); ?>
+<br/>
 <?php $this->endWidget() ?>
 
 <div class="highlight">
-    <pre class="linenums prettyprint ">
-        &lt;?php $form = $this-&gt;beginWidget('bootstrap.widgets.BsActiveForm',
-            array(
-                'enableAjaxValidation' =&gt; true,
-                'id' =&gt; uniqid('user_'),
-                'htmlOptions' =&gt; array(
-                    'class' =&gt; 'bs-example'
-                )
-            )
-        ); ?&gt;
-        &lt;?php echo $form-&gt;textField($model, 'username'); ?&gt;
-        &lt;?php echo $form-&gt;passwordField($model, 'username'); ?&gt;
-        &lt;?php echo $form-&gt;numberField($model, 'username'); ?&gt;
-        &lt;?php echo $form-&gt;emailField($model, 'username'); ?&gt;
-        &lt;?php echo $form-&gt;urlField($model, 'username'); ?&gt;
-        &lt;?php echo $form-&gt;rangeField($model, 'username'); ?&gt;
-        &lt;?php echo $form-&gt;dateField($model, 'username'); ?&gt;
-        &lt;?php echo $form-&gt;fileField($model, 'username'); ?&gt;
-        &lt;?php $this-&gt;endWidget() ?&gt;
+    <pre >
+<span class="pre_black">
+<span class="pre_blue">&lt;?php<br>$form&nbsp;</span><span class="pre_green">=&nbsp;</span><span
+       class="pre_blue">$this</span><span class="pre_green">-&gt;</span><span class="pre_blue">beginWidget</span><span
+        class="pre_green">(</span><span class="pre_red">'bootstrap.widgets.BsActiveForm'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'enableAjaxValidation'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">true</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'id'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">uniqid</span><span
+        class="pre_green">(</span><span class="pre_red">'user_'</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'htmlOptions'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+        class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+        class="pre_red">'bs-example'<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_green">)<br>));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
+        class="pre_green">echo&nbsp;</span><span class="pre_blue">$form</span><span
+        class="pre_green">-&gt;</span><span class="pre_blue">textField</span><span class="pre_green">(</span><span
+       class="pre_blue">$model</span><span class="pre_green">,&nbsp;</span><span class="pre_red">'username'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'placeholder'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_red">'textField'<br></span><span
+        class="pre_green">));<br></span><span class="pre_blue">?&gt;<br></span> &nbsp; &nbsp;<br><span
+        class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+       class="pre_blue">$form</span><span class="pre_green">-&gt;</span><span class="pre_blue">passwordField</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'username'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'placeholder'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_red">'passwordField'<br></span><span
+        class="pre_green">));<br></span><span class="pre_blue">?&gt;<br></span> &nbsp; &nbsp;<br><span
+        class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+       class="pre_blue">$form</span><span class="pre_green">-&gt;</span><span class="pre_blue">numberField</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'username'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'placeholder'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_red">'numberField'<br></span><span
+        class="pre_green">));<br></span><span class="pre_blue">?&gt;<br></span> &nbsp; &nbsp;<br><span
+        class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+       class="pre_blue">$form</span><span class="pre_green">-&gt;</span><span class="pre_blue">emailField</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'username'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'placeholder'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_red">'emailField'<br></span><span
+        class="pre_green">));<br></span><span class="pre_blue">?&gt;<br></span> &nbsp; &nbsp;<br><span
+        class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+       class="pre_blue">$form</span><span class="pre_green">-&gt;</span><span class="pre_blue">urlField</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'username'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'placeholder'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_red">'urlField'<br></span><span
+        class="pre_green">));<br></span><span class="pre_blue">?&gt;<br></span> &nbsp; &nbsp;<br><span
+        class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+       class="pre_blue">$form</span><span class="pre_green">-&gt;</span><span class="pre_blue">rangeField</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'username'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'placeholder'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_red">'rangeField'<br></span><span
+        class="pre_green">));<br></span><span class="pre_blue">?&gt;<br></span> &nbsp; &nbsp;<br><span
+        class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+       class="pre_blue">$form</span><span class="pre_green">-&gt;</span><span class="pre_blue">dateField</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'username'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'placeholder'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_red">'dateField'<br></span><span
+        class="pre_green">));<br></span><span class="pre_blue">?&gt;<br></span> &nbsp; &nbsp;<br><span
+        class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+       class="pre_blue">$form</span><span class="pre_green">-&gt;</span><span class="pre_blue">fileField</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'username'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'placeholder'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_red">'fileField'<br></span><span
+        class="pre_green">));<br></span><span class="pre_blue">?&gt;<br></span> &nbsp; &nbsp;<br><span
+        class="pre_blue">&lt;?php<br>$this</span><span class="pre_green">-&gt;</span><span
+       class="pre_blue">endWidget</span><span class="pre_green">();<br></span><span
+       class="pre_blue">?&gt;</span>
+</span>
     </pre>
 </div>
 
@@ -314,18 +482,30 @@
 <?php $this->endWidget() ?>
 
 <div class="highlight">
-    <pre class="linenums prettyprint ">
-        &lt;?php $form = $this-&gt;beginWidget('bootstrap.widgets.BsActiveForm',
-            array(
-                'enableAjaxValidation' =&gt; true,
-                'id' =&gt; uniqid('user_'),
-                'htmlOptions' =&gt; array(
-                    'class' =&gt; 'bs-example'
-                )
-            )
-        ); ?&gt;
-        &lt;?php echo $form-&gt;textArea($model, 'username'); ?&gt;
-        &lt;?php $this-&gt;endWidget() ?&gt;
+    <pre >
+      <span class="pre_black">
+<span class="pre_blue">&lt;?php<br>$form&nbsp;</span><span class="pre_green">=&nbsp;</span><span
+             class="pre_blue">$this</span><span class="pre_green">-&gt;</span><span
+             class="pre_blue">beginWidget</span><span class="pre_green">(</span><span
+              class="pre_red">'bootstrap.widgets.BsActiveForm'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
+              class="pre_red">'enableAjaxValidation'&nbsp;</span><span
+              class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">true</span><span
+              class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
+              class="pre_red">'id'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+             class="pre_blue">uniqid</span><span class="pre_green">(</span><span class="pre_red">'user_'</span><span
+              class="pre_green">),<br>&nbsp;&nbsp; &nbsp;</span><span
+              class="pre_red">'htmlOptions'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+              class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+              class="pre_red">'bs-example'<br>&nbsp;&nbsp; &nbsp;</span><span
+              class="pre_green">)<br>));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
+              class="pre_green">echo&nbsp;</span><span class="pre_blue">$form</span><span
+              class="pre_green">-&gt;</span><span class="pre_blue">textArea</span><span
+              class="pre_green">(</span><span class="pre_blue">$model</span><span class="pre_green">,&nbsp;</span><span
+              class="pre_red">'username'</span><span class="pre_green">);<br></span><span
+             class="pre_blue">?&gt;<br>&lt;?php<br>$this</span><span class="pre_green">-&gt;</span><span
+             class="pre_blue">endWidget</span><span class="pre_green">();<br></span><span
+             class="pre_blue">?&gt;</span>
+</span>
     </pre>
 </div>
 
@@ -356,25 +536,54 @@
 <?php $this->endWidget() ?>
 
 <div class="highlight">
-    <pre class="linenums prettyprint ">
-        &lt;?php $form = $this-&gt;beginWidget('bootstrap.widgets.BsActiveForm',
-            array(
-                'enableAjaxValidation' =&gt; true,
-                'id' =&gt; uniqid('user_'),
-
-            )
-        ); ?&gt;
-       &lt;?php echo $form-&gt;checkBoxControlGroup($model, 'profile'); ?&gt;
-    &lt;?php echo $form-&gt;inlineCheckBoxListControlGroup($model, 'profile', array('1', '2', '3')); ?&gt;
-    &lt;?php echo $form-&gt;checkBoxListControlGroup($model, 'profile',
-        array("Option one is this and that—be sure to include why it's great")); ?&gt;
-
-    &lt;?php echo $form-&gt;radioButtonControlGroup($model, 'profile'); ?&gt;
-    &lt;?php echo $form-&gt;radioButtonListControlGroup($model, 'profile', array(
-        'Option one is this and that—be sure to include why it\'s great',
-        'Option two can is something else and selecting it will deselect option one',
-    )); ?&gt;
-        &lt;?php $this-&gt;endWidget() ?&gt;
+    <pre >
+<span class="pre_black">
+<span class="pre_blue">&lt;?php<br>$form&nbsp;</span><span class="pre_green">=&nbsp;</span><span
+       class="pre_blue">$this</span><span class="pre_green">-&gt;</span><span class="pre_blue">beginWidget</span><span
+        class="pre_green">(</span><span class="pre_red">'bootstrap.widgets.BsActiveForm'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'enableAjaxValidation'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">true</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'id'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">uniqid</span><span
+        class="pre_green">(</span><span class="pre_red">'user_'</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'htmlOptions'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+        class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+        class="pre_red">'bs-example'<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_green">)<br>));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
+        class="pre_green">echo&nbsp;</span><span class="pre_blue">$form</span><span
+        class="pre_green">-&gt;</span><span class="pre_blue">checkBoxControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'profile'</span><span
+        class="pre_green">);<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
+        class="pre_green">echo&nbsp;</span><span class="pre_blue">$form</span><span
+        class="pre_green">-&gt;</span><span class="pre_blue">inlineCheckBoxListControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'profile'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'1'</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'2'</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'3'<br></span><span
+        class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
+        class="pre_green">echo&nbsp;</span><span class="pre_blue">$form</span><span
+        class="pre_green">-&gt;</span><span class="pre_blue">checkBoxListControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'profile'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">"Option&nbsp;one&nbsp;is&nbsp;this&nbsp;and&nbsp;that—be&nbsp;sure&nbsp;to&nbsp;include&nbsp;why&nbsp;it's&nbsp;great"<br></span><span
+        class="pre_green">));<br></span><span class="pre_blue">?&gt;<br></span><br><span
+        class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+       class="pre_blue">$form</span><span class="pre_green">-&gt;</span><span class="pre_blue">radioButtonControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'profile'</span><span
+        class="pre_green">);<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
+        class="pre_green">echo&nbsp;</span><span class="pre_blue">$form</span><span
+        class="pre_green">-&gt;</span><span class="pre_blue">radioButtonListControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'profile'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'Option&nbsp;one&nbsp;is&nbsp;this&nbsp;and&nbsp;that—be&nbsp;sure&nbsp;to&nbsp;include&nbsp;why&nbsp;it\'s&nbsp;great'</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'Option&nbsp;two&nbsp;can&nbsp;is&nbsp;something&nbsp;else&nbsp;and&nbsp;selecting&nbsp;it&nbsp;will&nbsp;deselect&nbsp;option&nbsp;one'<br></span><span
+        class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br>$this</span><span
+        class="pre_green">-&gt;</span><span class="pre_blue">endWidget</span><span class="pre_green">();<br></span><span
+       class="pre_blue">?&gt;</span>
+</span>
     </pre>
 </div>
 <h3 id="forms-disabled-fieldsets">Disabled fieldsets</h3>
@@ -413,12 +622,31 @@
 
 <?php $this->endWidget() ?>
 <div class="highlight">
-    <pre class="linenums prettyprint ">
-&lt;?php echo $form-&gt;textFieldControlGroup($model, 'username',
-    array(
-        'disabled' => true,
-    )));
-?&gt;
+    <pre >
+<span class="pre_black">
+<span class="pre_blue">&lt;?php<br>$form&nbsp;</span><span class="pre_green">=&nbsp;</span><span
+       class="pre_blue">$this</span><span class="pre_green">-&gt;</span><span class="pre_blue">beginWidget</span><span
+        class="pre_green">(</span><span class="pre_red">'bootstrap.widgets.BsActiveForm'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'enableAjaxValidation'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">true</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'id'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">uniqid</span><span
+        class="pre_green">(</span><span class="pre_red">'user_'</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'htmlOptions'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+        class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+        class="pre_red">'bs-example&nbsp;bs-example-control-sizing'<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_green">)<br>));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
+        class="pre_green">echo&nbsp;</span><span class="pre_blue">$form</span><span
+        class="pre_green">-&gt;</span><span class="pre_blue">textFieldControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'username'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'disabled'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">true<br></span><span
+        class="pre_green">));<br></span><span class="pre_blue">?&gt;<br></span><br><span
+        class="pre_blue">&lt;?php<br>$this</span><span class="pre_green">-&gt;</span><span
+       class="pre_blue">endWidget</span><span class="pre_green">();<br></span><span
+       class="pre_blue">?&gt;</span>
+</span>
     </pre>
 </div>
 
@@ -437,49 +665,84 @@
         )
     )
 ); ?>
-    <?php echo $form->textFieldControlGroup($model, 'username',
-        array(
-            'controlOptions' => array('class' => 'has-success col-lg-10'),
-        )
-    ); ?>
-    <?php echo $form->textFieldControlGroup($model, 'username',
-        array(
-            'groupOptions' => array('class' => 'has-success'),
-        )
-    ); ?>
-    <?php echo $form->textFieldControlGroup($model, 'username',
-        array(
-            'controlOptions' => array('class' => 'has-warning col-lg-10'),
-        )
-    ); ?>
-    <?php echo $form->textFieldControlGroup($model, 'username',
-        array(
-            'controlOptions' => array('class' => 'has-error col-lg-10'),
-        )
-    ); ?>
-<?php $this->endWidget() ?>
-<div class="highlight">
-    <pre class="linenums prettyprint ">
-&lt;?php echo $form-&gt;textFieldControlGroup($model, 'username',
+<?php echo $form->textFieldControlGroup($model, 'username',
     array(
-        'controlOptions' => array('class' => 'has-sucess col-lg-10'),
-    )));
-?&gt;
-&lt;?php echo $form-&gt;textFieldControlGroup($model, 'username',
+        'controlOptions' => array('class' => 'has-success col-lg-10'),
+    )
+); ?>
+<?php echo $form->textFieldControlGroup($model, 'username',
     array(
-        'groupOptions' => array('class' => 'has-sucess'),
-    )));
-?&gt;
-&lt;?php echo $form-&gt;textFieldControlGroup($model, 'username',
+        'groupOptions' => array('class' => 'has-success'),
+    )
+); ?>
+<?php echo $form->textFieldControlGroup($model, 'username',
     array(
         'controlOptions' => array('class' => 'has-warning col-lg-10'),
-    )));
-?&gt;
-&lt;?php echo $form-&gt;textFieldControlGroup($model, 'username',
+    )
+); ?>
+<?php echo $form->textFieldControlGroup($model, 'username',
     array(
         'controlOptions' => array('class' => 'has-error col-lg-10'),
-    )));
-?&gt;
+    )
+); ?>
+<?php $this->endWidget() ?>
+<div class="highlight">
+    <pre >
+<span class="pre_black">
+<span class="pre_blue">&lt;?php<br>$form&nbsp;</span><span class="pre_green">=&nbsp;</span><span
+       class="pre_blue">$this</span><span class="pre_green">-&gt;</span><span class="pre_blue">beginWidget</span><span
+        class="pre_green">(</span><span class="pre_red">'bootstrap.widgets.BsActiveForm'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'enableAjaxValidation'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">true</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'id'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">uniqid</span><span
+        class="pre_green">(</span><span class="pre_red">'user_'</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'layout'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">FORM_LAYOUT_HORIZONTAL</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'htmlOptions'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+        class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+        class="pre_red">'bs-example&nbsp;bs-example-control-sizing'<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_green">)<br>));<br></span><span class="pre_blue">?&gt;<br></span> &nbsp; &nbsp;<span
+        class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+       class="pre_blue">$form</span><span class="pre_green">-&gt;</span><span class="pre_blue">textFieldControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'username'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'controlOptions'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+        class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+        class="pre_red">'has-success&nbsp;col-lg-10'<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_green">)<br>));<br></span><span
+       class="pre_blue">?&gt;<br></span> &nbsp; &nbsp;<span class="pre_blue">&lt;?php<br></span><span
+        class="pre_green">echo&nbsp;</span><span class="pre_blue">$form</span><span
+        class="pre_green">-&gt;</span><span class="pre_blue">textFieldControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'username'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'groupOptions'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+        class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+        class="pre_red">'has-success'<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_green">)<br>));<br></span><span class="pre_blue">?&gt;<br></span> &nbsp; &nbsp;<span
+        class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+       class="pre_blue">$form</span><span class="pre_green">-&gt;</span><span class="pre_blue">textFieldControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'username'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'controlOptions'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+        class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+        class="pre_red">'has-warning&nbsp;col-lg-10'<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_green">)<br>));<br></span><span
+       class="pre_blue">?&gt;<br></span> &nbsp; &nbsp;<span class="pre_blue">&lt;?php<br></span><span
+        class="pre_green">echo&nbsp;</span><span class="pre_blue">$form</span><span
+        class="pre_green">-&gt;</span><span class="pre_blue">textFieldControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'username'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'controlOptions'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+        class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+        class="pre_red">'has-error&nbsp;col-lg-10'<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_green">)<br>));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br>$this</span><span
+        class="pre_green">-&gt;</span><span class="pre_blue">endWidget</span><span class="pre_green">();<br></span><span
+       class="pre_blue">?&gt;</span>
+</span>
     </pre>
 </div>
 
@@ -501,12 +764,12 @@
         )
     )
 ); ?>
-<?php echo $form->textFieldControlGroup($model, 'username',array('class' => BSHtml::INPUT_SIZE_LG)); ?>
+<?php echo $form->textFieldControlGroup($model, 'username', array('class' => BSHtml::INPUT_SIZE_LG)); ?>
 <?php echo $form->textFieldControlGroup($model, 'username'); ?>
-<?php echo $form->textFieldControlGroup($model, 'username',array('class' => BSHtml::INPUT_SIZE_SM)); ?>
+<?php echo $form->textFieldControlGroup($model, 'username', array('class' => BSHtml::INPUT_SIZE_SM)); ?>
 <?php echo $form->dropDownListControlGroup($model, 'profile',
     array('1', '2', '3', '4', '5'),
-    array('empty' => 'Something ...','class' => BSHtml::INPUT_SIZE_LG)
+    array('empty' => 'Something ...', 'class' => BSHtml::INPUT_SIZE_LG)
 ); ?>
 <?php echo $form->dropDownListControlGroup($model, 'profile',
     array('1', '2', '3', '4', '5'),
@@ -514,30 +777,90 @@
 ); ?>
 <?php echo $form->dropDownListControlGroup($model, 'profile',
     array('1', '2', '3', '4', '5'),
-    array('empty' => 'Something ...','class' => BSHtml::INPUT_SIZE_SM)
+    array('empty' => 'Something ...', 'class' => BSHtml::INPUT_SIZE_SM)
 ); ?>
 <?php $this->endWidget() ?>
 <div class="highlight">
-    <pre class="linenums prettyprint ">
-&lt;?php echo $form-&gt;textFieldControlGroup($model, 'username',
-        array('class' =&gt; BSHtml::INPUT_SIZE_LG));
-?&gt;
-&lt;?php echo $form-&gt;textFieldControlGroup($model, 'username'); ?&gt;
-&lt;?php echo $form-&gt;textFieldControlGroup($model, 'username',
-        array('class' =&gt; BSHtml::INPUT_SIZE_SM));
-?&gt;
-&lt;?php echo $form-&gt;dropDownListControlGroup($model, 'profile',
-    array('1', '2', '3', '4', '5'),
-    array('empty' =&gt; 'Something ...','class' =&gt; BSHtml::INPUT_SIZE_LG)
-); ?&gt;
-&lt;?php echo $form-&gt;dropDownListControlGroup($model, 'profile',
-    array('1', '2', '3', '4', '5'),
-    array('empty' =&gt; 'Something ...')
-); ?&gt;
-&lt;?php echo $form-&gt;dropDownListControlGroup($model, 'profile',
-    array('1', '2', '3', '4', '5'),
-    array('empty' =&gt; 'Something ...','class' =&gt; BSHtml::INPUT_SIZE_SM)
-); ?&gt;
+    <pre >
+<span class="pre_black">
+<span class="pre_blue">&lt;?php<br>$form&nbsp;</span><span class="pre_green">=&nbsp;</span><span
+       class="pre_blue">$this</span><span class="pre_green">-&gt;</span><span class="pre_blue">beginWidget</span><span
+        class="pre_green">(</span><span class="pre_red">'bootstrap.widgets.BsActiveForm'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'enableAjaxValidation'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">true</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'id'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">uniqid</span><span
+        class="pre_green">(</span><span class="pre_red">'user_'</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'htmlOptions'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+        class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+        class="pre_red">'bs-example&nbsp;bs-example-control-sizing'<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_green">)<br>));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
+        class="pre_green">echo&nbsp;</span><span class="pre_blue">$form</span><span
+        class="pre_green">-&gt;</span><span class="pre_blue">textFieldControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'username'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">INPUT_SIZE_LG<br></span><span
+        class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
+        class="pre_green">echo&nbsp;</span><span class="pre_blue">$form</span><span
+        class="pre_green">-&gt;</span><span class="pre_blue">textFieldControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'username'</span><span
+        class="pre_green">);<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
+        class="pre_green">echo&nbsp;</span><span class="pre_blue">$form</span><span
+        class="pre_green">-&gt;</span><span class="pre_blue">textFieldControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'username'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">INPUT_SIZE_SM<br></span><span
+        class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
+        class="pre_green">echo&nbsp;</span><span class="pre_blue">$form</span><span
+        class="pre_green">-&gt;</span><span class="pre_blue">dropDownListControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'profile'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'1'</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'2'</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'3'</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'4'</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'5'<br></span><span
+        class="pre_green">),&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'empty'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+        class="pre_red">'Something&nbsp;...'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">INPUT_SIZE_LG<br></span><span
+        class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
+        class="pre_green">echo&nbsp;</span><span class="pre_blue">$form</span><span
+        class="pre_green">-&gt;</span><span class="pre_blue">dropDownListControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'profile'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'1'</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'2'</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'3'</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'4'</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'5'<br></span><span
+        class="pre_green">),&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'empty'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+        class="pre_red">'Something&nbsp;...'<br></span><span class="pre_green">));<br></span><span
+       class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+       class="pre_blue">$form</span><span class="pre_green">-&gt;</span><span class="pre_blue">dropDownListControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'profile'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'1'</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'2'</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'3'</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'4'</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'5'<br></span><span
+        class="pre_green">),&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'empty'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+        class="pre_red">'Something&nbsp;...'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">INPUT_SIZE_SM<br></span><span
+        class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br>$this</span><span
+        class="pre_green">-&gt;</span><span class="pre_blue">endWidget</span><span class="pre_green">();<br></span><span
+       class="pre_blue">?&gt;</span>
+</span>
     </pre>
 </div>
 
@@ -571,12 +894,52 @@
 </div>
 <?php $this->endWidget() ?>
 <div class="highlight">
-    <pre class="linenums prettyprint ">
-&lt;?php echo $form-&gt;textFieldControlGroup($model, 'username',
-    array('groupOptions' =&gt; array('class' =&gt; 'col-lg-2',
-        'controlOptions' => array('class' => 'col-lg-12')
-    )));
-?&gt;
+    <pre >
+<span class="pre_black">
+<span class="pre_blue">&lt;?php<br>$form&nbsp;</span><span class="pre_green">=&nbsp;</span><span
+       class="pre_blue">$this</span><span class="pre_green">-&gt;</span><span class="pre_blue">beginWidget</span><span
+        class="pre_green">(</span><span class="pre_red">'bootstrap.widgets.BsActiveForm'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'enableAjaxValidation'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">true</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'id'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">uniqid</span><span
+        class="pre_green">(</span><span class="pre_red">'user_'</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'htmlOptions'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+        class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+        class="pre_red">'bs-example&nbsp;bs-example-control-sizing'<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_green">)<br>));<br></span><span class="pre_blue">?&gt;<br></span>&lt;div&nbsp;class="row"&gt;<br>&nbsp;&nbsp; &nbsp;<span
+        class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+       class="pre_blue">$form</span><span class="pre_green">-&gt;</span><span class="pre_blue">textFieldControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'username'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'placeholder'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_red">'col-lg-2'</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'controlOptions'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+        class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+        class="pre_red">'col-lg-12'<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'groupOptions'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+        class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+        class="pre_red">'col-lg-2'<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_green">)<br>));<br></span><span class="pre_blue">?&gt;<br></span> &nbsp; &nbsp;<span
+        class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+       class="pre_blue">$form</span><span class="pre_green">-&gt;</span><span class="pre_blue">textFieldControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'username'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'placeholder'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_red">'col-lg-6'</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'controlOptions'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+        class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+        class="pre_red">'col-lg-12'<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'groupOptions'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+        class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+        class="pre_red">'col-lg-6'<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_green">)<br>));<br></span><span class="pre_blue">?&gt;<br></span>&lt;/div&gt;<br><span
+        class="pre_blue">&lt;?php<br>$this</span><span class="pre_green">-&gt;</span><span
+       class="pre_blue">endWidget</span><span class="pre_green">();<br></span><span
+       class="pre_blue">?&gt;</span>
+</span>
     </pre>
 </div>
 
@@ -601,13 +964,32 @@
 ); ?>
 <?php $this->endWidget() ?>
 <div class="highlight">
-    <pre class="linenums prettyprint ">
-&lt;?php echo $form-&gt;textFieldControlGroup($model, 'username',
-    array(
-        'placeholder' => '',
-        'help' => 'A block of help text that breaks onto a new line and may extend beyond one line.'
-    )));
-?&gt;
+    <pre >
+<span class="pre_black">
+<span class="pre_blue">&lt;?php<br>$form&nbsp;</span><span class="pre_green">=&nbsp;</span><span
+       class="pre_blue">$this</span><span class="pre_green">-&gt;</span><span class="pre_blue">beginWidget</span><span
+        class="pre_green">(</span><span class="pre_red">'bootstrap.widgets.BsActiveForm'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'enableAjaxValidation'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">true</span><span
+        class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'id'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">uniqid</span><span
+        class="pre_green">(</span><span class="pre_red">'user_'</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'htmlOptions'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+        class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+        class="pre_red">'bs-example'<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_green">)<br>));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
+        class="pre_green">echo&nbsp;</span><span class="pre_blue">$form</span><span
+        class="pre_green">-&gt;</span><span class="pre_blue">textFieldControlGroup</span><span
+        class="pre_green">(</span><span class="pre_blue">$model</span><span
+        class="pre_green">,&nbsp;</span><span class="pre_red">'username'</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'placeholder'&nbsp;</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_red">''</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_red">'help'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+        class="pre_red">'A&nbsp;block&nbsp;of&nbsp;help&nbsp;text&nbsp;that&nbsp;breaks&nbsp;onto&nbsp;a&nbsp;new&nbsp;line&nbsp;and&nbsp;may&nbsp;extend&nbsp;beyond&nbsp;one&nbsp;line.'<br></span><span
+        class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br>$this</span><span
+        class="pre_green">-&gt;</span><span class="pre_blue">endWidget</span><span class="pre_green">();<br></span><span
+       class="pre_blue">?&gt;</span>
+</span>
     </pre>
 </div>
 </div>
