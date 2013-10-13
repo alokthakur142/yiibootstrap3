@@ -443,17 +443,52 @@ echo BSHtml::buttonGroup(
 </div>
 
 <div class="bs-example">
-    <div class="btn-group btn-group-justified">
-        <a href="#" class="btn btn-default">Left</a>
-        <a href="#" class="btn btn-default">Middle</a>
-        <a href="#" class="btn btn-default">Right</a>
-    </div>
+<?php echo BSHtml::buttonGroup(
+    array(
+        array('label' => 'Action', 'url' => '#','type' => BSHtml::BUTTON_TYPE_LINK),
+        array('label' => 'Another action', 'url' => '#','type' => BSHtml::BUTTON_TYPE_LINK),
+        array('label' => 'Something else here', 'url' => '#','type' => BSHtml::BUTTON_TYPE_LINK),
+    ),
+    array('justified' => true)
+); ?>
 </div>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span
-                class="s">"btn-group btn-group-justified"</span><span class="nt">&gt;</span>
-            ...
-            <span class="nt">&lt;/div&gt;</span>
-        </code></pre>
+<div class="highlight">
+    <pre>
+        <span class="pre_black">
+            <span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">buttonGroup</span><span class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'Action'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'#'</span><span
+                class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="pre_red">'type'&nbsp;</span><span
+                class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                class="pre_green">::</span><span
+                class="pre_blue">BUTTON_TYPE_LINK<br>&nbsp;&nbsp; &nbsp;</span><span
+                class="pre_green">),<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'Another&nbsp;action'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'#'</span><span
+                class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="pre_red">'type'&nbsp;</span><span
+                class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                class="pre_green">::</span><span
+                class="pre_blue">BUTTON_TYPE_LINK<br>&nbsp;&nbsp; &nbsp;</span><span
+                class="pre_green">),<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'Something&nbsp;else&nbsp;here'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'#'</span><span
+                class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="pre_red">'type'&nbsp;</span><span
+                class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                class="pre_green">::</span><span
+                class="pre_blue">BUTTON_TYPE_LINK<br>&nbsp;&nbsp; &nbsp;</span><span
+                class="pre_green">)<br>),&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'justified'&nbsp;</span><span
+                class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">true<br></span><span
+                class="pre_green">));<br></span><span class="pre_blue">?&gt;</span>
+        </span>
+    </pre>
 </div>
 
 </div>
