@@ -49,17 +49,17 @@
 <!--                <li class=""><a href="#input-groups-buttons-segmented">Segmented buttons</a></li>-->
 <!--            </ul>-->
 <!--        </li>-->
-<!--        <li class="">-->
-<!--            <a href="#nav">Navs</a>-->
-<!--            <ul class="nav">-->
-<!--                <li class=""><a href="#nav-tabs">Tabs</a></li>-->
-<!--                <li class=""><a href="#nav-pills">Pills</a></li>-->
-<!--                <li class=""><a href="#nav-justified">Justified nav</a></li>-->
-<!--                <li class=""><a href="#nav-disabled-links">Disabled links</a></li>-->
-<!--                <li><a href="#nav-alignment">Alignment options</a></li>-->
-<!--                <li class=""><a href="#nav-dropdowns">Using dropdowns</a></li>-->
-<!--            </ul>-->
-<!--        </li>-->
+        <li class="">
+            <a href="#nav">Navs</a>
+            <ul class="nav">
+                <li class=""><a href="#nav-tabs">Tabs</a></li>
+                <li class=""><a href="#nav-pills">Pills</a></li>
+                <li class=""><a href="#nav-justified">Justified nav</a></li>
+                <li class=""><a href="#nav-disabled-links">Disabled links</a></li>
+                <li><a href="#nav-alignment">Alignment options</a></li>
+                <li class=""><a href="#nav-dropdowns">Using dropdowns</a></li>
+            </ul>
+        </li>
 <!--        <li class="">-->
 <!--            <a href="#navbar">Navbar</a>-->
 <!--            <ul class="nav">-->

@@ -15,3 +15,7 @@ array_push(
 <!-- Button Groups
 ================================================== -->
 <?php $this->renderPartial('components/_button_groups', array('model' => $model)) ?>
+
+<!-- Navs
+================================================== -->
+<?php $this->renderPartial('components/_navs', array('model' => $model)) ?>

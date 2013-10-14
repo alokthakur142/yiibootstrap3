@@ -445,9 +445,9 @@ echo BSHtml::buttonGroup(
 <div class="bs-example">
 <?php echo BSHtml::buttonGroup(
     array(
-        array('label' => 'Action', 'url' => '#','type' => BSHtml::BUTTON_TYPE_LINK),
-        array('label' => 'Another action', 'url' => '#','type' => BSHtml::BUTTON_TYPE_LINK),
-        array('label' => 'Something else here', 'url' => '#','type' => BSHtml::BUTTON_TYPE_LINK),
+        array('label' => 'Left', 'url' => '#','type' => BSHtml::BUTTON_TYPE_LINK),
+        array('label' => 'Middle', 'url' => '#','type' => BSHtml::BUTTON_TYPE_LINK),
+        array('label' => 'Right', 'url' => '#','type' => BSHtml::BUTTON_TYPE_LINK),
     ),
     array('justified' => true)
 ); ?>
