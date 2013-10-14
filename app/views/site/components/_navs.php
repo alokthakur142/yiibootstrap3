@@ -87,11 +87,11 @@
     </div>
 
     <div class="bs-example">
-        <ul class="nav nav-pills">
-            <li><a href="#">Clickable link</a></li>
-            <li><a href="#">Clickable link</a></li>
-            <li class="disabled"><a href="#">Disabled link</a></li>
-        </ul>
+        <?php echo BSHtml::pills(array(
+            array('label' => 'Home', 'url' => '#', 'active' => true),
+            array('label' => 'Profile', 'url' => '#',),
+            array('label' => 'Messages', 'url' => '#','disabled' => true),
+        ),array('justified' => true)); ?>
     </div>
     <div class="highlight"><pre><code class="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-pills"</span><span class="nt">&gt;</span>
                 ...
@@ -106,22 +106,17 @@
 
     <h3>Tabs with dropdowns</h3>
     <div class="bs-example">
-        <ul class="nav nav-tabs">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Help</a></li>
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    Dropdown <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                </ul>
-            </li>
-        </ul>
+        <?php echo BSHtml::tabs(array(
+            array('label' => 'Home', 'url' => '#', 'active' => true),
+            array('label' => 'Help', 'url' => '#'),
+            array('label' => 'Dropdown', 'items' => array(
+                array('label' => 'Action', 'url' => '#'),
+                array('label' => 'Another action', 'url' => '#'),
+                array('label' => 'Something else here', 'url' => '#'),
+                BSHtml::menuDivider(),
+                array('label' => 'Separate link', 'url' => '#'),
+            )),
+        )); ?>
     </div>
     <div class="highlight"><pre><code class="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs"</span><span class="nt">&gt;</span>
                 ...
@@ -139,22 +134,17 @@
 
     <h3>Pills with dropdowns</h3>
     <div class="bs-example">
-        <ul class="nav nav-pills">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Help</a></li>
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    Dropdown <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                </ul>
-            </li>
-        </ul>
+        <?php echo BSHtml::pills(array(
+            array('label' => 'Home', 'url' => '#', 'active' => true),
+            array('label' => 'Help', 'url' => '#'),
+            array('label' => 'Dropdown', 'items' => array(
+                array('label' => 'Action', 'url' => '#'),
+                array('label' => 'Another action', 'url' => '#'),
+                array('label' => 'Something else here', 'url' => '#'),
+                BSHtml::menuDivider(),
+                array('label' => 'Separate link', 'url' => '#'),
+            )),
+        )); ?>
     </div><!-- /example -->
     <div class="highlight"><pre><code class="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-pills"</span><span class="nt">&gt;</span>
                 ...
