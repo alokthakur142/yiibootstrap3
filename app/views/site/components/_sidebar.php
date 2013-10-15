@@ -74,7 +74,7 @@
 <!--                <li class=""><a href="#navbar-inverted">Inverted navbar</a></li>-->
 <!--            </ul>-->
 <!--        </li>-->
-<!--        <li class=""><a href="#breadcrumbs">Breadcrumbs</a></li>-->
+        <li class=""><a href="#breadcrumbs">Breadcrumbs</a></li>
 <!--        <li class="">-->
 <!--            <a href="#pagination">Pagination</a>-->
 <!--            <ul class="nav">-->
