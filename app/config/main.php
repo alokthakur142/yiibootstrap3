@@ -79,9 +79,6 @@ return array(
 	),
 	// application parameters
 	'params' => array(
-//        'yii.handleErrors'   => true,
-//        'yii.debug' => true,
-//        'yii.traceLevel' => 3,
         'version' => ' Version 0.0.5 ',
     ),
 );

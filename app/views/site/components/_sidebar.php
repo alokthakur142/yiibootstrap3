@@ -75,15 +75,15 @@
 <!--            </ul>-->
 <!--        </li>-->
         <li class=""><a href="#breadcrumbs">Breadcrumbs</a></li>
-<!--        <li class="">-->
-<!--            <a href="#pagination">Pagination</a>-->
-<!--            <ul class="nav">-->
-<!--                <li class=""><a href="#pagination-default">Default pagination</a></li>-->
-<!--                <li class=""><a href="#pagination-pager">Pager</a></li>-->
-<!--            </ul>-->
-<!--        </li>-->
-<!--        <li class=""><a href="#labels">Labels</a></li>-->
-<!--        <li class=""><a href="#badges">Badges</a></li>-->
+        <li class="">
+            <a href="#pagination">Pagination</a>
+            <ul class="nav">
+                <li class=""><a href="#pagination-default">Default pagination</a></li>
+                <li class=""><a href="#pagination-pager">Pager</a></li>
+            </ul>
+        </li>
+        <li class=""><a href="#labels">Labels</a></li>
+        <li class=""><a href="#badges">Badges</a></li>
 <!--        <li class=""><a href="#jumbotron">Jumbotron</a></li>-->
 <!--        <li class=""><a href="#page-header">Page header</a></li>-->
 <!--        <li class="">-->

@@ -22,3 +22,12 @@ array_push(
 <!-- Breadcrumbs
 ================================================== -->
 <?php $this->renderPartial('components/_breadcrumbs', array('model' => $model)) ?>
+<!-- Pagination
+================================================== -->
+<?php $this->renderPartial('components/_pagination', array('model' => $model)) ?>
+<!-- Labels
+================================================== -->
+<?php $this->renderPartial('components/_label', array('model' => $model)) ?>
+<!-- Badge
+================================================== -->
+<?php $this->renderPartial('components/_badge', array('model' => $model)) ?>
