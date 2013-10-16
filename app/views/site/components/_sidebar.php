@@ -84,15 +84,15 @@
         </li>
         <li class=""><a href="#labels">Labels</a></li>
         <li class=""><a href="#badges">Badges</a></li>
-<!--        <li class=""><a href="#jumbotron">Jumbotron</a></li>-->
-<!--        <li class=""><a href="#page-header">Page header</a></li>-->
-<!--        <li class="">-->
-<!--            <a href="#thumbnails">Thumbnails</a>-->
-<!--            <ul class="nav">-->
-<!--                <li class=""><a href="#thumbnails-default">Default example</a></li>-->
-<!--                <li class=""><a href="#thumbnails-custom-content">Custom content</a></li>-->
-<!--            </ul>-->
-<!--        </li>-->
+        <li class=""><a href="#jumbotron">Jumbotron</a></li>
+        <li class=""><a href="#page-header">Page header</a></li>
+        <li class="">
+            <a href="#thumbnails">Thumbnails</a>
+            <ul class="nav">
+                <li class=""><a href="#thumbnails-default">Default example</a></li>
+                <li class=""><a href="#thumbnails-custom-content">Custom content</a></li>
+            </ul>
+        </li>
 <!--        <li class="">-->
 <!--            <a href="#alerts">Alerts</a>-->
 <!--            <ul class="nav">-->

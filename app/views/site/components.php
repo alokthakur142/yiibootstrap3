@@ -31,3 +31,12 @@ array_push(
 <!-- Badge
 ================================================== -->
 <?php $this->renderPartial('components/_badge', array('model' => $model)) ?>
+<!-- Jumbotron
+================================================== -->
+<?php $this->renderPartial('components/_jumbotron', array('model' => $model)) ?>
+<!-- Pageheader
+================================================== -->
+<?php $this->renderPartial('components/_page_header', array('model' => $model)) ?>
+<!-- Thumbnail
+================================================== -->
+<?php $this->renderPartial('components/_thumbnails', array('model' => $model)) ?>
