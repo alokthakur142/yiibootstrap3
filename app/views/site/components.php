@@ -39,4 +39,4 @@ array_push(
 <?php $this->renderPartial('components/_page_header', array('model' => $model)) ?>
 <!-- Thumbnail
 ================================================== -->
-<?php $this->renderPartial('components/_thumbnails', array('model' => $model)) ?>
+<?php //$this->renderPartial('components/_thumbnails', array('model' => $model)) ?>

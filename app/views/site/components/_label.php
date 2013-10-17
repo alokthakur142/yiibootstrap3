@@ -7,9 +7,12 @@
     <p class="lead"></p>
 
     <h3>Example</h3>
+
     <div class="bs-example">
         <h1>Example heading <?php echo BSHtml::bsLabel('New') ?></h1>
+
         <h2>Example heading <?php echo BSHtml::bsLabel('New') ?></h2>
+
         <h3>Example heading <?php echo BSHtml::bsLabel('New') ?></h3>
         <h4>Example heading <?php echo BSHtml::bsLabel('New') ?></h4>
         <h5>Example heading <?php echo BSHtml::bsLabel('New') ?></h5>
@@ -17,27 +20,76 @@
     </div>
     <div class="highlight">
         <pre>
-            <span style="color: #000000">
-                    &lt;h3&gt;<br>Example&nbsp;heading&nbsp;<br><span style="color: #0000BB">&lt;?php<br></span><span
-                    style="color: #007700;">echo&nbsp;</span><span style="color: #0000BB;">BSHtml</span><span
-                    style="color: #007700;">::</span><span style="color: #0000BB;">labelTb</span><span
-                    style="color: #007700;">(</span><span style="color: #DD0000;">'New'</span><span
-                    style="color: #007700;">);<br></span><span
-                    style="color: #0000BB;">?&gt;<br></span>&lt;/h3&gt;
+            <span class="pre_black">
+                    &lt;h3&gt;<br>Example&nbsp;heading&nbsp;<br><span class="pre_blue">&lt;?php<br></span><span
+                    class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">::</span><span class="pre_blue">labelTb</span><span
+                    class="pre_green">(</span><span class="pre_red">'New'</span><span
+                    class="pre_green">);<br></span><span
+                    class="pre_blue">?&gt;<br></span>&lt;/h3&gt;
             </span>
         </pre>
     </div>
     <h3>Available variations</h3>
+
     <p>Add any of the below mentioned modifier classes to change the appearance of a label.</p>
+
     <div class="bs-example">
         <?php echo BSHtml::bsLabel('Default') ?>
-        <?php echo BSHtml::bsLabel('Primary',array('color' => BSHtml::LABEL_COLOR_PRIMARY)) ?>
-        <?php echo BSHtml::bsLabel('Success',array('color' => BSHtml::LABEL_COLOR_SUCCESS)) ?>
-        <?php echo BSHtml::bsLabel('Info',array('color' => BSHtml::LABEL_COLOR_INFO)) ?>
-        <?php echo BSHtml::bsLabel('Warning',array('color' => BSHtml::LABEL_COLOR_WARNING)) ?>
-        <?php echo BSHtml::bsLabel('Danger',array('color' => BSHtml::LABEL_COLOR_DANGER)) ?>
+        <?php echo BSHtml::bsLabel('Primary', array('color' => BSHtml::LABEL_COLOR_PRIMARY)) ?>
+        <?php echo BSHtml::bsLabel('Success', array('color' => BSHtml::LABEL_COLOR_SUCCESS)) ?>
+        <?php echo BSHtml::bsLabel('Info', array('color' => BSHtml::LABEL_COLOR_INFO)) ?>
+        <?php echo BSHtml::bsLabel('Warning', array('color' => BSHtml::LABEL_COLOR_WARNING)) ?>
+        <?php echo BSHtml::bsLabel('Danger', array('color' => BSHtml::LABEL_COLOR_DANGER)) ?>
     </div>
     <div class="highlight">
-        <pre></pre>
+        <pre>
+            <span class="pre_black">
+<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">bsLabel</span><span class="pre_green">(</span><span
+                    class="pre_red">'Default'</span><span class="pre_green">);<br></span><span
+                    class="pre_blue">?&gt;<br>&lt;?php<br></span><span
+                    class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">::</span><span class="pre_blue">bsLabel</span><span
+                    class="pre_green">(</span><span class="pre_red">'Primary'</span><span
+                    class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'color'&nbsp;</span><span
+                    class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">::</span><span class="pre_blue">LABEL_COLOR_PRIMARY<br></span><span
+                    class="pre_green">));<br></span><span
+                    class="pre_blue">?&gt;<br>&lt;?php<br></span><span
+                    class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">::</span><span class="pre_blue">bsLabel</span><span
+                    class="pre_green">(</span><span class="pre_red">'Success'</span><span
+                    class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'color'&nbsp;</span><span
+                    class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">::</span><span class="pre_blue">LABEL_COLOR_SUCCESS<br></span><span
+                    class="pre_green">));<br></span><span
+                    class="pre_blue">?&gt;<br>&lt;?php<br></span><span
+                    class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">::</span><span class="pre_blue">bsLabel</span><span
+                    class="pre_green">(</span><span class="pre_red">'Info'</span><span
+                    class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'color'&nbsp;</span><span
+                    class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">::</span><span class="pre_blue">LABEL_COLOR_INFO<br></span><span
+                    class="pre_green">));<br></span><span
+                    class="pre_blue">?&gt;<br>&lt;?php<br></span><span
+                    class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">::</span><span class="pre_blue">bsLabel</span><span
+                    class="pre_green">(</span><span class="pre_red">'Warning'</span><span
+                    class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'color'&nbsp;</span><span
+                    class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">::</span><span class="pre_blue">LABEL_COLOR_WARNING<br></span><span
+                    class="pre_green">));<br></span><span
+                    class="pre_blue">?&gt;<br>&lt;?php<br></span><span
+                    class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">::</span><span class="pre_blue">bsLabel</span><span
+                    class="pre_green">(</span><span class="pre_red">'Danger'</span><span
+                    class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'color'&nbsp;</span><span
+                    class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">::</span><span class="pre_blue">LABEL_COLOR_DANGER<br></span><span
+                    class="pre_green">));<br></span><span class="pre_blue">?&gt;</span>
+</span>
+        </pre>
     </div>
 </div>
