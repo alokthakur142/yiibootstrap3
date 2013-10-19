@@ -141,7 +141,7 @@
         <div class="">
             <?php echo BSHtml::pagination($list, array('size' => BSHtml::PAGINATION_SIZE_SMALL)); ?>
         </div>
-    </div><span class="pre_black">
+    </div><div class="highlight"><pre><span class="pre_black">
 <span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
             class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">pagination</span><span
             class="pre_green">(</span><span class="pre_blue">$list</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
