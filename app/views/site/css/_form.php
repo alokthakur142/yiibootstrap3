@@ -386,6 +386,8 @@
 <br/>
 <?php echo $form->fileField($model, 'username', array('placeholder' => 'fileField')); ?>
 <br/>
+<?php echo $form->telField($model, 'email', array('placeholder' => 'telField')); ?>
+<br/>
 <?php $this->endWidget() ?>
 
 <div class="highlight">
