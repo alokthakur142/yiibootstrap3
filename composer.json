@@ -12,7 +12,7 @@
     "type": "yii-application",
     "license": "BSD-3-Clause",
     "minimum-stability": "stable",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "config": {
         "vendor-dir": "app/lib/vendor"
     },

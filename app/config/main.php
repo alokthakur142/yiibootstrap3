@@ -79,6 +79,6 @@ return array(
 	),
 	// application parameters
 	'params' => array(
-        'version' => ' Version 0.0.5 ',
+        'version' => ' Version 0.0.6 ',
     ),
 );
