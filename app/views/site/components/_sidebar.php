@@ -93,14 +93,14 @@
 <!--                <li class=""><a href="#thumbnails-custom-content">Custom content</a></li>-->
 <!--            </ul>-->
 <!--        </li>-->
-<!--        <li class="">-->
-<!--            <a href="#alerts">Alerts</a>-->
-<!--            <ul class="nav">-->
-<!--                <li class=""><a href="#alerts-examples">Examples</a></li>-->
-<!--                <li class=""><a href="#alerts-dismissable">Dismissable alerts</a></li>-->
-<!--                <li class=""><a href="#alerts-links">Links in alerts</a></li>-->
-<!--            </ul>-->
-<!--        </li>-->
+        <li class="">
+            <a href="#alerts">Alerts</a>
+            <ul class="nav">
+                <li class=""><a href="#alerts-examples">Examples</a></li>
+                <li class=""><a href="#alerts-dismissable">Dismissable alerts</a></li>
+                <li class=""><a href="#alerts-links">Links in alerts</a></li>
+            </ul>
+        </li>
 <!--        <li class="">-->
 <!--            <a href="#progress">Progress bars</a>-->
 <!--            <ul class="nav">-->

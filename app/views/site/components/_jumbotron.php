@@ -9,7 +9,7 @@
         container will keep it at the width of the rest of your content and provide rounded corners.</p>
 
     <div class="bs-example">
-        <?=
+        <?php echo
         BSHtml::jumbotron(
             'Hello, world!',
             $this->renderInternal(Yii::app()->basePath . '/views/site/components/_jumboPartial.php', array(), true)

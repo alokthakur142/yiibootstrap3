@@ -40,3 +40,6 @@ array_push(
 <!-- Thumbnail
 ================================================== -->
 <?php //$this->renderPartial('components/_thumbnails', array('model' => $model)) ?>
+<!--Alerts
+================================================== -->
+<?php $this->renderPartial('components/_alerts', array('model' => $model)) ?>
