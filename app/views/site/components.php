@@ -43,3 +43,6 @@ array_push(
 <!--Alerts
 ================================================== -->
 <?php $this->renderPartial('components/_alerts', array('model' => $model)) ?>
+<!--Porgressbars
+================================================== -->
+<?php $this->renderPartial('components/_progressbar', array('model' => $model)) ?>

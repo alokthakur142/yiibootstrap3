@@ -101,16 +101,16 @@
                 <li class=""><a href="#alerts-links">Links in alerts</a></li>
             </ul>
         </li>
-<!--        <li class="">-->
-<!--            <a href="#progress">Progress bars</a>-->
-<!--            <ul class="nav">-->
-<!--                <li class=""><a href="#progress-basic">Basic example</a></li>-->
-<!--                <li class=""><a href="#progress-alternatives">Contextual alternatives</a></li>-->
-<!--                <li class=""><a href="#progress-striped">Striped</a></li>-->
-<!--                <li class=""><a href="#progress-animated">Animated</a></li>-->
-<!--                <li class=""><a href="#progress-stacked">Stacked</a></li>-->
-<!--            </ul>-->
-<!--        </li>-->
+        <li class="">
+            <a href="#progress">Progress bars</a>
+            <ul class="nav">
+                <li class=""><a href="#progress-basic">Basic example</a></li>
+                <li class=""><a href="#progress-alternatives">Contextual alternatives</a></li>
+                <li class=""><a href="#progress-striped">Striped</a></li>
+                <li class=""><a href="#progress-animated">Animated</a></li>
+                <li class=""><a href="#progress-stacked">Stacked</a></li>
+            </ul>
+        </li>
 <!--        <li class="active">-->
 <!--            <a href="#media">Media object</a>-->
 <!--            <ul class="nav">-->
