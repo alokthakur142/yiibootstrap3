@@ -137,7 +137,7 @@
 <!--                </li><li><a href="#panels-list-group">With list groups</a>-->
 <!--                </li></ul>-->
 <!--        </li>-->
-<!--        <li><a href="#wells">Wells</a></li>-->
+        <li><a href="#wells">Wells</a></li>
 
 
     </ul>

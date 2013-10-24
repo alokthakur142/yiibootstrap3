@@ -46,3 +46,6 @@ array_push(
 <!--Porgressbars
 ================================================== -->
 <?php $this->renderPartial('components/_progressbar', array('model' => $model)) ?>
+<!--Wells
+================================================== -->
+<?php $this->renderPartial('components/_wells', array('model' => $model)) ?>
