@@ -14,104 +14,233 @@
 </div>
 
 <div class="bs-example">
-    <nav class="navbar navbar-default" role="navigation">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Brand</a>
-        </div>
+    <?php $this->widget('bootstrap.widgets.BsNavbar', array(
+            'collapse' => true,
+            'brandLabel' => BSHtml::icon(BSHtml::GLYPHICON_HOME),
+            'brandUrl' => Yii::app()->homeUrl,
+            'items'    => array(
+                array(
+                    'class' => 'bootstrap.widgets.BsNav',
+                    'type'  => 'navbar',
+                    'activateParents' => true,
+                    'items' => array(
+                        array(
+                            'label' => 'Home', 'url' => array('/site/index'),
+                            'items' => array(
+                                BSHtml::menuHeader(BSHtml::icon(BSHtml::GLYPHICON_BOOKMARK),array('class' => 'text-center','style' => 'color:#99cc32;font-size:32px;')),
+                                array('label' => 'Home', 'url' => array('/site/index')),
+                                array('label' => 'About', 'url' => array('/site/page', 'view' => 'about')),
+                                array('label' => 'Contact', 'url' => array('/site/contact')),
+                                BSHtml::menuDivider(),
+                                array('label' => 'Login', 'url' => array('/site/login'), 'visible' => Yii::app()->user->isGuest,'icon' => BSHtml::GLYPHICON_LOG_IN),
+                                array('label' => 'Logout (' . Yii::app()->user->name . ')', 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest),
+                                array('label' => 'Home', 'url' => array('/site/index'),'icon' => BSHtml::GLYPHICON_HOME),
+                                array('label' => 'About', 'url' => array('/site/page', 'view' => 'about'),'icon' => BSHtml::GLYPHICON_PAPERCLIP),
+                                array('label' => 'Contact', 'url' => array('/site/contact'),'icon' => BSHtml::GLYPHICON_FLOPPY_OPEN),
+                            ),
+                        ),
+                    ),
+                ),
+                array(
+                    'class' => 'bootstrap.widgets.BsNav',
+                    'type'  => 'navbar',
+                    'activateParents' => true,
+                    'items' => array(
+                        array('label' => 'About', 'url' => array('/site/page', 'view' => 'about')),
+                        array('label' => 'Contact', 'url' => array('/site/contact')),
+                        array('label' => 'Login', 'url' => array('/site/login'),'pull' => BSHtml::PULL_RIGHT, 'visible' => Yii::app()->user->isGuest),
+                        array('label' => 'Logout (' . Yii::app()->user->name . ')','pull' => BSHtml::PULL_RIGHT, 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest)
+                    ),
+                    'htmlOptions' => array(
+                        'pull' =>BSHtml::PULL_RIGHT
+                    )
+                )
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <form class="navbar-form navbar-left" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Link</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Separated link</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </nav>
+            ),
+        )
+    ); ?>
 </div>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-default"</span> <span class="na">role=</span><span class="s">"navigation"</span><span class="nt">&gt;</span>
-            <span class="c">&lt;!-- Brand and toggle get grouped for better mobile display --&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"navbar-toggle"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">".navbar-ex1-collapse"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle navigation<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
-            <span class="nt">&lt;/button&gt;</span>
-            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Brand<span class="nt">&lt;/a&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-
-            <span class="c">&lt;!-- Collect the nav links, forms, and other content for toggling --&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse navbar-ex1-collapse"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>Dropdown <span class="nt">&lt;b</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/b&gt;&lt;/a&gt;</span>
-            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Something else here<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Separated link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>One more separated link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-            <span class="nt">&lt;/ul&gt;</span>
-            <span class="nt">&lt;/li&gt;</span>
-            <span class="nt">&lt;/ul&gt;</span>
-            <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"navbar-form navbar-left"</span> <span class="na">role=</span><span class="s">"search"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Search"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
-            <span class="nt">&lt;/form&gt;</span>
-            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav navbar-right"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>Dropdown <span class="nt">&lt;b</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/b&gt;&lt;/a&gt;</span>
-            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Something else here<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Separated link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-            <span class="nt">&lt;/ul&gt;</span>
-            <span class="nt">&lt;/li&gt;</span>
-            <span class="nt">&lt;/ul&gt;</span>
-            <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.navbar-collapse --&gt;</span>
-            <span class="nt">&lt;/nav&gt;</span>
-        </code></pre></div>
+<div class="highlight">
+    <pre>
+        <span class="pre_black">
+            <span class="pre_blue">&lt;?php<br>$this</span><span class="pre_green">-&gt;</span><span
+                class="pre_blue">widget</span><span class="pre_green">(</span><span
+                class="pre_red">'bootstrap.widgets.BsNavbar'</span><span
+                class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'collapse'&nbsp;</span><span
+                class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">true</span><span
+                class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
+                class="pre_red">'brandLabel'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">icon</span><span class="pre_green">(</span><span class="pre_blue">BSHtml</span><span
+                class="pre_green">::</span><span class="pre_blue">GLYPHICON_HOME</span><span
+                class="pre_green">),<br>&nbsp;&nbsp; &nbsp;</span><span
+                class="pre_red">'brandUrl'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_blue">Yii</span><span class="pre_green">::</span><span class="pre_blue">app</span><span
+                class="pre_green">()-&gt;</span><span class="pre_blue">homeUrl</span><span
+                class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
+                class="pre_red">'items'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'bootstrap.widgets.BsNav'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'type'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'navbar'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'activateParents'&nbsp;</span><span
+                class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">true</span><span
+                class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'items'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'Home'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'/site/index'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'items'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">menuHeader</span><span class="pre_green">(</span><span
+                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">icon</span><span class="pre_green">(</span><span class="pre_blue">BSHtml</span><span
+                class="pre_green">::</span><span class="pre_blue">GLYPHICON_BOOKMARK</span><span
+                class="pre_green">),&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'text-center'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'style'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'color:#99cc32;font-size:32px;'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">)),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'Home'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'/site/index'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'About'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'/site/page'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'view'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'about'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'Contact'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'/site/contact'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">menuDivider</span><span class="pre_green">(),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'Login'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'/site/login'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'visible'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_blue">Yii</span><span class="pre_green">::</span><span class="pre_blue">app</span><span
+                class="pre_green">()-&gt;</span><span class="pre_blue">user</span><span
+                class="pre_green">-&gt;</span><span class="pre_blue">isGuest</span><span
+                class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'icon'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">GLYPHICON_LOG_IN<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'Logout&nbsp;('&nbsp;</span><span class="pre_green">.&nbsp;</span><span
+                class="pre_blue">Yii</span><span class="pre_green">::</span><span class="pre_blue">app</span><span
+                class="pre_green">()-&gt;</span><span class="pre_blue">user</span><span
+                class="pre_green">-&gt;</span><span class="pre_blue">name&nbsp;</span><span
+                class="pre_green">.&nbsp;</span><span class="pre_red">')'</span><span
+                class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'/site/logout'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'visible'&nbsp;</span><span class="pre_green">=&gt;&nbsp;!</span><span
+                class="pre_blue">Yii</span><span class="pre_green">::</span><span class="pre_blue">app</span><span
+                class="pre_green">()-&gt;</span><span class="pre_blue">user</span><span
+                class="pre_green">-&gt;</span><span class="pre_blue">isGuest<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'Home'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'/site/index'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'icon'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">GLYPHICON_HOME<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'About'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'/site/page'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'view'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'about'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'icon'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">GLYPHICON_PAPERCLIP<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'Contact'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'/site/contact'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'icon'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">GLYPHICON_FLOPPY_OPEN<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'bootstrap.widgets.BsNav'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'type'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'navbar'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'activateParents'&nbsp;</span><span
+                class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">true</span><span
+                class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'items'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'About'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'/site/page'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'view'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'about'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'Contact'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'/site/contact'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'Login'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'/site/login'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'pull'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">PULL_RIGHT</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'visible'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_blue">Yii</span><span class="pre_green">::</span><span class="pre_blue">app</span><span
+                class="pre_green">()-&gt;</span><span class="pre_blue">user</span><span
+                class="pre_green">-&gt;</span><span class="pre_blue">isGuest<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'Logout&nbsp;('&nbsp;</span><span class="pre_green">.&nbsp;</span><span
+                class="pre_blue">Yii</span><span class="pre_green">::</span><span class="pre_blue">app</span><span
+                class="pre_green">()-&gt;</span><span class="pre_blue">user</span><span
+                class="pre_green">-&gt;</span><span class="pre_blue">name&nbsp;</span><span
+                class="pre_green">.&nbsp;</span><span class="pre_red">')'</span><span
+                class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'pull'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">PULL_RIGHT</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'/site/logout'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'visible'&nbsp;</span><span class="pre_green">=&gt;&nbsp;!</span><span
+                class="pre_blue">Yii</span><span class="pre_green">::</span><span class="pre_blue">app</span><span
+                class="pre_green">()-&gt;</span><span class="pre_blue">user</span><span
+                class="pre_green">-&gt;</span><span class="pre_blue">isGuest<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'htmlOptions'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'pull'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">PULL_RIGHT<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<br>&nbsp;&nbsp; &nbsp;)<br>));<br></span><span
+                class="pre_blue">?&gt;</span>
+        </span>
+    </pre>
+</div>
 
 <div class="bs-callout bs-callout-danger">
     <h4>Plugin dependency</h4>

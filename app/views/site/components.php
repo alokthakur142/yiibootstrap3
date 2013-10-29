@@ -19,6 +19,9 @@ array_push(
 <!-- Navs
 ================================================== -->
 <?php $this->renderPartial('components/_navs', array('model' => $model)) ?>
+<!-- Navbar
+================================================== -->
+<?php $this->renderPartial('components/_navbar', array('model' => $model)) ?>
 <!-- Breadcrumbs
 ================================================== -->
 <?php $this->renderPartial('components/_breadcrumbs', array('model' => $model)) ?>

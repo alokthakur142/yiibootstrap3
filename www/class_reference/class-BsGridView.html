@@ -7,7 +7,7 @@
 	<title>Class BsGridView</title>
 
 	<script type="text/javascript" src="resources/combined.js?1303512325"></script>
-	<script type="text/javascript" src="elementlist.js?3707972970"></script>
+	<script type="text/javascript" src="elementlist.js?2019737583"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -44,6 +44,7 @@
 				<li><a href="class-BSApi.html">BSApi</a></li>
 				<li><a href="class-BsBreadcrumb.html">BsBreadcrumb</a></li>
 				<li><a href="class-BsButtonColumn.html">BsButtonColumn</a></li>
+				<li><a href="class-BsCollapse.html">BsCollapse</a></li>
 				<li><a href="class-BsDataColumn.html">BsDataColumn</a></li>
 				<li class="active"><a href="class-BsGridView.html">BsGridView</a></li>
 				<li><a href="class-BSHtml.html">BSHtml</a></li>
@@ -144,7 +145,7 @@ CGridView
 				<a href="http://www.opensource.org/licenses/bsd-license.php">New BSD License</a><br />
 				<b>Author:</b>
 				Pascal Brewing<br />
-		<b>Located at</b> <a href="source-class-BsGridView.html#14-146" title="Go to source code">widgets/BsGridView.php</a><br />
+		<b>Located at</b> <a href="source-class-BsGridView.html#13-108" title="Go to source code">widgets/BsGridView.php</a><br />
 	</div>
 
 
@@ -162,7 +163,7 @@ CGridView
 
 		<td class="name"><div>
 		<a class="anchor" href="#_init">#</a>
-		<code><a href="source-class-BsGridView.html#46-73" title="Go to source code">init</a>( )</code>
+		<code><a href="source-class-BsGridView.html#44-68" title="Go to source code">init</a>( )</code>
 
 		<div class="description short">
 			
@@ -195,7 +196,7 @@ CGridView
 
 		<td class="name"><div>
 		<a class="anchor" href="#_initColumns">#</a>
-		<code><a href="source-class-BsGridView.html#75-86" title="Go to source code">initColumns</a>( )</code>
+		<code><a href="source-class-BsGridView.html#70-81" title="Go to source code">initColumns</a>( )</code>
 
 		<div class="description short">
 			
@@ -228,7 +229,7 @@ CGridView
 
 		<td class="name"><div>
 		<a class="anchor" href="#_createDataColumn">#</a>
-		<code><a href="source-class-BsGridView.html#88-111" title="Go to source code">createDataColumn</a>( <span>mixed <var>$text</var></span> )</code>
+		<code><a href="source-class-BsGridView.html#83-106" title="Go to source code">createDataColumn</a>( <span>mixed <var>$text</var></span> )</code>
 
 		<div class="description short">
 			
@@ -263,39 +264,6 @@ CGridView
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="renderItems" id="_renderItems">
-
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_renderItems">#</a>
-		<code><a href="source-class-BsGridView.html#112-130" title="Go to source code">renderItems</a>( )</code>
-
-		<div class="description short">
-			
-<p>Renders the data items for the grid view.</p>
-
-		</div>
-
-		<div class="description detailed hidden">
-			
-<p>Renders the data items for the grid view.</p>
-
-
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
 	</table>
 
 
@@ -318,7 +286,7 @@ CGridView
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-BsGridView.html#19-24" title="Go to source code"><var>$type</var></a>
+				<a href="source-class-BsGridView.html#18-23" title="Go to source code"><var>$type</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -349,7 +317,7 @@ BSHtml::GRID_TYPE_HOVER.</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-BsGridView.html#25-28" title="Go to source code"><var>$pagerCssClass</var></a>
+				<a href="source-class-BsGridView.html#24-27" title="Go to source code"><var>$pagerCssClass</var></a>
 		</td>
 		<td class="value"><code><span class="php-quote">'pagination'</span></code></td>
 		<td class="description"><div>
@@ -376,7 +344,7 @@ BSHtml::GRID_TYPE_HOVER.</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-BsGridView.html#29-33" title="Go to source code"><var>$pager</var></a>
+				<a href="source-class-BsGridView.html#28-32" title="Go to source code"><var>$pager</var></a>
 		</td>
 		<td class="value"><code><span class="php-keyword1">array</span>(<span class="php-quote">'class'</span> =&gt; <span class="php-quote">'bootstrap.widgets.BsPager'</span>)</code></td>
 		<td class="description"><div>
@@ -409,7 +377,7 @@ class="php-quote"&gt;'ext.bootstrap.widgets.TbPager'&lt;/span&gt;)</code>.</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-BsGridView.html#34-38" title="Go to source code"><var>$cssFile</var></a>
+				<a href="source-class-BsGridView.html#33-37" title="Go to source code"><var>$cssFile</var></a>
 		</td>
 		<td class="value"><code><span class="php-keyword1">false</span></code></td>
 		<td class="description"><div>
@@ -438,7 +406,7 @@ that no CSS will be included.</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-BsGridView.html#39-42" title="Go to source code"><var>$template</var></a>
+				<a href="source-class-BsGridView.html#38-41" title="Go to source code"><var>$template</var></a>
 		</td>
 		<td class="value"><code><span class="php-quote">&quot;{items}\n{pager}{summary}&quot;</span></code></td>
 		<td class="description"><div>

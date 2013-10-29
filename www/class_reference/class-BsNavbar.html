@@ -7,7 +7,7 @@
 	<title>Class BsNavbar</title>
 
 	<script type="text/javascript" src="resources/combined.js?1303512325"></script>
-	<script type="text/javascript" src="elementlist.js?3707972970"></script>
+	<script type="text/javascript" src="elementlist.js?2019737583"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -44,6 +44,7 @@
 				<li><a href="class-BSApi.html">BSApi</a></li>
 				<li><a href="class-BsBreadcrumb.html">BsBreadcrumb</a></li>
 				<li><a href="class-BsButtonColumn.html">BsButtonColumn</a></li>
+				<li><a href="class-BsCollapse.html">BsCollapse</a></li>
 				<li><a href="class-BsDataColumn.html">BsDataColumn</a></li>
 				<li><a href="class-BsGridView.html">BsGridView</a></li>
 				<li><a href="class-BSHtml.html">BSHtml</a></li>
@@ -140,17 +141,15 @@ CWidget
 		
 		<b>Package:</b> bootstrap\widgets<br />
 
-				<b>Copyright:</b>
-				Copyright © Christoffer Niska 2013-<br />
 				<b>License:</b>
 				<a href="http://www.opensource.org/licenses/bsd-license.php">New BSD License</a><br />
 				<b>Author:</b>
-				Christoffer Niska &lt;<a
-href="mailto:christoffer.niska&#64;gmail.com">christoffer.niska&#64;<!---->gmail.com</a>&gt;<br />
+				Pascal Brewing &lt;<a
+href="mailto:pascalbrewing&#64;googlemail.com">pascalbrewing&#64;<!---->googlemail.com</a>&gt;<br />
 				<b>See:</b>
 				<a
 href="http://twitter.github.com/bootstrap/components.html#navbar">http://twitter.github.com/bootstrap/components.html#navbar</a><br />
-		<b>Located at</b> <a href="source-class-BsNavbar.html#12-131" title="Go to source code">widgets/BsNavbar.php</a><br />
+		<b>Located at</b> <a href="source-class-BsNavbar.html#11-124" title="Go to source code">widgets/BsNavbar.php</a><br />
 	</div>
 
 
@@ -168,7 +167,7 @@ href="http://twitter.github.com/bootstrap/components.html#navbar">http://twitter
 
 		<td class="name"><div>
 		<a class="anchor" href="#_init">#</a>
-		<code><a href="source-class-BsNavbar.html#59-79" title="Go to source code">init</a>( )</code>
+		<code><a href="source-class-BsNavbar.html#54-74" title="Go to source code">init</a>( )</code>
 
 		<div class="description short">
 			
@@ -201,7 +200,7 @@ href="http://twitter.github.com/bootstrap/components.html#navbar">http://twitter
 
 		<td class="name"><div>
 		<a class="anchor" href="#_run">#</a>
-		<code><a href="source-class-BsNavbar.html#81-130" title="Go to source code">run</a>( )</code>
+		<code><a href="source-class-BsNavbar.html#76-123" title="Go to source code">run</a>( )</code>
 
 		<div class="description short">
 			
@@ -245,9 +244,9 @@ href="http://twitter.github.com/bootstrap/components.html#navbar">http://twitter
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-BsNavbar.html#18-21" title="Go to source code"><var>$color</var></a>
+				<a href="source-class-BsNavbar.html#17-20" title="Go to source code"><var>$color</var></a>
 		</td>
-		<td class="value"><code></code></td>
+		<td class="value"><code><code><a href="class-BSHtml.html#NAVBAR_COLOR">BSHtml::<b>NAVBAR_COLOR</b></a></code></code></td>
 		<td class="description"><div>
 			<a href="#$color" class="anchor">#</a>
 
@@ -272,7 +271,7 @@ href="http://twitter.github.com/bootstrap/components.html#navbar">http://twitter
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-BsNavbar.html#22-25" title="Go to source code"><var>$brandLabel</var></a>
+				<a href="source-class-BsNavbar.html#21-24" title="Go to source code"><var>$brandLabel</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -299,7 +298,7 @@ href="http://twitter.github.com/bootstrap/components.html#navbar">http://twitter
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-BsNavbar.html#26-29" title="Go to source code"><var>$brandUrl</var></a>
+				<a href="source-class-BsNavbar.html#25-28" title="Go to source code"><var>$brandUrl</var></a>
 		</td>
 		<td class="value"><code></code></td>
 		<td class="description"><div>
@@ -326,7 +325,7 @@ href="http://twitter.github.com/bootstrap/components.html#navbar">http://twitter
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-BsNavbar.html#30-33" title="Go to source code"><var>$brandOptions</var></a>
+				<a href="source-class-BsNavbar.html#29-32" title="Go to source code"><var>$brandOptions</var></a>
 		</td>
 		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
 		<td class="description"><div>
@@ -346,18 +345,18 @@ href="http://twitter.github.com/bootstrap/components.html#navbar">http://twitter
 			</div>
 		</div></td>
 	</tr>
-	<tr data-order="display" id="$display">
+	<tr data-order="position" id="$position">
 		<td class="attributes"><code>
 			public  
 			string
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-BsNavbar.html#34-37" title="Go to source code"><var>$display</var></a>
+				<a href="source-class-BsNavbar.html#33-36" title="Go to source code"><var>$position</var></a>
 		</td>
-		<td class="value"><code><code><a href="class-BSHtml.html#NAVBAR_DISPLAY_FIXEDTOP">BSHtml::<b>NAVBAR_DISPLAY_FIXEDTOP</b></a></code></code></td>
+		<td class="value"><code><code><a href="class-BSHtml.html#NAVBAR_POSITION">BSHtml::<b>NAVBAR_POSITION</b></a></code></code></td>
 		<td class="description"><div>
-			<a href="#$display" class="anchor">#</a>
+			<a href="#$position" class="anchor">#</a>
 
 			<div class="description short">
 				
@@ -368,33 +367,6 @@ href="http://twitter.github.com/bootstrap/components.html#navbar">http://twitter
 			<div class="description detailed hidden">
 				
 <p>nanvbar display type.</p>
-
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="fluid" id="$fluid">
-		<td class="attributes"><code>
-			public  
-			boolean
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-BsNavbar.html#38-41" title="Go to source code"><var>$fluid</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">false</span></code></td>
-		<td class="description"><div>
-			<a href="#$fluid" class="anchor">#</a>
-
-			<div class="description short">
-				
-<p>whether the navbar spans over the whole page.</p>
-
-			</div>
-
-			<div class="description detailed hidden">
-				
-<p>whether the navbar spans over the whole page.</p>
 
 
 			</div>
@@ -407,7 +379,7 @@ href="http://twitter.github.com/bootstrap/components.html#navbar">http://twitter
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-BsNavbar.html#42-45" title="Go to source code"><var>$collapse</var></a>
+				<a href="source-class-BsNavbar.html#37-40" title="Go to source code"><var>$collapse</var></a>
 		</td>
 		<td class="value"><code><span class="php-keyword1">false</span></code></td>
 		<td class="description"><div>
@@ -434,7 +406,7 @@ href="http://twitter.github.com/bootstrap/components.html#navbar">http://twitter
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-BsNavbar.html#46-49" title="Go to source code"><var>$collapseOptions</var></a>
+				<a href="source-class-BsNavbar.html#41-44" title="Go to source code"><var>$collapseOptions</var></a>
 		</td>
 		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
 		<td class="description"><div>
@@ -461,7 +433,7 @@ href="http://twitter.github.com/bootstrap/components.html#navbar">http://twitter
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-BsNavbar.html#50-53" title="Go to source code"><var>$items</var></a>
+				<a href="source-class-BsNavbar.html#45-48" title="Go to source code"><var>$items</var></a>
 		</td>
 		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
 		<td class="description"><div>
@@ -488,7 +460,7 @@ href="http://twitter.github.com/bootstrap/components.html#navbar">http://twitter
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-BsNavbar.html#54-57" title="Go to source code"><var>$htmlOptions</var></a>
+				<a href="source-class-BsNavbar.html#49-52" title="Go to source code"><var>$htmlOptions</var></a>
 		</td>
 		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
 		<td class="description"><div>

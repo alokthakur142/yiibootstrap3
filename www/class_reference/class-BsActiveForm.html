@@ -7,7 +7,7 @@
 	<title>Class BsActiveForm</title>
 
 	<script type="text/javascript" src="resources/combined.js?1303512325"></script>
-	<script type="text/javascript" src="elementlist.js?3707972970"></script>
+	<script type="text/javascript" src="elementlist.js?2019737583"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -44,6 +44,7 @@
 				<li><a href="class-BSApi.html">BSApi</a></li>
 				<li><a href="class-BsBreadcrumb.html">BsBreadcrumb</a></li>
 				<li><a href="class-BsButtonColumn.html">BsButtonColumn</a></li>
+				<li><a href="class-BsCollapse.html">BsCollapse</a></li>
 				<li><a href="class-BsDataColumn.html">BsDataColumn</a></li>
 				<li><a href="class-BsGridView.html">BsGridView</a></li>
 				<li><a href="class-BSHtml.html">BSHtml</a></li>
@@ -144,7 +145,7 @@ CActiveForm
 				<a href="http://www.opensource.org/licenses/bsd-license.php">New BSD License</a><br />
 				<b>Author:</b>
 				Pascal Brewing<br />
-		<b>Located at</b> <a href="source-class-BsActiveForm.html#12-745" title="Go to source code">widgets/BsActiveForm.php</a><br />
+		<b>Located at</b> <a href="source-class-BsActiveForm.html#12-773" title="Go to source code">widgets/BsActiveForm.php</a><br />
 	</div>
 
 
@@ -484,6 +485,56 @@ specified attribute.</dd>
 		</div>
 		</div></td>
 	</tr>
+	<tr data-order="telField" id="_telField">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_telField">#</a>
+		<code><a href="source-class-BsActiveForm.html#228-240" title="Go to source code">telField</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Renders an telephone field for a model attribute.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Renders an telephone field for a model attribute.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$model</var></dt>
+					<dd><code>CModel</code><br>$model the data model.</dd>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code><br>$attribute the attribute.</dd>
+					<dt><var>$htmlOptions</var></dt>
+					<dd><code>array</code><br>$htmlOptions additional HTML attributes.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>the generated input field.<br />
+				</div>
+
+
+				<h4>See</h4>
+				<div class="list">
+						<code><code><a href="class-BSHtml.html#_activeEmailField">BSHtml::activeEmailField()</a></code></code><br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="numberField" id="_numberField">
 
 		<td class="attributes"><code>
@@ -495,7 +546,7 @@ specified attribute.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_numberField">#</a>
-		<code><a href="source-class-BsActiveForm.html#228-240" title="Go to source code">numberField</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#242-254" title="Go to source code">numberField</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -545,7 +596,7 @@ specified attribute.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_rangeField">#</a>
-		<code><a href="source-class-BsActiveForm.html#242-254" title="Go to source code">rangeField</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#256-268" title="Go to source code">rangeField</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -595,7 +646,7 @@ specified attribute.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_dateField">#</a>
-		<code><a href="source-class-BsActiveForm.html#256-267" title="Go to source code">dateField</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#270-281" title="Go to source code">dateField</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -641,7 +692,7 @@ specified attribute.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_textArea">#</a>
-		<code><a href="source-class-BsActiveForm.html#269-281" title="Go to source code">textArea</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#283-295" title="Go to source code">textArea</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -691,7 +742,7 @@ specified attribute.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_fileField">#</a>
-		<code><a href="source-class-BsActiveForm.html#283-295" title="Go to source code">fileField</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#297-309" title="Go to source code">fileField</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -741,7 +792,7 @@ specified attribute.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_radioButton">#</a>
-		<code><a href="source-class-BsActiveForm.html#297-308" title="Go to source code">radioButton</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#311-322" title="Go to source code">radioButton</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -791,7 +842,7 @@ specified attribute.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_checkBox">#</a>
-		<code><a href="source-class-BsActiveForm.html#310-321" title="Go to source code">checkBox</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#324-335" title="Go to source code">checkBox</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -841,7 +892,7 @@ specified attribute.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_dropDownList">#</a>
-		<code><a href="source-class-BsActiveForm.html#323-335" title="Go to source code">dropDownList</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$data</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#337-349" title="Go to source code">dropDownList</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$data</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -893,7 +944,7 @@ specified attribute.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_listBox">#</a>
-		<code><a href="source-class-BsActiveForm.html#337-349" title="Go to source code">listBox</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$data</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#351-363" title="Go to source code">listBox</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$data</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -945,7 +996,7 @@ specified attribute.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_radioButtonList">#</a>
-		<code><a href="source-class-BsActiveForm.html#351-363" title="Go to source code">radioButtonList</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$data</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#365-377" title="Go to source code">radioButtonList</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$data</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -997,7 +1048,7 @@ specified attribute.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_inlineRadioButtonList">#</a>
-		<code><a href="source-class-BsActiveForm.html#365-377" title="Go to source code">inlineRadioButtonList</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$data</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#379-391" title="Go to source code">inlineRadioButtonList</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$data</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -1049,7 +1100,7 @@ specified attribute.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_checkBoxList">#</a>
-		<code><a href="source-class-BsActiveForm.html#379-391" title="Go to source code">checkBoxList</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$data</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#393-405" title="Go to source code">checkBoxList</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$data</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -1101,7 +1152,7 @@ specified attribute.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_inlineCheckBoxList">#</a>
-		<code><a href="source-class-BsActiveForm.html#393-405" title="Go to source code">inlineCheckBoxList</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$data</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#407-419" title="Go to source code">inlineCheckBoxList</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$data</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -1153,7 +1204,7 @@ specified attribute.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_uneditableField">#</a>
-		<code><a href="source-class-BsActiveForm.html#407-418" title="Go to source code">uneditableField</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#421-432" title="Go to source code">uneditableField</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -1203,7 +1254,7 @@ specified attribute.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_searchQuery">#</a>
-		<code><a href="source-class-BsActiveForm.html#420-431" title="Go to source code">searchQuery</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#434-445" title="Go to source code">searchQuery</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -1253,7 +1304,7 @@ specified attribute.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_textFieldControlGroup">#</a>
-		<code><a href="source-class-BsActiveForm.html#433-445" title="Go to source code">textFieldControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#447-459" title="Go to source code">textFieldControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -1303,7 +1354,7 @@ specified attribute.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_passwordFieldControlGroup">#</a>
-		<code><a href="source-class-BsActiveForm.html#447-459" title="Go to source code">passwordFieldControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#461-473" title="Go to source code">passwordFieldControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -1353,7 +1404,7 @@ specified attribute.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_urlFieldControlGroup">#</a>
-		<code><a href="source-class-BsActiveForm.html#461-473" title="Go to source code">urlFieldControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#475-487" title="Go to source code">urlFieldControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -1403,7 +1454,7 @@ specified attribute.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_emailFieldControlGroup">#</a>
-		<code><a href="source-class-BsActiveForm.html#475-487" title="Go to source code">emailFieldControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#489-501" title="Go to source code">emailFieldControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -1442,6 +1493,56 @@ specified attribute.</dd>
 		</div>
 		</div></td>
 	</tr>
+	<tr data-order="telFieldControlGroup" id="_telFieldControlGroup">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_telFieldControlGroup">#</a>
+		<code><a href="source-class-BsActiveForm.html#503-515" title="Go to source code">telFieldControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Generates a control group with an telephone field for a model attribute.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Generates a control group with an telephone field for a model attribute.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$model</var></dt>
+					<dd><code>CModel</code><br>$model the data model.</dd>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code><br>$attribute the attribute name.</dd>
+					<dt><var>$htmlOptions</var></dt>
+					<dd><code>array</code><br>$htmlOptions additional HTML attributes.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>the generated row.<br />
+				</div>
+
+
+				<h4>See</h4>
+				<div class="list">
+						<code><code><a href="class-BSHtml.html#_activeTelFieldControlGroup">BSHtml::activeTelFieldControlGroup()</a></code></code><br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="numberFieldControlGroup" id="_numberFieldControlGroup">
 
 		<td class="attributes"><code>
@@ -1453,7 +1554,7 @@ specified attribute.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_numberFieldControlGroup">#</a>
-		<code><a href="source-class-BsActiveForm.html#489-501" title="Go to source code">numberFieldControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#517-529" title="Go to source code">numberFieldControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -1503,7 +1604,7 @@ specified attribute.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_rangeFieldControlGroup">#</a>
-		<code><a href="source-class-BsActiveForm.html#503-515" title="Go to source code">rangeFieldControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#531-543" title="Go to source code">rangeFieldControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -1553,7 +1654,7 @@ specified attribute.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_dateFieldControlGroup">#</a>
-		<code><a href="source-class-BsActiveForm.html#517-529" title="Go to source code">dateFieldControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#545-557" title="Go to source code">dateFieldControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -1603,7 +1704,7 @@ specified attribute.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_textAreaControlGroup">#</a>
-		<code><a href="source-class-BsActiveForm.html#531-543" title="Go to source code">textAreaControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#559-571" title="Go to source code">textAreaControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -1653,7 +1754,7 @@ specified attribute.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_checkBoxControlGroup">#</a>
-		<code><a href="source-class-BsActiveForm.html#545-557" title="Go to source code">checkBoxControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#573-585" title="Go to source code">checkBoxControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -1703,7 +1804,7 @@ specified attribute.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_radioButtonControlGroup">#</a>
-		<code><a href="source-class-BsActiveForm.html#559-571" title="Go to source code">radioButtonControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#587-599" title="Go to source code">radioButtonControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -1753,7 +1854,7 @@ specified attribute.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_dropDownListControlGroup">#</a>
-		<code><a href="source-class-BsActiveForm.html#573-585" title="Go to source code">dropDownListControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$data</var></span>, <span>mixed <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#601-613" title="Go to source code">dropDownListControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$data</var></span>, <span>mixed <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -1805,7 +1906,7 @@ specified attribute.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_listBoxControlGroup">#</a>
-		<code><a href="source-class-BsActiveForm.html#587-599" title="Go to source code">listBoxControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$data</var></span>, <span>mixed <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#615-627" title="Go to source code">listBoxControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$data</var></span>, <span>mixed <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -1857,7 +1958,7 @@ specified attribute.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_fileFieldControlGroup">#</a>
-		<code><a href="source-class-BsActiveForm.html#601-613" title="Go to source code">fileFieldControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#629-641" title="Go to source code">fileFieldControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -1907,7 +2008,7 @@ specified attribute.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_radioButtonListControlGroup">#</a>
-		<code><a href="source-class-BsActiveForm.html#615-628" title="Go to source code">radioButtonListControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$data</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#643-656" title="Go to source code">radioButtonListControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$data</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -1959,7 +2060,7 @@ specified attribute.</dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_inlineRadioButtonListControlGroup">#</a>
-		<code><a href="source-class-BsActiveForm.html#630-643" title="Go to source code">inlineRadioButtonListControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$data</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#658-671" title="Go to source code">inlineRadioButtonListControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$data</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -2013,7 +2114,7 @@ attribute.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_checkBoxListControlGroup">#</a>
-		<code><a href="source-class-BsActiveForm.html#645-658" title="Go to source code">checkBoxListControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$data</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#673-686" title="Go to source code">checkBoxListControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$data</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -2065,7 +2166,7 @@ attribute.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_inlineCheckBoxListControlGroup">#</a>
-		<code><a href="source-class-BsActiveForm.html#660-673" title="Go to source code">inlineCheckBoxListControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$data</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#688-701" title="Go to source code">inlineCheckBoxListControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$data</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -2119,7 +2220,7 @@ attribute.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_uneditableFieldControlGroup">#</a>
-		<code><a href="source-class-BsActiveForm.html#675-687" title="Go to source code">uneditableFieldControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#703-715" title="Go to source code">uneditableFieldControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -2169,7 +2270,7 @@ attribute.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_searchQueryControlGroup">#</a>
-		<code><a href="source-class-BsActiveForm.html#689-701" title="Go to source code">searchQueryControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-BsActiveForm.html#717-729" title="Go to source code">searchQueryControlGroup</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$htmlOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -2219,7 +2320,7 @@ attribute.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_processRowOptions">#</a>
-		<code><a href="source-class-BsActiveForm.html#703-729" title="Go to source code">processRowOptions</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$options</var></span> )</code>
+		<code><a href="source-class-BsActiveForm.html#731-757" title="Go to source code">processRowOptions</a>( <span>CModel <var>$model</var></span>, <span>string <var>$attribute</var></span>, <span>array <var>$options</var></span> )</code>
 
 		<div class="description short">
 			

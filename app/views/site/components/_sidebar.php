@@ -60,20 +60,20 @@
                 <li class=""><a href="#nav-dropdowns">Using dropdowns</a></li>
             </ul>
         </li>
-<!--        <li class="">-->
-<!--            <a href="#navbar">Navbar</a>-->
-<!--            <ul class="nav">-->
-<!--                <li class=""><a href="#navbar-default">Default navbar</a></li>-->
-<!--                <li class=""><a href="#navbar-buttons">Buttons</a></li>-->
-<!--                <li class=""><a href="#navbar-text">Text</a></li>-->
-<!--                <li class=""><a href="#navbar-links">Non-nav links</a></li>-->
-<!--                <li class=""><a href="#navbar-component-alignment">Component alignment</a></li>-->
-<!--                <li class=""><a href="#navbar-fixed-top">Fixed to top</a></li>-->
-<!--                <li class=""><a href="#navbar-fixed-bottom">Fixed to bottom</a></li>-->
-<!--                <li class=""><a href="#navbar-static-top">Static top</a></li>-->
-<!--                <li class=""><a href="#navbar-inverted">Inverted navbar</a></li>-->
-<!--            </ul>-->
-<!--        </li>-->
+        <li class="">
+            <a href="#navbar">Navbar</a>
+            <ul class="nav">
+                <li class=""><a href="#navbar-default">Default navbar</a></li>
+                <li class=""><a href="#navbar-buttons">Buttons</a></li>
+                <li class=""><a href="#navbar-text">Text</a></li>
+                <li class=""><a href="#navbar-links">Non-nav links</a></li>
+                <li class=""><a href="#navbar-component-alignment">Component alignment</a></li>
+                <li class=""><a href="#navbar-fixed-top">Fixed to top</a></li>
+                <li class=""><a href="#navbar-fixed-bottom">Fixed to bottom</a></li>
+                <li class=""><a href="#navbar-static-top">Static top</a></li>
+                <li class=""><a href="#navbar-inverted">Inverted navbar</a></li>
+            </ul>
+        </li>
         <li class=""><a href="#breadcrumbs">Breadcrumbs</a></li>
         <li class="">
             <a href="#pagination">Pagination</a>
