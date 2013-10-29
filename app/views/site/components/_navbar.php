@@ -256,23 +256,48 @@
 <h2 id="navbar-buttons">Buttons</h2>
 <p>For buttons not residing in a <code>&lt;form&gt;</code>, add this class to vertically center buttons within a navbar.</p>
 <div class="bs-example">
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex2-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Brand</a>
-        </div>
-        <div class="collapse navbar-collapse navbar-ex2-collapse">
-            <button type="button" class="btn btn-default navbar-btn">Sign in</button>
-        </div>
-    </nav>
+    <?php $this->widget('bootstrap.widgets.BsNavbar', array(
+            'collapse' => true,
+            'brandLabel' => '',
+            'brandUrl' => '',
+            'items'    => array(
+                BSHtml::linkButton('sign',array(
+                        'icon' => BSHtml::GLYPHICON_BOOKMARK,
+                        'url' => array('/site/index'),
+                        'type' => BSHtml::BUTTON_TYPE_NAVBARBUTTON,
+                    )
+                )
+
+            ),
+        )
+    ); ?>
 </div>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default navbar-btn"</span><span class="nt">&gt;</span>Sign in<span class="nt">&lt;/button&gt;</span>
-        </code></pre></div>
+<div class="highlight">
+    <pre>
+    <span class="pre_black">
+        <span class="pre_blue">&lt;?php<br>$this</span><span class="pre_green">-&gt;</span><span
+            class="pre_blue">widget</span><span class="pre_green">(</span><span class="pre_red">'bootstrap.widgets.BsNavbar'</span><span
+            class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
+            class="pre_red">'collapse'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+            class="pre_blue">true</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
+            class="pre_red">'brandLabel'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+            class="pre_red">''</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'brandUrl'&nbsp;</span><span
+            class="pre_green">=&gt;&nbsp;</span><span class="pre_red">''</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
+            class="pre_red">'items'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+            class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">linkButton</span><span
+            class="pre_green">(</span><span class="pre_red">'sign'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+            class="pre_red">'icon'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+            class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">GLYPHICON_BOOKMARK</span><span
+            class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="pre_red">'url'&nbsp;</span><span
+            class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+            class="pre_red">'/site/index'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+            class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="pre_red">'type'&nbsp;</span><span
+            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span
+            class="pre_green">::</span><span class="pre_blue">BUTTON_TYPE_NAVBARBUTTON<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+            class="pre_green">))<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<br>&nbsp;&nbsp; &nbsp;)<br>));<br></span><span
+            class="pre_blue">?&gt;</span>
+    </span>    
+</pre></div>
 
 
 <h2 id="navbar-text">Text</h2>
