@@ -21,7 +21,6 @@
     <?php echo BSHtml::button('Warning', array('color' => BSHtml::BUTTON_COLOR_WARNING)); ?>
     <?php echo BSHtml::button('Success', array('color' => BSHtml::BUTTON_COLOR_SUCCESS)); ?>
     <?php echo BSHtml::button('Info', array('color' => BSHtml::BUTTON_COLOR_INFO)); ?>
-    <?php echo BSHtml::button('Inverse', array('color' => BSHtml::BUTTON_COLOR_INVERSE)); ?>
     <?php echo BSHtml::button('Default'); ?>
     <?php echo BSHtml::button('Link', array('color' => BSHtml::BUTTON_COLOR_LINK)); ?>
 </div>
@@ -53,11 +52,7 @@
             class="pre_red">'Info'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
             class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span>
         <span class="pre_green">::</span><span class="pre_blue">BUTTON_COLOR_INFO<br></span><span
-            class="pre_green">));<br></span><span class="pre_blue">?&gt;<br></span> &nbsp; &nbsp;<span class="pre_blue">&lt;?php<br></span><span
-            class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">button</span>
-        <span class="pre_green">(</span><span class="pre_red">'Inverse'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
-            class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span>
-        <span class="pre_green">::</span><span class="pre_blue">BUTTON_COLOR_INVERSE<br></span><span class="pre_green">));<br></span><span class="pre_blue">?&gt;<br></span>
+            class="pre_green">));<br></span><span class="pre_blue">?&gt;<br></span>
         &nbsp; &nbsp;<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span>
         <span class="pre_green">::</span><span class="pre_blue">button</span><span class="pre_green">(</span><span
             class="pre_red">'Default'</span><span class="pre_green">);<br></span><span class="pre_blue">?&gt;<br></span>
