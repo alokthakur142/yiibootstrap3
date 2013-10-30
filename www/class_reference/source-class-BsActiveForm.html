@@ -858,28 +858,40 @@
 </span><span id="750" class="l"><a class="l" href="#750">750: </a>        }
 </span><span id="751" class="l"><a class="l" href="#751">751: </a>        <span class="php-var">$helpOptions</span> = \bootstrap\helpers\BSArray::popValue(<span class="php-quote">'helpOptions'</span>, <span class="php-var">$options</span>, <span class="php-keyword1">array</span>());
 </span><span id="752" class="l"><a class="l" href="#752">752: </a>        <span class="php-var">$helpOptions</span>[<span class="php-quote">'type'</span>] = <span class="php-var">$this</span>-&gt;helpType;
-</span><span id="753" class="l"><a class="l" href="#753">753: </a>        <span class="php-var">$options</span>[<span class="php-quote">'helpOptions'</span>] = <span class="php-var">$helpOptions</span>;
-</span><span id="754" class="l"><a class="l" href="#754">754: </a>        <span class="php-var">$options</span>[<span class="php-quote">'labelOptions'</span>] = <span class="php-var">$this</span>-&gt;setLabelOptionsByLayout();
-</span><span id="755" class="l"><a class="l" href="#755">755: </a>        <span class="php-var">$options</span>[<span class="php-quote">'formLayout'</span>] = <span class="php-var">$this</span>-&gt;layout;
-</span><span id="756" class="l"><a class="l" href="#756">756: </a>        <span class="php-keyword1">return</span> <span class="php-var">$options</span>;
-</span><span id="757" class="l"><a class="l" href="#757">757: </a>    }
-</span><span id="758" class="l"><a class="l" href="#758">758: </a>
-</span><span id="759" class="l"><a class="l" href="#759">759: </a>    <span class="php-comment">/**
-</span></span><span id="760" class="l"><a class="l" href="#760">760: </a><span class="php-comment">     * set the label CssClass by Layout
-</span></span><span id="761" class="l"><a class="l" href="#761">761: </a><span class="php-comment">     * @return array
-</span></span><span id="762" class="l"><a class="l" href="#762">762: </a><span class="php-comment">     */</span>
-</span><span id="763" class="l"><a class="l" href="#763">763: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> <a id="_setLabelOptionsByLayout" href="#_setLabelOptionsByLayout">setLabelOptionsByLayout</a>(){
-</span><span id="764" class="l"><a class="l" href="#764">764: </a>        <span class="php-keyword1">if</span>(<span class="php-keyword1">empty</span>(<span class="php-var">$this</span>-&gt;layout))
-</span><span id="765" class="l"><a class="l" href="#765">765: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">array</span>(<span class="php-quote">'class'</span> =&gt; <span class="php-quote">'control-label'</span>);
-</span><span id="766" class="l"><a class="l" href="#766">766: </a>
-</span><span id="767" class="l"><a class="l" href="#767">767: </a>        <span class="php-keyword1">if</span>(<span class="php-var">$this</span>-&gt;layout === BSHtml::FORM_LAYOUT_INLINE)
-</span><span id="768" class="l"><a class="l" href="#768">768: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">array</span>(<span class="php-quote">'class'</span> =&gt; <span class="php-quote">'sr-only'</span>);
-</span><span id="769" class="l"><a class="l" href="#769">769: </a>
-</span><span id="770" class="l"><a class="l" href="#770">770: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">array</span>(<span class="php-quote">'class'</span> =&gt; <span class="php-quote">'col-lg-2 control-label'</span>);
-</span><span id="771" class="l"><a class="l" href="#771">771: </a>    }
-</span><span id="772" class="l"><a class="l" href="#772">772: </a>
-</span><span id="773" class="l"><a class="l" href="#773">773: </a>}
-</span><span id="774" class="l"><a class="l" href="#774">774: </a></span></code></pre>
+</span><span id="753" class="l"><a class="l" href="#753">753: </a>        <span class="php-var">$labelOptions</span> = \bootstrap\helpers\BSArray::popValue(<span class="php-quote">'labelOptions'</span>,<span class="php-var">$options</span>,<span class="php-keyword1">array</span>());
+</span><span id="754" class="l"><a class="l" href="#754">754: </a>
+</span><span id="755" class="l"><a class="l" href="#755">755: </a>        <span class="php-var">$options</span>[<span class="php-quote">'helpOptions'</span>] = <span class="php-var">$helpOptions</span>;
+</span><span id="756" class="l"><a class="l" href="#756">756: </a>        <span class="php-var">$options</span>[<span class="php-quote">'labelOptions'</span>] = self::setLabelOptionsByLayout(<span class="php-var">$this</span>-&gt;layout,<span class="php-var">$labelOptions</span>);
+</span><span id="757" class="l"><a class="l" href="#757">757: </a>        <span class="php-var">$options</span>[<span class="php-quote">'formLayout'</span>] = <span class="php-var">$this</span>-&gt;layout;
+</span><span id="758" class="l"><a class="l" href="#758">758: </a>        <span class="php-keyword1">return</span> <span class="php-var">$options</span>;
+</span><span id="759" class="l"><a class="l" href="#759">759: </a>    }
+</span><span id="760" class="l"><a class="l" href="#760">760: </a>
+</span><span id="761" class="l"><a class="l" href="#761">761: </a>    <span class="php-comment">/**
+</span></span><span id="762" class="l"><a class="l" href="#762">762: </a><span class="php-comment">     * set the label CssClass by Layout
+</span></span><span id="763" class="l"><a class="l" href="#763">763: </a><span class="php-comment">     * @param string $layout
+</span></span><span id="764" class="l"><a class="l" href="#764">764: </a><span class="php-comment">     * @param array $labelOptions
+</span></span><span id="765" class="l"><a class="l" href="#765">765: </a><span class="php-comment">     * @return array new label options
+</span></span><span id="766" class="l"><a class="l" href="#766">766: </a><span class="php-comment">     */</span>
+</span><span id="767" class="l"><a class="l" href="#767">767: </a>    <span class="php-keyword1">static</span> <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> <a id="_setLabelOptionsByLayout" href="#_setLabelOptionsByLayout">setLabelOptionsByLayout</a>(<span class="php-var">$layout</span>,<span class="php-var">$labelOptions</span>=<span class="php-keyword1">array</span>()){
+</span><span id="768" class="l"><a class="l" href="#768">768: </a>
+</span><span id="769" class="l"><a class="l" href="#769">769: </a>        <span class="php-keyword1">if</span>(<span class="php-keyword1">empty</span>(<span class="php-var">$layout</span>)){
+</span><span id="770" class="l"><a class="l" href="#770">770: </a>            BSHtml::addCssClass(<span class="php-quote">'control-label'</span>,<span class="php-var">$labelOptions</span>);
+</span><span id="771" class="l"><a class="l" href="#771">771: </a>            <span class="php-keyword1">return</span> <span class="php-var">$labelOptions</span>;
+</span><span id="772" class="l"><a class="l" href="#772">772: </a>        }
+</span><span id="773" class="l"><a class="l" href="#773">773: </a>        <span class="php-keyword1">if</span>(<span class="php-var">$layout</span> === BSHtml::FORM_LAYOUT_INLINE){
+</span><span id="774" class="l"><a class="l" href="#774">774: </a>            BSHtml::addCssClass(<span class="php-quote">'control-label'</span>,<span class="php-var">$labelOptions</span>);
+</span><span id="775" class="l"><a class="l" href="#775">775: </a>            BSHtml::addCssClass(<span class="php-quote">'sr-only'</span>,<span class="php-var">$labelOptions</span>);
+</span><span id="776" class="l"><a class="l" href="#776">776: </a>            <span class="php-keyword1">return</span> <span class="php-var">$labelOptions</span>;
+</span><span id="777" class="l"><a class="l" href="#777">777: </a>        }
+</span><span id="778" class="l"><a class="l" href="#778">778: </a>        <span class="php-var">$labelClass</span> = \bootstrap\helpers\BSArray::popValue(<span class="php-quote">'class'</span>,<span class="php-var">$labelOptions</span>,BSHtml::FORM_LAYOUT_HORIZONTAL_LABEL_CLASS);
+</span><span id="779" class="l"><a class="l" href="#779">779: </a>        BSHtml::addCssClass(<span class="php-quote">'control-label'</span>,<span class="php-var">$labelOptions</span>);
+</span><span id="780" class="l"><a class="l" href="#780">780: </a>        BSHtml::addCssClass(<span class="php-var">$labelClass</span>,<span class="php-var">$labelOptions</span>);
+</span><span id="781" class="l"><a class="l" href="#781">781: </a>        <span class="php-keyword1">return</span> <span class="php-var">$labelOptions</span>;
+</span><span id="782" class="l"><a class="l" href="#782">782: </a>
+</span><span id="783" class="l"><a class="l" href="#783">783: </a>    }
+</span><span id="784" class="l"><a class="l" href="#784">784: </a>
+</span><span id="785" class="l"><a class="l" href="#785">785: </a>}
+</span><span id="786" class="l"><a class="l" href="#786">786: </a></span></code></pre>
 
 	<div id="footer">
 		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
