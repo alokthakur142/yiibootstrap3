@@ -326,8 +326,12 @@
         )
     ); ?>
 </div>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"navbar-text"</span><span class="nt">&gt;</span>Signed in as Mark Otto<span class="nt">&lt;/p&gt;</span>
-        </code></pre></div>
+<div class="highlight">
+    <?= BSHtml::codeBlock("'items'    => array(
+                BSHtml::menuText('Signed in as Mark Otto'),
+            ),")
+    ?>
+</div>
 
 
 <h2 id="navbar-links">Non-nav links</h2>
@@ -349,8 +353,19 @@
         )
     ); ?>
 </div>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"navbar-text pull-right"</span><span class="nt">&gt;</span>Signed in as <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"navbar-link"</span><span class="nt">&gt;</span>Mark Otto<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
-        </code></pre></div>
+<div class="highlight">
+    <?= BSHtml::codeBlock("'items'    => array(
+                BSHtml::menuText(
+                    'Signed in as '.BSHtml::link(
+                        'Mark Otto',
+                        array('site/user','id' => Yii::app()->user->id),
+                        array('class' => 'navbar-link')
+                    ),
+                    array('pull' => BSHtml::PULL_RIGHT)
+                ),
+            ),")
+    ?>
+</div>
 
 
 <h2 id="navbar-component-alignment">Component alignment</h2>
