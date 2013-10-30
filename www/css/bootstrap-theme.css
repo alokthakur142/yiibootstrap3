@@ -20,6 +20,7 @@ body {
 #footer {
   position: fixed;
   bottom: 0;
+  z-index: 1001;
   width: 100%;
   height: 60px;
   background: url("../img/tweed.png") 0 0 repeat #666666;
