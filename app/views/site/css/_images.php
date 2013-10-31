@@ -15,9 +15,18 @@
         <?php echo BSHtml::imageCircle('holder.js/140x140'); ?>
         <?php echo BSHtml::imageThumbnail('holder.js/140x140'); ?>
     </div>
-    <div class="highlight"><pre >
+    <div class="highlight"><pre>
 <span class="pre_black">
-<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">imageRounded</span><span class="pre_green">(</span><span class="pre_red">'holder.js/140x140'</span><span class="pre_green">);<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">imageCircle</span><span class="pre_green">(</span><span class="pre_red">'holder.js/140x140'</span><span class="pre_green">);<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">imageThumbnail</span><span class="pre_green">(</span><span class="pre_red">'holder.js/140x140'</span><span class="pre_green">);<br></span><span class="pre_blue">?&gt;</span>
+<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+        class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">imageRounded</span><span
+        class="pre_green">(</span><span class="pre_red">'holder.js/140x140'</span><span
+        class="pre_green">);<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+        class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">imageCircle</span><span
+        class="pre_green">(</span><span class="pre_red">'holder.js/140x140'</span><span
+        class="pre_green">);<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+        class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">imageThumbnail</span><span
+        class="pre_green">(</span><span class="pre_red">'holder.js/140x140'</span><span
+        class="pre_green">);<br></span><span class="pre_blue">?&gt;</span>
 </span>
 </pre>
     </div>
@@ -25,8 +34,21 @@
     <div class="bs-callout bs-callout-warning">
         <h4>Responsive images</h4>
 
-        <p>Looking for how to make images more responsive? <a href="../css#overview-responsive-images">Check out the
-                responsive images section</a> up top.</p>
+        <p>Looking for how to make images more responsive?</p>
     </div>
-
+    <div class="bs-example">
+        <?php echo BSHtml::imageResponsive('holder.js/1200x450') ?>
+    </div>
+    <div class="highlight">
+        <pre>
+<span class="pre_black">
+<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+class="pre_blue">imageResponsive</span><span
+class="pre_green">(</span><span class="pre_red">'holder.js/1200x450'</span><span
+class="pre_green">);<br></span><span class="pre_blue">?&gt;
+</span>
+            </span>
+        </pre>
+    </div>
 </div>

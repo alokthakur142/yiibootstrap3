@@ -41,7 +41,7 @@ if (YII_DEBUG) {
     $cs->registerScriptFile($themePath . "/js/application-{$version}.min.js", CClientScript::POS_END);
 }
 $cs
-    ->registerScriptFile('https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css', CClientScript::POS_END)
+//    ->registerScriptFile('https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css', CClientScript::POS_END)
     ->registerScript('tooltip', "$('[data-toggle=\"tooltip\"]').tooltip();", CClientScript::POS_READY)
     ->registerScript('popover', "$('[data-toggle=\"popover\"]').popover();", CClientScript::POS_READY)
     ->registerScript('analytics',
