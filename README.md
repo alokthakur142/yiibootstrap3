@@ -1,5 +1,5 @@
 # Yii Bootstrap3 Module Example
-#### Version 0.0.6
+#### Version 0.0.7
 ### Code
 [Demo][0]
 

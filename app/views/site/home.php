@@ -1,6 +1,6 @@
 <?php $this->pageTitle = 'Home' ?>
 <div class="content g-markdown">
-    <?= BSHtml::pageHeader('Yii-Bootstrap3-Module', BSHtml::italics(' Version 0.0.6 <a href="https://packagist.org/packages/drmabuse/yii-bootstrap-3-module"><img src="https://poser.pugx.org/drmabuse/yii-bootstrap-3-module/v/stable.png" alt="Latest Stable Version"></a> <a href="https://packagist.org/packages/drmabuse/yii-bootstrap-3-module"><img src="https://poser.pugx.org/drmabuse/yii-bootstrap-3-module/downloads.png" alt="Total Downloads Packagist"></a>')); ?>
+    <?= BSHtml::pageHeader('Yii-Bootstrap3-Module', BSHtml::italics(' Version 0.0.7  <a href="https://packagist.org/packages/drmabuse/yii-bootstrap-3-module"><img src="https://poser.pugx.org/drmabuse/yii-bootstrap-3-module/downloads.png" alt="Total Downloads Packagist"></a>')); ?>
     <p><strong>Instructions</strong></p>
 
     <p>This yii module uses <a href="http://getbootstrap.com" title="bootsrap">Twitter Bootstrap</a> as a base. It is
