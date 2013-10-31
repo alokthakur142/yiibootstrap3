@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Pascal Brewing">
+    <meta name="keywords" content="Yii,Bootstrap3,Widgets,Composer,Grunt">
     <link rel="shortcut icon" href="../../assets/ico/favicon.png">
     <title><?= $this->pageTitle ?> | Yii-Bootstrap-3-Module</title>
     <?php $this->renderPartial('//script_header') ?>
