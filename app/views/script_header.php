@@ -37,7 +37,9 @@ if (YII_DEBUG) {
     $cs
         ->registerScriptFile($themePath . '/js/bootstrap.js', CClientScript::POS_END)
         ->registerScriptFile($themePath . '/js/holder.js', CClientScript::POS_END);
+    $cs->registerScriptFile($themePath . '/js/redactor/redactor.min.js', CClientScript::POS_END);
 } else {
+    $cs->registerScriptFile($themePath . '/js/redactor/redactor.min.js', CClientScript::POS_END);
     $cs->registerScriptFile($themePath . "/js/application-{$version}.min.js", CClientScript::POS_END);
 }
 $cs

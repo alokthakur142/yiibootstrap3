@@ -18,6 +18,9 @@
                     <a href="<?= Yii::app()->baseUrl.'/site/components' ?>">Components</a>
                 </li>
                 <li>
+                    <a href="<?= Yii::app()->baseUrl.'/site/javascript' ?>">Javascript</a>
+                </li>
+                <li>
                     <a href="/doc">Class Reference</a>
                 </li>
             </ul>
