@@ -30,24 +30,40 @@
         ),
     )); ?>
 </div><!-- /example -->
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/button&gt;</span>
-            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"modal-title"</span><span class="nt">&gt;</span>Modal title<span class="nt">&lt;/h4&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p&gt;</span>One fine body<span class="ni">&amp;hellip;</span><span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/button&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Save changes<span class="nt">&lt;/button&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.modal-content --&gt;</span>
-            <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.modal-dialog --&gt;</span>
-            <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.modal --&gt;</span>
-        </code></pre></div>
+<div class="highlight">
+    <pre>
+        <span class="pre_black">
+            <span class="pre_blue">&lt;?php<br>$this</span><span class="pre_green">-&gt;</span><span
+                class="pre_blue">widget</span><span class="pre_green">(</span><span
+                class="pre_red">'bootstrap.widgets.BsModal'</span><span
+                class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'id'&nbsp;</span><span
+                class="pre_green">=&gt;&nbsp;</span><span class="pre_red">'myModal'</span><span
+                class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
+                class="pre_red">'header'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'Modal&nbsp;Heading'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
+                class="pre_red">'content'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'&lt;p&gt;One&nbsp;fine&nbsp;body...&lt;/p&gt;'</span><span
+                class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
+                class="pre_red">'footer'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">button</span><span class="pre_green">(</span><span
+                class="pre_red">'Save&nbsp;Changes'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'data-dismiss'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'modal'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BUTTON_COLOR_PRIMARY<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">)),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="pre_blue">BSHtml</span><span
+                class="pre_green">::</span><span class="pre_blue">button</span><span
+                class="pre_green">(</span><span class="pre_red">'Close'</span><span
+                class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'data-dismiss'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'modal'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_green">))<br>&nbsp;&nbsp; &nbsp;)<br>));<br></span><span
+                class="pre_blue">?&gt;</span>
+        </span>
+    </pre>
+</div>
 
 <h3>Live demo</h3>
 <p>Toggle a modal via JavaScript by clicking the button below. It will slide down and fade in from the top of the page.</p>
@@ -93,27 +109,7 @@
 </div><!-- /.modal -->
 
 <div class="bs-example" style="padding-bottom: 24px;">
-    <?php echo BSHtml::ajaxButton(
-        'BSHtml::ajaxButton',
-        Yii::app()->createAbsoluteUrl('site/ajaxTest'),
-        array(
-            'cache' => true,
-            'data' => array(
-                'message' => 'clicked the AjaxButton'
-            ),
-            'type' => 'POST',
-            'success' => 'js:function(data){
-                    console.log(data);
-                    $(".modal-body").html(data);
-                    $("#demo_modal").modal("show");
-                }',
-        ),
-        array(
-            'color' => BSHtml::BUTTON_COLOR_INFO,
-            'icon' => BSHtml::GLYPHICON_BELL
-        )
-    ); ?>
-    <?php echo BSHtml::ajaxLink('BSHtml::ajaxLink',
+    <?php echo BSHtml::ajaxLink('Launch Demo Modal',
         Yii::app()->createAbsoluteUrl('site/ajaxTest'),
         array(
             'cache' => true,
@@ -122,40 +118,44 @@
             ),
             'type' => 'POST',
             'success' => 'js:function(data){
-                    console.log(data);
-                    $(".modal-body").html(data);
-                    $("#demo_modal").modal("show");
-                }',
+                console.log(data);
+                $(".modal-body").html(data);
+                $("#demo_modal").modal("show");
+            }',
         ),
         array(
             'icon' => BSHtml::GLYPHICON_BELL
         )
     ); ?>
 </div><!-- /example -->
-<div class="highlight"><pre><code class="html"><span class="c">&lt;!-- Button trigger modal --&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#myModal"</span><span class="nt">&gt;</span>
-            Launch demo modal
-            <span class="nt">&lt;/button&gt;</span>
-
-            <span class="c">&lt;!-- Modal --&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"myModal"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"myModalLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/button&gt;</span>
-            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"modal-title"</span> <span class="na">id=</span><span class="s">"myModalLabel"</span><span class="nt">&gt;</span>Modal title<span class="nt">&lt;/h4&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
-            ...
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/button&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Save changes<span class="nt">&lt;/button&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.modal-content --&gt;</span>
-            <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.modal-dialog --&gt;</span>
-            <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.modal --&gt;</span>
-        </code></pre></div>
+<div class="highlight">
+    <pre>
+        <span class="pre_black">
+            <span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
+                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">ajaxLink</span><span class="pre_green">(</span><span
+                class="pre_red">'open&nbsp;Modal'</span><span class="pre_green">,&nbsp;</span><span
+                class="pre_blue">Yii</span><span class="pre_green">::</span><span class="pre_blue">app</span><span
+                class="pre_green">()-&gt;</span><span class="pre_blue">createAbsoluteUrl</span><span
+                class="pre_green">(</span><span class="pre_red">'site/ajaxTest'</span><span
+                class="pre_green">),&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'cache'&nbsp;</span><span
+                class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">true</span><span
+                class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'data'&nbsp;</span><span
+                class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_red">'message'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'clicked&nbsp;the&nbsp;AjaxLink'<br>&nbsp;&nbsp; &nbsp;</span><span
+                class="pre_green">),<br>&nbsp;&nbsp; &nbsp;</span><span
+                class="pre_red">'type'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'POST'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
+                class="pre_red">'success'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+                class="pre_red">'js:function(data){<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;console.log(data);<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$(".modal-body").html(data);<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$("#demo_modal").modal("show");<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}'<br></span><span
+                class="pre_green">),&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'icon'&nbsp;</span><span
+                class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                class="pre_green">::</span><span class="pre_blue">GLYPHICON_BELL<br></span><span
+                class="pre_green">));<br></span><span class="pre_blue">?&gt;</span>
+        </span>
+    </pre>
+</div>
 
 
 <div class="bs-callout bs-callout-warning">
@@ -177,49 +177,49 @@
 <div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myModal'</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="nx">options</span><span class="p">)</span>
         </code></pre></div>
 
-<h3>Options</h3>
-<p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-backdrop=""</code>.</p>
-<div class="table-responsive">
-    <table class="table table-bordered table-striped">
-        <thead>
-        <tr>
-            <th style="width: 100px;">Name</th>
-            <th style="width: 50px;">type</th>
-            <th style="width: 50px;">default</th>
-            <th>description</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>backdrop</td>
-            <td>boolean or the string <code>'static'</code></td>
-            <td>true</td>
-            <td>Includes a modal-backdrop element. Alternatively, specify <code>static</code> for a backdrop which doesn't close the modal on click.</td>
-        </tr>
-        <tr>
-            <td>keyboard</td>
-            <td>boolean</td>
-            <td>true</td>
-            <td>Closes the modal when escape key is pressed</td>
-        </tr>
-        <tr>
-            <td>show</td>
-            <td>boolean</td>
-            <td>true</td>
-            <td>Shows the modal when initialized.</td>
-        </tr>
-        <tr>
-            <td>remote</td>
-            <td>path</td>
-            <td>false</td>
-            <td><p>If a remote URL is provided, content will be loaded via jQuery's <code>load</code> method and injected into the root of the modal element. If you're using the data-api, you may alternatively use the <code>href</code> attribute to specify the remote source. An example of this is shown below:</p>
-                <div class="highlight"><pre><code class="html"><span class="nt">&lt;a</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">href=</span><span class="s">"remote.html"</span> <span class="na">data-target=</span><span class="s">"#modal"</span><span class="nt">&gt;</span>Click me<span class="nt">&lt;/a&gt;</span>
-                        </code></pre></div>
-            </td>
-        </tr>
-        </tbody>
-    </table>
-</div><!-- /.table-responsive -->
+<!--<h3>Options</h3>-->
+<!--<p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-backdrop=""</code>.</p>-->
+<!--<div class="table-responsive">-->
+<!--    <table class="table table-bordered table-striped">-->
+<!--        <thead>-->
+<!--        <tr>-->
+<!--            <th style="width: 100px;">Name</th>-->
+<!--            <th style="width: 50px;">type</th>-->
+<!--            <th style="width: 50px;">default</th>-->
+<!--            <th>description</th>-->
+<!--        </tr>-->
+<!--        </thead>-->
+<!--        <tbody>-->
+<!--        <tr>-->
+<!--            <td>backdrop</td>-->
+<!--            <td>boolean or the string <code>'static'</code></td>-->
+<!--            <td>true</td>-->
+<!--            <td>Includes a modal-backdrop element. Alternatively, specify <code>static</code> for a backdrop which doesn't close the modal on click.</td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>keyboard</td>-->
+<!--            <td>boolean</td>-->
+<!--            <td>true</td>-->
+<!--            <td>Closes the modal when escape key is pressed</td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>show</td>-->
+<!--            <td>boolean</td>-->
+<!--            <td>true</td>-->
+<!--            <td>Shows the modal when initialized.</td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>remote</td>-->
+<!--            <td>path</td>-->
+<!--            <td>false</td>-->
+<!--            <td><p>If a remote URL is provided, content will be loaded via jQuery's <code>load</code> method and injected into the root of the modal element. If you're using the data-api, you may alternatively use the <code>href</code> attribute to specify the remote source. An example of this is shown below:</p>-->
+<!--                <div class="highlight"><pre><code class="html"><span class="nt">&lt;a</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">href=</span><span class="s">"remote.html"</span> <span class="na">data-target=</span><span class="s">"#modal"</span><span class="nt">&gt;</span>Click me<span class="nt">&lt;/a&gt;</span>-->
+<!--                        </code></pre></div>-->
+<!--            </td>-->
+<!--        </tr>-->
+<!--        </tbody>-->
+<!--    </table>-->
+<!--</div><!-- /.table-responsive -->-->
 
 <h3>Methods</h3>
 
