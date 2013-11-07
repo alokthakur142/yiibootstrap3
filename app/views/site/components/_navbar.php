@@ -48,11 +48,11 @@
                     'items' => array(
                         array('label' => 'About', 'url' => array('/site/page', 'view' => 'about')),
                         array('label' => 'Contact', 'url' => array('/site/contact')),
-                        array('label' => 'Login', 'url' => array('/site/login'),'pull' => BSHtml::PULL_RIGHT, 'visible' => Yii::app()->user->isGuest),
-                        array('label' => 'Logout (' . Yii::app()->user->name . ')','pull' => BSHtml::PULL_RIGHT, 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest)
+                        array('label' => 'Login', 'url' => array('/site/login'),'pull' => BSHtml::NAVBAR_NAV_PULL_RIGHT, 'visible' => Yii::app()->user->isGuest),
+                        array('label' => 'Logout (' . Yii::app()->user->name . ')','pull' => BSHtml::NAVBAR_NAV_PULL_RIGHT, 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest)
                     ),
                     'htmlOptions' => array(
-                        'pull' =>BSHtml::PULL_RIGHT
+                        'pull' =>BSHtml::NAVBAR_NAV_PULL_RIGHT
                     )
                 )
 
@@ -208,7 +208,7 @@
                 class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'pull'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                 class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
-                class="pre_blue">PULL_RIGHT</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_blue">NAVBAR_NAV_PULL_RIGHT</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'visible'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                 class="pre_blue">Yii</span><span class="pre_green">::</span><span class="pre_blue">app</span><span
                 class="pre_green">()-&gt;</span><span class="pre_blue">user</span><span
@@ -223,7 +223,7 @@
                 class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'pull'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                 class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
-                class="pre_blue">PULL_RIGHT</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_blue">NAVBAR_NAV_PULL_RIGHT</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'/site/logout'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
@@ -235,7 +235,7 @@
                 class="pre_red">'htmlOptions'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'pull'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                 class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
-                class="pre_blue">PULL_RIGHT<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                class="pre_blue">NAVBAR_NAV_PULL_RIGHT<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_green">)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<br>&nbsp;&nbsp; &nbsp;)<br>));<br></span><span
                 class="pre_blue">?&gt;</span>
         </span>
@@ -279,7 +279,7 @@
                         array('label' => 'Logout (' . Yii::app()->user->name . ')', 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest)
                     ),
                     'htmlOptions' => array(
-                        'pull' =>BSHtml::PULL_RIGHT
+                        'pull' =>BSHtml::NAVBAR_NAV_PULL_RIGHT
                     )
                 )
             ),
@@ -347,7 +347,7 @@
                         array('site/user','id' => Yii::app()->user->id),
                         array('class' => 'navbar-link')
                     ),
-                    array('pull' => BSHtml::PULL_RIGHT)
+                    array('pull' => BSHtml::NAVBAR_NAV_PULL_RIGHT)
                 ),
             ),
         )
@@ -361,7 +361,7 @@
                         array('site/user','id' => Yii::app()->user->id),
                         array('class' => 'navbar-link')
                     ),
-                    array('pull' => BSHtml::PULL_RIGHT)
+                    array('pull' => BSHtml::NAVBAR_NAV_PULL_RIGHT)
                 ),
             ),")
     ?>
