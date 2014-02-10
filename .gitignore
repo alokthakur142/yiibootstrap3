@@ -40,3 +40,5 @@ composer.lock
 node_modules
 npm-debug.log
 www/uploads
+
+/bower_components
