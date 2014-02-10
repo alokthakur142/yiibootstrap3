@@ -1,6 +1,6 @@
 <?php
 
-class User extends CActiveRecord
+class User extends CFormModel
 {
 	/**
 	 * The followings are the available columns in table 'tbl_user':
@@ -11,6 +11,12 @@ class User extends CActiveRecord
 	 * @var string $profile
 	 */
 
+    public $id;
+    public $username;
+    public $password;
+    public $email;
+    public $profile;
+
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @return CActiveRecord the static model class
@@ -20,13 +26,13 @@ class User extends CActiveRecord
 		return parent::model($className);
 	}
 
-	/**
-	 * @return string the associated database table name
-	 */
-	public function tableName()
-	{
-		return '{{user}}';
-	}
+//	/**
+//	 * @return string the associated database table name
+//	 */
+//	public function tableName()
+//	{
+//		return '{{user}}';
+//	}
 
 	/**
 	 * @return array validation rules for model attributes.

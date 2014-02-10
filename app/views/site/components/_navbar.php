@@ -380,6 +380,11 @@
             'collapse' => true,
             'position' => BSHtml::NAVBAR_POSITION_FIXED_TOP,
             'brandLabel' => 'Home',
+            'htmlOptions' => array(
+                'containerOptions' => array(
+                    'fluid' => true
+                ),
+            ),
             'items'    => array(
                 array(
                     'class' => 'bootstrap.widgets.BsNav',
@@ -398,6 +403,13 @@
 </div><!-- /example -->
 <div class="highlight">
     <?= BSHtml::codeBlock("'position' => BSHtml::NAVBAR_POSITION_FIXED_TOP") ?>
+    <?= BSHtml::codeBlock(
+        "'htmlOptions' => array(
+        'containerOptions' => array(
+            'fluid' => true
+        ),
+    ),"
+    ) ?>
 </div>
 
 <div class="bs-callout bs-callout-danger">

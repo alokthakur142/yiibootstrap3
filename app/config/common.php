@@ -28,7 +28,7 @@ return array(
     ),
 	'components' => array(
         'db' => array(
-            'connectionString' => 'mysql:host=localhost;dbname=pres',
+            'connectionString' => 'mysql:host=localhost;dbname=yii-press',
             'username' => 'root',
             'password' => 'root',
             'enableProfiling' => true,
