@@ -15,8 +15,8 @@ $version = trim(str_replace(' Version ', '', Yii::app()->params->version));
  */
 if (YII_DEBUG) {
     $cs
-        ->registerCssFile($themePath . '/css/bootstrap.css')
-        ->registerCssFile($themePath . '/css/bootstrap-theme.css');
+        ->registerCssFile($themePath . '/css/bootstrap.css');
+//        ->registerCssFile($themePath . '/css/bootstrap-theme.css');
 } else {
     $cs->registerCssFile($themePath . "/css/application-{$version}.min.css");
 }

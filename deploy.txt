@@ -1,0 +1,22 @@
+#!/bin/sh
+
+echo "Update BS3 Example"
+echo ""
+echo ""
+
+echo "###############"
+echo "Git pull"
+echo "###############"
+git pull
+
+echo ""
+echo ""
+echo "###############"
+echo "Fix permissions"
+echo "###############"
+chown -R www-data:www-data .
+echo "done."
+
+echo ""
+echo ""
+echo "All done."

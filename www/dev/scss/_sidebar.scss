@@ -1,0 +1,108 @@
+/*
+ * Side navigation
+ *
+ * Scrollspy and affixed enhanced navigation to highlight sections and secondary
+ * sections of docs content.
+ */
+
+/* By default it's not affixed in mobile views, so undo that */
+
+.bs-sidebar.affix {
+  position: static;
+  background: url("../img/tweed.png") 0 0 repeat #666666;
+  -moz-border-radius: 0.1px;
+  border-radius: 0.1px;
+  -webkit-box-shadow: 0 0 13px 4px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 13px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 13px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* First level of nav */
+
+.bs-sidenav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-shadow: 0 1px 0 #333;
+  border-radius: 5px;
+}
+
+/* All levels of nav */
+
+.bs-sidebar .nav > li > a {
+  display: block;
+  padding: 5px 20px;
+  color: #e1e1e1;
+}
+
+.bs-sidebar .nav > li > a:hover,
+.bs-sidebar .nav > li > a:focus {
+  text-decoration: none;
+}
+
+.bs-sidebar .nav > .active > a,
+.bs-sidebar .nav > .active:hover > a,
+.bs-sidebar .nav > .active:focus > a {
+  font-weight: bold;
+  color: #FFF5E6;
+  background-color: transparent;
+  border-right: 1px solid #99cc32;
+}
+
+/* Nav: second level (shown on .active) */
+
+.bs-sidebar .nav .nav {
+  display: none;
+  /* Hide by default, but at >768px, show it */
+
+  margin-bottom: 8px;
+}
+
+.bs-sidebar .nav .nav > li > a {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 30px;
+  font-size: 90%;
+}
+
+/* Show and affix the side nav when space allows it */
+
+@media screen and (min-width: 992px)
+{
+/* Widen the fixed sidebar */
+
+  .bs-sidebar .nav > .active > ul {
+    display: block;
+  }
+
+  .bs-sidebar.affix,
+  .bs-sidebar.affix-bottom {
+    width: 213px;
+  }
+  .bs-sidebar.affix {
+    position: fixed;
+  /* Undo the static from mobile first approach */
+
+    top: 80px;
+  }
+  .bs-sidebar.affix-bottom {
+    position: absolute;
+    /* Undo the static from mobile first approach */
+  }
+  .bs-sidebar.affix-bottom .bs-sidenav,
+  .bs-sidebar.affix .bs-sidenav {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px)
+{
+/* Widen the fixed sidebar again */
+
+  .bs-sidebar.affix-bottom,
+  .bs-sidebar.affix {
+    width: 263px;
+  }
+}

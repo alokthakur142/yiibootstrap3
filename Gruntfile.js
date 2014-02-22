@@ -66,17 +66,24 @@ module.exports = function (grunt) {
 //                }
 //            },
             bootstrap:{
-
+                options: {                       // Target options
+                    style: 'compressed'
+                },
+                files: {                         // Dictionary of files
+//                    'www/css/bootstrap.css':                              'bower_components/bootstrap-sass/lib/bootstrap.scss',   // 'destination': 'source'
+                    'www/css/bootstrap.css':                              'www/dev/scss/app.scss',   // 'destination': 'source'
+                    'www/css/application-<%= pkg.version %>.min.css':                              'www/dev/scss/app.scss'   // 'destination': 'source'
+//                    'www/css/application-<%= pkg.version %>.min.css':     'bower_components/bootstrap-sass/lib/bootstrap.scss'   // 'destination': 'source'
+                }
             }
         },
         concat: {
-            application_css: {
-                src: [
-                    'www/css/bootstrap.min.css',
-                    'www/css/bootstrap-theme.min.css'
-                ],
-                dest: 'www/css/application-<%= pkg.version %>.min.css'
-            },
+//            application_css: {
+//                src: [
+//                    'www/css/bootstrap.min.css'
+//                ],
+//                dest: 'www/css/application-<%= pkg.version %>.min.css'
+//            },
             application_js: {
                 src: [
                     'www/js/bootstrap.min.js',
