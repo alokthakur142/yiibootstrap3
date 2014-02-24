@@ -1,4 +1,5 @@
 <?php
+
 /**
  * SiteController class
  * @author Pascal Brewing <pascalbrewing@gmail.com>
@@ -9,8 +10,8 @@ class SiteController extends EController
 {
 
     /**
-    * @return array action filters
-    */
+     * @return array action filters
+     */
     public function filters()
     {
         return array(
@@ -27,12 +28,12 @@ class SiteController extends EController
     public function accessRules()
     {
         return array(
-            array('allow',  // allow all users to perform 'index' and 'view' actions
-                'actions'=>array('index','css','ajaxTest','doc','error','components','javascript'),
-                'users'=>array('*'),
+            array('allow', // allow all users to perform 'index' and 'view' actions
+                'actions' => array('index', 'css', 'ajaxTest', 'doc', 'error', 'components', 'javascript'),
+                'users' => array('*'),
             ),
-            array('deny',  // deny all users
-                'users'=>array('*'),
+            array('deny', // deny all users
+                'users' => array('*'),
             ),
         );
     }
@@ -43,40 +44,42 @@ class SiteController extends EController
         $this->render('home');
     }
 
-    public function actionCss(){
+    public function actionCss()
+    {
         $model = new User();
         $this->layout = '//layouts/column_2';
 
-        if(isset($_POST['User']))
-        {
+        if (isset($_POST['User'])) {
             echo CActiveForm::validate($model);
             Yii::app()->end();
         }
-        $this->render('css',array('model' => $model));
+        $this->render('css', array('model' => $model));
     }
 
-    public function actionComponents(){
+    public function actionComponents()
+    {
         $model = new User();
         $this->layout = '//layouts/column_2';
 
-        if(isset($_POST['User']))
-        {
+        if (isset($_POST['User'])) {
             echo CActiveForm::validate($model);
             Yii::app()->end();
         }
-        $this->render('components',array('model' => $model));
+        $this->render('components', array('model' => $model));
     }
-    public function actionJavascript(){
+
+    public function actionJavascript()
+    {
         $model = new User();
         $this->layout = '//layouts/column_2';
 
-        if(isset($_POST['User']))
-        {
+        if (isset($_POST['User'])) {
             echo CActiveForm::validate($model);
             Yii::app()->end();
         }
-        $this->render('javascript',array('model' => $model));
+        $this->render('javascript', array('model' => $model));
     }
+
     /**
      * Ajax Sample
      */
@@ -91,40 +94,40 @@ class SiteController extends EController
      * Apigen Documentation
      * php apigen.php apigen --source bootstrap/app/lib/vendor/drmabuse/yii-bootstrap-3-module/ --destination bootstrap/www/class_reference
      */
-    public function actionDoc(){
+    public function actionDoc()
+    {
         $this->render('documentation');
     }
-	/**
-	 * This is the action to handle external exceptions.
-	 */
-	public function actionError()
-	{
-		if($error=Yii::app()->errorHandler->error)
-		{
-			if(Yii::app()->request->isAjaxRequest)
-				echo $error['message'];
-			else
-				$this->render('error', $error);
-		}
-	}
+
+    /**
+     * This is the action to handle external exceptions.
+     */
+    public function actionError()
+    {
+        if ($error = Yii::app()->errorHandler->error) {
+            if (Yii::app()->request->isAjaxRequest)
+                echo $error['message'];
+            else
+                $this->render('error', $error);
+        }
+    }
+
     /**
      * Displays the contact page
      */
     public function actionContact()
     {
-        $model=new ContactForm;
-        if(isset($_POST['ContactForm']))
-        {
-            $model->attributes=$_POST['ContactForm'];
-            if($model->validate())
-            {
-                $headers="From: {$model->email}\r\nReply-To: {$model->email}";
-                mail(Yii::app()->params['adminEmail'],$model->subject,$model->body,$headers);
-                Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
+        $model = new ContactForm;
+        if (isset($_POST['ContactForm'])) {
+            $model->attributes = $_POST['ContactForm'];
+            if ($model->validate()) {
+                $headers = "From: {$model->email}\r\nReply-To: {$model->email}";
+                mail(Yii::app()->params['adminEmail'], $model->subject, $model->body, $headers);
+                Yii::app()->user->setFlash('contact', 'Thank you for contacting us. We will respond to you as soon as possible.');
                 $this->refresh();
             }
         }
-        $this->render('contact',array('model'=>$model));
+        $this->render('contact', array('model' => $model));
     }
 
     /**
@@ -132,30 +135,32 @@ class SiteController extends EController
      */
     public function actionLogin()
     {
-        if (!defined('CRYPT_BLOWFISH')||!CRYPT_BLOWFISH)
-            throw new CHttpException(500,"This application requires that PHP was compiled with Blowfish support for crypt().");
+        if (!defined('CRYPT_BLOWFISH') || !CRYPT_BLOWFISH)
+            throw new CHttpException(500, "This application requires that PHP was compiled with Blowfish support for crypt().");
 
-        $model=new LoginForm;
+        $model = new LoginForm;
 
         // if it is ajax validation request
-        if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
-        {
+        if (isset($_POST['ajax']) && $_POST['ajax'] === 'login-form') {
             echo CActiveForm::validate($model);
             Yii::app()->end();
         }
 
         // collect user input data
-        if(isset($_POST['LoginForm']))
-        {
-            $model->attributes=$_POST['LoginForm'];
+        if (isset($_POST['LoginForm'])) {
+            $model->attributes = $_POST['LoginForm'];
             // validate user input and redirect to the previous page if valid
-            if($model->validate() && $model->login())
+            if ($model->validate() && $model->login())
                 $this->redirect(Yii::app()->user->returnUrl);
         }
         // display the login form
-        $this->render('login',array('model'=>$model));
+        $this->render('login', array('model' => $model));
     }
 
+    public function actionRegister()
+    {
+
+    }
     /**
      * Logs out the current user and redirect to homepage.
      */

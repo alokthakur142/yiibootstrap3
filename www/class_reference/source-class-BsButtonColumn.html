@@ -7,8 +7,8 @@
 
 	<title>File widgets/BsButtonColumn.php</title>
 
-	<script type="text/javascript" src="resources/combined.js?1303512325"></script>
-	<script type="text/javascript" src="elementlist.js?2019737583"></script>
+	<script type="text/javascript" src="resources/combined.js?1771186947"></script>
+	<script type="text/javascript" src="elementlist.js?793332107"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -47,6 +47,7 @@
 				<li class="active"><a href="class-BsButtonColumn.html">BsButtonColumn</a></li>
 				<li><a href="class-BsCollapse.html">BsCollapse</a></li>
 				<li><a href="class-BsDataColumn.html">BsDataColumn</a></li>
+				<li><a href="class-BsDetailView.html">BsDetailView</a></li>
 				<li><a href="class-BsGridView.html">BsGridView</a></li>
 				<li><a href="class-BSHtml.html">BSHtml</a></li>
 				<li><a href="class-BsListView.html">BsListView</a></li>
@@ -54,6 +55,7 @@
 				<li><a href="class-BsNav.html">BsNav</a></li>
 				<li><a href="class-BsNavbar.html">BsNavbar</a></li>
 				<li><a href="class-BsPager.html">BsPager</a></li>
+				<li><a href="class-BsPanel.html">BsPanel</a></li>
 				<li><a href="class-BsWidget.html">BsWidget</a></li>
 				<li><a href="class-ChartJs.html">ChartJs</a></li>
 				<li><a href="class-ChBars.html">ChBars</a></li>
@@ -174,7 +176,7 @@
 </span><span id="66" class="l"><a class="l" href="#66">66: </a>        }
 </span><span id="67" class="l"><a class="l" href="#67">67: </a>
 </span><span id="68" class="l"><a class="l" href="#68">68: </a>        <span class="php-var">$url</span> = \bootstrap\helpers\BSArray::popValue(<span class="php-quote">'url'</span>, <span class="php-var">$button</span>, <span class="php-quote">'#'</span>);
-</span><span id="69" class="l"><a class="l" href="#69">69: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">strcmp</span>(<span class="php-var">$url</span>, <span class="php-quote">'#'</span>) !== <span class="php-num">0</span>) {
+</span><span id="69" class="l"><a class="l" href="#69">69: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$url</span> !== <span class="php-quote">'#'</span>) {
 </span><span id="70" class="l"><a class="l" href="#70">70: </a>            <span class="php-var">$url</span> = <span class="php-var">$this</span>-&gt;evaluateExpression(<span class="php-var">$url</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'data'</span> =&gt; <span class="php-var">$data</span>, <span class="php-quote">'row'</span> =&gt; <span class="php-var">$row</span>));
 </span><span id="71" class="l"><a class="l" href="#71">71: </a>        }
 </span><span id="72" class="l"><a class="l" href="#72">72: </a>

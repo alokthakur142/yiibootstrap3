@@ -7,8 +7,8 @@
 
 	<title>File components/BSApi.php</title>
 
-	<script type="text/javascript" src="resources/combined.js?1303512325"></script>
-	<script type="text/javascript" src="elementlist.js?2019737583"></script>
+	<script type="text/javascript" src="resources/combined.js?1771186947"></script>
+	<script type="text/javascript" src="elementlist.js?793332107"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -47,6 +47,7 @@
 				<li><a href="class-BsButtonColumn.html">BsButtonColumn</a></li>
 				<li><a href="class-BsCollapse.html">BsCollapse</a></li>
 				<li><a href="class-BsDataColumn.html">BsDataColumn</a></li>
+				<li><a href="class-BsDetailView.html">BsDetailView</a></li>
 				<li><a href="class-BsGridView.html">BsGridView</a></li>
 				<li><a href="class-BSHtml.html">BSHtml</a></li>
 				<li><a href="class-BsListView.html">BsListView</a></li>
@@ -54,6 +55,7 @@
 				<li><a href="class-BsNav.html">BsNav</a></li>
 				<li><a href="class-BsNavbar.html">BsNavbar</a></li>
 				<li><a href="class-BsPager.html">BsPager</a></li>
+				<li><a href="class-BsPanel.html">BsPanel</a></li>
 				<li><a href="class-BsWidget.html">BsWidget</a></li>
 				<li><a href="class-ChartJs.html">ChartJs</a></li>
 				<li><a href="class-ChBars.html">ChBars</a></li>
@@ -210,7 +212,47 @@
 </span><span id="102" class="l"><a class="l" href="#102">102: </a>        \Yii::app()-&gt;getClientScript()-&gt;registerCssFile(<span class="php-var">$this</span>-&gt;getAssetsUrl() . <span class="php-quote">&quot;/css/</span><span class="php-var">{$cssFile}</span><span class="php-quote">&quot;</span>, <span class="php-var">$media</span>);
 </span><span id="103" class="l"><a class="l" href="#103">103: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>;
 </span><span id="104" class="l"><a class="l" href="#104">104: </a>    }
-</span><span id="105" class="l"><a class="l" href="#105">105: </a></span>} </code></pre>
+</span><span id="105" class="l"><a class="l" href="#105">105: </a>
+</span><span id="106" class="l"><a class="l" href="#106">106: </a>    <span class="php-comment">/**
+</span></span><span id="107" class="l"><a class="l" href="#107">107: </a><span class="php-comment">     * Registers events using the given selector.
+</span></span><span id="108" class="l"><a class="l" href="#108">108: </a><span class="php-comment">     * @param string $selector the CSS selector.
+</span></span><span id="109" class="l"><a class="l" href="#109">109: </a><span class="php-comment">     * @param string[] $events the JavaScript event configuration (name=&gt;handler).
+</span></span><span id="110" class="l"><a class="l" href="#110">110: </a><span class="php-comment">     * @param int $position the position of the JavaScript code.
+</span></span><span id="111" class="l"><a class="l" href="#111">111: </a><span class="php-comment">     */</span>
+</span><span id="112" class="l"><a class="l" href="#112">112: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_registerEvents" href="#_registerEvents">registerEvents</a>(<span class="php-var">$selector</span>, <span class="php-var">$events</span>, <span class="php-var">$position</span> = CClientScript::POS_END)
+</span><span id="113" class="l"><a class="l" href="#113">113: </a>    {
+</span><span id="114" class="l"><a class="l" href="#114">114: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword1">empty</span>(<span class="php-var">$events</span>)) {
+</span><span id="115" class="l"><a class="l" href="#115">115: </a>            <span class="php-keyword1">return</span>;
+</span><span id="116" class="l"><a class="l" href="#116">116: </a>        }
+</span><span id="117" class="l"><a class="l" href="#117">117: </a>
+</span><span id="118" class="l"><a class="l" href="#118">118: </a>        <span class="php-var">$script</span> = <span class="php-quote">''</span>;
+</span><span id="119" class="l"><a class="l" href="#119">119: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$events</span> <span class="php-keyword1">as</span> <span class="php-var">$name</span> =&gt; <span class="php-var">$handler</span>) {
+</span><span id="120" class="l"><a class="l" href="#120">120: </a>            <span class="php-var">$handler</span> = (<span class="php-var">$handler</span> <span class="php-keyword1">instanceof</span> CJavaScriptExpression)
+</span><span id="121" class="l"><a class="l" href="#121">121: </a>                ? <span class="php-var">$handler</span>
+</span><span id="122" class="l"><a class="l" href="#122">122: </a>                : <span class="php-keyword1">new</span> CJavaScriptExpression(<span class="php-var">$handler</span>);
+</span><span id="123" class="l"><a class="l" href="#123">123: </a>
+</span><span id="124" class="l"><a class="l" href="#124">124: </a>            <span class="php-var">$script</span> .= <span class="php-quote">&quot;jQuery('</span><span class="php-var">{$selector}</span><span class="php-quote">').on('</span><span class="php-var">{$name}</span><span class="php-quote">', </span><span class="php-var">{$handler}</span><span class="php-quote">);&quot;</span>;
+</span><span id="125" class="l"><a class="l" href="#125">125: </a>        }
+</span><span id="126" class="l"><a class="l" href="#126">126: </a>        <span class="php-var">$id</span> = __CLASS__ . <span class="php-quote">'#Events'</span> . self::<span class="php-var">$counter</span>++;
+</span><span id="127" class="l"><a class="l" href="#127">127: </a>        Yii::app()-&gt;clientScript-&gt;registerScript(<span class="php-var">$id</span>, <span class="php-var">$script</span>, <span class="php-var">$position</span>);
+</span><span id="128" class="l"><a class="l" href="#128">128: </a>    }
+</span><span id="129" class="l"><a class="l" href="#129">129: </a>
+</span><span id="130" class="l"><a class="l" href="#130">130: </a>    <span class="php-comment">/**
+</span></span><span id="131" class="l"><a class="l" href="#131">131: </a><span class="php-comment">     * Registers a specific Bootstrap plugin using the given selector and options.
+</span></span><span id="132" class="l"><a class="l" href="#132">132: </a><span class="php-comment">     * @param string $name the plugin name.
+</span></span><span id="133" class="l"><a class="l" href="#133">133: </a><span class="php-comment">     * @param string $selector the CSS selector.
+</span></span><span id="134" class="l"><a class="l" href="#134">134: </a><span class="php-comment">     * @param array $options the JavaScript options for the plugin.
+</span></span><span id="135" class="l"><a class="l" href="#135">135: </a><span class="php-comment">     * @param int $position the position of the JavaScript code.
+</span></span><span id="136" class="l"><a class="l" href="#136">136: </a><span class="php-comment">     */</span>
+</span><span id="137" class="l"><a class="l" href="#137">137: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_registerPlugin" href="#_registerPlugin">registerPlugin</a>(<span class="php-var">$name</span>, <span class="php-var">$selector</span>, <span class="php-var">$options</span> = <span class="php-keyword1">array</span>(), <span class="php-var">$position</span> = CClientScript::POS_END)
+</span><span id="138" class="l"><a class="l" href="#138">138: </a>    {
+</span><span id="139" class="l"><a class="l" href="#139">139: </a>        <span class="php-var">$options</span> = !<span class="php-keyword1">empty</span>(<span class="php-var">$options</span>) ? CJavaScript::encode(<span class="php-var">$options</span>) : <span class="php-quote">''</span>;
+</span><span id="140" class="l"><a class="l" href="#140">140: </a>        <span class="php-var">$script</span> = <span class="php-quote">&quot;jQuery('</span><span class="php-var">{$selector}</span><span class="php-quote">').</span><span class="php-var">{$name}</span><span class="php-quote">(</span><span class="php-var">{$options}</span><span class="php-quote">);&quot;</span>;
+</span><span id="141" class="l"><a class="l" href="#141">141: </a>        <span class="php-var">$id</span> = __CLASS__ . <span class="php-quote">'#Plugin'</span> . self::<span class="php-var">$counter</span>++;
+</span><span id="142" class="l"><a class="l" href="#142">142: </a>        Yii::app()-&gt;clientScript-&gt;registerScript(<span class="php-var">$id</span>, <span class="php-var">$script</span>, <span class="php-var">$position</span>);
+</span><span id="143" class="l"><a class="l" href="#143">143: </a>    }
+</span><span id="144" class="l"><a class="l" href="#144">144: </a>
+</span><span id="145" class="l"><a class="l" href="#145">145: </a></span>} </code></pre>
 
 	<div id="footer">
 		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>

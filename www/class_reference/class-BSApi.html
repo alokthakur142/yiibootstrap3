@@ -6,8 +6,8 @@
 
 	<title>Class BSApi</title>
 
-	<script type="text/javascript" src="resources/combined.js?1303512325"></script>
-	<script type="text/javascript" src="elementlist.js?2019737583"></script>
+	<script type="text/javascript" src="resources/combined.js?1771186947"></script>
+	<script type="text/javascript" src="elementlist.js?793332107"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -46,6 +46,7 @@
 				<li><a href="class-BsButtonColumn.html">BsButtonColumn</a></li>
 				<li><a href="class-BsCollapse.html">BsCollapse</a></li>
 				<li><a href="class-BsDataColumn.html">BsDataColumn</a></li>
+				<li><a href="class-BsDetailView.html">BsDetailView</a></li>
 				<li><a href="class-BsGridView.html">BsGridView</a></li>
 				<li><a href="class-BSHtml.html">BSHtml</a></li>
 				<li><a href="class-BsListView.html">BsListView</a></li>
@@ -53,6 +54,7 @@
 				<li><a href="class-BsNav.html">BsNav</a></li>
 				<li><a href="class-BsNavbar.html">BsNavbar</a></li>
 				<li><a href="class-BsPager.html">BsPager</a></li>
+				<li><a href="class-BsPanel.html">BsPanel</a></li>
 				<li><a href="class-BsWidget.html">BsWidget</a></li>
 				<li><a href="class-ChartJs.html">ChartJs</a></li>
 				<li><a href="class-ChBars.html">ChBars</a></li>
@@ -141,7 +143,7 @@ CComponent
 		
 		<b>Package:</b> bootstrap\components<br />
 
-		<b>Located at</b> <a href="source-class-BSApi.html#3-105" title="Go to source code">components/BSApi.php</a><br />
+		<b>Located at</b> <a href="source-class-BSApi.html#3-145" title="Go to source code">components/BSApi.php</a><br />
 	</div>
 
 
@@ -310,6 +312,94 @@ media types.</dd>
 				<div class="list">
 					<code>mixed</code><br>$this<br />
 				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="registerEvents" id="_registerEvents">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_registerEvents">#</a>
+		<code><a href="source-class-BSApi.html#106-128" title="Go to source code">registerEvents</a>( <span>string <var>$selector</var></span>, <span>string[] <var>$events</var></span>, <span>integer <var>$position</var> = CClientScript::POS_END</span> )</code>
+
+		<div class="description short">
+			
+<p>Registers events using the given selector.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Registers events using the given selector.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$selector</var></dt>
+					<dd><code>string</code><br>$selector the CSS selector.</dd>
+					<dt><var>$events</var></dt>
+					<dd><code>string[]</code><br>$events the JavaScript event configuration (name=&gt;handler).</dd>
+					<dt><var>$position</var></dt>
+					<dd><code>integer</code><br>$position the position of the JavaScript code.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="registerPlugin" id="_registerPlugin">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_registerPlugin">#</a>
+		<code><a href="source-class-BSApi.html#130-143" title="Go to source code">registerPlugin</a>( <span>string <var>$name</var></span>, <span>string <var>$selector</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>integer <var>$position</var> = CClientScript::POS_END</span> )</code>
+
+		<div class="description short">
+			
+<p>Registers a specific Bootstrap plugin using the given selector and
+options.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Registers a specific Bootstrap plugin using the given selector and
+options.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code><br>$name the plugin name.</dd>
+					<dt><var>$selector</var></dt>
+					<dd><code>string</code><br>$selector the CSS selector.</dd>
+					<dt><var>$options</var></dt>
+					<dd><code>array</code><br>$options the JavaScript options for the plugin.</dd>
+					<dt><var>$position</var></dt>
+					<dd><code>integer</code><br>$position the position of the JavaScript code.</dd>
+				</dl></div>
+
 
 
 

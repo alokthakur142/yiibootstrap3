@@ -6,8 +6,8 @@
 
 	<title>Class BsDataColumn</title>
 
-	<script type="text/javascript" src="resources/combined.js?1303512325"></script>
-	<script type="text/javascript" src="elementlist.js?2019737583"></script>
+	<script type="text/javascript" src="resources/combined.js?1771186947"></script>
+	<script type="text/javascript" src="elementlist.js?793332107"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -46,6 +46,7 @@
 				<li><a href="class-BsButtonColumn.html">BsButtonColumn</a></li>
 				<li><a href="class-BsCollapse.html">BsCollapse</a></li>
 				<li class="active"><a href="class-BsDataColumn.html">BsDataColumn</a></li>
+				<li><a href="class-BsDetailView.html">BsDetailView</a></li>
 				<li><a href="class-BsGridView.html">BsGridView</a></li>
 				<li><a href="class-BSHtml.html">BSHtml</a></li>
 				<li><a href="class-BsListView.html">BsListView</a></li>
@@ -53,6 +54,7 @@
 				<li><a href="class-BsNav.html">BsNav</a></li>
 				<li><a href="class-BsNavbar.html">BsNavbar</a></li>
 				<li><a href="class-BsPager.html">BsPager</a></li>
+				<li><a href="class-BsPanel.html">BsPanel</a></li>
 				<li><a href="class-BsWidget.html">BsWidget</a></li>
 				<li><a href="class-ChartJs.html">ChartJs</a></li>
 				<li><a href="class-ChBars.html">ChBars</a></li>
@@ -145,7 +147,7 @@ CDataColumn
 				<a href="http://www.opensource.org/licenses/bsd-license.php">New BSD License</a><br />
 				<b>Author:</b>
 				Pascal Brewing<br />
-		<b>Located at</b> <a href="source-class-BsDataColumn.html#11-101" title="Go to source code">widgets/BsDataColumn.php</a><br />
+		<b>Located at</b> <a href="source-class-BsDataColumn.html#11-113" title="Go to source code">widgets/BsDataColumn.php</a><br />
 	</div>
 
 
@@ -163,7 +165,7 @@ CDataColumn
 
 		<td class="name"><div>
 		<a class="anchor" href="#_renderHeaderCellContent">#</a>
-		<code><a href="source-class-BsDataColumn.html#22-48" title="Go to source code">renderHeaderCellContent</a>( )</code>
+		<code><a href="source-class-BsDataColumn.html#30-56" title="Go to source code">renderHeaderCellContent</a>( )</code>
 
 		<div class="description short">
 			
@@ -198,7 +200,7 @@ trigger the sorting if the column is sortable.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_renderFilterCell">#</a>
-		<code><a href="source-class-BsDataColumn.html#50-60" title="Go to source code">renderFilterCell</a>( )</code>
+		<code><a href="source-class-BsDataColumn.html#58-68" title="Go to source code">renderFilterCell</a>( )</code>
 
 		<div class="description short">
 			
@@ -231,7 +233,7 @@ trigger the sorting if the column is sortable.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_renderFilterCellContent">#</a>
-		<code><a href="source-class-BsDataColumn.html#62-100" title="Go to source code">renderFilterCellContent</a>( )</code>
+		<code><a href="source-class-BsDataColumn.html#70-112" title="Go to source code">renderFilterCellContent</a>( )</code>
 
 		<div class="description short">
 			
@@ -296,8 +298,37 @@ filter input</p>
 
 					<h4>Link</h4>
 					<div class="list">
-							{TbDataColumn::renderFilterCellContent()}<br />
+							{BsDataColumn::renderFilterCellContent()}<br />
 					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="filterHtmlOptions" id="$filterHtmlOptions">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-BsDataColumn.html#22-28" title="Go to source code"><var>$filterHtmlOptions</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$filterHtmlOptions" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p><code>`</code>php echo CHtml::openTag('td', $this-&gt;filterHtmlOptions);
+<code>`</code></p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p><code>`</code>php echo CHtml::openTag('td', $this-&gt;filterHtmlOptions);
+<code>`</code></p>
+
+
 			</div>
 		</div></td>
 	</tr>
