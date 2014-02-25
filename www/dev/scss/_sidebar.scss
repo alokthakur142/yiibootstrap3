@@ -66,7 +66,11 @@
   padding-left: 30px;
   font-size: 90%;
 }
-
+.page-header{
+  h1{
+    padding-top: 60px;
+  }
+}
 /* Show and affix the side nav when space allows it */
 
 @media screen and (min-width: 992px)

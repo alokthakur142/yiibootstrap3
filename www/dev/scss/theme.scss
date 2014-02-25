@@ -57,7 +57,7 @@ pre.prettyprint {
 }
 
 pre .pre_green {
-  color: #99cc32;
+  color: #55cc17;
 }
 
 pre .pre_blue {
@@ -93,26 +93,7 @@ pre .lineno {
 }
 
 .bs-glyphicons li {
-  float: left;
-  height: 115px;
-  padding: 10px;
-  margin: 0 -1px -1px 0;
-  line-height: 1.4;
-  text-align: center;
   list-style: none;
-  background: url("../img/noisy_net.png") 0 0 repeat #666666;
-  border: 1px solid #ddd;
-}
-
-.bs-glyphicons li span {
-  margin-bottom: 20px;
-  font-size: 32px;
-}
-
-
-.bs-glyphicons li span,
-.bs-glyphicons li small {
-  color: #99cc32;
 }
 
 /* Show code snippets when we have the space */

@@ -1,1 +1,1 @@
-<iframe class="" src="<?php echo Yii::app()->createAbsoluteUrl('class_reference') ?>" frameborder="0" width="100%" height="1200"></iframe>
+<iframe style="margin-top: 60px" class="" src="<?php echo Yii::app()->createAbsoluteUrl('class_reference') ?>" frameborder="0" width="100%" height="1200"></iframe>

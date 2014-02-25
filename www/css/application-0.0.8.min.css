@@ -4413,7 +4413,7 @@ pre.prettyprint {
   background: #ccc7c4; }
 
 pre .pre_green {
-  color: #99cc32; }
+  color: #55cc17; }
 
 pre .pre_blue {
   color: #1650f2; }
@@ -4441,22 +4441,7 @@ pre .lineno {
   text-align: right; }
 
 .bs-glyphicons li {
-  float: left;
-  height: 115px;
-  padding: 10px;
-  margin: 0 -1px -1px 0;
-  line-height: 1.4;
-  text-align: center;
-  list-style: none;
-  background: url("../img/noisy_net.png") 0 0 repeat #666666;
-  border: 1px solid #ddd; }
-
-.bs-glyphicons li span {
-  margin-bottom: 20px;
-  font-size: 32px; }
-
-.bs-glyphicons li span, .bs-glyphicons li small {
-  color: #99cc32; }
+  list-style: none; }
 
 /* Show code snippets when we have the space */
 @media screen and (min-width: 481px) {
@@ -5721,6 +5706,9 @@ h1[id] {
   padding-bottom: 3px;
   padding-left: 30px;
   font-size: 90%; }
+
+.page-header h1 {
+  padding-top: 60px; }
 
 /* Show and affix the side nav when space allows it */
 @media screen and (min-width: 992px) {
