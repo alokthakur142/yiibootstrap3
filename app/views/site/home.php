@@ -9,54 +9,10 @@
 
     <div class="bs-docs-section">
         <div class="page-header">
-            <h1 id="download">Download Bootstrap</h1>
-        </div>
-        <p class="lead">There are a few easy ways to quickly get started with Bootstrap, each one appealing to a
-            different
-            skill level and use case. Read through to see what suits your particular needs.</p>
-
-        <h3 id="download-compiled">Compiled CSS, JS, and fonts</h3>
-
-        <p>The fastest way to get Bootstrap is to download the compiled and minified versions of our CSS and JavaScript,
-            along with the included fonts. No documentation or original source files are included.</p>
-
-        <p><a class="btn btn-lg btn-primary"
-              href="http://getbootstrap.com/customize/"
-              onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download compiled']);">Download
-                Bootstrap</a></p>
-
-        <h3 id="download-additional">Additional downloads</h3>
-
-        <div class="bs-docs-dl-options">
-            <h4>
-                <a href="https://github.com/twbs/bootstrap"
-                   onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download source']);">Download
-                    latest
-                    source code</a>
-            </h4>
-
-            <p>Get the original files for all CSS and JavaScript by downloading the latest version directly from
-                GitHub.</p>
-            <h4>
-                <a href="https://github.com/twbs/bootstrap"
-                   onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'GitHub project']);">Clone or fork
-                    via
-                    GitHub</a>
-            </h4>
-
-            <p>Clone the entire project or fork your own version of Bootstrap to make it your own by visiting us on
-                GitHub.</p>
-            <h4>
-                Install with <a href="http://bower.io">Bower</a>
-            </h4>
-
-            <p>Install and manage the original files for all CSS and JavaScript, along with a local copy of the docs,
-                using
-                <a href="http://bower.io">Bower</a>.</p>
-
-            <div class="highlight"><code><span class="nv">$ </span>bower install bootstrap
-                </code>
-            </div>
+            <h4 id="download">Download Bootstrap<small> <a class="btn btn-xs btn-primary"
+                                                          href="http://getbootstrap.com/customize/"
+                                                          onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download compiled']);">Download Bootstrap
+                    </a></small></h4>
         </div>
         <p>Append in Your Yii Layout:</p>
     <pre>
