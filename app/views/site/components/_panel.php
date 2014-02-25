@@ -145,7 +145,7 @@ $gridColumns = array(
 
             'columns' => $gridColumns,
             'type' => BSHtml::GRID_TYPE_STRIPED
-        )); ?>content
+        )); ?>
         <?php $this->endWidget(); ?>
         <div class="highlight">
             <pre>
