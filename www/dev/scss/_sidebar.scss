@@ -9,7 +9,8 @@
 
 .bs-sidebar.affix {
   position: static;
-  background: url("../img/tweed.png") 0 0 repeat #666666;
+//  background: url("../img/tweed.png") 0 0 repeat #666666;
+  background: #e1e1e1;
   -moz-border-radius: 0.1px;
   border-radius: 0.1px;
   -webkit-box-shadow: 0 0 13px 4px rgba(0, 0, 0, 0.5);
@@ -24,7 +25,7 @@
   padding-bottom: 10px;
   margin-top: 30px;
   margin-bottom: 30px;
-  text-shadow: 0 1px 0 #333;
+//  text-shadow: 0 1px 0 #333;
   border-radius: 5px;
 }
 
@@ -33,7 +34,7 @@
 .bs-sidebar .nav > li > a {
   display: block;
   padding: 5px 20px;
-  color: #e1e1e1;
+  color: #2a2a2a;
 }
 
 .bs-sidebar .nav > li > a:hover,
@@ -45,7 +46,7 @@
 .bs-sidebar .nav > .active:hover > a,
 .bs-sidebar .nav > .active:focus > a {
   font-weight: bold;
-  color: #FFF5E6;
+  color: #666666;
   background-color: transparent;
   border-right: 1px solid #99cc32;
 }

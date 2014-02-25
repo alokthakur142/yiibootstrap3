@@ -218,11 +218,15 @@ $glyphicons = array(
     <div class="row">
         <ul class="bs-glyphicons">
             <?php foreach ($glyphicons as $key => $value) : ?>
-                <li class="col-lg-4 text-center">
+                <li>
                     <?= BSHtml::icon($value) ?>
-                    <br/>
-                    <?php echo BSHtml::small(strtoupper(str_replace('-', '_', $value))) ?>
+                    <span data-toggle="popover" data-html="true" data-content="<?php echo BSHtml::small(strtoupper(str_replace('-', '_', $value))) ?>" class="glyphicon-class" style="font-size: 10px; "><?php echo BSHtml::small(strtoupper(str_replace('-', '_', $value))) ?></span>
                 </li>
+<!--                <li class="col-lg-4 text-center">-->
+<!--                    --><?//= BSHtml::icon($value) ?>
+<!--                    <br/>-->
+<!--                    --><?php //echo BSHtml::small(strtoupper(str_replace('-', '_', $value))) ?>
+<!--                </li>-->
             <?php endforeach ?>
         </ul>
     </div>
