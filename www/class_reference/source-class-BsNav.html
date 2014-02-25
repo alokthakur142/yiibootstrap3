@@ -183,9 +183,9 @@
 </span><span id="73" class="l"><a class="l" href="#73"> 73: </a>        }
 </span><span id="74" class="l"><a class="l" href="#74"> 74: </a>        <span class="php-var">$pull</span> = \bootstrap\helpers\BSArray::popValue(<span class="php-quote">'pull'</span>, <span class="php-var">$this</span>-&gt;htmlOptions);
 </span><span id="75" class="l"><a class="l" href="#75"> 75: </a>
-</span><span id="76" class="l"><a class="l" href="#76"> 76: </a>        <span class="php-keyword1">if</span>(!<span class="php-keyword1">empty</span>(<span class="php-var">$pull</span>)){
-</span><span id="77" class="l"><a class="l" href="#77"> 77: </a>            <span class="php-keyword1">if</span>(<span class="php-var">$pull</span> === BSHtml::NAVBAR_NAV_PULL_RIGHT||<span class="php-var">$pull</span> === BSHtml::NAVBAR_NAV_PULL_LEFT){
-</span><span id="78" class="l"><a class="l" href="#78"> 78: </a>                BSHtml::addCssClass(<span class="php-quote">'navbar-'</span>.<span class="php-var">$pull</span>,<span class="php-var">$this</span>-&gt;htmlOptions);
+</span><span id="76" class="l"><a class="l" href="#76"> 76: </a>        <span class="php-keyword1">if</span> (!<span class="php-keyword1">empty</span>(<span class="php-var">$pull</span>)) {
+</span><span id="77" class="l"><a class="l" href="#77"> 77: </a>            <span class="php-keyword1">if</span> (<span class="php-var">$pull</span> === BSHtml::NAVBAR_NAV_PULL_RIGHT || <span class="php-var">$pull</span> === BSHtml::NAVBAR_NAV_PULL_LEFT) {
+</span><span id="78" class="l"><a class="l" href="#78"> 78: </a>                BSHtml::addCssClass(<span class="php-quote">'navbar-'</span> . <span class="php-var">$pull</span>, <span class="php-var">$this</span>-&gt;htmlOptions);
 </span><span id="79" class="l"><a class="l" href="#79"> 79: </a>            }
 </span><span id="80" class="l"><a class="l" href="#80"> 80: </a>        }
 </span><span id="81" class="l"><a class="l" href="#81"> 81: </a>        <span class="php-var">$this</span>-&gt;items = <span class="php-var">$this</span>-&gt;normalizeItems(<span class="php-var">$this</span>-&gt;items, <span class="php-var">$route</span>, <span class="php-var">$hasActiveChild</span>);

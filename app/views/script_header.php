@@ -55,6 +55,7 @@ $cs
 
           ga('create', 'UA-34355526-3', 'pascal-brewing.de');
           ga('send', 'pageview');
+          ga('set', 'anonymizeIp', true);
         "
         , CClientScript::POS_END
     )

@@ -8,7 +8,7 @@
         "boilerplate",
         "template"
     ],
-    "homepage": "bootstrap3.pascal-brewing.de",
+    "homepage": "http://bootstrap3.pascal-brewing.de",
     "type": "yii-application",
     "license": "BSD-3-Clause",
     "minimum-stability": "stable",

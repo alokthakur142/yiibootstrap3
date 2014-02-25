@@ -151,7 +151,7 @@ href="mailto:francis.beresford&#64;gmail.com">francis.beresford&#64;<!---->gmail
 				<b>See:</b>
 				<a
 href="http://getbootstrap.com/components/#panels">http://getbootstrap.com/components/#panels</a><br />
-		<b>Located at</b> <a href="source-class-BsPanel.html#11-58" title="Go to source code">widgets/BsPanel.php</a><br />
+		<b>Located at</b> <a href="source-class-BsPanel.html#11-110" title="Go to source code">widgets/BsPanel.php</a><br />
 	</div>
 
 
@@ -169,7 +169,7 @@ href="http://getbootstrap.com/components/#panels">http://getbootstrap.com/compon
 
 		<td class="name"><div>
 		<a class="anchor" href="#_init">#</a>
-		<code><a href="source-class-BsPanel.html#39-43" title="Go to source code">init</a>( )</code>
+		<code><a href="source-class-BsPanel.html#51-67" title="Go to source code">init</a>( )</code>
 
 		<div class="description short">
 			
@@ -177,6 +177,39 @@ href="http://getbootstrap.com/components/#panels">http://getbootstrap.com/compon
 
 		<div class="description detailed hidden">
 			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="run" id="_run">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_run">#</a>
+		<code><a href="source-class-BsPanel.html#69-83" title="Go to source code">run</a>( )</code>
+
+		<div class="description short">
+			
+<p>Renders the content of the portlet.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Renders the content of the portlet.</p>
+
 
 
 
@@ -198,7 +231,42 @@ href="http://getbootstrap.com/components/#panels">http://getbootstrap.com/compon
 
 		<td class="name"><div>
 		<a class="anchor" href="#_renderDecoration">#</a>
-		<code><a href="source-class-BsPanel.html#45-57" title="Go to source code">renderDecoration</a>( )</code>
+		<code><a href="source-class-BsPanel.html#85-96" title="Go to source code">renderDecoration</a>( )</code>
+
+		<div class="description short">
+			
+<p>Renders the decoration for the portlet. The default implementation will
+render the title if it is set.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Renders the decoration for the portlet. The default implementation will
+render the title if it is set.</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="renderFooter" id="_renderFooter">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_renderFooter">#</a>
+		<code><a href="source-class-BsPanel.html#98-109" title="Go to source code">renderFooter</a>( )</code>
 
 		<div class="description short">
 			
@@ -246,7 +314,7 @@ render the title if it is set.</p>
 		<td class="name">
 				<a href="source-class-BsPanel.html#17-20" title="Go to source code"><var>$htmlOptions</var></a>
 		</td>
-		<td class="value"><code><span class="php-keyword1">array</span>(<span class="php-quote">'class'</span>=&gt;<span class="php-quote">'panel'</span>)</code></td>
+		<td class="value"><code><span class="php-keyword1">array</span>(<span class="php-quote">'class'</span> =&gt; <span class="php-quote">'panel'</span>)</code></td>
 		<td class="description"><div>
 			<a href="#$htmlOptions" class="anchor">#</a>
 
@@ -347,6 +415,64 @@ render the title if it is set.</p>
 			</div>
 		</div></td>
 	</tr>
+	<tr data-order="footer" id="$footer">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-BsPanel.html#33-38" title="Go to source code"><var>$footer</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$footer" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>the footer of the portlet. Defaults to null. When this is not set, the footer
+will not be displayed. Note that the footer will not be HTML-encoded when
+rendering.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>the footer of the portlet. Defaults to null. When this is not set, the footer
+will not be displayed. Note that the footer will not be HTML-encoded when
+rendering.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="footerCssClass" id="$footerCssClass">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-BsPanel.html#39-42" title="Go to source code"><var>$footerCssClass</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">'panel-footer'</span></code></td>
+		<td class="description"><div>
+			<a href="#$footerCssClass" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>the CSS class for the panel footer tag. Defaults to 'panel-title'.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>the CSS class for the panel footer tag. Defaults to 'panel-title'.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
 	<tr data-order="type" id="$type">
 		<td class="attributes"><code>
 			public  
@@ -354,7 +480,7 @@ render the title if it is set.</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-BsPanel.html#34-37" title="Go to source code"><var>$type</var></a>
+				<a href="source-class-BsPanel.html#44-47" title="Go to source code"><var>$type</var></a>
 		</td>
 		<td class="value"><code><code><a href="class-BSHtml.html#PANEL_TYPE_DEFAULT">BSHtml::<b>PANEL_TYPE_DEFAULT</b></a></code></code></td>
 		<td class="description"><div>

@@ -118,95 +118,95 @@
 </span></span><span id="8" class="l"><a class="l" href="#8">  8: </a><span class="php-comment"> */</span>
 </span><span id="9" class="l"><a class="l" href="#9">  9: </a>
 </span><span id="10" class="l"><a class="l" href="#10"> 10: </a>Yii::import(<span class="php-quote">'zii.widgets.CBreadcrumbs'</span>);
-</span><span id="11" class="l"><a class="l" href="#11"> 11: </a><span class="php-keyword1">class</span> <a id="BsBreadcrumb" href="#BsBreadcrumb">BsBreadcrumb</a> <span class="php-keyword1">extends</span> CBreadcrumbs
-</span><span id="12" class="l"><a class="l" href="#12"> 12: </a>{
-</span><span id="13" class="l"><a class="l" href="#13"> 13: </a>    <span class="php-comment">/**
-</span></span><span id="14" class="l"><a class="l" href="#14"> 14: </a><span class="php-comment">     * @var string the tag name for the breadcrumbs container tag. Defaults to 'div'.
-</span></span><span id="15" class="l"><a class="l" href="#15"> 15: </a><span class="php-comment">     */</span>
-</span><span id="16" class="l"><a class="l" href="#16"> 16: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$tagName" href="#$tagName">$tagName</a></span>=<span class="php-quote">'ol'</span>;
-</span><span id="17" class="l"><a class="l" href="#17"> 17: </a>    <span class="php-comment">/**
-</span></span><span id="18" class="l"><a class="l" href="#18"> 18: </a><span class="php-comment">     * @var array the HTML attributes for the breadcrumbs container tag.
-</span></span><span id="19" class="l"><a class="l" href="#19"> 19: </a><span class="php-comment">     */</span>
-</span><span id="20" class="l"><a class="l" href="#20"> 20: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$htmlOptions" href="#$htmlOptions">$htmlOptions</a></span>=<span class="php-keyword1">array</span>(<span class="php-quote">'class'</span>=&gt;<span class="php-quote">'breadcrumb'</span>);
-</span><span id="21" class="l"><a class="l" href="#21"> 21: </a>    <span class="php-comment">/**
-</span></span><span id="22" class="l"><a class="l" href="#22"> 22: </a><span class="php-comment">     * @var boolean whether to HTML encode the link labels. Defaults to true.
-</span></span><span id="23" class="l"><a class="l" href="#23"> 23: </a><span class="php-comment">     */</span>
-</span><span id="24" class="l"><a class="l" href="#24"> 24: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$encodeLabel" href="#$encodeLabel">$encodeLabel</a></span>=<span class="php-keyword1">true</span>;
-</span><span id="25" class="l"><a class="l" href="#25"> 25: </a>    <span class="php-comment">/**
-</span></span><span id="26" class="l"><a class="l" href="#26"> 26: </a><span class="php-comment">     * @var string the first hyperlink in the breadcrumbs (called home link).
-</span></span><span id="27" class="l"><a class="l" href="#27"> 27: </a><span class="php-comment">     * If this property is not set, it defaults to a link pointing to {@link CWebApplication::homeUrl} with label 'Home'.
-</span></span><span id="28" class="l"><a class="l" href="#28"> 28: </a><span class="php-comment">     * If this property is false, the home link will not be rendered.
-</span></span><span id="29" class="l"><a class="l" href="#29"> 29: </a><span class="php-comment">     */</span>
-</span><span id="30" class="l"><a class="l" href="#30"> 30: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$homeLink" href="#$homeLink">$homeLink</a></span>;
-</span><span id="31" class="l"><a class="l" href="#31"> 31: </a>    <span class="php-comment">/**
-</span></span><span id="32" class="l"><a class="l" href="#32"> 32: </a><span class="php-comment">     * @var array list of hyperlinks to appear in the breadcrumbs. If this property is empty,
-</span></span><span id="33" class="l"><a class="l" href="#33"> 33: </a><span class="php-comment">     * the widget will not render anything. Each key-value pair in the array
-</span></span><span id="34" class="l"><a class="l" href="#34"> 34: </a><span class="php-comment">     * will be used to generate a hyperlink by calling CHtml::link(key, value). For this reason, the key
-</span></span><span id="35" class="l"><a class="l" href="#35"> 35: </a><span class="php-comment">     * refers to the label of the link while the value can be a string or an array (used to
-</span></span><span id="36" class="l"><a class="l" href="#36"> 36: </a><span class="php-comment">     * create a URL). For more details, please refer to {@link CHtml::link}.
-</span></span><span id="37" class="l"><a class="l" href="#37"> 37: </a><span class="php-comment">     * If an element's key is an integer, it means the element will be rendered as a label only (meaning the current page).
-</span></span><span id="38" class="l"><a class="l" href="#38"> 38: </a><span class="php-comment">     *
-</span></span><span id="39" class="l"><a class="l" href="#39"> 39: </a><span class="php-comment">     * The following example will generate breadcrumbs as &quot;Home &gt; Sample post &gt; Edit&quot;, where &quot;Home&quot; points to the homepage,
-</span></span><span id="40" class="l"><a class="l" href="#40"> 40: </a><span class="php-comment">     * &quot;Sample post&quot; points to the &quot;index.php?r=post/view&amp;id=12&quot; page, and &quot;Edit&quot; is a label. Note that the &quot;Home&quot; link
-</span></span><span id="41" class="l"><a class="l" href="#41"> 41: </a><span class="php-comment">     * is specified via {@link homeLink} separately.
-</span></span><span id="42" class="l"><a class="l" href="#42"> 42: </a><span class="php-comment">     *
-</span></span><span id="43" class="l"><a class="l" href="#43"> 43: </a><span class="php-comment">     * &lt;pre&gt;
-</span></span><span id="44" class="l"><a class="l" href="#44"> 44: </a><span class="php-comment">     * array(
-</span></span><span id="45" class="l"><a class="l" href="#45"> 45: </a><span class="php-comment">     *     'Sample post'=&gt;array('post/view', 'id'=&gt;12),
-</span></span><span id="46" class="l"><a class="l" href="#46"> 46: </a><span class="php-comment">     *     'Edit',
-</span></span><span id="47" class="l"><a class="l" href="#47"> 47: </a><span class="php-comment">     * )
-</span></span><span id="48" class="l"><a class="l" href="#48"> 48: </a><span class="php-comment">     * &lt;/pre&gt;
-</span></span><span id="49" class="l"><a class="l" href="#49"> 49: </a><span class="php-comment">     */</span>
-</span><span id="50" class="l"><a class="l" href="#50"> 50: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$links" href="#$links">$links</a></span>=<span class="php-keyword1">array</span>();
-</span><span id="51" class="l"><a class="l" href="#51"> 51: </a>    <span class="php-comment">/**
-</span></span><span id="52" class="l"><a class="l" href="#52"> 52: </a><span class="php-comment">     * @var string String, specifies how each active item is rendered. Defaults to
-</span></span><span id="53" class="l"><a class="l" href="#53"> 53: </a><span class="php-comment">     * &quot;&lt;a href=&quot;{url}&quot;&gt;{label}&lt;/a&gt;&quot;, where &quot;{label}&quot; will be replaced by the corresponding item
-</span></span><span id="54" class="l"><a class="l" href="#54"> 54: </a><span class="php-comment">     * label while &quot;{url}&quot; will be replaced by the URL of the item.
-</span></span><span id="55" class="l"><a class="l" href="#55"> 55: </a><span class="php-comment">     * @since 1.1.11
-</span></span><span id="56" class="l"><a class="l" href="#56"> 56: </a><span class="php-comment">     */</span>
-</span><span id="57" class="l"><a class="l" href="#57"> 57: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$activeLinkTemplate" href="#$activeLinkTemplate">$activeLinkTemplate</a></span>=<span class="php-quote">'&lt;li&gt;&lt;a href=&quot;{url}&quot;&gt;{label}&lt;/a&gt;&lt;/li&gt;'</span>;
-</span><span id="58" class="l"><a class="l" href="#58"> 58: </a>    <span class="php-comment">/**
-</span></span><span id="59" class="l"><a class="l" href="#59"> 59: </a><span class="php-comment">     * @var string String, specifies how each inactive item is rendered. Defaults to
-</span></span><span id="60" class="l"><a class="l" href="#60"> 60: </a><span class="php-comment">     * &quot;&lt;span&gt;{label}&lt;/span&gt;&quot;, where &quot;{label}&quot; will be replaced by the corresponding item label.
-</span></span><span id="61" class="l"><a class="l" href="#61"> 61: </a><span class="php-comment">     * Note that inactive template does not have &quot;{url}&quot; parameter.
-</span></span><span id="62" class="l"><a class="l" href="#62"> 62: </a><span class="php-comment">     * @since 1.1.11
-</span></span><span id="63" class="l"><a class="l" href="#63"> 63: </a><span class="php-comment">     */</span>
-</span><span id="64" class="l"><a class="l" href="#64"> 64: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$inactiveLinkTemplate" href="#$inactiveLinkTemplate">$inactiveLinkTemplate</a></span>=<span class="php-quote">'&lt;li&gt;&lt;span&gt;{label}&lt;/span&gt;&lt;/li&gt;'</span>;
-</span><span id="65" class="l"><a class="l" href="#65"> 65: </a>    <span class="php-comment">/**
-</span></span><span id="66" class="l"><a class="l" href="#66"> 66: </a><span class="php-comment">     * @var string the separator between links in the breadcrumbs. Defaults to ' &amp;raquo; '.
-</span></span><span id="67" class="l"><a class="l" href="#67"> 67: </a><span class="php-comment">     */</span>
-</span><span id="68" class="l"><a class="l" href="#68"> 68: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$separator" href="#$separator">$separator</a></span>=<span class="php-quote">''</span>;
-</span><span id="69" class="l"><a class="l" href="#69"> 69: </a>
-</span><span id="70" class="l"><a class="l" href="#70"> 70: </a>    <span class="php-comment">/**
-</span></span><span id="71" class="l"><a class="l" href="#71"> 71: </a><span class="php-comment">     * Renders the content of the portlet.
-</span></span><span id="72" class="l"><a class="l" href="#72"> 72: </a><span class="php-comment">     */</span>
-</span><span id="73" class="l"><a class="l" href="#73"> 73: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_run" href="#_run">run</a>()
-</span><span id="74" class="l"><a class="l" href="#74"> 74: </a>    {
-</span><span id="75" class="l"><a class="l" href="#75"> 75: </a>        <span class="php-keyword1">if</span>(<span class="php-keyword1">empty</span>(<span class="php-var">$this</span>-&gt;links))
-</span><span id="76" class="l"><a class="l" href="#76"> 76: </a>            <span class="php-keyword1">return</span>;
-</span><span id="77" class="l"><a class="l" href="#77"> 77: </a>
-</span><span id="78" class="l"><a class="l" href="#78"> 78: </a>        <span class="php-keyword1">echo</span> CHtml::openTag(<span class="php-var">$this</span>-&gt;tagName,<span class="php-var">$this</span>-&gt;htmlOptions).<span class="php-quote">&quot;\n&quot;</span>;
-</span><span id="79" class="l"><a class="l" href="#79"> 79: </a>        <span class="php-var">$links</span>=<span class="php-keyword1">array</span>();
-</span><span id="80" class="l"><a class="l" href="#80"> 80: </a>        <span class="php-keyword1">if</span>(<span class="php-var">$this</span>-&gt;homeLink===<span class="php-keyword1">null</span>)
-</span><span id="81" class="l"><a class="l" href="#81"> 81: </a>            <span class="php-var">$links</span>[]=<span class="php-keyword2">strtr</span>(<span class="php-var">$this</span>-&gt;activeLinkTemplate,<span class="php-keyword1">array</span>(
-</span><span id="82" class="l"><a class="l" href="#82"> 82: </a>                <span class="php-quote">'{url}'</span>=&gt;CHtml::normalizeUrl(Yii::app()-&gt;homeUrl),
-</span><span id="83" class="l"><a class="l" href="#83"> 83: </a>                <span class="php-quote">'{label}'</span>=&gt;<span class="php-quote">'Home'</span>,
-</span><span id="84" class="l"><a class="l" href="#84"> 84: </a>            ));
-</span><span id="85" class="l"><a class="l" href="#85"> 85: </a>        <span class="php-keyword1">elseif</span>(<span class="php-var">$this</span>-&gt;homeLink!==<span class="php-keyword1">false</span>)
-</span><span id="86" class="l"><a class="l" href="#86"> 86: </a>            <span class="php-var">$links</span>[]=<span class="php-var">$this</span>-&gt;homeLink;
-</span><span id="87" class="l"><a class="l" href="#87"> 87: </a>
-</span><span id="88" class="l"><a class="l" href="#88"> 88: </a>        <span class="php-keyword1">foreach</span>(<span class="php-var">$this</span>-&gt;links <span class="php-keyword1">as</span> <span class="php-var">$label</span>=&gt;<span class="php-var">$url</span>)
-</span><span id="89" class="l"><a class="l" href="#89"> 89: </a>        {
-</span><span id="90" class="l"><a class="l" href="#90"> 90: </a>            <span class="php-keyword1">if</span>(<span class="php-keyword2">is_string</span>(<span class="php-var">$label</span>) || <span class="php-keyword2">is_array</span>(<span class="php-var">$url</span>)){
-</span><span id="91" class="l"><a class="l" href="#91"> 91: </a>                <span class="php-var">$links</span>[]=<span class="php-keyword2">strtr</span>(<span class="php-var">$this</span>-&gt;activeLinkTemplate,<span class="php-keyword1">array</span>(
-</span><span id="92" class="l"><a class="l" href="#92"> 92: </a>                    <span class="php-quote">'{url}'</span>=&gt;CHtml::normalizeUrl(<span class="php-var">$url</span>),
-</span><span id="93" class="l"><a class="l" href="#93"> 93: </a>                    <span class="php-quote">'{label}'</span>=&gt;<span class="php-var">$this</span>-&gt;encodeLabel ? CHtml::encode(<span class="php-var">$label</span>) : <span class="php-var">$label</span>,
+</span><span id="11" class="l"><a class="l" href="#11"> 11: </a>
+</span><span id="12" class="l"><a class="l" href="#12"> 12: </a><span class="php-keyword1">class</span> <a id="BsBreadcrumb" href="#BsBreadcrumb">BsBreadcrumb</a> <span class="php-keyword1">extends</span> CBreadcrumbs
+</span><span id="13" class="l"><a class="l" href="#13"> 13: </a>{
+</span><span id="14" class="l"><a class="l" href="#14"> 14: </a>    <span class="php-comment">/**
+</span></span><span id="15" class="l"><a class="l" href="#15"> 15: </a><span class="php-comment">     * @var string the tag name for the breadcrumbs container tag. Defaults to 'div'.
+</span></span><span id="16" class="l"><a class="l" href="#16"> 16: </a><span class="php-comment">     */</span>
+</span><span id="17" class="l"><a class="l" href="#17"> 17: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$tagName" href="#$tagName">$tagName</a></span> = <span class="php-quote">'ol'</span>;
+</span><span id="18" class="l"><a class="l" href="#18"> 18: </a>    <span class="php-comment">/**
+</span></span><span id="19" class="l"><a class="l" href="#19"> 19: </a><span class="php-comment">     * @var array the HTML attributes for the breadcrumbs container tag.
+</span></span><span id="20" class="l"><a class="l" href="#20"> 20: </a><span class="php-comment">     */</span>
+</span><span id="21" class="l"><a class="l" href="#21"> 21: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$htmlOptions" href="#$htmlOptions">$htmlOptions</a></span> = <span class="php-keyword1">array</span>(<span class="php-quote">'class'</span> =&gt; <span class="php-quote">'breadcrumb'</span>);
+</span><span id="22" class="l"><a class="l" href="#22"> 22: </a>    <span class="php-comment">/**
+</span></span><span id="23" class="l"><a class="l" href="#23"> 23: </a><span class="php-comment">     * @var boolean whether to HTML encode the link labels. Defaults to true.
+</span></span><span id="24" class="l"><a class="l" href="#24"> 24: </a><span class="php-comment">     */</span>
+</span><span id="25" class="l"><a class="l" href="#25"> 25: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$encodeLabel" href="#$encodeLabel">$encodeLabel</a></span> = <span class="php-keyword1">true</span>;
+</span><span id="26" class="l"><a class="l" href="#26"> 26: </a>    <span class="php-comment">/**
+</span></span><span id="27" class="l"><a class="l" href="#27"> 27: </a><span class="php-comment">     * @var string the first hyperlink in the breadcrumbs (called home link).
+</span></span><span id="28" class="l"><a class="l" href="#28"> 28: </a><span class="php-comment">     * If this property is not set, it defaults to a link pointing to {@link CWebApplication::homeUrl} with label 'Home'.
+</span></span><span id="29" class="l"><a class="l" href="#29"> 29: </a><span class="php-comment">     * If this property is false, the home link will not be rendered.
+</span></span><span id="30" class="l"><a class="l" href="#30"> 30: </a><span class="php-comment">     */</span>
+</span><span id="31" class="l"><a class="l" href="#31"> 31: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$homeLink" href="#$homeLink">$homeLink</a></span>;
+</span><span id="32" class="l"><a class="l" href="#32"> 32: </a>    <span class="php-comment">/**
+</span></span><span id="33" class="l"><a class="l" href="#33"> 33: </a><span class="php-comment">     * @var array list of hyperlinks to appear in the breadcrumbs. If this property is empty,
+</span></span><span id="34" class="l"><a class="l" href="#34"> 34: </a><span class="php-comment">     * the widget will not render anything. Each key-value pair in the array
+</span></span><span id="35" class="l"><a class="l" href="#35"> 35: </a><span class="php-comment">     * will be used to generate a hyperlink by calling CHtml::link(key, value). For this reason, the key
+</span></span><span id="36" class="l"><a class="l" href="#36"> 36: </a><span class="php-comment">     * refers to the label of the link while the value can be a string or an array (used to
+</span></span><span id="37" class="l"><a class="l" href="#37"> 37: </a><span class="php-comment">     * create a URL). For more details, please refer to {@link CHtml::link}.
+</span></span><span id="38" class="l"><a class="l" href="#38"> 38: </a><span class="php-comment">     * If an element's key is an integer, it means the element will be rendered as a label only (meaning the current page).
+</span></span><span id="39" class="l"><a class="l" href="#39"> 39: </a><span class="php-comment">     *
+</span></span><span id="40" class="l"><a class="l" href="#40"> 40: </a><span class="php-comment">     * The following example will generate breadcrumbs as &quot;Home &gt; Sample post &gt; Edit&quot;, where &quot;Home&quot; points to the homepage,
+</span></span><span id="41" class="l"><a class="l" href="#41"> 41: </a><span class="php-comment">     * &quot;Sample post&quot; points to the &quot;index.php?r=post/view&amp;id=12&quot; page, and &quot;Edit&quot; is a label. Note that the &quot;Home&quot; link
+</span></span><span id="42" class="l"><a class="l" href="#42"> 42: </a><span class="php-comment">     * is specified via {@link homeLink} separately.
+</span></span><span id="43" class="l"><a class="l" href="#43"> 43: </a><span class="php-comment">     *
+</span></span><span id="44" class="l"><a class="l" href="#44"> 44: </a><span class="php-comment">     * &lt;pre&gt;
+</span></span><span id="45" class="l"><a class="l" href="#45"> 45: </a><span class="php-comment">     * array(
+</span></span><span id="46" class="l"><a class="l" href="#46"> 46: </a><span class="php-comment">     *     'Sample post'=&gt;array('post/view', 'id'=&gt;12),
+</span></span><span id="47" class="l"><a class="l" href="#47"> 47: </a><span class="php-comment">     *     'Edit',
+</span></span><span id="48" class="l"><a class="l" href="#48"> 48: </a><span class="php-comment">     * )
+</span></span><span id="49" class="l"><a class="l" href="#49"> 49: </a><span class="php-comment">     * &lt;/pre&gt;
+</span></span><span id="50" class="l"><a class="l" href="#50"> 50: </a><span class="php-comment">     */</span>
+</span><span id="51" class="l"><a class="l" href="#51"> 51: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$links" href="#$links">$links</a></span> = <span class="php-keyword1">array</span>();
+</span><span id="52" class="l"><a class="l" href="#52"> 52: </a>    <span class="php-comment">/**
+</span></span><span id="53" class="l"><a class="l" href="#53"> 53: </a><span class="php-comment">     * @var string String, specifies how each active item is rendered. Defaults to
+</span></span><span id="54" class="l"><a class="l" href="#54"> 54: </a><span class="php-comment">     * &quot;&lt;a href=&quot;{url}&quot;&gt;{label}&lt;/a&gt;&quot;, where &quot;{label}&quot; will be replaced by the corresponding item
+</span></span><span id="55" class="l"><a class="l" href="#55"> 55: </a><span class="php-comment">     * label while &quot;{url}&quot; will be replaced by the URL of the item.
+</span></span><span id="56" class="l"><a class="l" href="#56"> 56: </a><span class="php-comment">     * @since 1.1.11
+</span></span><span id="57" class="l"><a class="l" href="#57"> 57: </a><span class="php-comment">     */</span>
+</span><span id="58" class="l"><a class="l" href="#58"> 58: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$activeLinkTemplate" href="#$activeLinkTemplate">$activeLinkTemplate</a></span> = <span class="php-quote">'&lt;li&gt;&lt;a href=&quot;{url}&quot;&gt;{label}&lt;/a&gt;&lt;/li&gt;'</span>;
+</span><span id="59" class="l"><a class="l" href="#59"> 59: </a>    <span class="php-comment">/**
+</span></span><span id="60" class="l"><a class="l" href="#60"> 60: </a><span class="php-comment">     * @var string String, specifies how each inactive item is rendered. Defaults to
+</span></span><span id="61" class="l"><a class="l" href="#61"> 61: </a><span class="php-comment">     * &quot;&lt;span&gt;{label}&lt;/span&gt;&quot;, where &quot;{label}&quot; will be replaced by the corresponding item label.
+</span></span><span id="62" class="l"><a class="l" href="#62"> 62: </a><span class="php-comment">     * Note that inactive template does not have &quot;{url}&quot; parameter.
+</span></span><span id="63" class="l"><a class="l" href="#63"> 63: </a><span class="php-comment">     * @since 1.1.11
+</span></span><span id="64" class="l"><a class="l" href="#64"> 64: </a><span class="php-comment">     */</span>
+</span><span id="65" class="l"><a class="l" href="#65"> 65: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$inactiveLinkTemplate" href="#$inactiveLinkTemplate">$inactiveLinkTemplate</a></span> = <span class="php-quote">'&lt;li&gt;&lt;span&gt;{label}&lt;/span&gt;&lt;/li&gt;'</span>;
+</span><span id="66" class="l"><a class="l" href="#66"> 66: </a>    <span class="php-comment">/**
+</span></span><span id="67" class="l"><a class="l" href="#67"> 67: </a><span class="php-comment">     * @var string the separator between links in the breadcrumbs. Defaults to ' &amp;raquo; '.
+</span></span><span id="68" class="l"><a class="l" href="#68"> 68: </a><span class="php-comment">     */</span>
+</span><span id="69" class="l"><a class="l" href="#69"> 69: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$separator" href="#$separator">$separator</a></span> = <span class="php-quote">''</span>;
+</span><span id="70" class="l"><a class="l" href="#70"> 70: </a>
+</span><span id="71" class="l"><a class="l" href="#71"> 71: </a>    <span class="php-comment">/**
+</span></span><span id="72" class="l"><a class="l" href="#72"> 72: </a><span class="php-comment">     * Renders the content of the portlet.
+</span></span><span id="73" class="l"><a class="l" href="#73"> 73: </a><span class="php-comment">     */</span>
+</span><span id="74" class="l"><a class="l" href="#74"> 74: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_run" href="#_run">run</a>()
+</span><span id="75" class="l"><a class="l" href="#75"> 75: </a>    {
+</span><span id="76" class="l"><a class="l" href="#76"> 76: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword1">empty</span>(<span class="php-var">$this</span>-&gt;links))
+</span><span id="77" class="l"><a class="l" href="#77"> 77: </a>            <span class="php-keyword1">return</span>;
+</span><span id="78" class="l"><a class="l" href="#78"> 78: </a>
+</span><span id="79" class="l"><a class="l" href="#79"> 79: </a>        <span class="php-keyword1">echo</span> CHtml::openTag(<span class="php-var">$this</span>-&gt;tagName, <span class="php-var">$this</span>-&gt;htmlOptions) . <span class="php-quote">&quot;\n&quot;</span>;
+</span><span id="80" class="l"><a class="l" href="#80"> 80: </a>        <span class="php-var">$links</span> = <span class="php-keyword1">array</span>();
+</span><span id="81" class="l"><a class="l" href="#81"> 81: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;homeLink === <span class="php-keyword1">null</span>)
+</span><span id="82" class="l"><a class="l" href="#82"> 82: </a>            <span class="php-var">$links</span>[] = <span class="php-keyword2">strtr</span>(<span class="php-var">$this</span>-&gt;activeLinkTemplate, <span class="php-keyword1">array</span>(
+</span><span id="83" class="l"><a class="l" href="#83"> 83: </a>                <span class="php-quote">'{url}'</span> =&gt; CHtml::normalizeUrl(Yii::app()-&gt;homeUrl),
+</span><span id="84" class="l"><a class="l" href="#84"> 84: </a>                <span class="php-quote">'{label}'</span> =&gt; <span class="php-quote">'Home'</span>,
+</span><span id="85" class="l"><a class="l" href="#85"> 85: </a>            ));
+</span><span id="86" class="l"><a class="l" href="#86"> 86: </a>        <span class="php-keyword1">elseif</span> (<span class="php-var">$this</span>-&gt;homeLink !== <span class="php-keyword1">false</span>)
+</span><span id="87" class="l"><a class="l" href="#87"> 87: </a>            <span class="php-var">$links</span>[] = <span class="php-var">$this</span>-&gt;homeLink;
+</span><span id="88" class="l"><a class="l" href="#88"> 88: </a>
+</span><span id="89" class="l"><a class="l" href="#89"> 89: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;links <span class="php-keyword1">as</span> <span class="php-var">$label</span> =&gt; <span class="php-var">$url</span>) {
+</span><span id="90" class="l"><a class="l" href="#90"> 90: </a>            <span class="php-keyword1">if</span> (<span class="php-keyword2">is_string</span>(<span class="php-var">$label</span>) || <span class="php-keyword2">is_array</span>(<span class="php-var">$url</span>)) {
+</span><span id="91" class="l"><a class="l" href="#91"> 91: </a>                <span class="php-var">$links</span>[] = <span class="php-keyword2">strtr</span>(<span class="php-var">$this</span>-&gt;activeLinkTemplate, <span class="php-keyword1">array</span>(
+</span><span id="92" class="l"><a class="l" href="#92"> 92: </a>                    <span class="php-quote">'{url}'</span> =&gt; CHtml::normalizeUrl(<span class="php-var">$url</span>),
+</span><span id="93" class="l"><a class="l" href="#93"> 93: </a>                    <span class="php-quote">'{label}'</span> =&gt; <span class="php-var">$this</span>-&gt;encodeLabel ? CHtml::encode(<span class="php-var">$label</span>) : <span class="php-var">$label</span>,
 </span><span id="94" class="l"><a class="l" href="#94"> 94: </a>                ));
-</span><span id="95" class="l"><a class="l" href="#95"> 95: </a>            }<span class="php-keyword1">else</span>{
-</span><span id="96" class="l"><a class="l" href="#96"> 96: </a>                <span class="php-var">$links</span>[]=<span class="php-keyword2">str_replace</span>(<span class="php-quote">'{label}'</span>,<span class="php-var">$this</span>-&gt;encodeLabel ? CHtml::encode(<span class="php-var">$url</span>) : <span class="php-var">$url</span>,<span class="php-var">$this</span>-&gt;inactiveLinkTemplate);
+</span><span id="95" class="l"><a class="l" href="#95"> 95: </a>            } <span class="php-keyword1">else</span> {
+</span><span id="96" class="l"><a class="l" href="#96"> 96: </a>                <span class="php-var">$links</span>[] = <span class="php-keyword2">str_replace</span>(<span class="php-quote">'{label}'</span>, <span class="php-var">$this</span>-&gt;encodeLabel ? CHtml::encode(<span class="php-var">$url</span>) : <span class="php-var">$url</span>, <span class="php-var">$this</span>-&gt;inactiveLinkTemplate);
 </span><span id="97" class="l"><a class="l" href="#97"> 97: </a>            }
 </span><span id="98" class="l"><a class="l" href="#98"> 98: </a>        }
-</span><span id="99" class="l"><a class="l" href="#99"> 99: </a>        <span class="php-keyword1">echo</span> <span class="php-keyword2">implode</span>(<span class="php-var">$this</span>-&gt;separator,<span class="php-var">$links</span>);
+</span><span id="99" class="l"><a class="l" href="#99"> 99: </a>        <span class="php-keyword1">echo</span> <span class="php-keyword2">implode</span>(<span class="php-var">$this</span>-&gt;separator, <span class="php-var">$links</span>);
 </span><span id="100" class="l"><a class="l" href="#100">100: </a>        <span class="php-keyword1">echo</span> CHtml::closeTag(<span class="php-var">$this</span>-&gt;tagName);
 </span><span id="101" class="l"><a class="l" href="#101">101: </a>    }
 </span><span id="102" class="l"><a class="l" href="#102">102: </a></span>}</code></pre>

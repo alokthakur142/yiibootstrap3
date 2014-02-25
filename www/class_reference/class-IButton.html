@@ -122,25 +122,22 @@ buttons</p>
 button the effect. It was also added support for model/attribute pairs, so that
 you can easily integrate into your Yii's forms</p>
 
-<p>Sample 1 - turn all checkboxes in the page into iButtons:</p>
-
-<p>&lt;?php $this-&gt;widget('ext.ibutton.IButton', array(
+<p>Sample 1 - turn all checkboxes in the page into iButtons:<br />
+&lt;?php $this-&gt;widget('ext.ibutton.IButton', array(
 'selector'=&gt;':checkbox', 'options' =&gt;array( 'duration' =&gt; 250,
 'change'=&gt;'js:function(){alert("ooohay! it has been changed!");}' )
 ));?&gt;</p>
 
-<p>Sample 2 - turn the model/attribute pair into an iButton:</p>
-
-<p>&lt;?php $this-&gt;widget('ext.ibutton.IButton', array( 'model' =&gt; $model,
+<p>Sample 2 - turn the model/attribute pair into an iButton:<br />
+&lt;?php $this-&gt;widget('ext.ibutton.IButton', array( 'model' =&gt; $model,
 'attribute' =&gt; 'is_master', 'options' =&gt;array(
 'labelOn'=&gt;Yii::t('app','Yes'), 'labelOff'=&gt;Yii::t('app','No'),
 'change'=&gt;'js:function($choice){ $choice.is(":checked")?alert("Hey,
 master!"):alert("Sorry, you are not my master!"); }' ) ));?&gt;</p>
 
 <p>Sample 3 - turn both all radio buttons and a model/attribute pair into
-iButtons:</p>
-
-<p>&lt;?php $this-&gt;widget('ext.ibutton.IButton', array( 'selector' =&gt;
+iButtons:<br />
+&lt;?php $this-&gt;widget('ext.ibutton.IButton', array( 'selector' =&gt;
 ':radio', 'model' =&gt; $model, 'attribute' =&gt; 'is_master', 'options'
 =&gt;array( 'labelOn'=&gt;Yii::t('app','Yes'),
 'labelOff'=&gt;Yii::t('app','No'), 'change'=&gt;'js:function($choice){
@@ -194,7 +191,7 @@ href="mailto:scoob.junior&#64;gmail.com">scoob.junior&#64;<!---->gmail.com</a>&g
 &lt;<a href="mailto:junior&#64;df9.com.br">junior&#64;<!---->df9.com.br</a>&gt;<br />
 				<b>Version:</b>
 				1.2<br />
-		<b>Located at</b> <a href="source-class-IButton.html#13-212" title="Go to source code">extensions/ibutton/IButton.php</a><br />
+		<b>Located at</b> <a href="source-class-IButton.html#12-217" title="Go to source code">extensions/ibutton/IButton.php</a><br />
 	</div>
 
 
@@ -212,7 +209,7 @@ href="mailto:scoob.junior&#64;gmail.com">scoob.junior&#64;<!---->gmail.com</a>&g
 
 		<td class="name"><div>
 		<a class="anchor" href="#_init">#</a>
-		<code><a href="source-class-IButton.html#150-154" title="Go to source code">init</a>( )</code>
+		<code><a href="source-class-IButton.html#150-155" title="Go to source code">init</a>( )</code>
 
 		<div class="description short">
 			
@@ -241,7 +238,7 @@ href="mailto:scoob.junior&#64;gmail.com">scoob.junior&#64;<!---->gmail.com</a>&g
 
 		<td class="name"><div>
 		<a class="anchor" href="#_run">#</a>
-		<code><a href="source-class-IButton.html#159-165" title="Go to source code">run</a>( )</code>
+		<code><a href="source-class-IButton.html#160-167" title="Go to source code">run</a>( )</code>
 
 		<div class="description short">
 			

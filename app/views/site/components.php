@@ -49,6 +49,9 @@ array_push(
 <!--Porgressbars
 ================================================== -->
 <?php $this->renderPartial('components/_progressbar', array('model' => $model)) ?>
+<!--Panels Thx to https://bitbucket.org/fberesford Francis Beresford
+================================================== -->
+<?php $this->renderPartial('components/_panel', array('model' => $model)) ?>
 <!--Wells
 ================================================== -->
 <?php $this->renderPartial('components/_wells', array('model' => $model)) ?>

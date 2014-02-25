@@ -127,16 +127,18 @@
 <!--                <li><a href="#list-group-custom-content">Custom content</a></li>-->
 <!--            </ul>-->
 <!--        </li>-->
-<!--        <li>-->
-<!--            <a href="#panels">Panels</a>-->
-<!--            <ul class="nav">-->
-<!--                <li><a href="#panels-basic">Basic example</a></li>-->
-<!--                <li><a href="#panels-heading">Panel with heading</a></li>-->
-<!--                <li><a href="#panels-alternatives">Contextual alternatives</a></li>-->
+        <li>
+            <a href="#panels">Panels</a>
+            <ul class="nav">
+                <li><a href="#panels-basic">Basic example</a></li>
+                <li><a href="#panels-heading">Panel with heading</a></li>
+                <li><a href="#panels-footer">Panel with footer</a></li>
+                <li><a href="#panels-alternatives">Contextual alternatives with Tables</a></li>
 <!--                <li><a href="#panels-tables">With tables</a>-->
 <!--                </li><li><a href="#panels-list-group">With list groups</a>-->
-<!--                </li></ul>-->
-<!--        </li>-->
+<!--                </li>-->
+            </ul>
+        </li>
         <li><a href="#wells">Wells</a></li>
 
 
