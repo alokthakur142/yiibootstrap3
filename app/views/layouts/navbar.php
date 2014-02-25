@@ -28,22 +28,22 @@ $urls = [
     ],
     [
         'label'         => CHtml::image(Yii::app()->baseUrl.'/img/bootstrap.png','Bootstrap3 ;)',array('class' => '','height' => 20)),
-        'linkOptions'   => ['target' => 'blank'],
+        'linkOptions'   => ['target' => '_blank'],
         'url'           => 'http://getbootstrap.com',
     ],
     [
         'label'         => CHtml::image(Yii::app()->baseUrl.'/img/yii.png','Yii ;)',array('class' => '','height' => 20)),
-        'linkOptions'   => ['target' => 'blank'],
+        'linkOptions'   => ['target' => '_blank'],
         'url'           => 'http://www.yiiframework.com/extension/yii-bootstrap3-module/',
     ],
     [
         'label'         => CHtml::image(Yii::app()->baseUrl.'/img/bitbucket_logo_landing.png','Bitbucket ;)',array('class' => '','height' => 20)),
-        'linkOptions'   => ['target' => 'blank'],
+        'linkOptions'   => ['target' => '_blank'],
         'url'           => 'https://bitbucket.org/DrMabuse/yii-bootstrap-3-module',
     ],
     [
         'label'         => CHtml::image(Yii::app()->baseUrl.'/img/logo.png','Packagist ;)',array('class' => '','height' => 20)),
-        'linkOptions'   => ['target' => 'blank'],
+        'linkOptions'   => ['target' => '_blank'],
         'url'           => 'https://packagist.org/packages/drmabuse/yii-bootstrap-3-module'
 
     ]
