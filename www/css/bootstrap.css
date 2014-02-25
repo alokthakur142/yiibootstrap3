@@ -5693,7 +5693,7 @@ h1[id] {
   font-weight: bold;
   color: #666666;
   background-color: transparent;
-  border-right: 1px solid #99cc32; }
+  border-right: 3px solid #563d7c; }
 
 /* Nav: second level (shown on .active) */
 .bs-sidebar .nav .nav {
