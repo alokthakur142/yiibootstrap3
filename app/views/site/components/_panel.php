@@ -58,9 +58,9 @@ $gridColumns = array(
     'lastName',
 );
 ?>
-<div class="bs-docs-section">
+<div id="panels" class="bs-docs-section">
     <div class="page-header">
-        <h1 id="panels" class="page-header">Panels</h1><small>Thx to <?= CHtml::link(' Francis Beresford','https://bitbucket.org/fberesford') ?></small>
+        <h1  class="page-header">Panels</h1><small>Thx to <?= CHtml::link(' Francis Beresford','https://bitbucket.org/fberesford') ?></small>
     </div>
     <p>By default, all the <code>.panel</code> does is apply some basic border and padding to contain some content.</p>
     <div id="panels-basic" class="bs-example">
