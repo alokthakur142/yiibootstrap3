@@ -18,7 +18,7 @@ if (YII_DEBUG) {
         ->registerCssFile($themePath . '/css/bootstrap.css');
 //        ->registerCssFile($themePath . '/css/bootstrap-theme.css');
 } else {
-    $cs->registerCssFile($themePath . "/css/application-0.0.7.min.css");
+    $cs->registerCssFile($themePath . "/css/application-{$version}.min.css");
 }
 
 /**

@@ -3,7 +3,7 @@
 -------------------------------------------------- */
 
 body {
-  background: url("../img/grid.png") 0 0 repeat #666666;
+//  background: url("../img/grid.png") 0 0 repeat #666666;
 }
 
 /* Wrapper for page content to push down footer */
@@ -35,6 +35,9 @@ body {
       padding-top: 10px;
     }
   }
+}
+.bs-docs-section{
+  margin-bottom: 51px;
 }
 .bs-docs-nav {
   background: url("../img/tweed.png") 0 0 repeat #666;
@@ -453,6 +456,7 @@ pre .lineno {
   margin-bottom: 20px;
   font-size: 32px;
 }
+
 
 .bs-glyphicons li span,
 .bs-glyphicons li small {

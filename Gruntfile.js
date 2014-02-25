@@ -130,6 +130,10 @@ module.exports = function (grunt) {
                 files: 'www/css/bootstrap.css',
                 tasks: ['concat']
             },
+            sass:{
+                files: 'www/**/*.scss',
+                tasks: ['sass']
+            },
             app_theme:{
                 files: 'www/css/bootstrap-theme.css',
                 tasks: ['concat']

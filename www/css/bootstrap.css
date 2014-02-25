@@ -4372,8 +4372,6 @@ th.hidden-lg, td.hidden-lg {
 
 /* Sticky footer styles
 -------------------------------------------------- */
-body {
-  background: url("../img/grid.png") 0 0 repeat #666666; }
 
 /* Wrapper for page content to push down footer */
 #wrap {
@@ -4398,6 +4396,9 @@ body {
     border-top-left-radius: 4px; }
     #footer .list-inline li {
       padding-top: 10px; }
+
+.bs-docs-section {
+  margin-bottom: 51px; }
 
 .bs-docs-nav {
   background: url("../img/tweed.png") 0 0 repeat #666; }
