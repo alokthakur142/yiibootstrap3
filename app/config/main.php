@@ -45,7 +45,7 @@ return array(
     'components' => array(
 
         'BsHtml' => array(
-            'class' => 'bootstrap.components.BSHtml'
+            'class' => 'bootstrap.helpers.BsHtml'
         ),
 //        'chartjs'=>array(
 //            'class' => 'chartjs.components.ChartJs'
