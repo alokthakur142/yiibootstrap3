@@ -26,7 +26,7 @@ return array(
         'bootstrap.controllers.*',
         'bootstrap.helpers.*',
         'bootstrap.widgets.*',
-        'bootstrap.extensions.*',
+        'bootstrap.behaviors.*',
     ),
     // application behaviors
     'behaviors' => array(),
