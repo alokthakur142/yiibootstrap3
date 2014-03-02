@@ -11,7 +11,7 @@ $this->breadcrumbs = array(
 //);
 array_push(
     $this->secondNavPartials,
-    \app\helpers\NavPartial::getView('_affix')
+   NavPartial::getView('_affix')
 );
 Yii::app()->clientScript->registerScript('affix_sidebar',
     "

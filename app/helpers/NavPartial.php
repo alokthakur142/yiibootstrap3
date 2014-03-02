@@ -31,9 +31,7 @@
     SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace app\helpers;
-
-class NavPartial extends \CModel
+class NavPartial extends CModel
 {
     public static $view;
     public static $params;

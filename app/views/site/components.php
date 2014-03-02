@@ -2,7 +2,7 @@
 $this->pageTitle = 'Components';
 array_push(
     $this->secondNavPartials,
-    \app\helpers\NavPartial::getView('components/_sidebar')
+    NavPartial::getView('components/_sidebar')
 );
 ?>
 <!-- Glyphicons

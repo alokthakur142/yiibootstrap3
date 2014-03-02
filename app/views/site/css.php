@@ -2,7 +2,7 @@
 $this->pageTitle = 'CSS';
 array_push(
     $this->secondNavPartials,
-    \app\helpers\NavPartial::getView('_affix')
+   NavPartial::getView('_affix')
 );
 ?>
 <!-- Global Bootstrap settings
