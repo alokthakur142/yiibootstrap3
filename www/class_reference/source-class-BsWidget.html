@@ -8,7 +8,7 @@
 	<title>File behaviors/BsWidget.php</title>
 
 	<script type="text/javascript" src="resources/combined.js?1771186947"></script>
-	<script type="text/javascript" src="elementlist.js?793332107"></script>
+	<script type="text/javascript" src="elementlist.js?3835776087"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -20,14 +20,22 @@
 
 
 		<div id="groups">
-			<h3>Namespaces</h3>
+			<h3>Packages</h3>
 			<ul>
-				<li><a href="namespace-bootstrap.html">bootstrap<span></span></a>
+				<li class="active"><a href="package-bootstrap.html">bootstrap<span></span></a>
 						<ul>
-				<li><a href="namespace-bootstrap.helpers.html">helpers</a>
+				<li class="active"><a href="package-bootstrap.behaviors.html">behaviors</a>
+						</li>
+				<li><a href="package-bootstrap.components.html">components</a>
+						</li>
+				<li><a href="package-bootstrap.gii.html">gii</a>
+						</li>
+				<li><a href="package-bootstrap.helpers.html">helpers</a>
+						</li>
+				<li><a href="package-bootstrap.widgets.html">widgets</a>
 						</li>
 							</ul></li>
-				<li class="active"><a href="namespace-None.html">None</a>
+				<li><a href="package-None.html">None</a>
 						</li>
 			</ul>
 		</div>
@@ -38,34 +46,7 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-BootstrapCode.html">BootstrapCode</a></li>
-				<li><a href="class-BootstrapGenerator.html">BootstrapGenerator</a></li>
-				<li><a href="class-BootStrapModule.html">BootStrapModule</a></li>
-				<li><a href="class-BsActiveForm.html">BsActiveForm</a></li>
-				<li><a href="class-BSApi.html">BSApi</a></li>
-				<li><a href="class-BsBreadcrumb.html">BsBreadcrumb</a></li>
-				<li><a href="class-BsButtonColumn.html">BsButtonColumn</a></li>
-				<li><a href="class-BsCollapse.html">BsCollapse</a></li>
-				<li><a href="class-BsDataColumn.html">BsDataColumn</a></li>
-				<li><a href="class-BsDetailView.html">BsDetailView</a></li>
-				<li><a href="class-BsGridView.html">BsGridView</a></li>
-				<li><a href="class-BSHtml.html">BSHtml</a></li>
-				<li><a href="class-BsListView.html">BsListView</a></li>
-				<li><a href="class-BsModal.html">BsModal</a></li>
-				<li><a href="class-BsNav.html">BsNav</a></li>
-				<li><a href="class-BsNavbar.html">BsNavbar</a></li>
-				<li><a href="class-BsPager.html">BsPager</a></li>
-				<li><a href="class-BsPanel.html">BsPanel</a></li>
 				<li class="active"><a href="class-BsWidget.html">BsWidget</a></li>
-				<li><a href="class-ChartJs.html">ChartJs</a></li>
-				<li><a href="class-ChBars.html">ChBars</a></li>
-				<li><a href="class-ChDoughnut.html">ChDoughnut</a></li>
-				<li><a href="class-ChLine.html">ChLine</a></li>
-				<li><a href="class-ChPie.html">ChPie</a></li>
-				<li><a href="class-ChPolar.html">ChPolar</a></li>
-				<li><a href="class-ChRadar.html">ChRadar</a></li>
-				<li><a href="class-IButton.html">IButton</a></li>
-				<li><a href="class-MNav.html">MNav</a></li>
 			</ul>
 
 
@@ -93,7 +74,7 @@
 				<a href="index.html" title="Overview"><span>Overview</span></a>
 			</li>
 			<li>
-				<a href="namespace-None.html" title="Summary of None"><span>Namespace</span></a>
+				<a href="package-bootstrap.behaviors.html" title="Summary of bootstrap\behaviors"><span>Package</span></a>
 			</li>
 			<li>
 				<a href="class-BsWidget.html" title="Summary of BsWidget"><span>Class</span></a>
@@ -117,8 +98,8 @@
 </span></span><span id="7" class="l"><a class="l" href="#7"> 7: </a><span class="php-comment"> * @package bootstrap.behaviors
 </span></span><span id="8" class="l"><a class="l" href="#8"> 8: </a><span class="php-comment"> */</span>
 </span><span id="9" class="l"><a class="l" href="#9"> 9: </a>
-</span><span id="10" class="l"><a class="l" href="#10">10: </a>Yii::import(<span class="php-quote">'bootstrap.components.BSHtml'</span>);
-</span><span id="11" class="l"><a class="l" href="#11">11: </a>Yii::import(<span class="php-quote">'bootstrap.components.BSApi'</span>);
+</span><span id="10" class="l"><a class="l" href="#10">10: </a>Yii::import(<span class="php-quote">'bootstrap.components.BSApi'</span>);
+</span><span id="11" class="l"><a class="l" href="#11">11: </a>Yii::import(<span class="php-quote">'bootstrap.helpers.BsHtml'</span>);
 </span><span id="12" class="l"><a class="l" href="#12">12: </a>
 </span><span id="13" class="l"><a class="l" href="#13">13: </a><span class="php-comment">/**
 </span></span><span id="14" class="l"><a class="l" href="#14">14: </a><span class="php-comment"> * Bootstrap widget behavior.
@@ -175,7 +156,7 @@
 </span><span id="65" class="l"><a class="l" href="#65">65: </a>
 </span><span id="66" class="l"><a class="l" href="#66">66: </a>    <span class="php-comment">/**
 </span></span><span id="67" class="l"><a class="l" href="#67">67: </a><span class="php-comment">     * Returns the API instance.
-</span></span><span id="68" class="l"><a class="l" href="#68">68: </a><span class="php-comment">     * @return TbApi the api.
+</span></span><span id="68" class="l"><a class="l" href="#68">68: </a><span class="php-comment">     * @return BsApi the api.
 </span></span><span id="69" class="l"><a class="l" href="#69">69: </a><span class="php-comment">     */</span>
 </span><span id="70" class="l"><a class="l" href="#70">70: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> <a id="_getApi" href="#_getApi">getApi</a>()
 </span><span id="71" class="l"><a class="l" href="#71">71: </a>    {

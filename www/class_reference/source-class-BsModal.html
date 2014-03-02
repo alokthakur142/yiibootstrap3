@@ -8,7 +8,7 @@
 	<title>File widgets/BsModal.php</title>
 
 	<script type="text/javascript" src="resources/combined.js?1771186947"></script>
-	<script type="text/javascript" src="elementlist.js?793332107"></script>
+	<script type="text/javascript" src="elementlist.js?3835776087"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -20,14 +20,22 @@
 
 
 		<div id="groups">
-			<h3>Namespaces</h3>
+			<h3>Packages</h3>
 			<ul>
-				<li><a href="namespace-bootstrap.html">bootstrap<span></span></a>
+				<li class="active"><a href="package-bootstrap.html">bootstrap<span></span></a>
 						<ul>
-				<li><a href="namespace-bootstrap.helpers.html">helpers</a>
+				<li><a href="package-bootstrap.behaviors.html">behaviors</a>
+						</li>
+				<li><a href="package-bootstrap.components.html">components</a>
+						</li>
+				<li><a href="package-bootstrap.gii.html">gii</a>
+						</li>
+				<li><a href="package-bootstrap.helpers.html">helpers</a>
+						</li>
+				<li class="active"><a href="package-bootstrap.widgets.html">widgets</a>
 						</li>
 							</ul></li>
-				<li class="active"><a href="namespace-None.html">None</a>
+				<li><a href="package-None.html">None</a>
 						</li>
 			</ul>
 		</div>
@@ -38,34 +46,17 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-BootstrapCode.html">BootstrapCode</a></li>
-				<li><a href="class-BootstrapGenerator.html">BootstrapGenerator</a></li>
-				<li><a href="class-BootStrapModule.html">BootStrapModule</a></li>
 				<li><a href="class-BsActiveForm.html">BsActiveForm</a></li>
-				<li><a href="class-BSApi.html">BSApi</a></li>
 				<li><a href="class-BsBreadcrumb.html">BsBreadcrumb</a></li>
 				<li><a href="class-BsButtonColumn.html">BsButtonColumn</a></li>
-				<li><a href="class-BsCollapse.html">BsCollapse</a></li>
 				<li><a href="class-BsDataColumn.html">BsDataColumn</a></li>
-				<li><a href="class-BsDetailView.html">BsDetailView</a></li>
 				<li><a href="class-BsGridView.html">BsGridView</a></li>
-				<li><a href="class-BSHtml.html">BSHtml</a></li>
 				<li><a href="class-BsListView.html">BsListView</a></li>
 				<li class="active"><a href="class-BsModal.html">BsModal</a></li>
 				<li><a href="class-BsNav.html">BsNav</a></li>
 				<li><a href="class-BsNavbar.html">BsNavbar</a></li>
 				<li><a href="class-BsPager.html">BsPager</a></li>
 				<li><a href="class-BsPanel.html">BsPanel</a></li>
-				<li><a href="class-BsWidget.html">BsWidget</a></li>
-				<li><a href="class-ChartJs.html">ChartJs</a></li>
-				<li><a href="class-ChBars.html">ChBars</a></li>
-				<li><a href="class-ChDoughnut.html">ChDoughnut</a></li>
-				<li><a href="class-ChLine.html">ChLine</a></li>
-				<li><a href="class-ChPie.html">ChPie</a></li>
-				<li><a href="class-ChPolar.html">ChPolar</a></li>
-				<li><a href="class-ChRadar.html">ChRadar</a></li>
-				<li><a href="class-IButton.html">IButton</a></li>
-				<li><a href="class-MNav.html">MNav</a></li>
 			</ul>
 
 
@@ -93,7 +84,7 @@
 				<a href="index.html" title="Overview"><span>Overview</span></a>
 			</li>
 			<li>
-				<a href="namespace-None.html" title="Summary of None"><span>Namespace</span></a>
+				<a href="package-bootstrap.widgets.html" title="Summary of bootstrap\widgets"><span>Package</span></a>
 			</li>
 			<li>
 				<a href="class-BsModal.html" title="Summary of BsModal"><span>Class</span></a>
@@ -203,7 +194,7 @@
 </span><span id="93" class="l"><a class="l" href="#93"> 93: </a>    <span class="php-comment">/**
 </span></span><span id="94" class="l"><a class="l" href="#94"> 94: </a><span class="php-comment">     * @var string
 </span></span><span id="95" class="l"><a class="l" href="#95"> 95: </a><span class="php-comment">     */</span>
-</span><span id="96" class="l"><a class="l" href="#96"> 96: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$closeText" href="#$closeText">$closeText</a></span> = BSHtml::CLOSE_TEXT;
+</span><span id="96" class="l"><a class="l" href="#96"> 96: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$closeText" href="#$closeText">$closeText</a></span> = BsHtml::CLOSE_TEXT;
 </span><span id="97" class="l"><a class="l" href="#97"> 97: </a>
 </span><span id="98" class="l"><a class="l" href="#98"> 98: </a>    <span class="php-comment">/**
 </span></span><span id="99" class="l"><a class="l" href="#99"> 99: </a><span class="php-comment">     * @var string header content
@@ -226,19 +217,19 @@
 </span><span id="116" class="l"><a class="l" href="#116">116: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_init" href="#_init">init</a>()
 </span><span id="117" class="l"><a class="l" href="#117">117: </a>    {
 </span><span id="118" class="l"><a class="l" href="#118">118: </a>        <span class="php-var">$this</span>-&gt;attachBehavior(<span class="php-quote">'BsWidget'</span>, <span class="php-keyword1">new</span> BsWidget());
-</span><span id="119" class="l"><a class="l" href="#119">119: </a>        \bootstrap\helpers\BSArray::defaultValue(<span class="php-quote">'id'</span>, <span class="php-var">$this</span>-&gt;getId(), <span class="php-var">$this</span>-&gt;htmlOptions);
-</span><span id="120" class="l"><a class="l" href="#120">120: </a>        \bootstrap\helpers\BSArray::defaultValue(<span class="php-quote">'role'</span>, <span class="php-quote">'dialog'</span>, <span class="php-var">$this</span>-&gt;htmlOptions);
-</span><span id="121" class="l"><a class="l" href="#121">121: </a>        \bootstrap\helpers\BSArray::defaultValue(<span class="php-quote">'tabindex'</span>, <span class="php-quote">'-1'</span>, <span class="php-var">$this</span>-&gt;htmlOptions);
+</span><span id="119" class="l"><a class="l" href="#119">119: </a>        BsArray::defaultValue(<span class="php-quote">'id'</span>, <span class="php-var">$this</span>-&gt;getId(), <span class="php-var">$this</span>-&gt;htmlOptions);
+</span><span id="120" class="l"><a class="l" href="#120">120: </a>        BsArray::defaultValue(<span class="php-quote">'role'</span>, <span class="php-quote">'dialog'</span>, <span class="php-var">$this</span>-&gt;htmlOptions);
+</span><span id="121" class="l"><a class="l" href="#121">121: </a>        BsArray::defaultValue(<span class="php-quote">'tabindex'</span>, <span class="php-quote">'-1'</span>, <span class="php-var">$this</span>-&gt;htmlOptions);
 </span><span id="122" class="l"><a class="l" href="#122">122: </a>
 </span><span id="123" class="l"><a class="l" href="#123">123: </a>
-</span><span id="124" class="l"><a class="l" href="#124">124: </a>        BSHtml::addCssClass(<span class="php-quote">'modal'</span>, <span class="php-var">$this</span>-&gt;htmlOptions);
+</span><span id="124" class="l"><a class="l" href="#124">124: </a>        BsHtml::addCssClass(<span class="php-quote">'modal'</span>, <span class="php-var">$this</span>-&gt;htmlOptions);
 </span><span id="125" class="l"><a class="l" href="#125">125: </a>
 </span><span id="126" class="l"><a class="l" href="#126">126: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;fade) {
-</span><span id="127" class="l"><a class="l" href="#127">127: </a>            BSHtml::addCssClass(<span class="php-quote">'fade'</span>, <span class="php-var">$this</span>-&gt;htmlOptions);
+</span><span id="127" class="l"><a class="l" href="#127">127: </a>            BsHtml::addCssClass(<span class="php-quote">'fade'</span>, <span class="php-var">$this</span>-&gt;htmlOptions);
 </span><span id="128" class="l"><a class="l" href="#128">128: </a>        }
 </span><span id="129" class="l"><a class="l" href="#129">129: </a>
 </span><span id="130" class="l"><a class="l" href="#130">130: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;show) {
-</span><span id="131" class="l"><a class="l" href="#131">131: </a>            BSHtml::addCssClass(<span class="php-quote">'in'</span>, <span class="php-var">$this</span>-&gt;htmlOptions);
+</span><span id="131" class="l"><a class="l" href="#131">131: </a>            BsHtml::addCssClass(<span class="php-quote">'in'</span>, <span class="php-var">$this</span>-&gt;htmlOptions);
 </span><span id="132" class="l"><a class="l" href="#132">132: </a>        }
 </span><span id="133" class="l"><a class="l" href="#133">133: </a>
 </span><span id="134" class="l"><a class="l" href="#134">134: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">is_array</span>(<span class="php-var">$this</span>-&gt;footer)) {
@@ -274,13 +265,13 @@
 </span></span><span id="164" class="l"><a class="l" href="#164">164: </a><span class="php-comment">     */</span>
 </span><span id="165" class="l"><a class="l" href="#165">165: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_initOptions" href="#_initOptions">initOptions</a>()
 </span><span id="166" class="l"><a class="l" href="#166">166: </a>    {
-</span><span id="167" class="l"><a class="l" href="#167">167: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$remote</span> = \bootstrap\helpers\BSArray::popValue(<span class="php-quote">'remote'</span>, <span class="php-var">$this</span>-&gt;options)) {
+</span><span id="167" class="l"><a class="l" href="#167">167: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$remote</span> = BsArray::popValue(<span class="php-quote">'remote'</span>, <span class="php-var">$this</span>-&gt;options)) {
 </span><span id="168" class="l"><a class="l" href="#168">168: </a>            <span class="php-var">$this</span>-&gt;options[<span class="php-quote">'remote'</span>] = CHtml::normalizeUrl(<span class="php-var">$remote</span>);
 </span><span id="169" class="l"><a class="l" href="#169">169: </a>        }
 </span><span id="170" class="l"><a class="l" href="#170">170: </a>
-</span><span id="171" class="l"><a class="l" href="#171">171: </a>        \bootstrap\helpers\BSArray::defaultValue(<span class="php-quote">'backdrop'</span>, <span class="php-var">$this</span>-&gt;backdrop, <span class="php-var">$this</span>-&gt;options);
-</span><span id="172" class="l"><a class="l" href="#172">172: </a>        \bootstrap\helpers\BSArray::defaultValue(<span class="php-quote">'keyboard'</span>, <span class="php-var">$this</span>-&gt;keyboard, <span class="php-var">$this</span>-&gt;options);
-</span><span id="173" class="l"><a class="l" href="#173">173: </a>        \bootstrap\helpers\BSArray::defaultValue(<span class="php-quote">'show'</span>, <span class="php-var">$this</span>-&gt;show, <span class="php-var">$this</span>-&gt;options);
+</span><span id="171" class="l"><a class="l" href="#171">171: </a>        BsArray::defaultValue(<span class="php-quote">'backdrop'</span>, <span class="php-var">$this</span>-&gt;backdrop, <span class="php-var">$this</span>-&gt;options);
+</span><span id="172" class="l"><a class="l" href="#172">172: </a>        BsArray::defaultValue(<span class="php-quote">'keyboard'</span>, <span class="php-var">$this</span>-&gt;keyboard, <span class="php-var">$this</span>-&gt;options);
+</span><span id="173" class="l"><a class="l" href="#173">173: </a>        BsArray::defaultValue(<span class="php-quote">'show'</span>, <span class="php-var">$this</span>-&gt;show, <span class="php-var">$this</span>-&gt;options);
 </span><span id="174" class="l"><a class="l" href="#174">174: </a>    }
 </span><span id="175" class="l"><a class="l" href="#175">175: </a>
 </span><span id="176" class="l"><a class="l" href="#176">176: </a>    <span class="php-comment">/**
@@ -299,17 +290,17 @@
 </span><span id="189" class="l"><a class="l" href="#189">189: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_renderButton" href="#_renderButton">renderButton</a>()
 </span><span id="190" class="l"><a class="l" href="#190">190: </a>    {
 </span><span id="191" class="l"><a class="l" href="#191">191: </a>        <span class="php-keyword1">if</span> (!<span class="php-keyword1">empty</span>(<span class="php-var">$this</span>-&gt;buttonOptions) &amp;&amp; <span class="php-keyword2">is_array</span>(<span class="php-var">$this</span>-&gt;buttonOptions)) {
-</span><span id="192" class="l"><a class="l" href="#192">192: </a>            \bootstrap\helpers\BSArray::defaultValue(<span class="php-quote">'data-toggle'</span>, <span class="php-quote">'modal'</span>, <span class="php-var">$this</span>-&gt;buttonOptions);
+</span><span id="192" class="l"><a class="l" href="#192">192: </a>            BsArray::defaultValue(<span class="php-quote">'data-toggle'</span>, <span class="php-quote">'modal'</span>, <span class="php-var">$this</span>-&gt;buttonOptions);
 </span><span id="193" class="l"><a class="l" href="#193">193: </a>
 </span><span id="194" class="l"><a class="l" href="#194">194: </a>            <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;remote !== <span class="php-keyword1">null</span>) {
 </span><span id="195" class="l"><a class="l" href="#195">195: </a>                <span class="php-var">$this</span>-&gt;buttonOptions[<span class="php-quote">'data-remote'</span>] = CHtml::normalizeUrl(<span class="php-var">$this</span>-&gt;remote);
 </span><span id="196" class="l"><a class="l" href="#196">196: </a>            }
 </span><span id="197" class="l"><a class="l" href="#197">197: </a>
 </span><span id="198" class="l"><a class="l" href="#198">198: </a>            <span class="php-var">$selector</span> = <span class="php-quote">'#'</span> . <span class="php-var">$this</span>-&gt;htmlOptions[<span class="php-quote">'id'</span>];
-</span><span id="199" class="l"><a class="l" href="#199">199: </a>            <span class="php-var">$label</span> = \bootstrap\helpers\BSArray::popValue(<span class="php-quote">'label'</span>, <span class="php-var">$this</span>-&gt;buttonOptions, <span class="php-quote">'button'</span>);
+</span><span id="199" class="l"><a class="l" href="#199">199: </a>            <span class="php-var">$label</span> = BsArray::popValue(<span class="php-quote">'label'</span>, <span class="php-var">$this</span>-&gt;buttonOptions, <span class="php-quote">'button'</span>);
 </span><span id="200" class="l"><a class="l" href="#200">200: </a>            <span class="php-var">$attr</span> = <span class="php-keyword1">isset</span>(<span class="php-var">$this</span>-&gt;buttonOptions[<span class="php-quote">'data-remote'</span>]) ? <span class="php-quote">'data-target'</span> : <span class="php-quote">'href'</span>;
-</span><span id="201" class="l"><a class="l" href="#201">201: </a>            \bootstrap\helpers\BSArray::defaultValue(<span class="php-var">$attr</span>, <span class="php-var">$selector</span>, <span class="php-var">$this</span>-&gt;buttonOptions);
-</span><span id="202" class="l"><a class="l" href="#202">202: </a>            <span class="php-keyword1">echo</span> BSHtml::button(<span class="php-var">$label</span>, <span class="php-var">$this</span>-&gt;buttonOptions);
+</span><span id="201" class="l"><a class="l" href="#201">201: </a>            BsArray::defaultValue(<span class="php-var">$attr</span>, <span class="php-var">$selector</span>, <span class="php-var">$this</span>-&gt;buttonOptions);
+</span><span id="202" class="l"><a class="l" href="#202">202: </a>            <span class="php-keyword1">echo</span> BsHtml::button(<span class="php-var">$label</span>, <span class="php-var">$this</span>-&gt;buttonOptions);
 </span><span id="203" class="l"><a class="l" href="#203">203: </a>        }
 </span><span id="204" class="l"><a class="l" href="#204">204: </a>    }
 </span><span id="205" class="l"><a class="l" href="#205">205: </a>
@@ -318,9 +309,9 @@
 </span></span><span id="208" class="l"><a class="l" href="#208">208: </a><span class="php-comment">     */</span>
 </span><span id="209" class="l"><a class="l" href="#209">209: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_renderModal" href="#_renderModal">renderModal</a>()
 </span><span id="210" class="l"><a class="l" href="#210">210: </a>    {
-</span><span id="211" class="l"><a class="l" href="#211">211: </a>        <span class="php-keyword1">echo</span> BSHtml::openTag(<span class="php-quote">'div'</span>, <span class="php-var">$this</span>-&gt;htmlOptions) . PHP_EOL;
-</span><span id="212" class="l"><a class="l" href="#212">212: </a>        <span class="php-keyword1">echo</span> BSHtml::openTag(<span class="php-quote">'div'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'class'</span> =&gt; <span class="php-quote">'modal-dialog'</span>)) . PHP_EOL;
-</span><span id="213" class="l"><a class="l" href="#213">213: </a>        <span class="php-keyword1">echo</span> BSHtml::openTag(<span class="php-quote">'div'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'class'</span> =&gt; <span class="php-quote">'modal-content'</span>)) . PHP_EOL;
+</span><span id="211" class="l"><a class="l" href="#211">211: </a>        <span class="php-keyword1">echo</span> BsHtml::openTag(<span class="php-quote">'div'</span>, <span class="php-var">$this</span>-&gt;htmlOptions) . PHP_EOL;
+</span><span id="212" class="l"><a class="l" href="#212">212: </a>        <span class="php-keyword1">echo</span> BsHtml::openTag(<span class="php-quote">'div'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'class'</span> =&gt; <span class="php-quote">'modal-dialog'</span>)) . PHP_EOL;
+</span><span id="213" class="l"><a class="l" href="#213">213: </a>        <span class="php-keyword1">echo</span> BsHtml::openTag(<span class="php-quote">'div'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'class'</span> =&gt; <span class="php-quote">'modal-content'</span>)) . PHP_EOL;
 </span><span id="214" class="l"><a class="l" href="#214">214: </a>
 </span><span id="215" class="l"><a class="l" href="#215">215: </a>        <span class="php-var">$this</span>-&gt;renderModalHeader();
 </span><span id="216" class="l"><a class="l" href="#216">216: </a>        <span class="php-var">$this</span>-&gt;renderModalBody();
@@ -336,9 +327,9 @@
 </span><span id="226" class="l"><a class="l" href="#226">226: </a>    {
 </span><span id="227" class="l"><a class="l" href="#227">227: </a>        <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;div class=&quot;modal-header&quot;&gt;'</span> . PHP_EOL;
 </span><span id="228" class="l"><a class="l" href="#228">228: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;closeText) {
-</span><span id="229" class="l"><a class="l" href="#229">229: </a>            <span class="php-keyword1">echo</span> BSHtml::closeButton(<span class="php-var">$this</span>-&gt;closeText, <span class="php-keyword1">array</span>(<span class="php-quote">'data-dismiss'</span> =&gt; <span class="php-quote">'modal'</span>));
+</span><span id="229" class="l"><a class="l" href="#229">229: </a>            <span class="php-keyword1">echo</span> BsHtml::closeButton(<span class="php-var">$this</span>-&gt;closeText, <span class="php-keyword1">array</span>(<span class="php-quote">'data-dismiss'</span> =&gt; <span class="php-quote">'modal'</span>));
 </span><span id="230" class="l"><a class="l" href="#230">230: </a>        }
-</span><span id="231" class="l"><a class="l" href="#231">231: </a>        <span class="php-keyword1">echo</span> BSHtml::tag(<span class="php-quote">'h3'</span>, <span class="php-keyword1">array</span>(), <span class="php-var">$this</span>-&gt;<span class="php-keyword2">header</span>);
+</span><span id="231" class="l"><a class="l" href="#231">231: </a>        <span class="php-keyword1">echo</span> BsHtml::tag(<span class="php-quote">'h3'</span>, <span class="php-keyword1">array</span>(), <span class="php-var">$this</span>-&gt;<span class="php-keyword2">header</span>);
 </span><span id="232" class="l"><a class="l" href="#232">232: </a>        <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;/div&gt;'</span> . PHP_EOL;
 </span><span id="233" class="l"><a class="l" href="#233">233: </a>    }
 </span><span id="234" class="l"><a class="l" href="#234">234: </a>
