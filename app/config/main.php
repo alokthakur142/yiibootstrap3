@@ -44,7 +44,7 @@ return array(
     // application components
     'components' => array(
 
-        'bsHtml' => array(
+        'BsHtml' => array(
             'class' => 'bootstrap.components.BSHtml'
         ),
 //        'chartjs'=>array(
