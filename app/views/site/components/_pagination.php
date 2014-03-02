@@ -24,7 +24,7 @@
             array('label' => '»', 'url' => '#'),
         );
         ?>
-        <?php echo BSHtml::pagination($list); ?>
+        <?php echo BsHtml::pagination($list); ?>
     </div>
     <div class="highlight"><pre><span class="pre_black">
 &nbsp;<span class="pre_blue">&lt;?php<br>$list&nbsp;</span><span class="pre_green">=&nbsp;array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
@@ -57,7 +57,7 @@
                    class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                    class="pre_red">'#'<br>&nbsp;&nbsp; &nbsp;</span><span
                     class="pre_green">)<br>);<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
-                    class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span><span
                     class="pre_green">::</span><span class="pre_blue">pagination</span><span
                     class="pre_green">(</span><span class="pre_blue">$list</span><span
                     class="pre_green">);<br></span><span class="pre_blue">?&gt;</span>
@@ -81,7 +81,7 @@
             array('label' => '»', 'url' => '#'),
         );
         ?>
-        <?php echo BSHtml::pagination($list); ?>
+        <?php echo BsHtml::pagination($list); ?>
     </div>
     <div class="highlight"><pre><span class="pre_black">
 <span class="pre_blue">&lt;?php<br>$list&nbsp;</span><span class="pre_green">=&nbsp;array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
@@ -118,7 +118,7 @@
                    class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                    class="pre_red">'#'<br>&nbsp;&nbsp; &nbsp;</span><span
                     class="pre_green">)<br>);<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
-                    class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span><span
                     class="pre_green">::</span><span class="pre_blue">pagination</span><span
                     class="pre_green">(</span><span class="pre_blue">$list</span><span
                     class="pre_green">);<br></span><span class="pre_blue">?&gt;</span>
@@ -133,30 +133,30 @@
 
     <div class="bs-example">
         <div class="">
-            <?php echo BSHtml::pagination($list, array('size' => BSHtml::PAGINATION_SIZE_LARGE)); ?>
+            <?php echo BsHtml::pagination($list, array('size' => BsHtml::PAGINATION_SIZE_LARGE)); ?>
         </div>
         <div class="">
-            <?php echo BSHtml::pagination($list); ?>
+            <?php echo BsHtml::pagination($list); ?>
         </div>
         <div class="">
-            <?php echo BSHtml::pagination($list, array('size' => BSHtml::PAGINATION_SIZE_SMALL)); ?>
+            <?php echo BsHtml::pagination($list, array('size' => BsHtml::PAGINATION_SIZE_SMALL)); ?>
         </div>
     </div><div class="highlight"><pre><span class="pre_black">
 <span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-            class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">pagination</span><span
+            class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">pagination</span><span
             class="pre_green">(</span><span class="pre_blue">$list</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
            class="pre_red">'size'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-            class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">PAGINATION_SIZE_LARGE<br></span><span
+            class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">PAGINATION_SIZE_LARGE<br></span><span
             class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
-            class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span
+            class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span><span
             class="pre_green">::</span><span class="pre_blue">pagination</span><span
             class="pre_green">(</span><span class="pre_blue">$list</span><span
             class="pre_green">);<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
-            class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span
+            class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span><span
             class="pre_green">::</span><span class="pre_blue">pagination</span><span
             class="pre_green">(</span><span class="pre_blue">$list</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
            class="pre_red">'size'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-            class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">PAGINATION_SIZE_SMALL<br></span><span
+            class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">PAGINATION_SIZE_SMALL<br></span><span
             class="pre_green">));<br></span><span class="pre_blue">?&gt;</span>
 </span></pre></div>
 
@@ -168,14 +168,14 @@
 <h3>Default example</h3>
 <p>By default, the pager centers links.</p>
 <div class="bs-example">
-    <?php echo BSHtml::pager(array(
+    <?php echo BsHtml::pager(array(
         array('label' => 'Previous', 'url' => '#'),
         array('label' => 'Next', 'url' => '#'),
     )); ?>
 </div>
 <div class="highlight"><pre><<span class="pre_black">
 &nbsp;<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">pager</span><span
                 class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
@@ -193,14 +193,14 @@
 <h3>Aligned links</h3>
 <p>Alternatively, you can align each link to the sides:</p>
 <div class="bs-example">
-    <?php echo BSHtml::pager(array(
+    <?php echo BsHtml::pager(array(
         array('label' => '&larr; Older', 'url' => '#', 'previous' => true),
         array('label' => 'Newer &rarr;', 'url' => '#', 'next' => true),
     )); ?>
 </div>
 <div class="highlight"><pre><<span class="pre_black">
 <span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">pager</span><span
                 class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
@@ -225,14 +225,14 @@
 <h3>Optional disabled state</h3>
 <p>Pager links also use the general <code>.disabled</code> utility class from the pagination.</p>
 <div class="bs-example">
-    <?php echo BSHtml::pager(array(
+    <?php echo BsHtml::pager(array(
         array('label' => '&larr; Older', 'url' => '#', 'previous' => true, 'disabled' => true),
         array('label' => 'Newer &rarr;', 'url' => '#', 'next' => true),
     )); ?>
 </div>
 <div class="highlight"><pre><span class="pre_black">
 &nbsp;<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">pager</span><span
                 class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span

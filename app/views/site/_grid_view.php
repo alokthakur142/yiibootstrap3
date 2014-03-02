@@ -77,7 +77,7 @@ $gridColumns=array(
 //            'filter' => $gridDataProvider,
             'template' => "{summary}{items}{pager}",
             'columns' => $gridColumns,
-            'type' => BSHtml::GRID_TYPE_STRIPED,
+            'type' => BsHtml::GRID_TYPE_STRIPED,
         )); ?>
     </div>
 </div>
@@ -87,7 +87,7 @@ $gridColumns=array(
         'dataProvider' => $gridDataProvider,
         'template' => "{summary}{items}{pager}",
         'columns' => $gridColumns,
-        'type' => BSHtml::GRID_TYPE_STRIPED,
+        'type' => BsHtml::GRID_TYPE_STRIPED,
     )); ?&gt;
     </pre>
 <?php endif; ?>

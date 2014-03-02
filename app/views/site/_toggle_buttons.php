@@ -7,7 +7,7 @@
  * Class ${NAME}
  */
 ?>
-<?php echo BSHtml::checkBox('test',true,array()); ?>
+<?php echo BsHtml::checkBox('test',true,array()); ?>
 <?php $this->widget('bootstrap.extensions.ibutton.IButton', array(
     'selector'=>':checkbox',
     'options' =>array(

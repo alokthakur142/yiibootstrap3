@@ -16,7 +16,7 @@
 <div class="bs-example">
     <?php $this->widget('bootstrap.widgets.BsNavbar', array(
             'collapse' => true,
-            'brandLabel' => BSHtml::icon(BSHtml::GLYPHICON_HOME),
+            'brandLabel' => BsHtml::icon(BsHtml::GLYPHICON_HOME),
             'brandUrl' => Yii::app()->homeUrl,
             'items'    => array(
                 array(
@@ -27,16 +27,16 @@
                         array(
                             'label' => 'Home', 'url' => array('/site/index'),
                             'items' => array(
-                                BSHtml::menuHeader(BSHtml::icon(BSHtml::GLYPHICON_BOOKMARK),array('class' => 'text-center','style' => 'color:#99cc32;font-size:32px;')),
+                                BsHtml::menuHeader(BsHtml::icon(BsHtml::GLYPHICON_BOOKMARK),array('class' => 'text-center','style' => 'color:#99cc32;font-size:32px;')),
                                 array('label' => 'Home', 'url' => array('/site/index')),
                                 array('label' => 'About', 'url' => array('/site/page', 'view' => 'about')),
                                 array('label' => 'Contact', 'url' => array('/site/contact')),
-                                BSHtml::menuDivider(),
-                                array('label' => 'Login', 'url' => array('/site/login'), 'visible' => Yii::app()->user->isGuest,'icon' => BSHtml::GLYPHICON_LOG_IN),
+                                BsHtml::menuDivider(),
+                                array('label' => 'Login', 'url' => array('/site/login'), 'visible' => Yii::app()->user->isGuest,'icon' => BsHtml::GLYPHICON_LOG_IN),
                                 array('label' => 'Logout (' . Yii::app()->user->name . ')', 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest),
-                                array('label' => 'Home', 'url' => array('/site/index'),'icon' => BSHtml::GLYPHICON_HOME),
-                                array('label' => 'About', 'url' => array('/site/page', 'view' => 'about'),'icon' => BSHtml::GLYPHICON_PAPERCLIP),
-                                array('label' => 'Contact', 'url' => array('/site/contact'),'icon' => BSHtml::GLYPHICON_FLOPPY_OPEN),
+                                array('label' => 'Home', 'url' => array('/site/index'),'icon' => BsHtml::GLYPHICON_HOME),
+                                array('label' => 'About', 'url' => array('/site/page', 'view' => 'about'),'icon' => BsHtml::GLYPHICON_PAPERCLIP),
+                                array('label' => 'Contact', 'url' => array('/site/contact'),'icon' => BsHtml::GLYPHICON_FLOPPY_OPEN),
                             ),
                         ),
                     ),
@@ -48,11 +48,11 @@
                     'items' => array(
                         array('label' => 'About', 'url' => array('/site/page', 'view' => 'about')),
                         array('label' => 'Contact', 'url' => array('/site/contact')),
-                        array('label' => 'Login', 'url' => array('/site/login'),'pull' => BSHtml::NAVBAR_NAV_PULL_RIGHT, 'visible' => Yii::app()->user->isGuest),
-                        array('label' => 'Logout (' . Yii::app()->user->name . ')','pull' => BSHtml::NAVBAR_NAV_PULL_RIGHT, 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest)
+                        array('label' => 'Login', 'url' => array('/site/login'),'pull' => BsHtml::NAVBAR_NAV_PULL_RIGHT, 'visible' => Yii::app()->user->isGuest),
+                        array('label' => 'Logout (' . Yii::app()->user->name . ')','pull' => BsHtml::NAVBAR_NAV_PULL_RIGHT, 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest)
                     ),
                     'htmlOptions' => array(
-                        'pull' =>BSHtml::NAVBAR_NAV_PULL_RIGHT
+                        'pull' =>BsHtml::NAVBAR_NAV_PULL_RIGHT
                     )
                 )
 
@@ -70,8 +70,8 @@
                 class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">true</span><span
                 class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
                 class="pre_red">'brandLabel'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
-                class="pre_blue">icon</span><span class="pre_green">(</span><span class="pre_blue">BSHtml</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">icon</span><span class="pre_green">(</span><span class="pre_blue">BsHtml</span><span
                 class="pre_green">::</span><span class="pre_blue">GLYPHICON_HOME</span><span
                 class="pre_green">),<br>&nbsp;&nbsp; &nbsp;</span><span
                 class="pre_red">'brandUrl'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
@@ -93,10 +93,10 @@
                 class="pre_red">'/site/index'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'items'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">menuHeader</span><span class="pre_green">(</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
-                class="pre_blue">icon</span><span class="pre_green">(</span><span class="pre_blue">BSHtml</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">icon</span><span class="pre_green">(</span><span class="pre_blue">BsHtml</span><span
                 class="pre_green">::</span><span class="pre_blue">GLYPHICON_BOOKMARK</span><span
                 class="pre_green">),&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
@@ -121,7 +121,7 @@
                 class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'/site/contact'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_green">)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">menuDivider</span><span class="pre_green">(),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                 class="pre_red">'Login'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
@@ -134,7 +134,7 @@
                 class="pre_green">-&gt;</span><span class="pre_blue">isGuest</span><span
                 class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'icon'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">GLYPHICON_LOG_IN<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
@@ -158,7 +158,7 @@
                 class="pre_red">'/site/index'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'icon'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">GLYPHICON_HOME<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
@@ -169,7 +169,7 @@
                 class="pre_red">'about'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'icon'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">GLYPHICON_PAPERCLIP<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
@@ -178,7 +178,7 @@
                 class="pre_red">'/site/contact'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'icon'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">GLYPHICON_FLOPPY_OPEN<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_green">)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
@@ -207,7 +207,7 @@
                 class="pre_red">'/site/login'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'pull'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">NAVBAR_NAV_PULL_RIGHT</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'visible'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                 class="pre_blue">Yii</span><span class="pre_green">::</span><span class="pre_blue">app</span><span
@@ -222,7 +222,7 @@
                 class="pre_green">.&nbsp;</span><span class="pre_red">')'</span><span
                 class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'pull'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">NAVBAR_NAV_PULL_RIGHT</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'/site/logout'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
@@ -234,7 +234,7 @@
                 class="pre_green">)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'htmlOptions'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'pull'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">NAVBAR_NAV_PULL_RIGHT<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_green">)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<br>&nbsp;&nbsp; &nbsp;)<br>));<br></span><span
                 class="pre_blue">?&gt;</span>
@@ -261,11 +261,11 @@
             'brandLabel' => '',
             'brandUrl' => '',
             'items'    => array(
-                BSHtml::linkButton('sign',array(
-                        'icon' => BSHtml::GLYPHICON_BOOKMARK,
+                BsHtml::linkButton('sign',array(
+                        'icon' => BsHtml::GLYPHICON_BOOKMARK,
                         'url' => array('/site/index'),
-                        'type' => BSHtml::BUTTON_TYPE_NAVBARBUTTON,
-                        'color' => BSHtml::BUTTON_COLOR_INFO
+                        'type' => BsHtml::BUTTON_TYPE_NAVBARBUTTON,
+                        'color' => BsHtml::BUTTON_COLOR_INFO
                     )
                 ),
                 array(
@@ -279,7 +279,7 @@
                         array('label' => 'Logout (' . Yii::app()->user->name . ')', 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest)
                     ),
                     'htmlOptions' => array(
-                        'pull' =>BSHtml::NAVBAR_NAV_PULL_RIGHT
+                        'pull' =>BsHtml::NAVBAR_NAV_PULL_RIGHT
                     )
                 )
             ),
@@ -298,15 +298,15 @@
             class="pre_red">''</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'brandUrl'&nbsp;</span><span
             class="pre_green">=&gt;&nbsp;</span><span class="pre_red">''</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
             class="pre_red">'items'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
-            class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">linkButton</span><span
+            class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">linkButton</span><span
             class="pre_green">(</span><span class="pre_red">'sign'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
             class="pre_red">'icon'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-            class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">GLYPHICON_BOOKMARK</span><span
+            class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">GLYPHICON_BOOKMARK</span><span
             class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="pre_red">'url'&nbsp;</span><span
             class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
             class="pre_red">'/site/index'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
             class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="pre_red">'type'&nbsp;</span><span
-            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span
+            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span
             class="pre_green">::</span><span class="pre_blue">BUTTON_TYPE_NAVBARBUTTON<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
             class="pre_green">))<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<br>&nbsp;&nbsp; &nbsp;)<br>));<br></span><span
             class="pre_blue">?&gt;</span>
@@ -321,14 +321,14 @@
             'collapse' => true,
             'brandLabel' => 'Home',
             'items'    => array(
-                BSHtml::menuText('Signed in as Mark Otto'),
+                BsHtml::menuText('Signed in as Mark Otto'),
             ),
         )
     ); ?>
 </div>
 <div class="highlight">
-    <?= BSHtml::codeBlock("'items'    => array(
-                BSHtml::menuText('Signed in as Mark Otto'),
+    <?= BsHtml::codeBlock("'items'    => array(
+                BsHtml::menuText('Signed in as Mark Otto'),
             ),")
     ?>
 </div>
@@ -341,27 +341,27 @@
             'collapse' => true,
             'brandLabel' => 'Home',
             'items'    => array(
-                BSHtml::menuText(
-                    'Signed in as '.BSHtml::link(
+                BsHtml::menuText(
+                    'Signed in as '.BsHtml::link(
                         'Mark Otto',
                         array('site/user','id' => Yii::app()->user->id),
                         array('class' => 'navbar-link')
                     ),
-                    array('pull' => BSHtml::NAVBAR_NAV_PULL_RIGHT)
+                    array('pull' => BsHtml::NAVBAR_NAV_PULL_RIGHT)
                 ),
             ),
         )
     ); ?>
 </div>
 <div class="highlight">
-    <?= BSHtml::codeBlock("'items'    => array(
-                BSHtml::menuText(
-                    'Signed in as '.BSHtml::link(
+    <?= BsHtml::codeBlock("'items'    => array(
+                BsHtml::menuText(
+                    'Signed in as '.BsHtml::link(
                         'Mark Otto',
                         array('site/user','id' => Yii::app()->user->id),
                         array('class' => 'navbar-link')
                     ),
-                    array('pull' => BSHtml::NAVBAR_NAV_PULL_RIGHT)
+                    array('pull' => BsHtml::NAVBAR_NAV_PULL_RIGHT)
                 ),
             ),")
     ?>
@@ -378,7 +378,7 @@
 <div class="bs-example bs-navbar-top-example">
     <?php $this->widget('bootstrap.widgets.BsNavbar', array(
             'collapse' => true,
-            'position' => BSHtml::NAVBAR_POSITION_FIXED_TOP,
+            'position' => BsHtml::NAVBAR_POSITION_FIXED_TOP,
             'brandLabel' => 'Home',
             'htmlOptions' => array(
                 'containerOptions' => array(
@@ -402,8 +402,8 @@
     ); ?>
 </div><!-- /example -->
 <div class="highlight">
-    <?= BSHtml::codeBlock("'position' => BSHtml::NAVBAR_POSITION_FIXED_TOP") ?>
-    <?= BSHtml::codeBlock(
+    <?= BsHtml::codeBlock("'position' => BsHtml::NAVBAR_POSITION_FIXED_TOP") ?>
+    <?= BsHtml::codeBlock(
         "'htmlOptions' => array(
         'containerOptions' => array(
             'fluid' => true
@@ -426,7 +426,7 @@
 <div class="bs-example bs-navbar-bottom-example">
     <?php $this->widget('bootstrap.widgets.BsNavbar', array(
             'collapse' => true,
-            'position' => BSHtml::NAVBAR_POSITION_FIXED_BOTTOM,
+            'position' => BsHtml::NAVBAR_POSITION_FIXED_BOTTOM,
             'brandLabel' => 'Home',
             'items'    => array(
                 array(
@@ -445,7 +445,7 @@
     ); ?>
 </div><!-- /example -->
 <div class="highlight">
-    <?= BSHtml::codeBlock("'position' => BSHtml::NAVBAR_POSITION_FIXED_BOTTOM") ?>
+    <?= BsHtml::codeBlock("'position' => BsHtml::NAVBAR_POSITION_FIXED_BOTTOM") ?>
 </div>
 
 <div class="bs-callout bs-callout-danger">
@@ -464,7 +464,7 @@
 <div class="bs-example bs-navbar-top-example">
     <?php $this->widget('bootstrap.widgets.BsNavbar', array(
             'collapse' => true,
-            'position' => BSHtml::NAVBAR_POSITION_STATIC_TOP,
+            'position' => BsHtml::NAVBAR_POSITION_STATIC_TOP,
             'brandLabel' => 'Home',
             'items'    => array(
                 array(
@@ -483,7 +483,7 @@
     ); ?>
 </div><!-- /example -->
 <div class="highlight">
-    <?= BSHtml::codeBlock("'position' => BSHtml::NAVBAR_POSITION_STATIC_TOP") ?>
+    <?= BsHtml::codeBlock("'position' => BsHtml::NAVBAR_POSITION_STATIC_TOP") ?>
 </div>
 
 
@@ -492,7 +492,7 @@
 <div class="bs-example">
     <?php $this->widget('bootstrap.widgets.BsNavbar', array(
             'collapse' => true,
-            'color' => BSHtml::NAVBAR_COLOR_INVERSE,
+            'color' => BsHtml::NAVBAR_COLOR_INVERSE,
             'brandLabel' => 'Home',
             'items'    => array(
                 array(
@@ -511,7 +511,7 @@
     ); ?>
 </div><!-- /example -->
 <div class="highlight">
-    <?= BSHtml::codeBlock("'color' => BSHtml::NAVBAR_COLOR_INVERSE") ?>
+    <?= BsHtml::codeBlock("'color' => BsHtml::NAVBAR_COLOR_INVERSE") ?>
 </div>
 
 </div>

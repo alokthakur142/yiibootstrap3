@@ -22,7 +22,7 @@ $stu->hours = 10;
 
 $persons = array($mark, $jacob, $stu);
 $provArray = array();
-$a = array(BSHtml::GRID_TYPE_COLUMN_DANGER, BSHtml::GRID_TYPE_COLUMN_WARNING, BSHtml::GRID_TYPE_COLUMN_SUCCESS, BSHtml::GRID_TYPE_COLUMN_ACTIVE, '');
+$a = array(BsHtml::GRID_TYPE_COLUMN_DANGER, BsHtml::GRID_TYPE_COLUMN_WARNING, BsHtml::GRID_TYPE_COLUMN_SUCCESS, BsHtml::GRID_TYPE_COLUMN_ACTIVE, '');
 for ($i = 0, $l = 50; $i < $l; $i++) {
     $depth = rand(0, 2);
 //    CVarDumper::dump($persons[$depth]->attributes,10,true);
@@ -137,14 +137,14 @@ $gridColumns = array(
         <h3>Example of a contextual alternative and table</h3>
         <?php $this->beginWidget('bootstrap.widgets.BsPanel', array(
             'title' => 'Panel title',
-            'type' => BSHtml::PANEL_TYPE_PRIMARY,
+            'type' => BsHtml::PANEL_TYPE_PRIMARY,
         )); ?>
         <?php $this->widget('bootstrap.widgets.BsGridView', array(
             'dataProvider' => $gridDataProvider,
             'id' => uniqid('table_'),
 
             'columns' => $gridColumns,
-            'type' => BSHtml::GRID_TYPE_STRIPED
+            'type' => BsHtml::GRID_TYPE_STRIPED
         )); ?>
         <?php $this->endWidget(); ?>
         <div class="highlight">
@@ -156,7 +156,7 @@ $gridColumns = array(
                             class="pre_red">'title'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                             class="pre_red">'Panel&nbsp;title'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
                             class="pre_red">'type'&nbsp;</span><span
-                            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span
                             class="pre_green">::</span><span class="pre_blue">PANEL_TYPE_PRIMARY<br></span><span
                             class="pre_green">));<br></span><span class="pre_blue">?&gt;<br></span>Panel&nbsp;content<br><span
                             class="pre_blue">&lt;?php<br>$this</span><span

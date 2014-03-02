@@ -1,6 +1,6 @@
 <?php $this->pageTitle = 'Home' ?>
 <div class="content g-markdown">
-    <?= BSHtml::pageHeader('Yii-Bootstrap3-Module', BSHtml::italics(' Version 0.0.8 <a href="https://packagist.org/packages/drmabuse/yii-bootstrap-3-module"><img src="https://poser.pugx.org/drmabuse/yii-bootstrap-3-module/v/stable.png" alt="Latest Stable Version"></a> <a href="https://packagist.org/packages/drmabuse/yii-bootstrap-3-module"><img src="https://poser.pugx.org/drmabuse/yii-bootstrap-3-module/downloads.png" alt="Total Downloads Packagist"></a>')); ?>
+    <?= BsHtml::pageHeader('Yii-Bootstrap3-Module', BsHtml::italics(' Version 0.0.8 <a href="https://packagist.org/packages/drmabuse/yii-bootstrap-3-module"><img src="https://poser.pugx.org/drmabuse/yii-bootstrap-3-module/v/stable.png" alt="Latest Stable Version"></a> <a href="https://packagist.org/packages/drmabuse/yii-bootstrap-3-module"><img src="https://poser.pugx.org/drmabuse/yii-bootstrap-3-module/downloads.png" alt="Total Downloads Packagist"></a>')); ?>
     <p><strong>Instructions</strong></p>
 
     <p>This yii module uses <a href="http://getbootstrap.com" title="bootsrap">Twitter Bootstrap</a> as a base. It is
@@ -169,9 +169,9 @@
             class="pre_red">'::1'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
             class="pre_green">)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<br>&nbsp;&nbsp; &nbsp;),<br>&nbsp;&nbsp; &nbsp;</span><span
             class="pre_red">'components'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
-            class="pre_red">'bsHtml'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+            class="pre_red">'BsHtml'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
             class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-            class="pre_red">'bootstrap.components.BSHtml'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+            class="pre_red">'bootstrap.components.BsHtml'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
             class="pre_green">)<br>&nbsp;&nbsp; &nbsp;)<br>);<br></span><span class="pre_blue">?&gt;</span>
 </span>
 </pre>

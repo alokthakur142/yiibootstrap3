@@ -7,7 +7,7 @@ $model->hours = 20;
 ?>
 <?php $form = $this->beginWidget('bootstrap.widgets.BsActiveForm',
     array(
-        'layout' => BSHtml::FORM_LAYOUT_HORIZONTAL,
+        'layout' => BsHtml::FORM_LAYOUT_HORIZONTAL,
         'enableAjaxValidation'=>true,
         'id' => 'special'
     )
@@ -57,8 +57,8 @@ $model->hours = 20;
 
     </fieldset>
 
-<?php echo BSHtml::formActions(array(
-    BSHtml::submitButton('Submit', array('color' => BSHtml::BUTTON_COLOR_PRIMARY)),
+<?php echo BsHtml::formActions(array(
+    BsHtml::submitButton('Submit', array('color' => BsHtml::BUTTON_COLOR_PRIMARY)),
 
 )); ?>
 

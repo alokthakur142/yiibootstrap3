@@ -1,95 +1,95 @@
-<?php echo BSHtml::progressBar(
+<?php echo BsHtml::progressBar(
     90,
     array(
-        'color' => BSHtml::PROGRESS_COLOR_INFO
+        'color' => BsHtml::PROGRESS_COLOR_INFO
     )
 ); ?>
 
-<?php echo BSHtml::progressBar(
+<?php echo BsHtml::progressBar(
     60,
     array(
-        'color' => BSHtml::PROGRESS_COLOR_SUCCESS
+        'color' => BsHtml::PROGRESS_COLOR_SUCCESS
     )
 ); ?>
 
 
-<?php echo BSHtml::progressBar(
+<?php echo BsHtml::progressBar(
     40,
     array(
-        'color' => BSHtml::PROGRESS_COLOR_DEFAULT
+        'color' => BsHtml::PROGRESS_COLOR_DEFAULT
     )
 ); ?>
 
 
-<?php echo BSHtml::progressBar(
+<?php echo BsHtml::progressBar(
     80,
     array(
-        'color' => BSHtml::PROGRESS_COLOR_WARNING
+        'color' => BsHtml::PROGRESS_COLOR_WARNING
     )
 ); ?>
 
 
-<?php echo BSHtml::progressBar(
+<?php echo BsHtml::progressBar(
     20,
     array(
-        'color' => BSHtml::PROGRESS_COLOR_DANGER
+        'color' => BsHtml::PROGRESS_COLOR_DANGER
     )
 ); ?>
 
 
-<?php echo BSHtml::stackedProgressBar(
+<?php echo BsHtml::stackedProgressBar(
     array(
-        array('color' => BSHtml::PROGRESS_COLOR_SUCCESS, 'width' => 35),
-        array('color' => BSHtml::PROGRESS_COLOR_WARNING, 'width' => 20),
-        array('color' => BSHtml::PROGRESS_COLOR_DANGER, 'width' => 10),
+        array('color' => BsHtml::PROGRESS_COLOR_SUCCESS, 'width' => 35),
+        array('color' => BsHtml::PROGRESS_COLOR_WARNING, 'width' => 20),
+        array('color' => BsHtml::PROGRESS_COLOR_DANGER, 'width' => 10),
     )
 ); ?>
 <pre class="pre-scrollable hidden-sm hidden-xs  linenums prettyprint lang-py prettyprint lang-py">
-&lt;?php echo BSHtml::progressBar(
+&lt;?php echo BsHtml::progressBar(
     90,
     array(
-        'color' => BSHtml::PROGRESS_COLOR_INFO
+        'color' => BsHtml::PROGRESS_COLOR_INFO
     )
 ); ?&gt;
 
 
-&lt;?php echo BSHtml::progressBar(
+&lt;?php echo BsHtml::progressBar(
     60,
     array(
-        'color' => BSHtml::PROGRESS_COLOR_SUCCESS
+        'color' => BsHtml::PROGRESS_COLOR_SUCCESS
     )
 ); ?&gt;
 
 
-&lt;?php echo BSHtml::progressBar(
+&lt;?php echo BsHtml::progressBar(
     40,
     array(
-        'color' => BSHtml::PROGRESS_COLOR_DEFAULT
+        'color' => BsHtml::PROGRESS_COLOR_DEFAULT
     )
 ); ?&gt;
 
 
-&lt;?php echo BSHtml::progressBar(
+&lt;?php echo BsHtml::progressBar(
     80,
     array(
-        'color' => BSHtml::PROGRESS_COLOR_WARNING
+        'color' => BsHtml::PROGRESS_COLOR_WARNING
     )
 ); ?&gt;
 
 
-&lt;?php echo BSHtml::progressBar(
+&lt;?php echo BsHtml::progressBar(
     20,
     array(
-        'color' => BSHtml::PROGRESS_COLOR_DANGER
+        'color' => BsHtml::PROGRESS_COLOR_DANGER
     )
 ); ?&gt;
 
 
-&lt;?php echo BSHtml::stackedProgressBar(
+&lt;?php echo BsHtml::stackedProgressBar(
     array(
-        array('color' => BSHtml::PROGRESS_COLOR_SUCCESS, 'width' => 35),
-        array('color' => BSHtml::PROGRESS_COLOR_WARNING, 'width' => 20),
-        array('color' => BSHtml::PROGRESS_COLOR_DANGER, 'width' => 10),
+        array('color' => BsHtml::PROGRESS_COLOR_SUCCESS, 'width' => 35),
+        array('color' => BsHtml::PROGRESS_COLOR_WARNING, 'width' => 20),
+        array('color' => BsHtml::PROGRESS_COLOR_DANGER, 'width' => 10),
     )
 ); ?&gt;
 </pre>

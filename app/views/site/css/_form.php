@@ -11,7 +11,7 @@
 
 <?php $form = $this->beginWidget('bootstrap.widgets.BsActiveForm',
     array(
-//        'layout' => BSHtml::FORM_LAYOUT_HORIZONTAL,
+//        'layout' => BsHtml::FORM_LAYOUT_HORIZONTAL,
         'enableAjaxValidation' => true,
         'id' => 'user_form',
         'htmlOptions' => array(
@@ -33,7 +33,7 @@
         $model,
         'email'
     ); ?>
-    <?php echo BSHtml::submitButton('Submit', array('color' => BSHtml::BUTTON_COLOR_PRIMARY)) ?>
+    <?php echo BsHtml::submitButton('Submit', array('color' => BsHtml::BUTTON_COLOR_PRIMARY)) ?>
 </fieldset>
 <?php $this->endWidget(); ?>
 <!-- /example -->
@@ -42,7 +42,7 @@
 <span class="pre_blue">&lt;?php<br>$form&nbsp;</span><span class="pre_green">=&nbsp;</span><span
        class="pre_blue">$this</span><span class="pre_green">-&gt;</span><span class="pre_blue">beginWidget</span><span
         class="pre_green">(</span><span class="pre_red">'bootstrap.widgets.BsActiveForm'</span><span
-        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span style="color: #FF8000;">// &nbsp; &nbsp; &nbsp; &nbsp;'layout'&nbsp;=&gt;&nbsp;BSHtml::FORM_LAYOUT_HORIZONTAL,<br>&nbsp;&nbsp; &nbsp;</span><span
+        class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span style="color: #FF8000;">// &nbsp; &nbsp; &nbsp; &nbsp;'layout'&nbsp;=&gt;&nbsp;BsHtml::FORM_LAYOUT_HORIZONTAL,<br>&nbsp;&nbsp; &nbsp;</span><span
         class="pre_red">'enableAjaxValidation'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
        class="pre_blue">true</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
         class="pre_red">'id'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
@@ -66,10 +66,10 @@
         class="pre_green">(</span><span class="pre_blue">$model</span><span
         class="pre_green">,&nbsp;</span><span class="pre_red">'email'</span><span class="pre_green">);<br></span><span
        class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">submitButton</span><span
+       class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">submitButton</span><span
         class="pre_green">(</span><span class="pre_red">'Submit'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
         class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_COLOR_PRIMARY<br></span><span
+       class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_COLOR_PRIMARY<br></span><span
         class="pre_green">));<br></span><span class="pre_blue">?&gt;<br></span>&lt;/fieldset&gt;<br><span
         class="pre_blue">&lt;?php<br>$this</span><span class="pre_green">-&gt;</span><span
        class="pre_blue">endWidget</span><span class="pre_green">();<br></span><span
@@ -97,7 +97,7 @@
 </div>
 <?php $form = $this->beginWidget('bootstrap.widgets.BsActiveForm',
     array(
-        'layout' => BSHtml::FORM_LAYOUT_INLINE,
+        'layout' => BsHtml::FORM_LAYOUT_INLINE,
         'enableAjaxValidation' => true,
         'id' => 'user_form_inline',
         'htmlOptions' => array(
@@ -119,7 +119,7 @@
         $model,
         'email'
     ); ?>
-    <?php echo BSHtml::submitButton('Submit', array('color' => BSHtml::BUTTON_COLOR_PRIMARY)); ?>
+    <?php echo BsHtml::submitButton('Submit', array('color' => BsHtml::BUTTON_COLOR_PRIMARY)); ?>
 </fieldset>
 <?php $this->endWidget(); ?>
 <!-- /example -->
@@ -130,7 +130,7 @@
         class="pre_green">(</span><span class="pre_red">'bootstrap.widgets.BsActiveForm'</span><span
         class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
         class="pre_red">'layout'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">FORM_LAYOUT_INLINE</span><span
+       class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">FORM_LAYOUT_INLINE</span><span
         class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'enableAjaxValidation'&nbsp;</span><span
         class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">true</span><span
         class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'id'&nbsp;</span><span
@@ -155,11 +155,11 @@
         class="pre_green">(</span><span class="pre_blue">$model</span><span
         class="pre_green">,&nbsp;</span><span class="pre_red">'email'</span><span class="pre_green">);<br></span><span
        class="pre_blue">?&gt;<br></span> &nbsp; &nbsp;<span class="pre_blue">&lt;?php<br></span><span
-        class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span
+        class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span><span
         class="pre_green">::</span><span class="pre_blue">submitButton</span><span class="pre_green">(</span><span
         class="pre_red">'Submit'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
         class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_COLOR_PRIMARY<br></span><span
+       class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_COLOR_PRIMARY<br></span><span
         class="pre_green">));<br></span><span class="pre_blue">?&gt;<br></span>&lt;/fieldset&gt;<br><span
         class="pre_blue">&lt;?php<br>$this</span><span class="pre_green">-&gt;</span><span
        class="pre_blue">endWidget</span><span class="pre_green">();<br></span><span
@@ -176,7 +176,7 @@
     need for <code>.row</code>.</p>
 <?php $form = $this->beginWidget('bootstrap.widgets.BsActiveForm',
     array(
-        'layout' => BSHtml::FORM_LAYOUT_HORIZONTAL,
+        'layout' => BsHtml::FORM_LAYOUT_HORIZONTAL,
         'enableAjaxValidation' => true,
         'id' => 'user_form_horizontal',
         'htmlOptions' => array(
@@ -190,8 +190,8 @@
         $model,
         'username'
     ); ?>
-    <?php echo $form->textFieldControlGroup($model, 'username', array('prepend' => BSHtml::icon(BSHtml::GLYPHICON_USER))); ?>
-    <?php echo $form->textFieldControlGroup($model, 'username', array('append' => BSHtml::icon(BSHtml::GLYPHICON_USER))); ?>
+    <?php echo $form->textFieldControlGroup($model, 'username', array('prepend' => BsHtml::icon(BsHtml::GLYPHICON_USER))); ?>
+    <?php echo $form->textFieldControlGroup($model, 'username', array('append' => BsHtml::icon(BsHtml::GLYPHICON_USER))); ?>
     <?php echo $form->passwordFieldControlGroup(
         $model,
         'password'
@@ -218,8 +218,8 @@
         'Option two can is something else and selecting it will deselect option one',
     )); ?>
 </fieldset>
-<?php echo BSHtml::formActions(array(
-    BSHtml::submitButton('Submit', array('color' => BSHtml::BUTTON_COLOR_PRIMARY)),
+<?php echo BsHtml::formActions(array(
+    BsHtml::submitButton('Submit', array('color' => BsHtml::BUTTON_COLOR_PRIMARY)),
 )); ?>
 
 <?php $this->endWidget(); ?>
@@ -231,7 +231,7 @@
         class="pre_green">(</span><span class="pre_red">'bootstrap.widgets.BsActiveForm'</span><span
         class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
         class="pre_red">'layout'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">FORM_LAYOUT_HORIZONTAL</span><span
+       class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">FORM_LAYOUT_HORIZONTAL</span><span
         class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'enableAjaxValidation'&nbsp;</span><span
         class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">true</span><span
         class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'id'&nbsp;</span><span
@@ -252,9 +252,9 @@
         class="pre_green">,&nbsp;</span><span class="pre_red">'username'</span><span
         class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
         class="pre_red">'prepend'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+       class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
        class="pre_blue">icon</span><span class="pre_green">(</span><span
-       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">GLYPHICON_USER</span><span
+       class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">GLYPHICON_USER</span><span
         class="pre_green">)<br>));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
         class="pre_green">echo&nbsp;</span><span class="pre_blue">$form</span><span
         class="pre_green">-&gt;</span><span class="pre_blue">textFieldControlGroup</span><span
@@ -262,9 +262,9 @@
         class="pre_green">,&nbsp;</span><span class="pre_red">'username'</span><span
         class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
         class="pre_red">'append'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+       class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
        class="pre_blue">icon</span><span class="pre_green">(</span><span
-       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">GLYPHICON_USER</span><span
+       class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">GLYPHICON_USER</span><span
         class="pre_green">)<br>));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
         class="pre_green">echo&nbsp;</span><span class="pre_blue">$form</span><span
         class="pre_green">-&gt;</span><span class="pre_blue">passwordFieldControlGroup</span><span
@@ -331,12 +331,12 @@
         class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'Option&nbsp;two&nbsp;can&nbsp;is&nbsp;something&nbsp;else&nbsp;and&nbsp;selecting&nbsp;it&nbsp;will&nbsp;deselect&nbsp;option&nbsp;one'<br></span><span
         class="pre_green">));<br></span><span class="pre_blue">?&gt;<br></span>&lt;/fieldset&gt;<br><span
         class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">formActions</span><span
-        class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_blue">BSHtml</span><span
+       class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">formActions</span><span
+        class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_blue">BsHtml</span><span
         class="pre_green">::</span><span class="pre_blue">submitButton</span><span class="pre_green">(</span><span
         class="pre_red">'Submit'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
         class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_COLOR_PRIMARY<br>&nbsp;&nbsp; &nbsp;</span><span
+       class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_COLOR_PRIMARY<br>&nbsp;&nbsp; &nbsp;</span><span
         class="pre_green">))<br>));<br></span><span class="pre_blue">?&gt;<br></span><br><span
         class="pre_blue">&lt;?php<br>$this</span><span class="pre_green">-&gt;</span><span
        class="pre_blue">endWidget</span><span class="pre_green">();<br></span><span
@@ -661,7 +661,7 @@
     array(
         'enableAjaxValidation' => true,
         'id' => uniqid('user_'),
-        'layout' => BSHtml::FORM_LAYOUT_HORIZONTAL,
+        'layout' => BsHtml::FORM_LAYOUT_HORIZONTAL,
         'htmlOptions' => array(
             'class' => 'bs-example bs-example-control-sizing'
         )
@@ -700,7 +700,7 @@
         class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">uniqid</span><span
         class="pre_green">(</span><span class="pre_red">'user_'</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp;</span><span
         class="pre_red">'layout'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">FORM_LAYOUT_HORIZONTAL</span><span
+       class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">FORM_LAYOUT_HORIZONTAL</span><span
         class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
         class="pre_red">'htmlOptions'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
         class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
@@ -766,12 +766,12 @@
         )
     )
 ); ?>
-<?php echo $form->textFieldControlGroup($model, 'username', array('class' => BSHtml::INPUT_SIZE_LG)); ?>
+<?php echo $form->textFieldControlGroup($model, 'username', array('class' => BsHtml::INPUT_SIZE_LG)); ?>
 <?php echo $form->textFieldControlGroup($model, 'username'); ?>
-<?php echo $form->textFieldControlGroup($model, 'username', array('class' => BSHtml::INPUT_SIZE_SM)); ?>
+<?php echo $form->textFieldControlGroup($model, 'username', array('class' => BsHtml::INPUT_SIZE_SM)); ?>
 <?php echo $form->dropDownListControlGroup($model, 'profile',
     array('1', '2', '3', '4', '5'),
-    array('empty' => 'Something ...', 'class' => BSHtml::INPUT_SIZE_LG)
+    array('empty' => 'Something ...', 'class' => BsHtml::INPUT_SIZE_LG)
 ); ?>
 <?php echo $form->dropDownListControlGroup($model, 'profile',
     array('1', '2', '3', '4', '5'),
@@ -779,7 +779,7 @@
 ); ?>
 <?php echo $form->dropDownListControlGroup($model, 'profile',
     array('1', '2', '3', '4', '5'),
-    array('empty' => 'Something ...', 'class' => BSHtml::INPUT_SIZE_SM)
+    array('empty' => 'Something ...', 'class' => BsHtml::INPUT_SIZE_SM)
 ); ?>
 <?php $this->endWidget() ?>
 <div class="highlight">
@@ -803,7 +803,7 @@
         class="pre_green">,&nbsp;</span><span class="pre_red">'username'</span><span
         class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
         class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">INPUT_SIZE_LG<br></span><span
+       class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">INPUT_SIZE_LG<br></span><span
         class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
         class="pre_green">echo&nbsp;</span><span class="pre_blue">$form</span><span
         class="pre_green">-&gt;</span><span class="pre_blue">textFieldControlGroup</span><span
@@ -816,7 +816,7 @@
         class="pre_green">,&nbsp;</span><span class="pre_red">'username'</span><span
         class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
         class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">INPUT_SIZE_SM<br></span><span
+       class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">INPUT_SIZE_SM<br></span><span
         class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
         class="pre_green">echo&nbsp;</span><span class="pre_blue">$form</span><span
         class="pre_green">-&gt;</span><span class="pre_blue">dropDownListControlGroup</span><span
@@ -831,7 +831,7 @@
         class="pre_red">'empty'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
         class="pre_red">'Something&nbsp;...'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
         class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">INPUT_SIZE_LG<br></span><span
+       class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">INPUT_SIZE_LG<br></span><span
         class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span
         class="pre_green">echo&nbsp;</span><span class="pre_blue">$form</span><span
         class="pre_green">-&gt;</span><span class="pre_blue">dropDownListControlGroup</span><span
@@ -858,7 +858,7 @@
         class="pre_red">'empty'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
         class="pre_red">'Something&nbsp;...'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
         class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-       class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">INPUT_SIZE_SM<br></span><span
+       class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">INPUT_SIZE_SM<br></span><span
         class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br>$this</span><span
         class="pre_green">-&gt;</span><span class="pre_blue">endWidget</span><span class="pre_green">();<br></span><span
        class="pre_blue">?&gt;</span>

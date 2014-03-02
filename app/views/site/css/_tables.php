@@ -22,7 +22,7 @@ $stu->hours = 10;
 
 $persons = array($mark, $jacob, $stu);
 $provArray = array();
-$a = array(BSHtml::GRID_TYPE_COLUMN_DANGER, BSHtml::GRID_TYPE_COLUMN_WARNING, BSHtml::GRID_TYPE_COLUMN_SUCCESS, BSHtml::GRID_TYPE_COLUMN_ACTIVE, '');
+$a = array(BsHtml::GRID_TYPE_COLUMN_DANGER, BsHtml::GRID_TYPE_COLUMN_WARNING, BsHtml::GRID_TYPE_COLUMN_SUCCESS, BsHtml::GRID_TYPE_COLUMN_ACTIVE, '');
 for ($i = 0, $l = 50; $i < $l; $i++) {
     $depth = rand(0, 2);
 //    CVarDumper::dump($persons[$depth]->attributes,10,true);
@@ -121,7 +121,7 @@ $gridColumns = array(
         'id' => uniqid('table_'),
 
         'columns' => $gridColumns,
-        'type' => BSHtml::GRID_TYPE_STRIPED
+        'type' => BsHtml::GRID_TYPE_STRIPED
     )); ?>
 </div>
 <!-- /example -->
@@ -139,7 +139,7 @@ $gridColumns = array(
         class="pre_green">),<br>&nbsp;&nbsp; &nbsp;<br>&nbsp;&nbsp; &nbsp;</span><span
         class="pre_red">'columns'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">$gridColumns</span>
     <span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'type'&nbsp;</span><span
-        class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
         class="pre_blue">GRID_TYPE_STRIPED<br></span>
     <span class="pre_green">));<br></span><span class="pre_blue">?&gt;</span>
     </span>
@@ -157,7 +157,7 @@ $gridColumns = array(
         'id' => uniqid('table_'),
 
         'columns' => $gridColumns,
-        'type' => BSHtml::GRID_TYPE_BORDERED
+        'type' => BsHtml::GRID_TYPE_BORDERED
     )); ?>
 </div>
 <!-- /example -->
@@ -175,7 +175,7 @@ $gridColumns = array(
         class="pre_green">),<br>&nbsp;&nbsp; &nbsp;<br>&nbsp;&nbsp; &nbsp;</span><span
         class="pre_red">'columns'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">$gridColumns</span>
     <span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'type'&nbsp;</span><span
-        class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
         class="pre_blue">GRID_TYPE_BORDERED<br></span>
     <span class="pre_green">));<br></span><span class="pre_blue">?&gt;</span>
     </span>
@@ -193,7 +193,7 @@ $gridColumns = array(
         'id' => uniqid('table_'),
 
         'columns' => $gridColumns,
-        'type' => BSHtml::GRID_TYPE_HOVER
+        'type' => BsHtml::GRID_TYPE_HOVER
     )); ?>
 </div>
 <!-- /example -->
@@ -211,7 +211,7 @@ $gridColumns = array(
         class="pre_green">),<br>&nbsp;&nbsp; &nbsp;<br>&nbsp;&nbsp; &nbsp;</span><span
         class="pre_red">'columns'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">$gridColumns</span>
     <span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'type'&nbsp;</span><span
-        class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
         class="pre_blue">GRID_TYPE_HOVER<br></span>
     <span class="pre_green">));<br></span><span class="pre_blue">?&gt;</span>
     </span>
@@ -229,7 +229,7 @@ $gridColumns = array(
         'id' => uniqid('table_'),
 
         'columns' => $gridColumns,
-        'type' => BSHtml::GRID_TYPE_CONDENSED
+        'type' => BsHtml::GRID_TYPE_CONDENSED
     )); ?>
 </div>
 <!-- /example -->
@@ -247,7 +247,7 @@ $gridColumns = array(
         class="pre_green">),<br>&nbsp;&nbsp; &nbsp;<br>&nbsp;&nbsp; &nbsp;</span><span
         class="pre_red">'columns'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">$gridColumns</span>
     <span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'type'&nbsp;</span><span
-        class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
         class="pre_blue">GRID_TYPE_CONDENSED<br></span>
     <span class="pre_green">));<br></span><span class="pre_blue">?&gt;</span>
     </span>
@@ -280,7 +280,7 @@ $gridColumns = array(
         array(
             'name' => 'id',
             'cssClassExpression' => '$data->cssClass',
-            'value' => 'BSHtml::badge($data->id)',
+            'value' => 'BsHtml::badge($data->id)',
             'type' => 'raw'
         ),
         array(
@@ -301,7 +301,7 @@ $gridColumns = array(
         'id' => uniqid('table_'),
         'template' => '{items}',
         'columns' => $col,
-        'type' => BSHtml::GRID_TYPE_CONDENSED . ' ' . BSHtml::GRID_TYPE_BORDERED . ' ' . BSHtml::GRID_TYPE_STRIPED
+        'type' => BsHtml::GRID_TYPE_CONDENSED . ' ' . BsHtml::GRID_TYPE_BORDERED . ' ' . BsHtml::GRID_TYPE_STRIPED
     )); ?>
 </div>
 <!-- /example -->
@@ -328,7 +328,7 @@ $gridColumns = array(
          class="pre_red">'$data-&gt;cssClass'</span><span
          class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
          class="pre_red">'value'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-         class="pre_red">'BSHtml::badge($data-&gt;id)'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+         class="pre_red">'BsHtml::badge($data-&gt;id)'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
          class="pre_red">'type'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
          class="pre_red">'raw'<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
          class="pre_red">'name'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
@@ -365,12 +365,12 @@ $gridColumns = array(
          class="pre_red">'columns'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
          class="pre_blue">$col</span>
     <span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'type'&nbsp;</span><span
-         class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+         class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
          class="pre_blue">GRID_TYPE_CONDENSED&nbsp;</span>
     <span class="pre_green">.&nbsp;</span><span class="pre_red">'&nbsp;'&nbsp;</span><span
-         class="pre_green">.&nbsp;</span><span class="pre_blue">BSHtml</span>
+         class="pre_green">.&nbsp;</span><span class="pre_blue">BsHtml</span>
     <span class="pre_green">::</span><span class="pre_blue">GRID_TYPE_BORDERED&nbsp;</span><span class="pre_green">.&nbsp;</span><span
-         class="pre_red">'&nbsp;'&nbsp;</span><span class="pre_green">.&nbsp;</span><span class="pre_blue">BSHtml</span>
+         class="pre_red">'&nbsp;'&nbsp;</span><span class="pre_green">.&nbsp;</span><span class="pre_blue">BsHtml</span>
     <span class="pre_green">::</span><span class="pre_blue">GRID_TYPE_STRIPED<br></span><span
          class="pre_green">));<br></span><span class="pre_blue">?&gt;</span>
     </span>
@@ -390,7 +390,7 @@ $gridColumns = array(
         'id' => uniqid('table_'),
 
         'columns' => $gridColumns,
-        'type' => BSHtml::GRID_TYPE_RESPONSIVE
+        'type' => BsHtml::GRID_TYPE_RESPONSIVE
     )); ?>
 </div>
 <!-- /example -->
@@ -408,7 +408,7 @@ $gridColumns = array(
         class="pre_green">),<br>&nbsp;&nbsp; &nbsp;<br>&nbsp;&nbsp; &nbsp;</span><span
         class="pre_red">'columns'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">$gridColumns</span>
     <span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'type'&nbsp;</span><span
-        class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+        class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
         class="pre_blue">GRID_TYPE_RESPONSIVE<br></span>
     <span class="pre_green">));<br></span><span class="pre_blue">?&gt;</span>
     </span>

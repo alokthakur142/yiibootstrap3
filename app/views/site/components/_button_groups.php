@@ -21,7 +21,7 @@
 
 <div class="bs-example">
 <?php
-echo BSHtml::buttonGroup(
+echo BsHtml::buttonGroup(
     array(
         array(
             'label' => 'Left'
@@ -30,7 +30,7 @@ echo BSHtml::buttonGroup(
             'label' => 'Middle'
         ),
         array(
-            'own' => BSHtml::ajaxButton(
+            'own' => BsHtml::ajaxButton(
                 'own',
                 Yii::app()->createAbsoluteUrl('site/ajaxTest'),
                 array(
@@ -46,14 +46,14 @@ echo BSHtml::buttonGroup(
                     }',
                 ),
                 array(
-                    'icon' => BSHtml::GLYPHICON_BELL
+                    'icon' => BsHtml::GLYPHICON_BELL
                 )
             )
         )
     ),
     array(
-        'color' => BSHtml::BUTTON_COLOR_WARNING,
-        'type' => BSHtml::BUTTON_TYPE_LINK
+        'color' => BsHtml::BUTTON_COLOR_WARNING,
+        'type' => BsHtml::BUTTON_TYPE_LINK
     )
 ); ?>
 </div>
@@ -61,14 +61,14 @@ echo BSHtml::buttonGroup(
     <pre >
         <span class="pre_black">
 <span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">buttonGroup</span><span class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                 class="pre_red">'Left'<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                 class="pre_red">'Middle'<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'own'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">ajaxButton</span><span class="pre_green">(</span><span
                 class="pre_red">'own'</span><span class="pre_green">,&nbsp;</span><span
                 class="pre_blue">Yii</span><span class="pre_green">::</span><span class="pre_blue">app</span><span
@@ -87,14 +87,14 @@ echo BSHtml::buttonGroup(
                 class="pre_red">'js:function(data){<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;console.log(data);<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$(".modal-body").html(data);<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$("#demo_modal").modal("show");<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_green">),&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'icon'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">GLYPHICON_BELL<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_green">))<br>&nbsp;&nbsp; &nbsp;)<br>),&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
                 class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">BUTTON_COLOR_WARNING</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
                 class="pre_red">'type'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">BUTTON_TYPE_LINK<br></span><span class="pre_green">));<br></span><span
                 class="pre_blue">?&gt;</span>
 </span>
@@ -108,9 +108,9 @@ echo BSHtml::buttonGroup(
 
 <div class="bs-example">
     <?php
-    echo BSHtml::buttonToolbar(array(
+    echo BsHtml::buttonToolbar(array(
         array('items' => array(
-            array('icon' => BSHtml::GLYPHICON_CAMERA),
+            array('icon' => BsHtml::GLYPHICON_CAMERA),
             array('label' => '2'),
             array('label' => '3'),
             array('label' => '4'),
@@ -127,11 +127,11 @@ echo BSHtml::buttonGroup(
     <pre >
        <span class="pre_black">
 <span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-               class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+               class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                class="pre_blue">buttonToolbar</span><span class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                class="pre_red">'items'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                class="pre_red">'icon'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-               class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+               class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                class="pre_blue">GLYPHICON_CAMERA<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
@@ -162,14 +162,14 @@ echo BSHtml::buttonGroup(
 
 <p>Instead of applying button sizing classes to every button in a group, just add <code>.btn-group-*</code> to the
     <code>.btn-group</code>.
-    <code>BSHtml::BUTTON_SIZE_LARGE</code> <code>BSHtml::BUTTON_SIZE_SMALL</code> <code>BSHtml::BUTTON_SIZE_MINI</code>
+    <code>BsHtml::BUTTON_SIZE_LARGE</code> <code>BsHtml::BUTTON_SIZE_SMALL</code> <code>BsHtml::BUTTON_SIZE_MINI</code>
 </p>
 
 <div class="bs-example">
     <?php
-    echo BSHtml::buttonToolbar(array(
+    echo BsHtml::buttonToolbar(array(
         array('items' => array(
-            array('icon' => BSHtml::GLYPHICON_CAMERA),
+            array('icon' => BsHtml::GLYPHICON_CAMERA),
             array('label' => '2'),
             array('label' => '3'),
             array('label' => '4'),
@@ -181,14 +181,14 @@ echo BSHtml::buttonGroup(
         )),
     ),
         array(
-            'size' => BSHtml::BUTTON_SIZE_LARGE
+            'size' => BsHtml::BUTTON_SIZE_LARGE
         )
     );
     ?>
     <?php
-    echo BSHtml::buttonToolbar(array(
+    echo BsHtml::buttonToolbar(array(
             array('items' => array(
-                array('icon' => BSHtml::GLYPHICON_CAMERA),
+                array('icon' => BsHtml::GLYPHICON_CAMERA),
                 array('label' => '2'),
                 array('label' => '3'),
                 array('label' => '4'),
@@ -204,9 +204,9 @@ echo BSHtml::buttonGroup(
     );
     ?>
     <?php
-    echo BSHtml::buttonToolbar(array(
+    echo BsHtml::buttonToolbar(array(
             array('items' => array(
-                array('icon' => BSHtml::GLYPHICON_CAMERA),
+                array('icon' => BsHtml::GLYPHICON_CAMERA),
                 array('label' => '2'),
                 array('label' => '3'),
                 array('label' => '4'),
@@ -218,14 +218,14 @@ echo BSHtml::buttonGroup(
             )),
         ),
         array(
-            'size' => BSHtml::BUTTON_SIZE_SMALL
+            'size' => BsHtml::BUTTON_SIZE_SMALL
         )
     );
     ?>
     <?php
-    echo BSHtml::buttonToolbar(array(
+    echo BsHtml::buttonToolbar(array(
             array('items' => array(
-                array('icon' => BSHtml::GLYPHICON_CAMERA),
+                array('icon' => BsHtml::GLYPHICON_CAMERA),
                 array('label' => '2'),
                 array('label' => '3'),
                 array('label' => '4'),
@@ -237,7 +237,7 @@ echo BSHtml::buttonGroup(
             )),
         ),
         array(
-            'size' => BSHtml::BUTTON_SIZE_MINI
+            'size' => BsHtml::BUTTON_SIZE_MINI
         )
     );
     ?>
@@ -246,11 +246,11 @@ echo BSHtml::buttonGroup(
     <pre >
        <span class="pre_black">
 <span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-               class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+               class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                class="pre_blue">buttonToolbar</span><span class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                class="pre_red">'items'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                class="pre_red">'icon'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-               class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+               class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                class="pre_blue">GLYPHICON_CAMERA<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
@@ -273,7 +273,7 @@ echo BSHtml::buttonGroup(
                class="pre_red">'7'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                class="pre_green">)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;)<br>&nbsp;&nbsp; &nbsp;)<br>),&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
                class="pre_red">'size'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-               class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+               class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                class="pre_blue">BUTTON_SIZE_MINI<br></span><span class="pre_green">));<br></span><span
                class="pre_blue">?&gt;</span>
 </span>
@@ -287,19 +287,19 @@ echo BSHtml::buttonGroup(
 
 <div class="bs-example">
     <?php
-    echo BSHtml::buttonGroup(array(
+    echo BsHtml::buttonGroup(array(
         array('label' => '1'),
         array('label' => '2'),
         array(
-            'own' =>BSHtml::buttonDropdown(
+            'own' =>BsHtml::buttonDropdown(
                 'Dropdown',
                 array(
-                    BSHtml::dropDownHeader('Dropdown Header'),
+                    BsHtml::dropDownHeader('Dropdown Header'),
                     array('label' => 'Action', 'url' => '#'),
                     array('label' => 'Another action', 'url' => '#'),
                     array('label' => 'Something else here', 'url' => '#'),
-                    BSHtml::menuDivider(),
-                    BSHtml::dropDownHeader('Dropdown Header'),
+                    BsHtml::menuDivider(),
+                    BsHtml::dropDownHeader('Dropdown Header'),
                     array('label' => 'Separate link', 'url' => '#'),
                 )
             )
@@ -310,7 +310,7 @@ echo BSHtml::buttonGroup(
 <div class="highlight">
     <pre >
         <span class="pre_black"><span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">buttonToolbar</span><span class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'items'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
@@ -320,10 +320,10 @@ echo BSHtml::buttonGroup(
                 class="pre_red">'2'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'own'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">buttonDropdown</span><span class="pre_green">(</span><span
                 class="pre_red">'Dropdown'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">dropDownHeader</span><span class="pre_green">(</span><span
                 class="pre_red">'Dropdown&nbsp;Header'</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
@@ -341,9 +341,9 @@ echo BSHtml::buttonGroup(
                 class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                 class="pre_red">'#'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">menuDivider</span><span class="pre_green">(),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">dropDownHeader</span><span class="pre_green">(</span><span
                 class="pre_red">'Dropdown&nbsp;Header'</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
@@ -363,19 +363,19 @@ echo BSHtml::buttonGroup(
 
 <div class="bs-example">
     <?php
-    echo BSHtml::verticalButtonGroup(array(
+    echo BsHtml::verticalButtonGroup(array(
         array('label' => '1'),
         array('label' => '2'),
         array(
-            'own' =>BSHtml::buttonDropdown(
+            'own' =>BsHtml::buttonDropdown(
                 'Dropdown',
                 array(
-                    BSHtml::dropDownHeader('Dropdown Header'),
+                    BsHtml::dropDownHeader('Dropdown Header'),
                     array('label' => 'Action', 'url' => '#'),
                     array('label' => 'Another action', 'url' => '#'),
                     array('label' => 'Something else here', 'url' => '#'),
-                    BSHtml::menuDivider(),
-                    BSHtml::dropDownHeader('Dropdown Header'),
+                    BsHtml::menuDivider(),
+                    BsHtml::dropDownHeader('Dropdown Header'),
                     array('label' => 'Separate link', 'url' => '#'),
                 )
             )
@@ -388,17 +388,17 @@ echo BSHtml::buttonGroup(
     <pre>
         <span class="pre_black">
 &nbsp;<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">verticalButtonGroup</span><span class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                 class="pre_red">'1'<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                 class="pre_red">'2'<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'own'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">buttonDropdown</span><span class="pre_green">(</span><span
                 class="pre_red">'Dropdown'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">dropDownHeader</span><span class="pre_green">(</span><span
                 class="pre_red">'Dropdown&nbsp;Header'</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
@@ -416,9 +416,9 @@ echo BSHtml::buttonGroup(
                 class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                 class="pre_red">'#'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">menuDivider</span><span class="pre_green">(),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">dropDownHeader</span><span class="pre_green">(</span><span
                 class="pre_red">'Dropdown&nbsp;Header'</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
@@ -443,11 +443,11 @@ echo BSHtml::buttonGroup(
 </div>
 
 <div class="bs-example">
-<?php echo BSHtml::buttonGroup(
+<?php echo BsHtml::buttonGroup(
     array(
-        array('label' => 'Left', 'url' => '#','type' => BSHtml::BUTTON_TYPE_LINK),
-        array('label' => 'Middle', 'url' => '#','type' => BSHtml::BUTTON_TYPE_LINK),
-        array('label' => 'Right', 'url' => '#','type' => BSHtml::BUTTON_TYPE_LINK),
+        array('label' => 'Left', 'url' => '#','type' => BsHtml::BUTTON_TYPE_LINK),
+        array('label' => 'Middle', 'url' => '#','type' => BsHtml::BUTTON_TYPE_LINK),
+        array('label' => 'Right', 'url' => '#','type' => BsHtml::BUTTON_TYPE_LINK),
     ),
     array('justified' => true)
 ); ?>
@@ -456,14 +456,14 @@ echo BSHtml::buttonGroup(
     <pre>
         <span class="pre_black">
             <span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">buttonGroup</span><span class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                 class="pre_red">'Action'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                 class="pre_red">'#'</span><span
                 class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="pre_red">'type'&nbsp;</span><span
-                class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span
                 class="pre_green">::</span><span
                 class="pre_blue">BUTTON_TYPE_LINK<br>&nbsp;&nbsp; &nbsp;</span><span
                 class="pre_green">),<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
@@ -472,7 +472,7 @@ echo BSHtml::buttonGroup(
                 class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                 class="pre_red">'#'</span><span
                 class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="pre_red">'type'&nbsp;</span><span
-                class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span
                 class="pre_green">::</span><span
                 class="pre_blue">BUTTON_TYPE_LINK<br>&nbsp;&nbsp; &nbsp;</span><span
                 class="pre_green">),<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
@@ -481,7 +481,7 @@ echo BSHtml::buttonGroup(
                 class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                 class="pre_red">'#'</span><span
                 class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="pre_red">'type'&nbsp;</span><span
-                class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span
                 class="pre_green">::</span><span
                 class="pre_blue">BUTTON_TYPE_LINK<br>&nbsp;&nbsp; &nbsp;</span><span
                 class="pre_green">)<br>),&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'justified'&nbsp;</span><span

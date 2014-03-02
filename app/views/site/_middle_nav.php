@@ -11,7 +11,7 @@
                 'color' => MNav::BUTTON_BLUE_BLIGHT,
                 'tooltip' => array(
                     'label' => 'test',
-                    'placement' => BSHtml::TOOLTIP_PLACEMENT_LEFT
+                    'placement' => BsHtml::TOOLTIP_PLACEMENT_LEFT
                 ),
             ),
             array(
@@ -20,7 +20,7 @@
                 'label' => 'test',
                 'tooltip' => array(
                     'label' => 'test',
-                    'placement' => BSHtml::TOOLTIP_PLACEMENT_TOP
+                    'placement' => BsHtml::TOOLTIP_PLACEMENT_TOP
                 ),
                 'badge' => 8
             ),
@@ -30,16 +30,16 @@
                 'label' => 'test',
                 'tooltip' => array(
                     'label' => 'test',
-                    'placement' => BSHtml::TOOLTIP_PLACEMENT_BOTTOM
+                    'placement' => BsHtml::TOOLTIP_PLACEMENT_BOTTOM
                 ),
             ),
             array(
-                'icon' =>BSHtml::GLYPHICON_ASTERISK,
+                'icon' =>BsHtml::GLYPHICON_ASTERISK,
                 'url' => 'test',
                 'label' => 'test',
                 'tooltip' => array(
                     'label' => 'test',
-                    'placement' => BSHtml::TOOLTIP_PLACEMENT_RIGHT
+                    'placement' => BsHtml::TOOLTIP_PLACEMENT_RIGHT
                 ),
             )
         ),
@@ -66,7 +66,7 @@
                 'label' => 'test'
             ),
             array(
-                'icon' =>BSHtml::GLYPHICON_BOOK,
+                'icon' =>BsHtml::GLYPHICON_BOOK,
                 'url' => 'test',
                 'label' => 'test'
             )
@@ -94,7 +94,7 @@
                 'label' => 'test'
             ),
             array(
-                'icon' =>BSHtml::GLYPHICON_ALIGN_CENTER,
+                'icon' =>BsHtml::GLYPHICON_ALIGN_CENTER,
                 'url' => 'test',
                 'label' => 'test'
             )
@@ -106,7 +106,7 @@
         'type' => MNav::MIDDLE_NAV_FREE,
         'items' => array(
             array(
-                'icon' =>BSHtml::GLYPHICON_BOOKMARK,
+                'icon' =>BsHtml::GLYPHICON_BOOKMARK,
                 'url' => 'test',
                 'label' => 'test',
                 'badge' => 42,
@@ -224,7 +224,7 @@
                             //MNav::BUTTON_GREYISH,
                             'tooltip' => array(
                                 'label' => 'test',
-                                'placement' => BSHtml::TOOLTIP_PLACEMENT_LEFT
+                                'placement' => BsHtml::TOOLTIP_PLACEMENT_LEFT
                             ),
                         ),
                         array(
@@ -233,7 +233,7 @@
                             'label' => 'test',
                             'tooltip' => array(
                                 'label' => 'test',
-                                'placement' => BSHtml::TOOLTIP_PLACEMENT_TOP
+                                'placement' => BsHtml::TOOLTIP_PLACEMENT_TOP
                             ),
                             'badge' => 8
                         ),
@@ -243,7 +243,7 @@
                             'label' => 'test',
                             'tooltip' => array(
                                 'label' => 'test',
-                                'placement' => BSHtml::TOOLTIP_PLACEMENT_BOTTOM
+                                'placement' => BsHtml::TOOLTIP_PLACEMENT_BOTTOM
                             ),
                         ),
                         array(
@@ -252,7 +252,7 @@
                             'label' => 'test',
                             'tooltip' => array(
                                 'label' => 'test',
-                                'placement' => BSHtml::TOOLTIP_PLACEMENT_RIGHT
+                                'placement' => BsHtml::TOOLTIP_PLACEMENT_RIGHT
                             ),
                         )
                     ),

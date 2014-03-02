@@ -13,18 +13,18 @@ $list = array(
 ?>
 <?php if($code) : ?>
 <div class="">
-    <?php echo BSHtml::pagination($list, array('size' => BSHtml::PAGINATION_SIZE_LARGE)); ?>
+    <?php echo BsHtml::pagination($list, array('size' => BsHtml::PAGINATION_SIZE_LARGE)); ?>
 </div>
 <?php endif;?>
 <div class="">
-    <?php echo BSHtml::pagination($list); ?>
+    <?php echo BsHtml::pagination($list); ?>
 </div>
 <div class="">
-    <?php echo BSHtml::pagination($list, array('size' => BSHtml::PAGINATION_SIZE_SMALL)); ?>
+    <?php echo BsHtml::pagination($list, array('size' => BsHtml::PAGINATION_SIZE_SMALL)); ?>
 </div>
 <?php if($code) : ?>
     <pre class="pre-scrollable hidden-sm hidden-xs  linenums prettyprint lang-py">
-        &lt;?php echo BSHtml::pagination(
+        &lt;?php echo BsHtml::pagination(
         array(
             array('label' => 'Previous', 'url' => '#'),
             array('label' => '1', 'url' => '#','active' => true),
@@ -34,9 +34,9 @@ $list = array(
             array('label' => '5', 'url' => '#'),
             array('label' => 'Next', 'url' => '#'),
         ),
-        'size' => BSHtml::PAGINATION_SIZE_LARGE
+        'size' => BsHtml::PAGINATION_SIZE_LARGE
     ); ?&gt;
-    &lt;?php echo BSHtml::pagination(
+    &lt;?php echo BsHtml::pagination(
         array(
             array('label' => 'Previous', 'url' => '#'),
             array('label' => '1', 'url' => '#','active' => true),
@@ -47,7 +47,7 @@ $list = array(
             array('label' => 'Next', 'url' => '#'),
         )
     ); ?&gt;
-    &lt;?php echo BSHtml::pagination(
+    &lt;?php echo BsHtml::pagination(
         array(
             array('label' => 'Previous', 'url' => '#'),
             array('label' => '1', 'url' => '#','active' => true),
@@ -57,7 +57,7 @@ $list = array(
             array('label' => '5', 'url' => '#'),
             array('label' => 'Next', 'url' => '#'),
         ,
-        array('size' => BSHtml::PAGINATION_SIZE_SMALL)
+        array('size' => BsHtml::PAGINATION_SIZE_SMALL)
     ); ?&gt;
 
     </pre>

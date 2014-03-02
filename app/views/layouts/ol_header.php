@@ -8,7 +8,7 @@
                 </a>
             </li>
             <li class=" ">
-                <?php echo BSHtml::link(
+                <?php echo BsHtml::link(
                     CHtml::image(
                         Yii::app()->baseUrl.'/img/bootstrap.png',
                         'Bootstrap3 ;)',
@@ -23,7 +23,7 @@
                     )
                 )
                 ?>
-                <?php echo BSHtml::link(
+                <?php echo BsHtml::link(
                     CHtml::image(
                         Yii::app()->baseUrl.'/img/yii.png',
                         'Yii ;)',
@@ -40,7 +40,7 @@
                 ?>
             </li>
             <li class="">
-                <?php echo BSHtml::link(
+                <?php echo BsHtml::link(
                     CHtml::image(
                         Yii::app()->baseUrl.'/img/bitbucket_logo_landing.png',
                         'Bitbucket ;)',
@@ -57,7 +57,7 @@
                 ?>
             </li>
             <li class="">
-                <?php echo BSHtml::link(
+                <?php echo BsHtml::link(
                     CHtml::image(
                         Yii::app()->baseUrl.'/img/logo.png',
                         'Packagist ;)',
@@ -76,7 +76,7 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li>
-                <?php echo BSHtml::link(BSHtml::icon(BSHtml::GLYPHICON_BOOKMARK).' Class Reference','doc',array('style' => 'font-size:16px;margin-top:20px;')) ?>
+                <?php echo BsHtml::link(BsHtml::icon(BsHtml::GLYPHICON_BOOKMARK).' Class Reference','doc',array('style' => 'font-size:16px;margin-top:20px;')) ?>
             </li>
             <!--                    <li class="dropdown">-->
             <!--                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>-->

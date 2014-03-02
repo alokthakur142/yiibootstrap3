@@ -6,14 +6,14 @@
     </div>
     <p class="lead">Indicate the current page's location within a navigational hierarchy.</p>
     <p>Separators are automatically added in CSS through <code>:before</code> and <code>content</code>.</p>
-    <?= BSHtml::emphasis(BSHtml::link('Read more on Yii Class Reference','http://www.yiiframework.com/doc/api/1.1/CBreadcrumbs')) ?>
+    <?= BsHtml::emphasis(BsHtml::link('Read more on Yii Class Reference','http://www.yiiframework.com/doc/api/1.1/CBreadcrumbs')) ?>
     <div class="bs-example">
-        <?php echo BSHtml::breadcrumbs(
+        <?php echo BsHtml::breadcrumbs(
             array(
                     'Components'
             )
         ); ?>
-        <?php echo BSHtml::breadcrumbs(
+        <?php echo BsHtml::breadcrumbs(
             array(
                 'Components' => array('site/components','#' => 'breadcrumbs'),
                 'BreadCrumb'
@@ -30,7 +30,7 @@
              // will generate the current page url : <li>News</li>
             'inactiveLinkTemplate'=>'<li>{label}</li>',
              // will generate your homeurl item : <li><a href="/dr/dr/public_html/">Home</a></li>
-            'homeLink'=>BSHtml::openTag('li').BSHtml::icon(BSHtml::GLYPHICON_HOME).BSHtml::closeTag('li')
+            'homeLink'=>BsHtml::openTag('li').BsHtml::icon(BsHtml::GLYPHICON_HOME).BsHtml::closeTag('li')
         ));
         ?><!-- breadcrumbs -->
     </div>
@@ -38,11 +38,11 @@
         <pre>
             <span class="pre_black">
                 <span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">breadcrumbs</span><span class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;</span><span
                     class="pre_red">'Components'<br></span><span class="pre_green">));<br></span><span
                     class="pre_blue">?&gt;<br>&lt;?php<br></span><span
-                    class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span><span
                     class="pre_green">::</span><span class="pre_blue">breadcrumbs</span><span
                     class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'Components'&nbsp;</span><span
                     class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
@@ -68,14 +68,14 @@
                     class="pre_green">=&gt;&nbsp;</span><span class="pre_red">'&lt;li&gt;{label}&lt;/li&gt;'</span><span
                     class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_orange">//&nbsp;will&nbsp;generate&nbsp;your&nbsp;homeurl&nbsp;item&nbsp;:&nbsp;&lt;li&gt;&lt;a&nbsp;href="/dr/dr/public_html/"&gt;Home&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp; &nbsp;</span><span
                     class="pre_red">'homeLink'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">openTag</span><span class="pre_green">(</span><span
                     class="pre_red">'li'</span><span class="pre_green">)&nbsp;.&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">icon</span><span class="pre_green">(</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">GLYPHICON_HOME</span><span
-                    class="pre_green">)&nbsp;.&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">)&nbsp;.&nbsp;</span><span class="pre_blue">BsHtml</span><span
                     class="pre_green">::</span><span class="pre_blue">closeTag</span><span
                     class="pre_green">(</span><span class="pre_red">'li'</span><span
                     class="pre_green">)<br>));<br></span><span class="pre_blue">?&gt;</span>&lt;!--&nbsp;breadcrumbs&nbsp;--&gt;

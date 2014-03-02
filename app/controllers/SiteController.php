@@ -86,7 +86,7 @@ class SiteController extends EController
     public function actionAjaxTest()
     {
         $message = $_POST['message'];
-        echo BSHtml::alert(BSHtml::ALERT_COLOR_INFO, "<strong>Message:</strong>{$message}");
+        echo BsHtml::alert(BsHtml::ALERT_COLOR_INFO, "<strong>Message:</strong>{$message}");
         Yii::app()->end();
     }
 

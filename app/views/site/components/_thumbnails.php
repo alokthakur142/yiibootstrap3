@@ -12,7 +12,7 @@
     <p>By default, Bootstrap's thumbnails are designed to showcase linked images with minimal required markup.</p>
     <div class="bs-example">
         <div class="row">
-            <?php echo BSHtml::rowThumbnails(array(
+            <?php echo BsHtml::rowThumbnails(array(
                     array(
                         'image' => array(
                             'src' => 'holder.js/260x180',

@@ -20,14 +20,14 @@
 <p>Default progress bar.</p>
 
 <div class="bs-example">
-    <?php echo BSHtml::progressBar(
+    <?php echo BsHtml::progressBar(
         60
     ); ?>
 </div>
 <div class="highlight"><pre>
             <span class="pre_black">
 <span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">progressBar</span><span class="pre_green">(</span><span
                     class="pre_blue">60</span><span class="pre_green">);<br></span><span
                     class="pre_blue">?&gt;</span>
@@ -40,64 +40,64 @@
 <p>Progress bars use some of the same button and alert classes for consistent styles.</p>
 
 <div class="bs-example">
-    <?php echo BSHtml::progressBar(
+    <?php echo BsHtml::progressBar(
         20,
         array(
-            'color' => BSHtml::PROGRESS_COLOR_SUCCESS
+            'color' => BsHtml::PROGRESS_COLOR_SUCCESS
         )
     ); ?>
-    <?php echo BSHtml::progressBar(
+    <?php echo BsHtml::progressBar(
         40,
         array(
-            'color' => BSHtml::PROGRESS_COLOR_INFO
+            'color' => BsHtml::PROGRESS_COLOR_INFO
         )
     ); ?>
-    <?php echo BSHtml::progressBar(
+    <?php echo BsHtml::progressBar(
         60,
         array(
-            'color' => BSHtml::PROGRESS_COLOR_WARNING
+            'color' => BsHtml::PROGRESS_COLOR_WARNING
         )
     ); ?>
-    <?php echo BSHtml::progressBar(
+    <?php echo BsHtml::progressBar(
         80,
         array(
-            'color' => BSHtml::PROGRESS_COLOR_DANGER
+            'color' => BsHtml::PROGRESS_COLOR_DANGER
         )
     ); ?>
 </div>
 <div class="highlight"><pre>
             <span class="pre_black">
 <span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">progressBar</span><span class="pre_green">(</span><span
                     class="pre_blue">20</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
                     style="color: #DD0000;">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">PROGRESS_COLOR_SUCCESS<br></span><span
                     class="pre_green">));<br></span><span
                     class="pre_blue">?&gt;<br>&lt;?php<br></span><span
-                    class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span><span
                     class="pre_green">::</span><span class="pre_blue">progressBar</span><span
                     class="pre_green">(</span><span class="pre_blue">40</span><span
                     class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span style="color: #DD0000;">'color'&nbsp;</span><span
-                    class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span
                     class="pre_green">::</span><span class="pre_blue">PROGRESS_COLOR_INFO<br></span><span
                     class="pre_green">));<br></span><span
                     class="pre_blue">?&gt;<br>&lt;?php<br></span><span
-                    class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span><span
                     class="pre_green">::</span><span class="pre_blue">progressBar</span><span
                     class="pre_green">(</span><span class="pre_blue">60</span><span
                     class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span style="color: #DD0000;">'color'&nbsp;</span><span
-                    class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span
                     class="pre_green">::</span><span
                     class="pre_blue">PROGRESS_COLOR_WARNING<br></span><span
                     class="pre_green">));<br></span><span
                     class="pre_blue">?&gt;<br>&lt;?php<br></span><span
-                    class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span><span
                     class="pre_green">::</span><span class="pre_blue">progressBar</span><span
                     class="pre_green">(</span><span class="pre_blue">80</span><span
                     class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span style="color: #DD0000;">'color'&nbsp;</span><span
-                    class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span
                     class="pre_green">::</span><span class="pre_blue">PROGRESS_COLOR_DANGER<br></span><span
                     class="pre_green">));<br></span><span class="pre_blue">?&gt;</span>
 </span>
@@ -109,31 +109,31 @@
 <p>Uses a gradient to create a striped effect. Not available in IE8.</p>
 
 <div class="bs-example">
-    <?php echo BSHtml::progressBar(
+    <?php echo BsHtml::progressBar(
         20,
         array(
-            'color' => BSHtml::PROGRESS_COLOR_SUCCESS,
+            'color' => BsHtml::PROGRESS_COLOR_SUCCESS,
             'striped' => true
         )
     ); ?>
-    <?php echo BSHtml::progressBar(
+    <?php echo BsHtml::progressBar(
         40,
         array(
-            'color' => BSHtml::PROGRESS_COLOR_INFO,
+            'color' => BsHtml::PROGRESS_COLOR_INFO,
             'striped' => true
         )
     ); ?>
-    <?php echo BSHtml::progressBar(
+    <?php echo BsHtml::progressBar(
         60,
         array(
-            'color' => BSHtml::PROGRESS_COLOR_WARNING,
+            'color' => BsHtml::PROGRESS_COLOR_WARNING,
             'striped' => true
         )
     ); ?>
-    <?php echo BSHtml::progressBar(
+    <?php echo BsHtml::progressBar(
         80,
         array(
-            'color' => BSHtml::PROGRESS_COLOR_DANGER,
+            'color' => BsHtml::PROGRESS_COLOR_DANGER,
             'striped' => true
         )
     ); ?>
@@ -141,41 +141,41 @@
 <div class="highlight"><pre>
             <span class="pre_black">
 <span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">progressBar</span><span class="pre_green">(</span><span
                     class="pre_blue">20</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
                     style="color: #DD0000;">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">PROGRESS_COLOR_SUCCESS</span><span
                     class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
                     style="color: #DD0000;">'striped'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                     class="pre_blue">true<br></span><span class="pre_green">));<br></span><span
                     class="pre_blue">?&gt;<br>&lt;?php<br></span><span
-                    class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span><span
                     class="pre_green">::</span><span class="pre_blue">progressBar</span><span
                     class="pre_green">(</span><span class="pre_blue">40</span><span
                     class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span style="color: #DD0000;">'color'&nbsp;</span><span
-                    class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span
                     class="pre_green">::</span><span class="pre_blue">PROGRESS_COLOR_INFO</span><span
                     class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
                     style="color: #DD0000;">'striped'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                     class="pre_blue">true<br></span><span class="pre_green">));<br></span><span
                     class="pre_blue">?&gt;<br>&lt;?php<br></span><span
-                    class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span><span
                     class="pre_green">::</span><span class="pre_blue">progressBar</span><span
                     class="pre_green">(</span><span class="pre_blue">60</span><span
                     class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span style="color: #DD0000;">'color'&nbsp;</span><span
-                    class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span
                     class="pre_green">::</span><span class="pre_blue">PROGRESS_COLOR_WARNING</span><span
                     class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
                     style="color: #DD0000;">'striped'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                     class="pre_blue">true<br></span><span class="pre_green">));<br></span><span
                     class="pre_blue">?&gt;<br>&lt;?php<br></span><span
-                    class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span><span
                     class="pre_green">::</span><span class="pre_blue">progressBar</span><span
                     class="pre_green">(</span><span class="pre_blue">80</span><span
                     class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span style="color: #DD0000;">'color'&nbsp;</span><span
-                    class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span
                     class="pre_green">::</span><span class="pre_blue">PROGRESS_COLOR_DANGER</span><span
                     class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
                     style="color: #DD0000;">'striped'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
@@ -191,7 +191,7 @@
     all versions of IE.</p>
 
 <div class="bs-example">
-    <?php echo BSHtml::progressBar(
+    <?php echo BsHtml::progressBar(
         20,
         array(
             'striped' => true,
@@ -202,7 +202,7 @@
 <div class="highlight"><pre>
     <span class="pre_black">
 <span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-            class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+            class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
             class="pre_blue">progressBar</span><span
             class="pre_green">(</span><span class="pre_blue">20</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
             style="color: #DD0000;">'striped'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
@@ -219,31 +219,31 @@
 <p>Place multiple bars into the same <code>.progress</code> to stack them.</p>
 
 <div class="bs-example">
-    <?php echo BSHtml::stackedProgressBar(
+    <?php echo BsHtml::stackedProgressBar(
         array(
-            array('color' => BSHtml::PROGRESS_COLOR_SUCCESS, 'width' => 35),
-            array('color' => BSHtml::PROGRESS_COLOR_WARNING, 'width' => 20),
-            array('color' => BSHtml::PROGRESS_COLOR_DANGER, 'width' => 10),
+            array('color' => BsHtml::PROGRESS_COLOR_SUCCESS, 'width' => 35),
+            array('color' => BsHtml::PROGRESS_COLOR_WARNING, 'width' => 20),
+            array('color' => BsHtml::PROGRESS_COLOR_DANGER, 'width' => 10),
         )
     ); ?>
 </div>
 <div class="highlight"><pre>
             <span class="pre_black">
 <span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">stackedProgressBar</span><span class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     style="color: #DD0000;">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">PROGRESS_COLOR_SUCCESS</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     style="color: #DD0000;">'width'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                     class="pre_blue">35<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     style="color: #DD0000;">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">PROGRESS_COLOR_WARNING</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     style="color: #DD0000;">'width'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                     class="pre_blue">20<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     style="color: #DD0000;">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">PROGRESS_COLOR_DANGER</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     style="color: #DD0000;">'width'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                     class="pre_blue">10<br>&nbsp;&nbsp; &nbsp;</span><span

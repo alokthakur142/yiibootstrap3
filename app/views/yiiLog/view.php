@@ -17,7 +17,7 @@ array('icon' => 'glyphicon glyphicon-minus-sign','label'=>'Delete YiiLog', 'url'
 );
 ?>
 
-<?php echo BSHtml::pageHeader('View','YiiLog '.$model->id) ?>
+<?php echo BsHtml::pageHeader('View','YiiLog '.$model->id) ?>
 
 <?php $this->widget('zii.widgets.CDetailView',array(
 'htmlOptions' => array(

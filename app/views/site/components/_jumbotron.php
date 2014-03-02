@@ -10,13 +10,13 @@
 
     <div class="bs-example">
         <?php echo
-        BSHtml::jumbotron(
+        BsHtml::jumbotron(
             'Hello, world!',
             $this->renderInternal(Yii::app()->basePath . '/views/site/components/_jumboPartial.php', array(), true)
         ) ?>
     </div>
     <div class="highlight"><pre><span class="pre_black">
-<span class="pre_blue">&lt;?=&nbsp;BSHtml</span><span class="pre_green">::</span><span class="pre_blue">jumbotron</span><span
+<span class="pre_blue">&lt;?=&nbsp;BsHtml</span><span class="pre_green">::</span><span class="pre_blue">jumbotron</span><span
                     class="pre_green">(</span><span class="pre_red">'Hello,&nbsp;world!'</span><span class="pre_green">,&nbsp;</span><span
                     class="pre_blue">$this</span><span class="pre_green">-&gt;</span><span class="pre_blue">renderInternal</span><span
                     class="pre_green">(</span><span class="pre_blue">Yii</span><span class="pre_green">::</span><span

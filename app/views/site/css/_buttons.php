@@ -10,56 +10,56 @@
 <p>Use any of the available button classes to quickly create a styled button.</p>
 
 <div class="bs-example">
-    <?php echo BSHtml::button(
+    <?php echo BsHtml::button(
         'Primary',
         array(
-            'color' => BSHtml::BUTTON_COLOR_PRIMARY,
+            'color' => BsHtml::BUTTON_COLOR_PRIMARY,
         )
     );
     ?>
-    <?php echo BSHtml::button('Danger', array('color' => BSHtml::BUTTON_COLOR_DANGER)); ?>
-    <?php echo BSHtml::button('Warning', array('color' => BSHtml::BUTTON_COLOR_WARNING)); ?>
-    <?php echo BSHtml::button('Success', array('color' => BSHtml::BUTTON_COLOR_SUCCESS)); ?>
-    <?php echo BSHtml::button('Info', array('color' => BSHtml::BUTTON_COLOR_INFO)); ?>
-    <?php echo BSHtml::button('Default'); ?>
-    <?php echo BSHtml::button('Link', array('color' => BSHtml::BUTTON_COLOR_LINK)); ?>
+    <?php echo BsHtml::button('Danger', array('color' => BsHtml::BUTTON_COLOR_DANGER)); ?>
+    <?php echo BsHtml::button('Warning', array('color' => BsHtml::BUTTON_COLOR_WARNING)); ?>
+    <?php echo BsHtml::button('Success', array('color' => BsHtml::BUTTON_COLOR_SUCCESS)); ?>
+    <?php echo BsHtml::button('Info', array('color' => BsHtml::BUTTON_COLOR_INFO)); ?>
+    <?php echo BsHtml::button('Default'); ?>
+    <?php echo BsHtml::button('Link', array('color' => BsHtml::BUTTON_COLOR_LINK)); ?>
 </div>
 <div class="highlight">
     <pre>
        <span class="pre_black">
-<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span
+<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span><span
             class="pre_green">::</span><span class="pre_blue">button</span><span class="pre_green">(</span><span
             class="pre_red">'Primary'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
-            class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span>
+            class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span>
         <span class="pre_green">::</span><span class="pre_blue">BUTTON_COLOR_PRIMARY<br></span><span class="pre_green">));<br></span><span class="pre_blue">?&gt;<br></span>
-        &nbsp; &nbsp;<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span>
+        &nbsp; &nbsp;<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span>
         <span class="pre_green">::</span><span class="pre_blue">button</span><span class="pre_green">(</span><span
             class="pre_red">'Danger'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
-            class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span>
+            class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span>
         <span class="pre_green">::</span><span class="pre_blue">BUTTON_COLOR_DANGER<br></span><span class="pre_green">));<br></span><span class="pre_blue">?&gt;<br></span>
-        &nbsp; &nbsp;<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span>
+        &nbsp; &nbsp;<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span>
         <span class="pre_green">::</span><span class="pre_blue">button</span><span class="pre_green">(</span><span
             class="pre_red">'Warning'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
-            class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span>
+            class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span>
         <span class="pre_green">::</span><span class="pre_blue">BUTTON_COLOR_WARNING<br></span><span class="pre_green">));<br></span><span class="pre_blue">?&gt;<br></span>
-        &nbsp; &nbsp;<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span>
+        &nbsp; &nbsp;<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span>
         <span class="pre_green">::</span><span class="pre_blue">button</span><span class="pre_green">(</span><span
             class="pre_red">'Success'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
-            class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span>
+            class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span>
         <span class="pre_green">::</span><span class="pre_blue">BUTTON_COLOR_SUCCESS<br></span><span class="pre_green">));<br></span><span class="pre_blue">?&gt;<br></span>
-        &nbsp; &nbsp;<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span>
+        &nbsp; &nbsp;<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span>
         <span class="pre_green">::</span><span class="pre_blue">button</span><span class="pre_green">(</span><span
             class="pre_red">'Info'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
-            class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span>
+            class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span>
         <span class="pre_green">::</span><span class="pre_blue">BUTTON_COLOR_INFO<br></span><span
             class="pre_green">));<br></span><span class="pre_blue">?&gt;<br></span>
-        &nbsp; &nbsp;<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span>
+        &nbsp; &nbsp;<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span>
         <span class="pre_green">::</span><span class="pre_blue">button</span><span class="pre_green">(</span><span
             class="pre_red">'Default'</span><span class="pre_green">);<br></span><span class="pre_blue">?&gt;<br></span>
-        &nbsp; &nbsp;<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span>
+        &nbsp; &nbsp;<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span>
         <span class="pre_green">::</span><span class="pre_blue">button</span><span class="pre_green">(</span><span
             class="pre_red">'Link'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
-            class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span>
+            class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span>
         <span class="pre_green">::</span><span class="pre_blue">BUTTON_COLOR_LINK<br></span><span
             class="pre_green">));<br></span><span class="pre_blue">?&gt;</span>
         </span>
@@ -73,63 +73,63 @@
 
 <div class="bs-example">
     <p>
-        <?php echo BSHtml::button(
+        <?php echo BsHtml::button(
             'Large Button',
             array(
-                'color' => BSHtml::BUTTON_COLOR_PRIMARY,
-                'size' => BSHtml::BUTTON_SIZE_LARGE
+                'color' => BsHtml::BUTTON_COLOR_PRIMARY,
+                'size' => BsHtml::BUTTON_SIZE_LARGE
             )
         );
         ?>
-        <?php echo BSHtml::button(
+        <?php echo BsHtml::button(
             'Large Button',
             array(
-                'size' => BSHtml::BUTTON_SIZE_LARGE
+                'size' => BsHtml::BUTTON_SIZE_LARGE
             )
         ); ?>
     </p>
 
     <p>
-        <?php echo BSHtml::button(
+        <?php echo BsHtml::button(
             'Default button',
             array(
-                'color' => BSHtml::BUTTON_COLOR_PRIMARY
+                'color' => BsHtml::BUTTON_COLOR_PRIMARY
             )
         );
         ?>
-        <?php echo BSHtml::button('Default button'); ?>
+        <?php echo BsHtml::button('Default button'); ?>
     </p>
 
     <p>
-        <?php echo BSHtml::button(
+        <?php echo BsHtml::button(
             'Small Button',
             array(
-                'color' => BSHtml::BUTTON_COLOR_PRIMARY,
-                'size' => BSHtml::BUTTON_SIZE_SMALL
+                'color' => BsHtml::BUTTON_COLOR_PRIMARY,
+                'size' => BsHtml::BUTTON_SIZE_SMALL
             )
         );
         ?>
-        <?php echo BSHtml::button(
+        <?php echo BsHtml::button(
             'Small Button',
             array(
-                'size' => BSHtml::BUTTON_SIZE_SMALL
+                'size' => BsHtml::BUTTON_SIZE_SMALL
             )
         ); ?>
     </p>
 
     <p>
-        <?php echo BSHtml::button(
+        <?php echo BsHtml::button(
             'Extra Small Button',
             array(
-                'color' => BSHtml::BUTTON_COLOR_PRIMARY,
-                'size' => BSHtml::BUTTON_SIZE_MINI
+                'color' => BsHtml::BUTTON_COLOR_PRIMARY,
+                'size' => BsHtml::BUTTON_SIZE_MINI
             )
         );
         ?>
-        <?php echo BSHtml::button(
+        <?php echo BsHtml::button(
             'Extra small button',
             array(
-                'size' => BSHtml::BUTTON_SIZE_MINI
+                'size' => BsHtml::BUTTON_SIZE_MINI
             )
         ); ?>
     </p>
@@ -137,49 +137,49 @@
 <div class="highlight">
     <pre>
 <span class="pre_black">
-<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span
+<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span><span
             class="pre_green">::</span><span class="pre_blue">button</span><span class="pre_green">(</span><span
             class="pre_red">'Large&nbsp;Button'</span><span
             class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'color'&nbsp;</span><span
-            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_COLOR_PRIMARY</span>
+            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_COLOR_PRIMARY</span>
         <span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'size'&nbsp;</span><span
-            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_SIZE_LARGE<br></span>
-        <span class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span>
+            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_SIZE_LARGE<br></span>
+        <span class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span>
         <span class="pre_green">::</span><span class="pre_blue">button</span><span class="pre_green">(</span><span
             class="pre_red">'Large&nbsp;Button'</span><span
             class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'size'&nbsp;</span><span
-            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_SIZE_LARGE<br></span>
-        <span class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span>
+            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_SIZE_LARGE<br></span>
+        <span class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span>
         <span class="pre_green">::</span><span class="pre_blue">button</span><span class="pre_green">(</span><span
             class="pre_red">'Default&nbsp;button'</span><span
             class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'color'&nbsp;</span><span
-            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_COLOR_PRIMARY<br></span>
-        <span class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span>
+            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_COLOR_PRIMARY<br></span>
+        <span class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span>
         <span class="pre_green">::</span><span class="pre_blue">button</span><span class="pre_green">(</span><span
             class="pre_red">'Default&nbsp;button'</span><span class="pre_green">);<br></span><span class="pre_blue">?&gt;<br></span>
-        <br><br><span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span>
+        <br><br><span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span>
         <span class="pre_green">::</span><span class="pre_blue">button</span><span class="pre_green">(</span><span
             class="pre_red">'Small&nbsp;Button'</span><span
             class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'color'&nbsp;</span><span
-            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_COLOR_PRIMARY</span>
+            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_COLOR_PRIMARY</span>
         <span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'size'&nbsp;</span><span
-            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_SIZE_SMALL<br></span>
-        <span class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span>
+            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_SIZE_SMALL<br></span>
+        <span class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span>
         <span class="pre_green">::</span><span class="pre_blue">button</span><span class="pre_green">(</span><span
             class="pre_red">'Small&nbsp;Button'</span><span
             class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'size'&nbsp;</span><span
-            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_SIZE_SMALL<br></span>
+            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_SIZE_SMALL<br></span>
         <span class="pre_green">));<br></span><span class="pre_blue">?&gt;<br></span><br><br><span class="pre_blue">&lt;?php<br></span><span
-            class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">button</span>
+            class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">button</span>
         <span class="pre_green">(</span><span class="pre_red">'Extra&nbsp;Small&nbsp;Button'</span><span
             class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'color'&nbsp;</span><span
-            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_COLOR_PRIMARY</span>
+            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_COLOR_PRIMARY</span>
         <span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'size'&nbsp;</span><span
-            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_SIZE_MINI<br></span>
-        <span class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span>
+            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_SIZE_MINI<br></span>
+        <span class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span>
         <span class="pre_green">::</span><span class="pre_blue">button</span><span class="pre_green">(</span><span
             class="pre_red">'Extra&nbsp;small&nbsp;button'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
-            class="pre_red">'size'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span>
+            class="pre_red">'size'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span>
         <span class="pre_green">::</span><span class="pre_blue">BUTTON_SIZE_MINI<br></span><span
             class="pre_green">));<br></span><span class="pre_blue">?&gt;<br></span>
         </span>
@@ -190,30 +190,30 @@
 
 <div class="bs-example">
     <div class="well" style="max-width: 400px; margin: 0 auto 10px;">
-        <?php echo BSHtml::button('Block button',
-            array('block' => true, 'color' => BSHtml::BUTTON_COLOR_PRIMARY, 'size' => BSHtml::BUTTON_SIZE_LARGE)); ?>
-        <?php echo BSHtml::button('Block button',
-            array('block' => true, 'size' => BSHtml::BUTTON_SIZE_LARGE)); ?>
+        <?php echo BsHtml::button('Block button',
+            array('block' => true, 'color' => BsHtml::BUTTON_COLOR_PRIMARY, 'size' => BsHtml::BUTTON_SIZE_LARGE)); ?>
+        <?php echo BsHtml::button('Block button',
+            array('block' => true, 'size' => BsHtml::BUTTON_SIZE_LARGE)); ?>
     </div>
 </div>
 <div class="highlight">
     <pre >
  <span class="pre_black">
-<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span
+<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span><span
             class="pre_green">::</span><span class="pre_blue">button</span><span class="pre_green">(</span><span
             class="pre_red">'Block&nbsp;button'</span><span
             class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'block'&nbsp;</span><span
             class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">true</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
-            class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span>
+            class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span>
         <span class="pre_green">::</span><span class="pre_blue">BUTTON_COLOR_PRIMARY</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
-            class="pre_red">'size'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span>
+            class="pre_red">'size'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span>
         <span class="pre_green">::</span><span class="pre_blue">BUTTON_SIZE_LARGE<br></span><span
-            class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span>
+            class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span>
         <span class="pre_green">::</span><span class="pre_blue">button</span><span class="pre_green">(</span><span
             class="pre_red">'Block&nbsp;button'</span><span
             class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'block'&nbsp;</span><span
             class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">true</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
-            class="pre_red">'size'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span>
+            class="pre_red">'size'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span>
         <span class="pre_green">::</span><span class="pre_blue">BUTTON_SIZE_LARGE<br></span><span
             class="pre_green">));<br></span><span class="pre_blue">?&gt;</span>
         </span>
@@ -230,30 +230,30 @@
 <p>Add the <code>disabled</code> attribute to <code>&lt;button&gt;</code> buttons.</p>
 
 <p class="bs-example">
-    <?php echo BSHtml::button('Primary button',
-        array('disabled' => true, 'size' => BSHtml::BUTTON_SIZE_LARGE, 'color' => BSHtml::BUTTON_COLOR_PRIMARY)); ?>
-    <?php echo BSHtml::button('Button',
-        array('disabled' => true, 'size' => BSHtml::BUTTON_SIZE_LARGE)); ?>
+    <?php echo BsHtml::button('Primary button',
+        array('disabled' => true, 'size' => BsHtml::BUTTON_SIZE_LARGE, 'color' => BsHtml::BUTTON_COLOR_PRIMARY)); ?>
+    <?php echo BsHtml::button('Button',
+        array('disabled' => true, 'size' => BsHtml::BUTTON_SIZE_LARGE)); ?>
 </p>
 
 <div class="highlight">
     <pre >
 <span class="pre_black">
-<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span
+<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span><span
             class="pre_green">::</span><span class="pre_blue">button</span><span class="pre_green">(</span><span
             class="pre_red">'Primary&nbsp;button'</span><span
             class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
             class="pre_red">'disabled'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">true</span>
         <span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'size'&nbsp;</span><span
-            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_SIZE_LARGE</span>
+            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_SIZE_LARGE</span>
         <span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'color'&nbsp;</span><span
-            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_COLOR_PRIMARY<br></span>
-        <span class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span>
+            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_COLOR_PRIMARY<br></span>
+        <span class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span>
         <span class="pre_green">::</span><span class="pre_blue">button</span><span class="pre_green">(</span><span
             class="pre_red">'Button'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
             class="pre_red">'disabled'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">true</span>
         <span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'size'&nbsp;</span><span
-            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_SIZE_LARGE<br></span>
+            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_SIZE_LARGE<br></span>
         <span class="pre_green">));<br></span><span class="pre_blue">?&gt;</span>
         </span>
     </pre>
@@ -271,29 +271,29 @@
 <p>Add the <code>.disabled</code> class to <code>&lt;a&gt;</code> buttons.</p>
 
 <p class="bs-example">
-    <?php echo BSHtml::linkButton('Primary link',
-        array('disabled' => true, 'size' => BSHtml::BUTTON_SIZE_LARGE, 'color' => BSHtml::BUTTON_COLOR_PRIMARY)); ?>
-    <?php echo BSHtml::linkButton('Link',
-        array('disabled' => true, 'size' => BSHtml::BUTTON_SIZE_LARGE)); ?>
+    <?php echo BsHtml::linkButton('Primary link',
+        array('disabled' => true, 'size' => BsHtml::BUTTON_SIZE_LARGE, 'color' => BsHtml::BUTTON_COLOR_PRIMARY)); ?>
+    <?php echo BsHtml::linkButton('Link',
+        array('disabled' => true, 'size' => BsHtml::BUTTON_SIZE_LARGE)); ?>
 </p>
 
 <div class="highlight"> <pre >
 <span class="pre_black">
-<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span
+<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span><span
             class="pre_green">::</span><span class="pre_blue">linkButton</span><span class="pre_green">(</span><span
             class="pre_red">'Primary&nbsp;link'</span><span
             class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
             class="pre_red">'disabled'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">true</span>
         <span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'size'&nbsp;</span><span
-            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_SIZE_LARGE</span>
+            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_SIZE_LARGE</span>
         <span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'color'&nbsp;</span><span
-            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_COLOR_PRIMARY<br></span>
-        <span class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span>
+            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_COLOR_PRIMARY<br></span>
+        <span class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span>
         <span class="pre_green">::</span><span class="pre_blue">linkButton</span><span class="pre_green">(</span><span
             class="pre_red">'Link'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
             class="pre_red">'disabled'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">true</span>
         <span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'size'&nbsp;</span><span
-            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_SIZE_LARGE<br></span>
+            class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">BUTTON_SIZE_LARGE<br></span>
         <span class="pre_green">));<br></span><span class="pre_blue">?&gt;</span>
         </span>
     </pre>
@@ -317,26 +317,26 @@
     element.</p>
 
 <form class="bs-example">
-    <?php echo BSHtml::linkButton('Link'); ?>
-    <?php echo BSHtml::button('Button'); ?>
-    <?php echo BSHtml::inputButton('Input'); ?>
-    <?php echo BSHtml::inputSubmitButton('Submit', array('type' => 'input')); ?>
-    <?php echo BSHtml::submitButton('Submit Button', array('type' => 'input')); ?>
+    <?php echo BsHtml::linkButton('Link'); ?>
+    <?php echo BsHtml::button('Button'); ?>
+    <?php echo BsHtml::inputButton('Input'); ?>
+    <?php echo BsHtml::inputSubmitButton('Submit', array('type' => 'input')); ?>
+    <?php echo BsHtml::submitButton('Submit Button', array('type' => 'input')); ?>
 </form>
 <div class="highlight"><pre >
 <span class="pre_black">
-<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span
+<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span><span
             class="pre_green">::</span><span class="pre_blue">linkButton</span><span class="pre_green">(</span><span
             class="pre_red">'Link'</span><span class="pre_green">);<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span>
-        <span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">button</span>
+        <span class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">button</span>
         <span class="pre_green">(</span><span class="pre_red">'Button'</span><span class="pre_green">);<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span>
-        <span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">inputButton</span>
+        <span class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">inputButton</span>
         <span class="pre_green">(</span><span class="pre_red">'Input'</span><span class="pre_green">);<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span>
-        <span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">inputSubmitButton</span>
+        <span class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">inputSubmitButton</span>
         <span class="pre_green">(</span><span class="pre_red">'Submit'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
             class="pre_red">'type'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
             class="pre_red">'input'<br></span><span class="pre_green">));<br></span><span class="pre_blue">?&gt;<br>&lt;?php<br></span>
-        <span class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span class="pre_green">::</span><span class="pre_blue">submitButton</span>
+        <span class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span><span class="pre_green">::</span><span class="pre_blue">submitButton</span>
         <span class="pre_green">(</span><span class="pre_red">'Submit&nbsp;Button'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
             class="pre_red">'type'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
             class="pre_red">'input'<br></span><span class="pre_green">));<br></span><span class="pre_blue">?&gt;</span>

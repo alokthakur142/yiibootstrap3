@@ -27,10 +27,10 @@ Yii::app()->clientScript->registerScript('search',
     });"
 );
 ?>
-<?php echo BSHtml::pageHeader('Manage', 'Yii Logs') ?>
+<?php echo BsHtml::pageHeader('Manage', 'Yii Logs') ?>
 <div class="panel panel-default">
     <div class="panel-heading">
-        <h3 class="panel-title"><?php echo BSHtml::button('Advanced search', array('class' => 'search-button', 'icon' => BSHtml::GLYPHICON_SEARCH, 'color' => BSHtml::BUTTON_COLOR_PRIMARY), '#'); ?></h3>
+        <h3 class="panel-title"><?php echo BsHtml::button('Advanced search', array('class' => 'search-button', 'icon' => BsHtml::GLYPHICON_SEARCH, 'color' => BsHtml::BUTTON_COLOR_PRIMARY), '#'); ?></h3>
     </div>
     <div class="panel-body">
         <p>

@@ -219,13 +219,13 @@ $glyphicons = array(
         <ul class="bs-glyphicons">
             <?php foreach ($glyphicons as $key => $value) : ?>
                 <li>
-                    <?= BSHtml::icon($value) ?>
-                    <span data-toggle="popover" data-html="true" data-content="<?php echo BSHtml::small(strtoupper(str_replace('-', '_', $value))) ?>" class="glyphicon-class" style="font-size: 10px; "><?php echo BSHtml::small(strtoupper(str_replace('-', '_', $value))) ?></span>
+                    <?= BsHtml::icon($value) ?>
+                    <span data-toggle="popover" data-html="true" data-content="<?php echo BsHtml::small(strtoupper(str_replace('-', '_', $value))) ?>" class="glyphicon-class" style="font-size: 10px; "><?php echo BsHtml::small(strtoupper(str_replace('-', '_', $value))) ?></span>
                 </li>
 <!--                <li class="col-lg-4 text-center">-->
-<!--                    --><?//= BSHtml::icon($value) ?>
+<!--                    --><?//= BsHtml::icon($value) ?>
 <!--                    <br/>-->
-<!--                    --><?php //echo BSHtml::small(strtoupper(str_replace('-', '_', $value))) ?>
+<!--                    --><?php //echo BsHtml::small(strtoupper(str_replace('-', '_', $value))) ?>
 <!--                </li>-->
             <?php endforeach ?>
         </ul>
@@ -241,9 +241,9 @@ $glyphicons = array(
         <pre>
             <span class="pre_black">
 <span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">icon</span><span class="pre_green">(</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">GLYPHICON_BARCODE</span><span class="pre_green">);<br></span><span
                     class="pre_blue">?&gt;</span>
 </span>
@@ -256,40 +256,40 @@ $glyphicons = array(
 
     <div class="bs-example">
         <?php
-        echo BSHtml::buttonToolbar(array(
+        echo BsHtml::buttonToolbar(array(
             array('items' => array(
-                array('icon' => BSHtml::GLYPHICON_ALIGN_LEFT),
-                array('icon' => BSHtml::GLYPHICON_ALIGN_CENTER),
-                array('icon' => BSHtml::GLYPHICON_ALIGN_RIGHT),
+                array('icon' => BsHtml::GLYPHICON_ALIGN_LEFT),
+                array('icon' => BsHtml::GLYPHICON_ALIGN_CENTER),
+                array('icon' => BsHtml::GLYPHICON_ALIGN_RIGHT),
             ))
         ));
 
-        echo BSHtml::button(
+        echo BsHtml::button(
             'Large Button',
             array(
-                'size' => BSHtml::BUTTON_SIZE_LARGE,
-                'icon' => BSHtml::GLYPHICON_BELL
+                'size' => BsHtml::BUTTON_SIZE_LARGE,
+                'icon' => BsHtml::GLYPHICON_BELL
             )
         );
 
-        echo BSHtml::button(
+        echo BsHtml::button(
             'Primary button',
             array(
-                'icon' => BSHtml::GLYPHICON_BELL,
+                'icon' => BsHtml::GLYPHICON_BELL,
             )
         );
-        echo BSHtml::button(
+        echo BsHtml::button(
             'Small button',
             array(
-                'size' => BSHtml::BUTTON_SIZE_SMALL,
-                'icon' => BSHtml::GLYPHICON_BELL,
+                'size' => BsHtml::BUTTON_SIZE_SMALL,
+                'icon' => BsHtml::GLYPHICON_BELL,
             )
         );
-        echo BSHtml::button(
+        echo BsHtml::button(
             'Extra small button',
             array(
-                'size' => BSHtml::BUTTON_SIZE_MINI,
-                'icon' => BSHtml::GLYPHICON_BELL,
+                'size' => BsHtml::BUTTON_SIZE_MINI,
+                'icon' => BsHtml::GLYPHICON_BELL,
             )
         );
 
@@ -299,58 +299,58 @@ $glyphicons = array(
         <pre>
             <span class="pre_black">
 &nbsp;<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">buttonToolbar</span><span
                     class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_red">'items'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_red">'icon'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">GLYPHICON_ALIGN_LEFT<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_red">'icon'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">GLYPHICON_ALIGN_CENTER<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_red">'icon'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">GLYPHICON_ALIGN_RIGHT<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_green">)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;)<br>&nbsp;&nbsp; &nbsp;)<br>));<br><br>echo&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">button</span><span class="pre_green">(</span><span
                     class="pre_red">'Large&nbsp;Button'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
                     class="pre_red">'size'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">BUTTON_SIZE_LARGE</span><span
                     class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
                     class="pre_red">'icon'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">GLYPHICON_BELL<br></span><span class="pre_green">));<br><br>echo&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">button</span><span class="pre_green">(</span><span
                     class="pre_red">'Primary&nbsp;button'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
                     class="pre_red">'icon'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">GLYPHICON_BELL<br></span><span
-                    class="pre_green">));<br>echo&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">));<br>echo&nbsp;</span><span class="pre_blue">BsHtml</span><span
                 class="pre_green">::</span><span class="pre_blue">button</span><span
                 class="pre_green">(</span><span class="pre_red">'Small&nbsp;button'</span><span
                 class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
                 class="pre_red">'size'&nbsp;</span><span
-                class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span
                 class="pre_green">::</span><span class="pre_blue">BUTTON_SIZE_SMALL</span><span
                 class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
                 class="pre_red">'icon'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">GLYPHICON_BELL<br></span><span
-                class="pre_green">));<br>echo&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                class="pre_green">));<br>echo&nbsp;</span><span class="pre_blue">BsHtml</span><span
                 class="pre_green">::</span><span class="pre_blue">button</span><span
                 class="pre_green">(</span><span
                 class="pre_red">'Extra&nbsp;small&nbsp;button'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
                 class="pre_red">'size'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">BUTTON_SIZE_MINI</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
                 class="pre_red">'icon'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">GLYPHICON_BELL<br></span><span
                 class="pre_green">));<br><br></span><span class="pre_blue">?&gt;</span>
             </span>

@@ -13,7 +13,7 @@
     <p>Note the <code>.nav-tabs</code> class requires the <code>.nav</code> base class.</p>
 
     <div class="bs-example">
-        <?php echo BSHtml::tabs(array(
+        <?php echo BsHtml::tabs(array(
             array('label' => 'Home', 'url' => '#', 'active' => true),
             array('label' => 'Profile', 'url' => '#',),
             array('label' => 'Messages', 'url' => '#',),
@@ -23,7 +23,7 @@
         <pre>
         <span class="pre_black">
             <span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">tabs</span><span
                 class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
@@ -51,7 +51,7 @@
     <p>Take that same HTML, but use <code>.nav-pills</code> instead:</p>
 
     <div class="bs-example">
-        <?php echo BSHtml::pills(array(
+        <?php echo BsHtml::pills(array(
             array('label' => 'Home', 'url' => '#', 'active' => true),
             array('label' => 'Profile', 'url' => '#',),
             array('label' => 'Messages', 'url' => '#',),
@@ -61,7 +61,7 @@
         <pre>
             <span class="pre_black">
                 <span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">pills</span><span class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                     class="pre_red">'Home'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
@@ -84,7 +84,7 @@
     <p>Pills are also vertically stackable. Just add <code>.nav-stacked</code>.</p>
 
     <div class="bs-example">
-        <?php echo BSHtml::stackedPills(array(
+        <?php echo BsHtml::stackedPills(array(
             array('label' => 'Home', 'url' => '#', 'active' => true),
             array('label' => 'Profile', 'url' => '#'),
             array('label' => 'Messages', 'url' => '#')
@@ -94,7 +94,7 @@
         <pre>
             <span class="pre_black">
                 <span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">stackedPills</span><span class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                     class="pre_red">'Home'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
@@ -123,13 +123,13 @@
     <p>Easily make tabs or pills equal widths of their parent with <code>.nav-justified</code>.</p>
 
     <div class="bs-example">
-        <?php echo BSHtml::tabs(array(
+        <?php echo BsHtml::tabs(array(
             array('label' => 'Home', 'url' => '#', 'active' => true),
             array('label' => 'Profile', 'url' => '#',),
             array('label' => 'Messages', 'url' => '#',),
         ), array('justified' => true)); ?>
         <br>
-        <?php echo BSHtml::pills(array(
+        <?php echo BsHtml::pills(array(
             array('label' => 'Home', 'url' => '#', 'active' => true),
             array('label' => 'Profile', 'url' => '#',),
             array('label' => 'Messages', 'url' => '#',),
@@ -140,7 +140,7 @@
         <pre>
             <span class="pre_black">
                 <span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">tabs</span><span class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                     class="pre_red">'Home'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
@@ -160,7 +160,7 @@
                     class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">true<br></span><span
                     class="pre_green">));<br></span><span
                     class="pre_blue">?&gt;<br>&lt;?php<br></span><span
-                    class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span><span
                     class="pre_green">::</span><span class="pre_blue">pills</span><span
                     class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
@@ -198,7 +198,7 @@
     </div>
 
     <div class="bs-example">
-        <?php echo BSHtml::pills(array(
+        <?php echo BsHtml::pills(array(
             array('label' => 'Home', 'url' => '#', 'active' => true),
             array('label' => 'Profile', 'url' => '#',),
             array('label' => 'Messages', 'url' => '#', 'disabled' => true),
@@ -207,7 +207,7 @@
     <div class="highlight"><pre>
             <span class="pre_black">
 &nbsp;<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">pills</span><span class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                     class="pre_red">'Home'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
@@ -241,14 +241,14 @@
     <h3>Tabs with dropdowns</h3>
 
     <div class="bs-example">
-        <?php echo BSHtml::tabs(array(
+        <?php echo BsHtml::tabs(array(
             array('label' => 'Home', 'url' => '#', 'active' => true),
             array('label' => 'Help', 'url' => '#'),
             array('label' => 'Dropdown', 'items' => array(
                 array('label' => 'Action', 'url' => '#'),
                 array('label' => 'Another action', 'url' => '#'),
                 array('label' => 'Something else here', 'url' => '#'),
-                BSHtml::menuDivider(),
+                BsHtml::menuDivider(),
                 array('label' => 'Separate link', 'url' => '#'),
             )),
         )); ?>
@@ -256,7 +256,7 @@
     <div class="highlight"><pre>
             <span class="pre_black">
 <span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">tabs</span><span class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                     class="pre_red">'Home'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
@@ -286,7 +286,7 @@
                     class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                     class="pre_red">'#'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">menuDivider</span><span class="pre_green">(),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                     class="pre_red">'Separate&nbsp;link'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
@@ -301,14 +301,14 @@
     <h3>Pills with dropdowns</h3>
 
     <div class="bs-example">
-        <?php echo BSHtml::pills(array(
+        <?php echo BsHtml::pills(array(
             array('label' => 'Home', 'url' => '#', 'active' => true),
             array('label' => 'Help', 'url' => '#'),
             array('label' => 'Dropdown', 'items' => array(
                 array('label' => 'Action', 'url' => '#'),
                 array('label' => 'Another action', 'url' => '#'),
                 array('label' => 'Something else here', 'url' => '#'),
-                BSHtml::menuDivider(),
+                BsHtml::menuDivider(),
                 array('label' => 'Separate link', 'url' => '#'),
             )),
         )); ?>
@@ -317,7 +317,7 @@
     <div class="highlight"><pre>
             <span class="pre_black">
 <span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">pills</span><span class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                     class="pre_red">'Home'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
@@ -347,7 +347,7 @@
                     class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                     class="pre_red">'#'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">menuDivider</span><span class="pre_green">(),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                     class="pre_red">'Separate&nbsp;link'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span

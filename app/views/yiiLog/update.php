@@ -16,5 +16,5 @@ $this->breadcrumbs=array(
     array('icon' => 'glyphicon glyphicon-minus-sign','label'=>'Delete YiiLog', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
     );
     ?>
-<?php echo BSHtml::pageHeader('Update','YiiLog '.$model->id) ?>
+<?php echo BsHtml::pageHeader('Update','YiiLog '.$model->id) ?>
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

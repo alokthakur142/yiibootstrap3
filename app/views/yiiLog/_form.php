@@ -13,7 +13,7 @@
 	// There is a call to performAjaxValidation() commented in generated controller code.
 	// See class documentation of CActiveForm for details on this.
 	'enableAjaxValidation'=>false,
-	'layout' => BSHtml::FORM_LAYOUT_HORIZONTAL,
+	'layout' => BsHtml::FORM_LAYOUT_HORIZONTAL,
 )); ?>
 
     <p class="help-block">Fields with <span class="required">*</span> are required.</p>
@@ -28,8 +28,8 @@
 
             <?php echo $form->textAreaControlGroup($model,'message',array('rows'=>6,'span'=>8)); ?>
 
-            <?php echo BSHtml::formActions(array(
-    BSHtml::submitButton('Submit', array('color' => BSHtml::BUTTON_COLOR_PRIMARY)),
+            <?php echo BsHtml::formActions(array(
+    BsHtml::submitButton('Submit', array('color' => BsHtml::BUTTON_COLOR_PRIMARY)),
 )); ?>
 
     <?php $this->endWidget(); ?>

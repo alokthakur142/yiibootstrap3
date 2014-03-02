@@ -42,15 +42,15 @@
                 class="pre_red">'&lt;p&gt;One&nbsp;fine&nbsp;body...&lt;/p&gt;'</span><span
                 class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
                 class="pre_red">'footer'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">button</span><span class="pre_green">(</span><span
                 class="pre_red">'Save&nbsp;Changes'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'data-dismiss'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                 class="pre_red">'modal'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                 class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">BUTTON_COLOR_PRIMARY<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
-                class="pre_green">)),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="pre_blue">BSHtml</span><span
+                class="pre_green">)),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="pre_blue">BsHtml</span><span
                 class="pre_green">::</span><span class="pre_blue">button</span><span
                 class="pre_green">(</span><span class="pre_red">'Close'</span><span
                 class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
@@ -64,7 +64,7 @@
 
 
     <div id="modals-usage" class="bs-example" style="padding-bottom: 24px;">
-        <?php echo BSHtml::ajaxLink('Launch Demo Modal',
+        <?php echo BsHtml::ajaxLink('Launch Demo Modal',
             Yii::app()->createAbsoluteUrl('site/ajaxTest'),
             array(
                 'cache' => true,
@@ -79,7 +79,7 @@
             }',
             ),
             array(
-                'icon' => BSHtml::GLYPHICON_BELL
+                'icon' => BsHtml::GLYPHICON_BELL
             )
         ); ?>
     </div><!-- /example -->
@@ -87,7 +87,7 @@
     <pre>
         <span class="pre_black">
             <span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-                class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                 class="pre_blue">ajaxLink</span><span class="pre_green">(</span><span
                 class="pre_red">'open&nbsp;Modal'</span><span class="pre_green">,&nbsp;</span><span
                 class="pre_blue">Yii</span><span class="pre_green">::</span><span class="pre_blue">app</span><span
@@ -105,7 +105,7 @@
                 class="pre_red">'success'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                 class="pre_red">'js:function(data){<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;console.log(data);<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$(".modal-body").html(data);<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$("#demo_modal").modal("show");<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}'<br></span><span
                 class="pre_green">),&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'icon'&nbsp;</span><span
-                class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                class="pre_green">=&gt;&nbsp;</span><span class="pre_blue">BsHtml</span><span
                 class="pre_green">::</span><span class="pre_blue">GLYPHICON_BELL<br></span><span
                 class="pre_green">));<br></span><span class="pre_blue">?&gt;</span>
         </span>
@@ -116,11 +116,11 @@
         'header' => 'Modal Heading',
         'content' => '<p>One fine body...</p>',
         'footer' => array(
-            BSHtml::button(
+            BsHtml::button(
                 'Save Changes',
-                array('data-dismiss' => 'modal', 'color' => BSHtml::BUTTON_COLOR_PRIMARY)
+                array('data-dismiss' => 'modal', 'color' => BsHtml::BUTTON_COLOR_PRIMARY)
             ),
-            BSHtml::button('Close', array('data-dismiss' => 'modal')),
+            BsHtml::button('Close', array('data-dismiss' => 'modal')),
         ),
     )); ?>
 </div>

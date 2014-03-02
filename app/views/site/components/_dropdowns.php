@@ -13,19 +13,19 @@
         <code>position: relative;</code>. Then add the menu's HTML.</p>
 
     <div class="bs-example">
-        <?php echo BSHtml::buttonDropdown(
+        <?php echo BsHtml::buttonDropdown(
             'Dropdown',
             array(
                 array('label' => 'Action', 'url' => '#'),
                 array('label' => 'Another action', 'url' => '#'),
                 array('label' => 'Something else here', 'url' => '#'),
-                BSHtml::menuDivider(),
+                BsHtml::menuDivider(),
                 array('label' => 'Separate link', 'url' => '#'),
             )
             , array(
                 'split' => true,
-                'size' => BSHtml::BUTTON_SIZE_SMALL,
-                'color' => BSHtml::BUTTON_COLOR_INFO
+                'size' => BsHtml::BUTTON_SIZE_SMALL,
+                'color' => BsHtml::BUTTON_COLOR_INFO
             )
         );?>
     </div>
@@ -34,7 +34,7 @@
         <pre >
            <span class="pre_black">
 &nbsp;<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-                   class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                   class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                    class="pre_blue">buttonDropdown</span><span class="pre_green">(</span><span
                    class="pre_red">'Dropdown'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                    class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
@@ -49,7 +49,7 @@
                    class="pre_red">'Something&nbsp;else&nbsp;here'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                    class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                    class="pre_red">'#'<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp;</span><span
-                   class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                   class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                    class="pre_blue">menuDivider</span><span class="pre_green">(),<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                    class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                    class="pre_red">'Separate&nbsp;link'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
@@ -58,10 +58,10 @@
                    class="pre_red">'split'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                    class="pre_blue">true</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
                    class="pre_red">'size'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                   class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                   class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                    class="pre_blue">BUTTON_SIZE_SMALL</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
                    class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                   class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                   class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                    class="pre_blue">BUTTON_COLOR_INFO<br></span><span class="pre_green">));<br></span><span
                    class="pre_blue">?&gt;</span>
 </span>
@@ -80,10 +80,10 @@
                     class="pre_blue">true</span><span
                     class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
                     class="pre_red">'size'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">BUTTON_SIZE_SMALL</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
                     class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">BUTTON_COLOR_INFO</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
                     class="pre_red">'split'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                     class="pre_blue">true</span><span
@@ -93,7 +93,7 @@
                     class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'menuOptions'&nbsp;</span><span
                     class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_red">'pull'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">PULL_RIGHT<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_green">)<br>);<br></span><span
                     class="pre_blue">?&gt;</span>
 </span>
@@ -105,15 +105,15 @@
     <p>Add a header to label sections of actions in any dropdown menu.</p>
 
     <div class="bs-example">
-        <?php echo BSHtml::buttonDropdown(
+        <?php echo BsHtml::buttonDropdown(
             'Dropdown',
             array(
-                BSHtml::dropDownHeader('Dropdown Header'),
+                BsHtml::dropDownHeader('Dropdown Header'),
                 array('label' => 'Action', 'url' => '#'),
                 array('label' => 'Another action', 'url' => '#'),
                 array('label' => 'Something else here', 'url' => '#'),
-                BSHtml::menuDivider(),
-                BSHtml::dropDownHeader('Dropdown Header'),
+                BsHtml::menuDivider(),
+                BsHtml::dropDownHeader('Dropdown Header'),
                 array('label' => 'Separate link', 'url' => '#'),
             )
         );?>
@@ -122,10 +122,10 @@
     <div class="highlight"><pre >
             <span class="pre_black">
 <span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">buttonDropdown</span><span class="pre_green">(</span><span
                     class="pre_red">'Dropdown'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">dropDownHeader</span><span class="pre_green">(</span><span
                     class="pre_red">'Dropdown&nbsp;Header'</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
@@ -140,9 +140,9 @@
                     class="pre_red">'Something&nbsp;else&nbsp;here'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                     class="pre_red">'#'<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">menuDivider</span><span
-                    class="pre_green">(),<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">(),<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_blue">BsHtml</span><span
                     class="pre_green">::</span><span class="pre_blue">dropDownHeader</span><span
                     class="pre_green">(</span><span class="pre_red">'Dropdown&nbsp;Header'</span><span
                     class="pre_green">),<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
@@ -160,7 +160,7 @@
     <p>Add <code>.disabled</code> to a <code>&lt;li&gt;</code> in the dropdown to disable the link.</p>
 
     <div class="bs-example">
-        <?php echo BSHtml::buttonDropdown(
+        <?php echo BsHtml::buttonDropdown(
             'Dropdown',
             array(
                 array('label' => 'Another action', 'url' => '#'),
@@ -170,8 +170,8 @@
             ,
             array(
                 'split' => true,
-                'size' => BSHtml::BUTTON_SIZE_SMALL,
-                'color' => BSHtml::BUTTON_COLOR_WARNING
+                'size' => BsHtml::BUTTON_SIZE_SMALL,
+                'color' => BsHtml::BUTTON_COLOR_WARNING
             )
         );?>
     </div>
@@ -179,7 +179,7 @@
     <div class="highlight"><pre >
             <span class="pre_black">
 &nbsp;<span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">buttonDropdown</span><span class="pre_green">(</span><span
                     class="pre_red">'Dropdown'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
@@ -200,10 +200,10 @@
                     class="pre_blue">true</span><span
                     class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
                     class="pre_red">'size'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">BUTTON_SIZE_SMALL</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp;</span><span
                     class="pre_red">'color'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">BUTTON_COLOR_WARNING<br></span><span
                     class="pre_green">));<br></span><span class="pre_blue">?&gt;</span>
 </span>

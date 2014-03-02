@@ -13,6 +13,6 @@ $this->breadcrumbs=array(
         array('icon' => 'glyphicon glyphicon-home','label'=>'Manage YiiLog', 'url'=>array('admin')),
     );
     ?>
-<?php echo BSHtml::pageHeader('Create','YiiLog') ?>
+<?php echo BsHtml::pageHeader('Create','YiiLog') ?>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

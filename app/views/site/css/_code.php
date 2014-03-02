@@ -10,16 +10,16 @@
     <p>Wrap inline snippets of code with <code>&lt;code&gt;</code>.</p>
 
     <div class="bs-example">
-        For example, <?php echo BSHtml::code(BSHtml::italics('Sample text here...')); ?> should be wrapped as inline.
+        For example, <?php echo BsHtml::code(BsHtml::italics('Sample text here...')); ?> should be wrapped as inline.
     </div>
 
     <div class="highlight">
         <pre >
             <span class="pre_black">
 <span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-                   class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                   class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                    class="pre_blue">code</span><span class="pre_green">(</span><span
-                   class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                   class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                    class="pre_blue">italics</span><span class="pre_green">(</span><span
                     class="pre_red">'Sample&nbsp;text&nbsp;here...'</span><span class="pre_green">));<br></span><span
                    class="pre_blue">?&gt;</span>
@@ -33,15 +33,15 @@
         proper rendering.</p>
 
     <div class="bs-example">
-        <?php echo BSHtml::codeBlock(BSHtml::emphasis('Sample text here...')); ?>
+        <?php echo BsHtml::codeBlock(BsHtml::emphasis('Sample text here...')); ?>
     </div>
     <div class="highlight">
         <pre>
             <span class="pre_black">
 <span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-                   class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                   class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                    class="pre_blue">codeBlock</span><span class="pre_green">(</span><span
-                   class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                   class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                    class="pre_blue">emphasis</span><span class="pre_green">(</span><span
                     class="pre_red">'Sample&nbsp;text&nbsp;here...'</span><span class="pre_green">));<br></span><span
                    class="pre_blue">?&gt;</span>

@@ -28,11 +28,11 @@ if(!isset($code))
 <div id="myTabContent" class="tab-content">
 <div class="tab-pane fade" id="home_<?php echo $id ?>">
     <p>
-        <?php echo BSHtml::button(
+        <?php echo BsHtml::button(
             'Popover',
             array(
 
-                'size' => BSHtml::BUTTON_SIZE_SMALL,
+                'size' => BsHtml::BUTTON_SIZE_SMALL,
                 'data-container' => 'body',
                 'data-toggle' => 'popover',
                 'data-placement' => 'left',
@@ -45,28 +45,28 @@ if(!isset($code))
             )
         )
         ?>
-        <?php echo BSHtml::linkButton('Google', array(
+        <?php echo BsHtml::linkButton('Google', array(
             'url' => 'http://www.google.de',
             'target' => '_blank',
-            'size' => BSHtml::BUTTON_SIZE_SMALL,
+            'size' => BsHtml::BUTTON_SIZE_SMALL,
 
         ))
         ?>
-        <?php echo BSHtml::linkButton('Google', array(
+        <?php echo BsHtml::linkButton('Google', array(
             'url' => 'http://www.google.de',
             'target' => '_blank',
-            'size' => BSHtml::BUTTON_SIZE_SMALL,
+            'size' => BsHtml::BUTTON_SIZE_SMALL,
             'data-toggle' => 'popover'
         ))
         ?>
-        <?php echo BSHtml::submitButton('BSHtml::submitButton',
+        <?php echo BsHtml::submitButton('BsHtml::submitButton',
             array(
-                'color' => BSHtml::BUTTON_COLOR_INFO,
+                'color' => BsHtml::BUTTON_COLOR_INFO,
                 'confirm' => 'Whooza ?'
             )
         ); ?>
-        <?php echo BSHtml::ajaxButton(
-            'BSHtml::ajaxButton',
+        <?php echo BsHtml::ajaxButton(
+            'BsHtml::ajaxButton',
             Yii::app()->createAbsoluteUrl('sitet/ajaxTest'),
             array(
                 'cache' => true,
@@ -81,11 +81,11 @@ if(!isset($code))
                 }',
             ),
             array(
-                'color' => BSHtml::BUTTON_COLOR_INFO,
-                'icon' => BSHtml::GLYPHICON_BELL
+                'color' => BsHtml::BUTTON_COLOR_INFO,
+                'icon' => BsHtml::GLYPHICON_BELL
             )
         ); ?>
-        <?php echo BSHtml::ajaxLink('BSHtml::ajaxLink',
+        <?php echo BsHtml::ajaxLink('BsHtml::ajaxLink',
             Yii::app()->createAbsoluteUrl('site/ajaxTest'),
             array(
                 'cache' => true,
@@ -100,26 +100,26 @@ if(!isset($code))
                 }',
             ),
             array(
-                'icon' => BSHtml::GLYPHICON_BELL
+                'icon' => BsHtml::GLYPHICON_BELL
             )
         ); ?>
         <?php if ($code) : ?>
                     <pre class="pre-scrollable hidden-sm hidden-xs  linenums prettyprint lang-py">
-                        &lt;?php echo BSHtml::linkButton('Google',array(
+                        &lt;?php echo BsHtml::linkButton('Google',array(
                             'url' => 'http://www.google.de',
                             'target' => '_blank',
-                            'size' => BSHtml::BUTTON_SIZE_SMALL,
+                            'size' => BsHtml::BUTTON_SIZE_SMALL,
 
                         ))
                         ?&gt;
-                        &lt;?php echo BSHtml::submitButton('BSHtml::submitButton',
+                        &lt;?php echo BsHtml::submitButton('BsHtml::submitButton',
                             array(
-                                'color' => BSHtml::BUTTON_COLOR_INFO,
+                                'color' => BsHtml::BUTTON_COLOR_INFO,
                                 'confirm' => 'Whooza ?'
                             )
                         ); ?&gt;
-                        &lt;?php echo BSHtml::ajaxButton(
-                            'BSHtml::ajaxButton',
+                        &lt;?php echo BsHtml::ajaxButton(
+                            'BsHtml::ajaxButton',
                             Yii::app()->createAbsoluteUrl('bootstrap/default/ajaxTest'),
                             array(
                                 'cache' => true,
@@ -134,11 +134,11 @@ if(!isset($code))
                                 }',
                             ),
                             array(
-                                'color' => BSHtml::BUTTON_COLOR_INFO,
-                                'icon' => BSHtml::GLYPHICON_BELL
+                                'color' => BsHtml::BUTTON_COLOR_INFO,
+                                'icon' => BsHtml::GLYPHICON_BELL
                             )
                         ); ?&gt;
-                        &lt;?php echo BSHtml::ajaxLink('BSHtml::ajaxLink',
+                        &lt;?php echo BsHtml::ajaxLink('BsHtml::ajaxLink',
                             Yii::app()->createAbsoluteUrl('bootstrap/default/ajaxTest'),
                             array(
                                 'cache' => true,
@@ -151,7 +151,7 @@ if(!isset($code))
                                 }',
                             ),
                             array(
-                                'icon' => BSHtml::GLYPHICON_BELL
+                                'icon' => BsHtml::GLYPHICON_BELL
                             )
                         ); ?&gt;
                     </pre>
@@ -165,107 +165,107 @@ if(!isset($code))
 <?php endif; ?>
 <div class="tab-pane fade in active" id="profile_<?php echo $id ?>">
     <p>
-        <?php echo BSHtml::button(
+        <?php echo BsHtml::button(
             'Primary',
             array(
-                'color' => BSHtml::BUTTON_COLOR_PRIMARY,
-                'size' => BSHtml::BUTTON_SIZE_LARGE
+                'color' => BsHtml::BUTTON_COLOR_PRIMARY,
+                'size' => BsHtml::BUTTON_SIZE_LARGE
             )
         );
         ?>
-        <?php echo BSHtml::button('Danger', array('color' => BSHtml::BUTTON_COLOR_DANGER, 'size' => BSHtml::BUTTON_SIZE_LARGE)); ?>
-        <?php echo BSHtml::button('Warning', array('color' => BSHtml::BUTTON_COLOR_WARNING, 'size' => BSHtml::BUTTON_SIZE_LARGE)); ?>
-        <?php echo BSHtml::button('Success', array('color' => BSHtml::BUTTON_COLOR_SUCCESS, 'size' => BSHtml::BUTTON_SIZE_LARGE)); ?>
-        <?php echo BSHtml::button('Info', array('color' => BSHtml::BUTTON_COLOR_INFO, 'size' => BSHtml::BUTTON_SIZE_LARGE)); ?>
-        <?php echo BSHtml::button('Inverse', array('color' => BSHtml::BUTTON_COLOR_INVERSE, 'size' => BSHtml::BUTTON_SIZE_LARGE)); ?>
-        <?php echo BSHtml::button('Default', array('size' => BSHtml::BUTTON_SIZE_LARGE)); ?>
-        <?php echo BSHtml::button('Link', array('color' => BSHtml::BUTTON_COLOR_LINK, 'size' => BSHtml::BUTTON_SIZE_LARGE)); ?>
+        <?php echo BsHtml::button('Danger', array('color' => BsHtml::BUTTON_COLOR_DANGER, 'size' => BsHtml::BUTTON_SIZE_LARGE)); ?>
+        <?php echo BsHtml::button('Warning', array('color' => BsHtml::BUTTON_COLOR_WARNING, 'size' => BsHtml::BUTTON_SIZE_LARGE)); ?>
+        <?php echo BsHtml::button('Success', array('color' => BsHtml::BUTTON_COLOR_SUCCESS, 'size' => BsHtml::BUTTON_SIZE_LARGE)); ?>
+        <?php echo BsHtml::button('Info', array('color' => BsHtml::BUTTON_COLOR_INFO, 'size' => BsHtml::BUTTON_SIZE_LARGE)); ?>
+        <?php echo BsHtml::button('Inverse', array('color' => BsHtml::BUTTON_COLOR_INVERSE, 'size' => BsHtml::BUTTON_SIZE_LARGE)); ?>
+        <?php echo BsHtml::button('Default', array('size' => BsHtml::BUTTON_SIZE_LARGE)); ?>
+        <?php echo BsHtml::button('Link', array('color' => BsHtml::BUTTON_COLOR_LINK, 'size' => BsHtml::BUTTON_SIZE_LARGE)); ?>
 
     </p>
     <p>
-        <?php echo BSHtml::button(
+        <?php echo BsHtml::button(
             'Primary',
             array(
-                'color' => BSHtml::BUTTON_COLOR_PRIMARY,
-                'size' => BSHtml::BUTTON_SIZE_DEFAULT //default value BSHtml::BUTTON_SIZE_DEFAULT=''
+                'color' => BsHtml::BUTTON_COLOR_PRIMARY,
+                'size' => BsHtml::BUTTON_SIZE_DEFAULT //default value BsHtml::BUTTON_SIZE_DEFAULT=''
             )
         );
         ?>
-        <?php echo BSHtml::button('Danger', array('color' => BSHtml::BUTTON_COLOR_DANGER)); ?>
-        <?php echo BSHtml::button('Warning', array('color' => BSHtml::BUTTON_COLOR_WARNING)); ?>
-        <?php echo BSHtml::button('Success', array('color' => BSHtml::BUTTON_COLOR_SUCCESS)); ?>
-        <?php echo BSHtml::button('Info', array('color' => BSHtml::BUTTON_COLOR_INFO)); ?>
-        <?php echo BSHtml::button('Inverse', array('color' => BSHtml::BUTTON_COLOR_INVERSE)); ?>
-        <?php echo BSHtml::button('Default'); ?>
-        <?php echo BSHtml::button('Link', array('color' => BSHtml::BUTTON_COLOR_LINK)); ?>
+        <?php echo BsHtml::button('Danger', array('color' => BsHtml::BUTTON_COLOR_DANGER)); ?>
+        <?php echo BsHtml::button('Warning', array('color' => BsHtml::BUTTON_COLOR_WARNING)); ?>
+        <?php echo BsHtml::button('Success', array('color' => BsHtml::BUTTON_COLOR_SUCCESS)); ?>
+        <?php echo BsHtml::button('Info', array('color' => BsHtml::BUTTON_COLOR_INFO)); ?>
+        <?php echo BsHtml::button('Inverse', array('color' => BsHtml::BUTTON_COLOR_INVERSE)); ?>
+        <?php echo BsHtml::button('Default'); ?>
+        <?php echo BsHtml::button('Link', array('color' => BsHtml::BUTTON_COLOR_LINK)); ?>
 
     </p>
     <p>
-        <?php echo BSHtml::button(
+        <?php echo BsHtml::button(
             'Primary',
             array(
-                'color' => BSHtml::BUTTON_COLOR_PRIMARY,
-                'size' => BSHtml::BUTTON_SIZE_SMALL
+                'color' => BsHtml::BUTTON_COLOR_PRIMARY,
+                'size' => BsHtml::BUTTON_SIZE_SMALL
             )
         );
         ?>
-        <?php echo BSHtml::button('Danger', array('color' => BSHtml::BUTTON_COLOR_DANGER, 'size' => BSHtml::BUTTON_SIZE_SMALL)); ?>
-        <?php echo BSHtml::button('Warning', array('color' => BSHtml::BUTTON_COLOR_WARNING, 'size' => BSHtml::BUTTON_SIZE_SMALL)); ?>
-        <?php echo BSHtml::button('Success', array('color' => BSHtml::BUTTON_COLOR_SUCCESS, 'size' => BSHtml::BUTTON_SIZE_SMALL)); ?>
-        <?php echo BSHtml::button('Info', array('color' => BSHtml::BUTTON_COLOR_INFO, 'size' => BSHtml::BUTTON_SIZE_SMALL)); ?>
-        <?php echo BSHtml::button('Inverse', array('color' => BSHtml::BUTTON_COLOR_INVERSE, 'size' => BSHtml::BUTTON_SIZE_SMALL)); ?>
-        <?php echo BSHtml::button('Default', array('size' => BSHtml::BUTTON_SIZE_SMALL)); ?>
-        <?php echo BSHtml::button('Link', array('color' => BSHtml::BUTTON_COLOR_LINK, 'size' => BSHtml::BUTTON_SIZE_SMALL)); ?>
+        <?php echo BsHtml::button('Danger', array('color' => BsHtml::BUTTON_COLOR_DANGER, 'size' => BsHtml::BUTTON_SIZE_SMALL)); ?>
+        <?php echo BsHtml::button('Warning', array('color' => BsHtml::BUTTON_COLOR_WARNING, 'size' => BsHtml::BUTTON_SIZE_SMALL)); ?>
+        <?php echo BsHtml::button('Success', array('color' => BsHtml::BUTTON_COLOR_SUCCESS, 'size' => BsHtml::BUTTON_SIZE_SMALL)); ?>
+        <?php echo BsHtml::button('Info', array('color' => BsHtml::BUTTON_COLOR_INFO, 'size' => BsHtml::BUTTON_SIZE_SMALL)); ?>
+        <?php echo BsHtml::button('Inverse', array('color' => BsHtml::BUTTON_COLOR_INVERSE, 'size' => BsHtml::BUTTON_SIZE_SMALL)); ?>
+        <?php echo BsHtml::button('Default', array('size' => BsHtml::BUTTON_SIZE_SMALL)); ?>
+        <?php echo BsHtml::button('Link', array('color' => BsHtml::BUTTON_COLOR_LINK, 'size' => BsHtml::BUTTON_SIZE_SMALL)); ?>
 
     </p>
     <p>
-        <?php echo BSHtml::button(
+        <?php echo BsHtml::button(
             'Primary',
             array(
-                'color' => BSHtml::BUTTON_COLOR_PRIMARY,
-                'size' => BSHtml::BUTTON_SIZE_MINI
+                'color' => BsHtml::BUTTON_COLOR_PRIMARY,
+                'size' => BsHtml::BUTTON_SIZE_MINI
             )
         );
         ?>
-        <?php echo BSHtml::button('Danger', array('color' => BSHtml::BUTTON_COLOR_DANGER, 'size' => BSHtml::BUTTON_SIZE_MINI)); ?>
-        <?php echo BSHtml::button('Warning', array('color' => BSHtml::BUTTON_COLOR_WARNING, 'size' => BSHtml::BUTTON_SIZE_MINI)); ?>
-        <?php echo BSHtml::button('Success', array('color' => BSHtml::BUTTON_COLOR_SUCCESS, 'size' => BSHtml::BUTTON_SIZE_MINI)); ?>
-        <?php echo BSHtml::button('Info', array('color' => BSHtml::BUTTON_COLOR_INFO, 'size' => BSHtml::BUTTON_SIZE_MINI)); ?>
-        <?php echo BSHtml::button('Inverse', array('color' => BSHtml::BUTTON_COLOR_INVERSE, 'size' => BSHtml::BUTTON_SIZE_MINI)); ?>
-        <?php echo BSHtml::button('Default', array('size' => BSHtml::BUTTON_SIZE_MINI)); ?>
-        <?php echo BSHtml::button('Link', array('color' => BSHtml::BUTTON_COLOR_LINK, 'size' => BSHtml::BUTTON_SIZE_MINI)); ?>
+        <?php echo BsHtml::button('Danger', array('color' => BsHtml::BUTTON_COLOR_DANGER, 'size' => BsHtml::BUTTON_SIZE_MINI)); ?>
+        <?php echo BsHtml::button('Warning', array('color' => BsHtml::BUTTON_COLOR_WARNING, 'size' => BsHtml::BUTTON_SIZE_MINI)); ?>
+        <?php echo BsHtml::button('Success', array('color' => BsHtml::BUTTON_COLOR_SUCCESS, 'size' => BsHtml::BUTTON_SIZE_MINI)); ?>
+        <?php echo BsHtml::button('Info', array('color' => BsHtml::BUTTON_COLOR_INFO, 'size' => BsHtml::BUTTON_SIZE_MINI)); ?>
+        <?php echo BsHtml::button('Inverse', array('color' => BsHtml::BUTTON_COLOR_INVERSE, 'size' => BsHtml::BUTTON_SIZE_MINI)); ?>
+        <?php echo BsHtml::button('Default', array('size' => BsHtml::BUTTON_SIZE_MINI)); ?>
+        <?php echo BsHtml::button('Link', array('color' => BsHtml::BUTTON_COLOR_LINK, 'size' => BsHtml::BUTTON_SIZE_MINI)); ?>
         <?php if ($code) : ?>
         <pre class="pre-scrollable hidden-sm hidden-xs  linenums prettyprint lang-py">
-&lt;?php echo BSHtml::button(
+&lt;?php echo BsHtml::button(
     'Primary',
     array(
-        'color' => BSHtml::BUTTON_COLOR_PRIMARY,
-        'size' => BSHtml::BUTTON_SIZE_LARGE
+        'color' => BsHtml::BUTTON_COLOR_PRIMARY,
+        'size' => BsHtml::BUTTON_SIZE_LARGE
     )
 );
 ?&gt;
-&lt;?php echo BSHtml::button(
+&lt;?php echo BsHtml::button(
     'Primary',
     array(
-        'color' => BSHtml::BUTTON_COLOR_PRIMARY,
-        'size' => BSHtml::BUTTON_SIZE_DEFAULT
+        'color' => BsHtml::BUTTON_COLOR_PRIMARY,
+        'size' => BsHtml::BUTTON_SIZE_DEFAULT
     )
 );
 ?&gt;
-&lt;?php echo BSHtml::button('Link', array('color' => BSHtml::BUTTON_COLOR_LINK)); ?&gt;
- &lt;?php echo BSHtml::button(
+&lt;?php echo BsHtml::button('Link', array('color' => BsHtml::BUTTON_COLOR_LINK)); ?&gt;
+ &lt;?php echo BsHtml::button(
     'Primary',
     array(
-        'color' => BSHtml::BUTTON_COLOR_PRIMARY,
-        'size' => BSHtml::BUTTON_SIZE_SMALL
+        'color' => BsHtml::BUTTON_COLOR_PRIMARY,
+        'size' => BsHtml::BUTTON_SIZE_SMALL
     )
 );
 ?&gt;
-&lt;?php echo BSHtml::button(
+&lt;?php echo BsHtml::button(
     'Primary',
     array(
-        'color' => BSHtml::BUTTON_COLOR_PRIMARY,
-        'size' => BSHtml::BUTTON_SIZE_MINI
+        'color' => BsHtml::BUTTON_COLOR_PRIMARY,
+        'size' => BsHtml::BUTTON_SIZE_MINI
     )
 );
 ?&gt;

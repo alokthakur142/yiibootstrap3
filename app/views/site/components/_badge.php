@@ -8,14 +8,14 @@
         Bootstrap navs, and more.</p>
 
     <div class="bs-example">
-        <?= BSHtml::link('Inbox ' . BSHtml::badge(42)) ?>
+        <?= BsHtml::link('Inbox ' . BsHtml::badge(42)) ?>
     </div>
     <div class="highlight">
         <pre><span class="pre_black">
-<span class="pre_blue">&lt;?=&nbsp;BSHtml</span><span class="pre_green">::</span><span
+<span class="pre_blue">&lt;?=&nbsp;BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">link</span><span class="pre_green">(</span><span
                     class="pre_red">'Inbox&nbsp;'&nbsp;</span><span class="pre_green">.&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">badge</span><span class="pre_green">(</span><span
                     class="pre_blue">42</span><span class="pre_green">))&nbsp;</span><span
                     class="pre_blue">?&gt;</span>
@@ -41,9 +41,9 @@
     <div class="bs-example">
         <p>
             <?php
-            echo BSHtml::pills(array(
+            echo BsHtml::pills(array(
                 array(
-                    'label' => 'Home ' . BSHtml::badge('23'),
+                    'label' => 'Home ' . BsHtml::badge('23'),
                     'url' => '#',
                     'active' => true
                 ),
@@ -52,7 +52,7 @@
                     'url' => '#'
                 ),
                 array(
-                    'label' => BSHtml::badge('56', array('pull' => BSHtml::PULL_RIGHT)) . ' Messages',
+                    'label' => BsHtml::badge('56', array('pull' => BsHtml::PULL_RIGHT)) . ' Messages',
                     'url' => '#'
                 )
             ));
@@ -61,9 +61,9 @@
 
         <p>
             <?php
-            echo BSHtml::stackedPills(array(
+            echo BsHtml::stackedPills(array(
                 array(
-                    'label' => 'Home ' . BSHtml::badge('23'),
+                    'label' => 'Home ' . BsHtml::badge('23'),
                     'url' => '#',
                     'active' => true
                 ),
@@ -72,7 +72,7 @@
                     'url' => '#'
                 ),
                 array(
-                    'label' => BSHtml::badge('56', array('pull' => BSHtml::PULL_RIGHT)) . ' Messages',
+                    'label' => BsHtml::badge('56', array('pull' => BsHtml::PULL_RIGHT)) . ' Messages',
                     'url' => '#'
                 )
             ), array(
@@ -85,11 +85,11 @@
         <pre>
             <span class="pre_black">
 <span class="pre_blue">&lt;?php<br></span><span class="pre_green">echo&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">pills</span><span class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                     class="pre_red">'Home&nbsp;'&nbsp;</span><span class="pre_green">.&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">badge</span><span class="pre_green">(</span><span
                     class="pre_red">'23'</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
@@ -101,23 +101,23 @@
                     class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                     class="pre_red">'#'<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">badge</span><span class="pre_green">(</span><span
                     class="pre_red">'56'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_red">'pull'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">PULL_RIGHT<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_green">))&nbsp;.&nbsp;</span><span
                     class="pre_red">'&nbsp;Messages'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                     class="pre_red">'#'<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_green">)<br>));<br></span><span
                     class="pre_blue">?&gt;<br>&lt;?php<br></span><span
-                    class="pre_green">echo&nbsp;</span><span class="pre_blue">BSHtml</span><span
+                    class="pre_green">echo&nbsp;</span><span class="pre_blue">BsHtml</span><span
                     class="pre_green">::</span><span class="pre_blue">stackedPills</span><span
                     class="pre_green">(array(<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                     class="pre_red">'Home&nbsp;'&nbsp;</span><span class="pre_green">.&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">badge</span><span class="pre_green">(</span><span
                     class="pre_red">'23'</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
@@ -129,11 +129,11 @@
                     class="pre_red">'url'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
                     class="pre_red">'#'<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_red">'label'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">badge</span><span class="pre_green">(</span><span
                     class="pre_red">'56'</span><span class="pre_green">,&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_red">'pull'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-                    class="pre_blue">BSHtml</span><span class="pre_green">::</span><span
+                    class="pre_blue">BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">PULL_RIGHT<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="pre_green">))&nbsp;.&nbsp;</span><span
                     class="pre_red">'&nbsp;Messages'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span

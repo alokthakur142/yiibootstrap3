@@ -9,10 +9,10 @@
         additional styles).</p>
 
     <div class="bs-example">
-        <?= BSHtml::pageHeader('Example page header', 'Subtext for header') ?>
+        <?= BsHtml::pageHeader('Example page header', 'Subtext for header') ?>
     </div>
     <div class="highlight"><pre><span class="pre_black">
-<span class="pre_blue">&lt;?=&nbsp;BSHtml</span><span class="pre_green">::</span><span
+<span class="pre_blue">&lt;?=&nbsp;BsHtml</span><span class="pre_green">::</span><span
                     class="pre_blue">pageHeader</span><span class="pre_green">(</span><span class="pre_red">'Example&nbsp;page&nbsp;header'</span><span
                     class="pre_green">,&nbsp;</span><span class="pre_red">'Subtext&nbsp;for&nbsp;header'</span><span
                     class="pre_green">)&nbsp;</span><span class="pre_blue">?&gt;</span>

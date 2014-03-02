@@ -5,7 +5,7 @@
         ));
         ?>
             <?php if(isset($this->menu) && is_array($this->menu)) : ?>
-                <?php echo BSHtml::listGroup($this->menu,array('class' => 'affix')); ?>
+                <?php echo BsHtml::listGroup($this->menu,array('class' => 'affix')); ?>
                 <div class="divider"><span></span></div>
             <?php endif; ?>
             <?php if(!empty($this->secondNavPartials)) : ?>
