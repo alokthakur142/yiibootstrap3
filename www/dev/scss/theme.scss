@@ -40,7 +40,13 @@
   border: 1px solid #e1e1e8;
   border-radius: 4px;
 }
-
+body{
+  .highlight{
+    pre{
+      color: black;
+    }
+  }
+}
 pre {
   padding: 10px 20px;
   margin-top: 0;

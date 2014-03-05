@@ -4395,11 +4395,13 @@ th.hidden-lg, td.hidden-lg {
   display: none;
   /* hidden by default, until >480px */
   padding: 0;
-  overflow: hidden;
   margin-bottom: 14px;
   background-color: #f7f7f9;
   border: 1px solid #e1e1e8;
   border-radius: 4px; }
+
+body .highlight pre {
+  color: black; }
 
 pre {
   padding: 10px 20px;
