@@ -4395,6 +4395,7 @@ th.hidden-lg, td.hidden-lg {
   display: none;
   /* hidden by default, until >480px */
   padding: 0;
+  overflow: hidden;
   margin-bottom: 14px;
   background-color: #f7f7f9;
   border: 1px solid #e1e1e8;
@@ -5224,8 +5225,7 @@ h1[id] {
   margin-top: 0;
   margin-bottom: 0;
   background-color: transparent;
-  border: 0;
-  white-space: nowrap; }
+  border: 0; }
 
 .highlight pre code {
   font-size: inherit;

@@ -1,6 +1,6 @@
 module.exports = function (grunt) {
     'use strict';
-    var extIbuttonAsset = 'extensions/ibutton/resources/css/';
+
     // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -49,41 +49,17 @@ module.exports = function (grunt) {
             }
         },
         sass: {                              // Task
-//            ibuttondist: {                            // Target
-//                options: {                       // Target options
-//                    style: 'compact'
-//                },
-//                files: {                         // Dictionary of files
-//                    'extensions/ibutton/resources/css/jquery.ibutton.css': extIbuttonAsset + 'jquery.ibutton.scss'       // 'destination': 'source'
-//                }
-//            },
-//            ibuttonprod: {
-//                options: {                       // Target options
-//                    style: 'compressed'
-//                },
-//                files: {                         // Dictionary of files
-//                    'extensions/ibutton/resources/css/jquery.ibutton.min.css': extIbuttonAsset + 'jquery.ibutton.scss'       // 'destination': 'source'
-//                }
-//            },
             bootstrap:{
                 options: {                       // Target options
-                    style: 'compressed'
+                    style:                                              'compressed'
                 },
                 files: {                         // Dictionary of files
-//                    'www/css/bootstrap.css':                              'bower_components/bootstrap-sass/lib/bootstrap.scss',   // 'destination': 'source'
-                    'www/css/bootstrap.css':                              'www/dev/scss/app.scss',   // 'destination': 'source'
-                    'www/css/application-<%= pkg.version %>.min.css':                              'www/dev/scss/app.scss'   // 'destination': 'source'
-//                    'www/css/application-<%= pkg.version %>.min.css':     'bower_components/bootstrap-sass/lib/bootstrap.scss'   // 'destination': 'source'
+                    'www/css/bootstrap.css':                            'www/dev/scss/app.scss',   // 'destination': 'source'
+                    'www/css/application-<%= pkg.version %>.min.css':   'www/dev/scss/app.scss'   // 'destination': 'source'
                 }
             }
         },
         concat: {
-//            application_css: {
-//                src: [
-//                    'www/css/bootstrap.min.css'
-//                ],
-//                dest: 'www/css/application-<%= pkg.version %>.min.css'
-//            },
             application_js: {
                 src: [
                     'www/js/bootstrap.min.js',
@@ -92,40 +68,7 @@ module.exports = function (grunt) {
                 dest: 'www/js/application-<%= pkg.version %>.min.js'
             }
         },
-//        recess: {
-//            options: {
-//                compile: true
-//            },
-//            bootstrap: {
-//                src: ['www/dev/less/bootstrap.less'],
-//                dest: 'www/css/bootstrap.css'
-//            },
-//            min: {
-//                options: {
-//                    compress: true
-//                },
-//                src: ['www/dev/less/bootstrap.less'],
-//                dest: 'www/css/bootstrap.min.css'
-//            },
-//            theme: {
-//                src: ['www/dev/less/theme.less'],
-//                dest: 'www/css/bootstrap-theme.css'
-//            },
-//            theme_min: {
-//                options: {
-//                    compress: true
-//                },
-//                src: ['www/dev/less/theme.less'],
-//                dest: 'www/css/bootstrap-theme.min.css'
-//            }
-//
-//        },
         watch: {
-            ibuttoncss: {
-                files: extIbuttonAsset + 'jquery.ibutton.scss',
-                tasks: ['sass:ibuttondist', 'sass:ibuttonprod']
-
-            },
             app:{
                 files: 'www/css/bootstrap.css',
                 tasks: ['concat']
@@ -146,10 +89,8 @@ module.exports = function (grunt) {
                 files: 'www/dev/less/theme.less',
                 tasks: ['recess:theme','recess:theme_min']
             }
-
         }
     });
-
     grunt.loadNpmTasks('grunt-release');
     grunt.loadNpmTasks('grunt-bumpup');
     grunt.loadNpmTasks('grunt-text-replace');

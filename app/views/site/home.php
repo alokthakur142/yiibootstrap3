@@ -6,13 +6,25 @@
     <p>This yii module uses <a href="http://getbootstrap.com" title="bootsrap">Twitter Bootstrap</a> as a base. It is
         written for the Yii framework and requires at least PHP&gt; = 5.3 *.The usual widgets like CGridView offered
         with. You could test it after installation with the gii code generator is included in the module.</p>
-
+    <?= BsHtml::alert(
+        BsHtml::ALERT_COLOR_DANGER,
+        BsHtml::icon(BsHtml::GLYPHICON_BELL).
+        ' 02.03.2014 Plz check Documentation BSHtml now BsHtml ,BSApi => BsApi and some more changes are from '.
+        BsHtml::alertLink('Commit',array('href' => 'http://goo.gl/irvXaV')).' Thx to Safarov Alisher'
+    ) ?>
     <div class="bs-docs-section">
         <div class="page-header">
-            <h4 id="download">Download Bootstrap<small> <a class="btn btn-xs btn-primary"
-                                                          href="http://getbootstrap.com/customize/"
-                                                          onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download compiled']);">Download Bootstrap
-                    </a></small></h4>
+            <h4 id="download">
+                Download Bootstrap
+                <small>
+                    <a class="btn btn-xs btn-primary"
+                       href="http://getbootstrap.com/customize/"
+                       onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download compiled']);"
+                    >
+                        Download Bootstrap
+                    </a>
+                </small>
+            </h4>
         </div>
         <p>Append in Your Yii Layout:</p>
     <pre>
