@@ -21,9 +21,7 @@ return array(
     ),
     'import' => array(
         'bootstrap.*',
-        'bootstrap.components.*',
-        'bootstrap.models.*',
-        'bootstrap.controllers.*',
+//        'bootstrap.components.*',
         'bootstrap.helpers.*',
         'bootstrap.widgets.*',
         'bootstrap.behaviors.*',
@@ -33,14 +31,6 @@ return array(
 
     // controllers mappings
     'controllerMap' => array(),
-
-    // application modules
-    'modules' => array(
-        'bootstrap' => array(
-            'class' => 'bootstrap.BootStrapModule'
-        ),
-    ),
-
     // application components
     'components' => array(
 
