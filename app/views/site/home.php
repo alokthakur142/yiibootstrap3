@@ -1,6 +1,6 @@
 <?php $this->pageTitle = 'Home' ?>
 <div class="content g-markdown">
-    <?= BsHtml::pageHeader('Yii-Bootstrap3-Module', BsHtml::italics(' Version 0.0.8 <a href="https://packagist.org/packages/drmabuse/yii-bootstrap-3-module"><img src="https://poser.pugx.org/drmabuse/yii-bootstrap-3-module/v/stable.png" alt="Latest Stable Version"></a> <a href="https://packagist.org/packages/drmabuse/yii-bootstrap-3-module"><img src="https://poser.pugx.org/drmabuse/yii-bootstrap-3-module/downloads.png" alt="Total Downloads Packagist"></a>')); ?>
+    <?= BsHtml::pageHeader('Yii-Bootstrap3-Extension', BsHtml::italics(' Version 0.0.8 <a href="https://packagist.org/packages/drmabuse/yii-bootstrap-3-module"><img src="https://poser.pugx.org/drmabuse/yii-bootstrap-3-module/v/stable.png" alt="Latest Stable Version"></a> <a href="https://packagist.org/packages/drmabuse/yii-bootstrap-3-module"><img src="https://poser.pugx.org/drmabuse/yii-bootstrap-3-module/downloads.png" alt="Total Downloads Packagist"></a>')); ?>
     <p><strong>Instructions</strong></p>
 
     <p>This yii module uses <a href="http://getbootstrap.com" title="bootsrap">Twitter Bootstrap</a> as a base. It is
@@ -8,8 +8,15 @@
         with. You could test it after installation with the gii code generator is included in the module.</p>
     <?=
     BsHtml::alert(
-        BsHtml::ALERT_COLOR_DANGER,
-        BsHtml::icon(BsHtml::GLYPHICON_BELL) .
+        BsHtml::ALERT_COLOR_WARNING,
+        BsHtml::icon(BsHtml::GLYPHICON_WARNING_SIGN) .
+        ' 06.03.2014 Module removed add as Extension ' .
+        BsHtml::alertLink('Commit', array('href' => 'http://goo.gl/Oe7xI3'))
+    ) ?>
+    <?=
+    BsHtml::alert(
+        BsHtml::ALERT_COLOR_WARNING,
+        BsHtml::icon(BsHtml::GLYPHICON_WARNING_SIGN) .
         ' 02.03.2014 Plz check Documentation BSHtml now BsHtml ,BSApi => BsApi and some more changes are from ' .
         BsHtml::alertLink('Commit', array('href' => 'http://goo.gl/irvXaV')) . ' Thx to Safarov Alisher'
     ) ?>
@@ -158,35 +165,25 @@
     <p>with</p>
 <pre>
     <span class="pre_black">
-<span class="pre_blue">&lt;?php<br></span><span class="pre_green">return&nbsp;array(<br>&nbsp;&nbsp; &nbsp;</span><span
-            class="pre_red">'aliases'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
-            class="pre_red">'bootstrap'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-            class="pre_red">'application.modules.bootstrap'<br>&nbsp;&nbsp; &nbsp;</span><span
-            class="pre_green">),<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'modules'&nbsp;</span><span
+<span class="pre_blue">&lt;?php<br></span><span class="pre_green">
+array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'aliases'&nbsp;</span><span
             class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
-            class="pre_red">'bootstrap'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-            class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-            class="pre_red">'bootstrap.BootStrapModule'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
-            class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
-            class="pre_red">'gii'&nbsp;</span><span
-            class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+            class="pre_red">'bootstrap'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
+            class="pre_red">'ext.bootstrap'<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp;</span><span
+            class="pre_red">'import'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+            class="pre_red">'bootstrap.behaviors.*'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+            class="pre_red">'bootstrap.helpers.*'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+            class="pre_red">'bootstrap.widgets.*'<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_green">),<br>&nbsp;&nbsp; &nbsp;</span><span
+            class="pre_red">'modules'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+            class="pre_red">'gii'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
             class="pre_red">'generatorPaths'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
             class="pre_red">'bootstrap.gii'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-            class="pre_green">),<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-            class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-            class="pre_red">'system.gii.GiiModule'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-            class="pre_red">'password'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-            class="pre_red">'yaa'</span><span
-            class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-            class="pre_red">'ipFilters'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-            class="pre_red">'127.0.0.1'</span><span class="pre_green">,<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-            class="pre_red">'::1'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-            class="pre_green">)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<br>&nbsp;&nbsp; &nbsp;),<br>&nbsp;&nbsp; &nbsp;</span><span
-            class="pre_red">'components'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
-            class="pre_red">'BsHtml'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
-            class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span
-            class="pre_red">'bootstrap.components.BsHtml'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
-            class="pre_green">)<br>&nbsp;&nbsp; &nbsp;)<br>);<br></span><span class="pre_blue">?&gt;</span>
+            class="pre_green">)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;)<br>&nbsp;&nbsp; &nbsp;),<br>&nbsp;&nbsp; &nbsp;</span><span
+            class="pre_red">'components'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+            class="pre_red">'bootstrap'&nbsp;</span><span class="pre_green">=&gt;&nbsp;array(<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+            class="pre_red">'class'&nbsp;</span><span class="pre_green">=&gt;&nbsp;</span><span class="pre_red">'bootstrap.components.BsApi'<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span><span
+            class="pre_green">)<br>&nbsp;&nbsp; &nbsp;)<br>);<br></span><span
+            class="pre_blue">?&gt;</span>
 </span>
 </pre>
 
