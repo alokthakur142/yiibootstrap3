@@ -188,6 +188,6 @@ array(<br>&nbsp;&nbsp; &nbsp;</span><span class="pre_red">'aliases'&nbsp;</span>
 </pre>
 
     <p>
-        <a href="https://bitbucket.org/DrMabuse/yii-bootstrap-3-module-example/src/bf91414d4a6ff5dd2a6c34d09d309c5a122d97c4/app/config/main.php?at=master"
+        <a href="https://bitbucket.org/DrMabuse/yii-bootstrap-3-module-example/src/8d3ef88f1bbb2d9ec5114bcba590f6801a071b01/app/config/main.php?at=master"
            title="">Full Config Example</a></p>
 </div>
