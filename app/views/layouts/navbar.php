@@ -58,7 +58,7 @@ $urls = [
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="../" class="navbar-brand">Yii Bootstrap3 Module</a>
+            <a href="../" class="navbar-brand">Yii Bootstrap3 Extension</a>
         </div>
         <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
             <?php
