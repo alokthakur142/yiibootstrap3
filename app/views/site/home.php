@@ -106,9 +106,11 @@
         move the Package to your
     </p>
 
-    <div class="hl-code">
+    <div class="hl-code" style="color:black;">
         <div class="hl-main">
-            <pre><span class="hl-code">/</span><span class="hl-reserved">protected</span><span
+            <pre style="
+    color: black;
+"><span class="hl-code">/</span><span class="hl-reserved">protected</span><span
                     class="hl-code">/</span><span class="hl-identifier">modules</span><span
                     class="hl-code">/</span></pre>
         </div>
@@ -119,7 +121,10 @@
 
     <div class="hl-code">
         <div class="hl-main">
-            <pre><span class="hl-quotes">"</span><span class="hl-string">drmabuse/yii-bootstrap-3-module</span><span
+            <pre style="
+    color: black;
+"
+><span class="hl-quotes">"</span><span class="hl-string">drmabuse/yii-bootstrap-3-module</span><span
                     class="hl-quotes">"</span><span class="hl-code">: </span><span class="hl-quotes">"</span><span
                     class="hl-string">dev-master</span><span class="hl-quotes">"</span></pre>
         </div>
